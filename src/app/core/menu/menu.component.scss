@@ -1,0 +1,84 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0;
+}
+
+img {
+  max-height: 2.5rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu a {
+  color: variables.$color-brown-900;
+  text-decoration: none;
+}
+
+.nav-menu a.active-link {
+  font-weight: variables.$font-weight-bold;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  cursor: pointer;
+}
+
+.menu {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Responsive Styles */
+@media (max-width: variables.$breakpoint-tablet) {
+  .nav-menu {
+    display: none; /* Hide by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: variables.$color-neutral-50;
+    width: 100%;
+    height: calc(100vh - 80px);
+    text-align: right;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show the menu when the active class is added */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+  .menu {
+    margin-bottom: variables.$spacing-unit-large * 10;
+  }
+
+  ul li {
+    border-bottom: 1px solid variables.$color-neutral-500;
+    padding: variables.$spacing-unit-large variables.$global-pd-tablet;
+  }
+
+  ul li:first-child {
+    border-top: 1px solid variables.$color-neutral-500;
+  }
+
+  .nav-menu {
+    gap: 0;
+  }
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+  ul li {
+    padding: variables.$spacing-unit-large variables.$global-pd-mobile;
+  }
+}

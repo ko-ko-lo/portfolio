@@ -1,0 +1,66 @@
+<div class="menu mb-80 bg-light-brown">
+  <div class="container-l">
+    <nav class="navbar flex-row justify-between align-center">
+      <a routerLink="/" (click)="closeMenuAndNavigate()" class="logo">
+        <img src="general/logo.svg" alt="Logo" />
+      </a>
+
+      <div
+        class="menu-toggle d-none gap-32"
+        (click)="toggleMenu()"
+        role="button"
+        aria-label="Toggle menu"
+        [attr.aria-expanded]="menuOpen"
+      >
+        <ng-container *ngIf="!menuOpen; else closeIcon">
+          <i class="material-icons">menu</i>
+        </ng-container>
+
+        <ng-template #closeIcon>
+          <span class="close-icon">
+            <i class="material-icons">close</i>
+          </span>
+        </ng-template>
+      </div>
+
+      <ul
+        class="nav-menu flex-row gap-32"
+        [class.active]="menuOpen"
+        role="navigation"
+      >
+        <li>
+          <a
+            routerLink="/projects"
+            routerLinkActive="active-link"
+            (click)="toggleMenu()"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/blog"
+            routerLinkActive="active-link"
+            (click)="toggleMenu()"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about-me"
+            routerLinkActive="active-link"
+            (click)="toggleMenu()"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/art"
+            routerLinkActive="active-link"
+            (click)="toggleMenu()"
+            >Art</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

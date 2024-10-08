@@ -1,0 +1,123 @@
+// styles/_variables.scss
+
+// ========================================================================
+// Colors
+// ========================================================================
+// Neutral Colors
+$color-neutral-50: #ffffff;
+$color-neutral-100: #f0f3f5;
+$color-neutral-200: #dee5e8;
+$color-neutral-300: #bdcad1;
+$color-neutral-400: #9eb2bc;
+$color-neutral-500: #7d98a5;
+$color-neutral-600: #607d8b;
+$color-neutral-700: #4d6470;
+$color-neutral-800: #3a4c54;
+$color-neutral-900: #263136;
+$color-neutral-900: #000000;
+
+// Brown Colors
+$color-brown-50: #f4eeec;
+$color-brown-100: #e8ddd9;
+$color-brown-200: #cfb8af;
+$color-brown-300: #b99589;
+$color-brown-400: #b38d7f;
+$color-brown-500: #795548;
+$color-brown-600: #604339;
+$color-brown-700: #4a342c;
+$color-brown-800: #30221d;
+$color-brown-900: #1a120f;
+
+// Blue Colors
+$color-blue-50: #eceef8;
+$color-blue-100: #d9ddf2;
+$color-blue-200: #b0b7e3;
+$color-blue-300: #8a95d6;
+$color-blue-400: #6070c8;
+$color-blue-500: #3f51b5;
+$color-blue-600: #324090;
+$color-blue-700: #26316e;
+$color-blue-800: #192048;
+$color-blue-900: #0d1126;
+
+// Berry Colors
+$color-berry-50: #f7e6f9;
+$color-berry-100: #eecdf4;
+$color-berry-200: #df9fea;
+$color-berry-300: #ce6ddf;
+$color-berry-400: #be3fd4;
+$color-berry-500: #9c27b0;
+$color-berry-600: #7d1f8e;
+$color-berry-700: #5c1768;
+$color-berry-800: #3f1047;
+$color-berry-900: #1d0721;
+
+// Background Colors
+$bg-light-brown: $color-brown-50;
+$bg-light-blue: $color-blue-50;
+$bg-light-berry: $color-berry-50;
+$bg-light-neutral: $color-neutral-50;
+
+$bg-medium-brown: $color-brown-700;
+$bg-medium-blue: $color-blue-800;
+$bg-medium-berry: $color-berry-700;
+
+$footer-background: $color-blue-900;
+
+// ========================================================================
+// Typography
+// ========================================================================
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Font Style
+$font-style-italic: italic;
+
+// Desktop - Font Sizes in rem
+$font-size-14: 0.78rem;
+$font-size-23: 1.28rem;
+$font-size-28: 1.56rem;
+$font-size-32: 1.78rem;
+
+//Line Height
+$lineheight-s: 120%;
+$lineheight-m: 140%;
+$lineheight-l: 160%;
+
+// ========================================================================
+// Spacing
+// ========================================================================
+$spacing-unit-large: 0.5rem; // 8px
+$spacing-unit-small: 0.111rem; // 2px
+
+// Responsive Spacing
+$global-pd-desktop: $spacing-unit-large * 12;
+$global-pd-tablet: $spacing-unit-large * 3;
+$global-pd-mobile: $spacing-unit-large * 2;
+
+// ========================================================================
+// Elevation
+// ========================================================================
+$elevation-xs: 0 2px 4px 0 rgba(54, 71, 78, 0.16);
+
+$elevation-s: 0 2px 4px 0 rgba(54, 71, 78, 0.04),
+  0 16px 32px -4px rgba(54, 71, 78, 0.1);
+
+// ========================================================================
+// Radius
+// ========================================================================
+$radius-s: $spacing-unit-small * 2;
+$radius-m: $spacing-unit-large;
+$radius-l: $spacing-unit-small * 6;
+
+// ========================================================================
+// Breakpoints
+// ========================================================================
+$breakpoint-mobile: 390px;
+$breakpoint-tablet: 768px;
+
+$max-width-s: 395px;
+$max-width-m: 822px;
+$max-width-l: 1440px;

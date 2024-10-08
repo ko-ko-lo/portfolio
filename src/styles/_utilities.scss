@@ -1,0 +1,131 @@
+// _utilities.scss
+@use "./variables" as variables;
+
+// ========================================================================
+// Radius
+// ========================================================================
+.radius-s {
+  border-radius: variables.$radius-s;
+}
+
+.radius-m {
+  border-radius: variables.$radius-m;
+}
+
+.radius-l {
+  border-radius: variables.$radius-l;
+}
+
+// ========================================================================
+// Text Utilities
+// ========================================================================
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// ========================================================================
+// Background Colors
+// ========================================================================
+.bg-light-blue {
+  background-color: variables.$bg-light-blue;
+}
+
+.bg-light-brown {
+  background-color: variables.$bg-light-brown;
+}
+
+.bg-light-berry {
+  background-color: variables.$bg-light-berry;
+}
+
+.bg-light-neutral {
+  background-color: variables.$bg-light-neutral;
+}
+
+.bg-medium-blue {
+  background-color: variables.$bg-medium-blue;
+}
+
+.bg-medium-brown {
+  background-color: variables.$bg-medium-brown;
+}
+
+.bg-medium-berry {
+  background-color: variables.$bg-medium-berry;
+}
+
+// ========================================================================
+// Flex Utilities
+// ========================================================================
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// ========================================================================
+// Margin and Padding
+// ========================================================================
+// Margin
+.mb-16 {
+  margin-bottom: variables.$spacing-unit-large * 2;
+}
+
+.mb-24 {
+  margin-bottom: variables.$spacing-unit-large * 3;
+}
+
+.mb-32 {
+  margin-bottom: variables.$spacing-unit-large * 4;
+}
+
+.mb-80 {
+  margin-bottom: variables.$spacing-unit-large * 10;
+}
+
+.m-middle {
+  margin: 0 auto;
+}
+
+//Padding
+.ptb-80 {
+  padding: variables.$spacing-unit-large * 10 0;
+}
+
+// ========================================================================
+// Display
+// ========================================================================
+.d-none {
+  display: none;
+}
+
+// ========================================================================
+// Gap
+// ========================================================================
+.gap-32 {
+  gap: variables.$spacing-unit-large * 4;
+}

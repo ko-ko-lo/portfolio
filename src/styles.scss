@@ -1,1 +1,141 @@
-/* You can add global styles to this file, and also import other style files */
+@use "styles/variables" as variables;
+@use "styles/utilities" as utilities;
+
+// ========================================================================
+// Base Styles
+// ========================================================================
+html {
+  font-size: 18px; /* Setting base size for rem calculations */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: variables.$font-weight-regular;
+  line-height: variables.$lineheight-m;
+  margin: 0;
+  padding: 0;
+  color: variables.$color-brown-900;
+}
+
+.container-m,
+.container-l {
+  padding: 0 variables.$global-pd-desktop;
+}
+
+.container-m {
+  max-width: variables.$max-width-m;
+}
+
+.container-l {
+  max-width: variables.$max-width-l;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// ========================================================================
+// Typography
+// ========================================================================
+h1,
+h2,
+h3,
+h4 {
+  font-weight: variables.$font-weight-bold;
+  color: variables.$color-brown-800;
+  line-height: variables.$lineheight-s;
+}
+
+h1 {
+  font-size: 3.06rem;
+  margin-bottom: 1.77rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.44rem;
+  margin-bottom: 1.77rem;
+}
+
+h3 {
+  font-size: 1.94rem;
+  margin-bottom: 0.88rem;
+}
+
+h4 {
+  font-size: 1.17rem;
+  margin-bottom: 0.44rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.44rem;
+}
+
+blockquote {
+  font-size: variables.$font-size-32;
+  font-style: variables.$font-style-italic;
+}
+
+cite {
+  font-size: 1rem;
+}
+
+// ========================================================================
+// Link Styles
+// ========================================================================
+a {
+  color: variables.$color-blue-700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: variables.$color-blue-500;
+    cursor: pointer;
+  }
+
+  &:visited,
+  &:active {
+    color: variables.$color-blue-600;
+  }
+}
+
+// ========================================================================
+// Button Styles
+// ========================================================================
+.button {
+  padding: variables.$spacing-unit-large * 4 variables.$spacing-unit-small * 7;
+  text-transform: uppercase;
+  background-color: variables.$color-brown-700;
+  color: variables.$color-neutral-50;
+  border: none;
+  border-radius: variables.$radius-s;
+  cursor: pointer;
+  box-shadow: variables.$elevation-xs;
+
+  &:hover {
+    background-color: variables.$color-brown-500;
+  }
+
+  &:focus {
+    background-color: variables.$color-brown-600;
+    outline: 2px solid variables.$color-brown-800;
+  }
+}
+
+// ========================================================================
+// Responsive Styles
+// ========================================================================
+@media (max-width: variables.$breakpoint-tablet) {
+  .container-l {
+    padding: 0 variables.$global-pd-tablet;
+  }
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+  .container-l {
+    padding: 0 variables.$global-pd-mobile;
+  }
+}
