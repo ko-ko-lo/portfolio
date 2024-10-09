@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-reflections',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './reflections.component.html',
-  styleUrl: './reflections.component.scss'
+  styleUrl: './reflections.component.scss',
 })
-export class ReflectionsComponent {
-
-}
+export class ReflectionsComponent {}

@@ -1,0 +1,21 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+.highlighted {
+  font-size: variables.$font-size-32;
+}
+
+.intro-img {
+  max-height: 13.89rem;
+}
+
+.max-width {
+  max-width: 890px;
+}
+
+.img-yoga {
+  max-width: 1034px;
+}
+.about-me {
+  max-width: 643px;
+}

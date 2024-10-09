@@ -87,6 +87,18 @@
   align-items: center;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 2;
+}
+
 // ========================================================================
 // Margin and Padding
 // ========================================================================
@@ -103,8 +115,16 @@
   margin-bottom: variables.$spacing-unit-large * 4;
 }
 
+.mb-56 {
+  margin-bottom: variables.$spacing-unit-large * 7;
+}
+
 .mb-80 {
   margin-bottom: variables.$spacing-unit-large * 10;
+}
+
+.mb-104 {
+  margin-bottom: variables.$spacing-unit-large * 13;
 }
 
 .m-middle {
@@ -114,6 +134,10 @@
 //Padding
 .ptb-80 {
   padding: variables.$spacing-unit-large * 10 0;
+}
+
+.pb-80 {
+  padding-bottom: variables.$spacing-unit-large * 10;
 }
 
 // ========================================================================
@@ -128,4 +152,30 @@
 // ========================================================================
 .gap-32 {
   gap: variables.$spacing-unit-large * 4;
+}
+
+// ========================================================================
+// Elevation
+// ========================================================================
+.elevation-xs {
+  box-shadow: variables.$elevation-xs;
+}
+
+.elevation-s {
+  box-shadow: variables.$elevation-s;
+}
+
+// ========================================================================
+// Max-Width
+// ========================================================================
+.max-width-s {
+  max-width: variables.$max-width-s;
+}
+
+.max-width-m {
+  max-width: variables.$max-width-m;
+}
+
+.max-width-l {
+  max-width: variables.$max-width-l;
 }

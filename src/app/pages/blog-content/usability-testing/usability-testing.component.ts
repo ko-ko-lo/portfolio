@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-usability-testing',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './usability-testing.component.html',
-  styleUrl: './usability-testing.component.scss'
+  styleUrl: './usability-testing.component.scss',
 })
-export class UsabilityTestingComponent {
-
-}
+export class UsabilityTestingComponent {}

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-art',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './art.component.html',
-  styleUrl: './art.component.scss'
+  styleUrl: './art.component.scss',
 })
-export class ArtComponent {
-
-}
+export class ArtComponent {}

@@ -6,18 +6,15 @@ import { Router, RouterModule } from '@angular/router';
   selector: 'app-menu',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'], // Corrected to 'styleUrls'
+  templateUrl: 'menu.component.html',
+  styleUrl: 'menu.component.scss',
 })
 export class MenuComponent implements OnInit {
   menuOpen = false;
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    // No longer detecting yoga routine page
-    // Any necessary initialization can go here
-  }
+  ngOnInit(): void {}
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
