@@ -34,6 +34,10 @@
 // ========================================================================
 // Background Colors
 // ========================================================================
+.bg-white {
+  background-color: variables.$color-neutral-50;
+}
+
 .bg-light-blue {
   background-color: variables.$bg-light-blue;
 }
@@ -150,6 +154,10 @@
 
 .pb-80 {
   padding-bottom: variables.$spacing-unit-large * 10;
+}
+
+.pt-32 {
+  padding-top: variables.$spacing-unit-large * 4;
 }
 
 // ========================================================================

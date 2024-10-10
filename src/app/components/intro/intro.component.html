@@ -1,4 +1,9 @@
 <section class="intro container-m text-center m-middle">
   <h1>{{ title }}</h1>
-  <p>{{ text }}</p>
+  <p *ngIf="!isArray(text)">{{ text }}</p>
+  <p *ngIf="isArray(text)">
+    <span *ngFor="let item of text; let isLast = last">
+      {{ item }}<span *ngIf="!isLast"><br /><br /></span>
+    </span>
+  </p>
 </section>

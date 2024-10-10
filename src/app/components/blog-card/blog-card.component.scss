@@ -19,6 +19,11 @@ a:hover {
   text-decoration: none;
 }
 
+a:hover.bg-white {
+  background-color: variables.$color-blue-50;
+  transition: background-color 0.3s ease;
+}
+
 .box {
   flex: 0 0 calc(33.33% - 21.33px);
 
