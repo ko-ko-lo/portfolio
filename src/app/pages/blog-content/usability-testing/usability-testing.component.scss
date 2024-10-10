@@ -1,0 +1,9 @@
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
+
+.scenario {
+  color: variables.$color-blue-800;
+  max-width: 604px;
+  border-left: 2px solid variables.$color-blue-800;
+  padding-left: variables.$spacing-unit-large * 2;
+}

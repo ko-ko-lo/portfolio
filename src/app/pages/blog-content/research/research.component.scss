@@ -1,0 +1,7 @@
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
+
+.bg-medium-brown ul {
+  font-size: variables.$spacing-unit-large * 3;
+  color: variables.$color-neutral-50;
+}

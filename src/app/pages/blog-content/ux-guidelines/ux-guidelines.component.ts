@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-ux-guidelines',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, IntroComponent],
   templateUrl: './ux-guidelines.component.html',
   styleUrl: './ux-guidelines.component.scss',
 })
-export class UxGuidelinesComponent {}
+export class UxGuidelinesComponent {
+  title: string = '7 UX Design Guidelines to Keep in Mind';
+  text: string =
+    "UX Design guidelines serve as valuable signposts, ensuring that the best decisions are made for the user, the product, and the organization. These guidelines help to understand what constitutes great UX Design and how to consciously create it, as a fantastic user experience doesn't happen by chance.";
+}

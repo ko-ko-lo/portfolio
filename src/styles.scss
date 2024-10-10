@@ -166,6 +166,16 @@ ul {
   }
 }
 
+.toolbox {
+  padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4;
+  color: variables.$color-neutral-50;
+}
+
+.toolbox h3 {
+  color: variables.$color-neutral-50;
+  margin-top: 0;
+}
+
 // ========================================================================
 // Responsive Styles
 // ========================================================================

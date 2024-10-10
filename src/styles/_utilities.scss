@@ -31,6 +31,10 @@
   text-align: right;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 // ========================================================================
 // Background Colors
 // ========================================================================
@@ -125,6 +129,10 @@
 
 .mb-32 {
   margin-bottom: variables.$spacing-unit-large * 4;
+}
+
+.mb-48 {
+  margin-bottom: variables.$spacing-unit-large * 6;
 }
 
 .mb-56 {
