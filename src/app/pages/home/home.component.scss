@@ -1,10 +1,6 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
 
-.highlighted {
-  font-size: variables.$font-size-32;
-}
-
 .intro-img {
   max-height: 13.89rem;
 }

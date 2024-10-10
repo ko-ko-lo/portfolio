@@ -1,0 +1,20 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+img.puzzle {
+  max-height: 363px;
+}
+
+.toolbox {
+  padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4;
+  color: variables.$color-neutral-50;
+}
+
+.toolbox h3 {
+  color: variables.$color-neutral-50;
+  margin-top: 0;
+}
+
+.container-individual {
+  max-width: 1034px;
+}
