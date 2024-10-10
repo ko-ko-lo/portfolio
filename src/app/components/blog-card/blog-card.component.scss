@@ -1,0 +1,38 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+img {
+  max-height: 250px;
+  box-shadow: variables.$elevation-s;
+}
+
+.padding {
+  padding: variables.$spacing-unit-large * 3 variables.$spacing-unit-large * 3
+    variables.$spacing-unit-large * 8;
+}
+
+a {
+  color: variables.$color-brown-900;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.box {
+  flex: 0 0 calc(33.33% - 21.33px);
+
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 560px) {
+  .box {
+    flex: 0 0 100%;
+  }
+}
