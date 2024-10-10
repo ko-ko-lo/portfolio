@@ -1,7 +1,6 @@
-export interface Article {
+export interface Art {
   id: number;
   title: string;
-  teaser: string;
   image: string;
   link: string;
   absoluteLink?: string;
