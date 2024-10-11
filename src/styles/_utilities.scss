@@ -74,6 +74,10 @@
   background-color: variables.$bg-medium-berry;
 }
 
+.bg-dark-neutral {
+  background-color: variables.$bg-dark-neutral;
+}
+
 // ========================================================================
 // Flex Utilities
 // ========================================================================
@@ -164,6 +168,10 @@
 }
 
 //Padding
+.pd-16 {
+  padding: variables.$spacing-unit-large * 2;
+}
+
 .ptb-80 {
   padding: variables.$spacing-unit-large * 10 0;
 }

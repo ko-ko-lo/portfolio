@@ -37,6 +37,16 @@ img {
   display: block;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  padding-top: variables.$spacing-unit-large * 2;
+  color: variables.$color-neutral-700;
+  font-size: 0.78rem;
+}
+
 // ========================================================================
 // Typography
 // ========================================================================
@@ -138,7 +148,8 @@ button {
 // ========================================================================
 // List Styles
 // ========================================================================
-ul {
+ul,
+ol {
   line-height: variables.$lineheight-xl;
   padding: 0;
   margin: 0;

@@ -1,1 +1,478 @@
-<p>yoga-application works!</p>
+<section class="mt-80 mb-80">
+  <app-intro [title]="title" [text]="text"></app-intro>
+</section>
+
+<section class="container-l d-flex gap-32 pb-80">
+  <div
+    class="box-1 flex-wrap justify-between gap-32 bg-light-brown radius-l pd-16"
+  >
+    <img src="projects/meditation.png" alt="" />
+  </div>
+  <div
+    class="box-1 flex-wrap justify-between gap-32 bg-light-brown radius-l pd-16"
+  >
+    <img src="projects/bananasana.png" alt="" />
+  </div>
+  <div
+    class="box-1 flex-wrap justify-between gap-32 bg-light-brown radius-l pd-16"
+  >
+    <img src="projects/toe-squat.png" alt="" />
+  </div>
+</section>
+
+<section class="bg-medium-blue bluebox text-center">
+  <div class="container-l">
+    <h2>Technical Tools used</h2>
+    <div class="d-flex gap-32">
+      <div class="box-1 flex-wrap justify-between gap-32">
+        <h3>Design Tools</h3>
+        <p>Figma for UIs, Procreate for Illustrations</p>
+      </div>
+      <div class="box-1 flex-wrap justify-between gap-32">
+        <h3>Frontend Framework</h3>
+        <p>Angular for Component-based Development</p>
+      </div>
+      <div class="box-1 flex-wrap justify-between gap-32">
+        <h3>Web Technologies</h3>
+        <p>TypeScript, SCSS and HTML</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-center ptb-80 m-middle container-m link-to-project">
+  <h2>Explore the Yin-Style Yoga Application</h2>
+  <p class="mb-32">
+    If you'd like to explore the application in real life, simply click the
+    button.
+  </p>
+  <a href="https://kokoloyoga.com" target="_blank" rel="noopener noreferrer">
+    <button class="link d-flex align-items m-middle">
+      Go to Application
+      <span class="material-icons" aria-hidden="true">open_in_new</span>
+    </button>
+  </a>
+</section>
+
+<section class="bg-light-brown ptb-80">
+  <div class="container-m m-middle text-center">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li>Planning and Technology Stack</li>
+      <li>UX/UI Design Process</li>
+      <li>Development Process</li>
+      <li>Future Plans</li>
+      <li>Final Reflections</li>
+    </ol>
+  </div>
+</section>
+
+<section class="ptb-80 container-m m-middle">
+  <h2>1. Planning and Technology Stack</h2>
+  <h3>Project Scope and Goals</h3>
+  <p>
+    The goal of the web application is to create a calming and user-friendly
+    platform focused on Yin-Style Yoga. At the heart of the application is a
+    library of yoga poses, each presented with a thoughtful structure that
+    includes step-by-step instructions for entering and exiting the pose, its
+    effects on the body, and suggested variations to suit different needs and
+    abilities.
+  </p>
+  <p>
+    In addition to the library, the app also features yoga routines, allowing
+    users to filter routines based on specific target areas.
+  </p>
+  <p>
+    Together, the Yoga Pose Library, routines, and introduction form
+    <strong>core of the application</strong>. These elements represent the
+    “Walking Skeleton” of the project - a minimal but complete version that
+    fulfills the essential requirements for the initial launch.
+  </p>
+  <h3>Technology Stack</h3>
+  <p>
+    Choosing the right framework for this project was a careful decision. With
+    so many options available, I ultimately decided to go with Angular for two
+    main reasons:
+  </p>
+  <p>
+    First, after starting to learn Java, I really grew to appreciate the
+    <strong>Object-Oriented Approach</strong>. As Angular embraces this same
+    approach, it made a natural fit for me.
+  </p>
+  <p>
+    The second reason is my plan to transform this app into a
+    <strong>Progressive Web Application</strong> (PWA). Since both PWAs and
+    Angular were developed by Google, Angular makes it especially smooth to turn
+    an Angular application into a PWA.
+  </p>
+  <p>
+    For the styling, I chose SCSS because it allows me to write more
+    <strong>efficient and maintainable CSS</strong> by using features like
+    variables, mixins, and nesting.
+  </p>
+</section>
+
+<section class="bg-light-berry ptb-80">
+  <div class="container-m m-middle">
+    <h3>Summary: Planning and Technology Stack</h3>
+    <p>
+      The Yin-Style Yoga Application is designed as a user-friendly platform
+      featuring a well-structured Yoga Pose Library and Yoga Routines, which
+      users can filter based on target areas. Built using Angular for its
+      object-oriented approach and future scalability as a Progressive Web App
+      (PWA), the app's component-based architecture ensures modularity and
+      maintainability. Styling is handled with SCSS, providing efficient and
+      reusable design through variables and mixins. Together, these elements
+      create a flexible foundation for future expansions while offering a smooth
+      user experience.
+    </p>
+  </div>
+</section>
+
+<section class="ptb-80 container-m m-middle">
+  <h2>2. UX/UI Design Process</h2>
+  <h3>Research and Discovery Phase</h3>
+  <p>
+    Creating the Yin-Style Yoga web application started with a personal
+    challenge: organizing my yoga routines and pose instructions in a more
+    efficient and accessible way. I wanted to develop a solution that not only
+    worked for me but could also serve a wider audience of people who are
+    passionate about yoga. This phase helped me define the core problems,
+    understand the target audience, and set the key requirements for the
+    application.
+  </p>
+  <h4>Identifying the Problem</h4>
+  <p>
+    Before creating this application, all my yoga routines and instructions were
+    scattered across various papers, making it difficult to quickly access the
+    information I needed. Every time I wanted to create a new routine or perform
+    an existing one, I had to search through my "paper chaos" to find details
+    about specific poses. This slowed down my practice and made it harder to
+    stay organized.
+  </p>
+  <p>
+    The primary goal of the application was to
+    <strong>speed up the creation and execution of yoga routines</strong>, while
+    providing a simple, quick way to access all the information I needed about
+    each pose. I envisioned an organized library that would allow me to easily
+    find, filter, and access yoga poses, saving me time and improving the flow
+    of my practice.
+  </p>
+  <h4>Target Group Analysis</h4>
+  <p>
+    As I moved forward with the idea, I considered who else might benefit from
+    this web application. I conducted a target group analysis by asking myself
+    key questions about potential users:
+  </p>
+  <ul>
+    <li><strong>Who is the application for?</strong></li>
+    <li><strong>What are their needs?</strong></li>
+    <li><strong>What are the most common use cases?</strong></li>
+  </ul>
+  <p>
+    From this analysis, I identified the <strong>core target group</strong>:
+  </p>
+  <p>
+    The Yin-Style Yoga application is thoughtfully designed to welcome a diverse
+    audience, ranging from young adults to seniors, especially those who have a
+    basic understanding of yoga. The ideal users are individuals who spend long
+    hours sitting or face high levels of stress in their everyday lives. They
+    are likely seeking a soothing, physical practice to help them find balance
+    amidst their busy routines and nurture both their physical and mental
+    well-being.<br />The application is accessible on various devices, including
+    desktops and tablets for practicing yoga, as well as smartphones for those
+    moments when users want to explore poses or browse our library on the go.
+  </p>
+  <h4>Brainstorming the Product Requirements</h4>
+  <p>
+    During my brainstorming sessions, I explored a variety of functionalities
+    that would enhance the user experience and provide real value. Initially, I
+    dreamed big, listing features such as:
+  </p>
+  <ul>
+    <li>
+      A <strong>Login Area</strong> with a
+      <strong>Personal Dashboard</strong> for tracking progress.
+    </li>
+    <li>
+      A tool to create <strong>custom yoga routines</strong> tailored to the
+      user's needs.
+    </li>
+    <li>
+      A <strong>Yoga Pose Library</strong> with detailed instructions and
+      illustrations.
+    </li>
+    <li>
+      <strong>Pre-made routines</strong> and
+      <strong>graphical videos</strong> to inspire users who are looking for
+      guidance.
+    </li>
+  </ul>
+  <p>
+    However, I knew I needed to prioritize the core functionalities for the
+    initial release. This led to the creation of
+    <strong>key product requirements</strong> that would lay the foundation for
+    the application:
+  </p>
+  <ol>
+    <li>
+      <strong>Quick and Easy Access to Yoga Poses</strong>: The application
+      needed a well-structured library where users could quickly find and filter
+      yoga poses based on target areas.
+    </li>
+    <li>
+      <strong>Silent, Self-Paced Practice</strong>: Users should be able to
+      conduct ready-made yoga routines in a peaceful environment, without
+      distractions.
+    </li>
+    <li>
+      <strong>Introduction to Yin-Style Yoga</strong>: For those new to the
+      practice, a brief introduction would offer insights into the benefits and
+      techniques of Yin-Style Yoga.
+    </li>
+  </ol>
+  <p>
+    By narrowing down these key requirements, I was able to focus on creating a
+    product that is <strong>user-friendly</strong> and
+    <strong>valuable</strong> from the very first version. I also kept in mind
+    that the initial launch could serve as a foundation, with the potential to
+    expand the app's functionality in the future.
+  </p>
+  <h3>High-Level Design Concept</h3>
+  <p>
+    In this phase, the focus was on creating a flexible, scalable structure for
+    the Yin-Style Yoga App, ensuring that users would have a smooth, intuitive
+    experience. The high-level design decisions revolved around visualizing the
+    site's structure, organizing content efficiently, and setting the overall
+    look and feel of the application. The goal was to ensure that the app would
+    not only meet users' current needs but could also grow and expand in the
+    future.
+  </p>
+  <h4>Scalable Information Architecture</h4>
+  <p>
+    A key consideration in the design process was ensuring that the information
+    architecture was modular and scalable. As the application evolves, I plan to
+    add more content, such as Breathing Techniques and Meditation Sessions,
+    which should be integrated seamlessly.
+  </p>
+  <p class="mb-32">
+    The design began by visualizing a Sitemap that would allow for future
+    growth. This <strong>sitemap</strong> outlines the main sections - such as
+    the Yoga Pose Library, Yoga Routines, and future sections for Breathing and
+    Meditation.
+  </p>
+  <img
+    src="projects/sitemap.png"
+    alt=""
+    class="m-middle sitemap"
+    title="Sitemap"
+  />
+
+  <h4>Content Creation and Structure</h4>
+  <p>
+    The next challenge was to create content for the whole application,
+    particularly for the Yoga Pose Library. The goal was to create content that
+    was both clear and concise, giving users all the information they need
+    without overwhelming them with unnecessary details.
+  </p>
+  <h4>Filtering Options</h4>
+  <p>
+    When designing the filtering system for the Yoga Pose Library and Yoga
+    Routines, I wanted to strike a balance between simplicity and utility. Too
+    many filters would overwhelm users, while too few might limit their ability
+    to find the content that suits their needs.
+  </p>
+  <h4>Wireframes</h4>
+  <p>
+    To bring the structure of the pages to life and better understand the
+    layout, user flows, and how various elements like text and images would
+    interact, I created simple wireframes. These rough wireframes allowed me to
+    explore the platform's design and functionality early on, providing a clear
+    sense of how the web application would feel and flow without getting lost in
+    the finer details.
+  </p>
+  <h4>High-Level Visual Design Guide</h4>
+  <p>
+    To establish a strong visual identity for the application, I began by
+    creating a high-level design guide. This guide outlines the core elements
+    that would define the look and feel of the application, from color schemes
+    to typography.
+  </p>
+  <p>
+    The design needed to reflect the calming, meditative nature of Yin-Style
+    Yoga. I chose a color palette with soft, soothing tones - gentle purples and
+    blues that evoke a sense of peace and balance. The typography was selected
+    to be clean and easy to read.
+  </p>
+  <h3>Detailed Design</h3>
+  <p>
+    The Detailed Design phase was where the vision for the Yin-Style Yoga
+    Application took shape in a concrete, visual form. This phase was centered
+    around building a comprehensive Design System that would not only define the
+    look and feel of the application but also ensure
+    <strong>consistency and scalability</strong>
+    throughout the design. From the foundation of this system, reusable
+    components and design patterns were created, followed by the visual designs.
+  </p>
+  <h4>Building the Foundation of Design System</h4>
+  <p>
+    The foundation of the Design System began with the
+    <strong>creation of variables</strong>, such as the Color Collections, which
+    ensured that the color palette remained consistent across the entire
+    application. Using color variables, I established semantic color aliases
+    (for example background, border, accent) to make the use of colors more
+    efficient and meaningful throughout the design.
+  </p>
+  <p>
+    In addition to color, I defined variables for other key elements such as
+    typography, number scales, border radius, elevation, and breakpoints.
+  </p>
+  <h4>Reusable Components and Patterns of the Design System</h4>
+  <p>
+    Based on the foundational variables, I began creating reusable components
+    that would form the building blocks of the application's interface. These
+    components included:
+  </p>
+  <ul>
+    <li>
+      <strong>Buttons and Filters</strong>: Designed to be flexible and
+      scalable, with various states for default, hover, and active interactions.
+    </li>
+    <li>
+      <strong>Cards</strong>: Components like the Yoga Pose Card and Training
+      Card were designed, ensuring they were visually consistent and adaptable
+      to different contexts.
+    </li>
+    <li>
+      <strong>Accordion</strong>: A design pattern for expanding and collapsing
+      content.
+    </li>
+    <li>
+      <strong>Main Navigation and Footer</strong>: Design patterns for
+      consistent navigation and branding across the app were also created.
+    </li>
+  </ul>
+  <p class="mb-32">
+    These components were <strong>built with reusability</strong> in mind,
+    ensuring they could be used across different sections of the application
+    without the need for redesign or additional effort, saving time in designing
+    and maintaining consistency.
+  </p>
+  <figure>
+    <img
+      src="projects/yoga-card.jpg"
+      alt=""
+      class="radius-l elevation-xs m-middle"
+      title="Design Pattern: Yoga Card"
+    />
+    <figcaption>Design Pattern: Yoga Card</figcaption>
+  </figure>
+  <h4>Yoga Pose Illustrations</h4>
+  <p>
+    As part of the Design System, I created custom illustrations for the yoga
+    poses using Procreate. These illustrations were designed to be simple yet
+    effective, focusing on clear representation of each pose without
+    overwhelming detail.
+  </p>
+  <h4>Creating the Visual Designs</h4>
+  <p>
+    With the Design System in place, I moved on to the creation of the Visual
+    Designs for the application. These designs followed the
+    <strong
+      >structure and flow established in the High-Level Design phase</strong
+    >, ensuring that the user experience remained cohesive from start to finish.
+  </p>
+  <p class="mb-32">
+    The Visual Designs were created with the goal of maintaining calmness and
+    clarity, using the variables, components and design patterns defined in the
+    Design System. Each screen was carefully crafted to guide the user through
+    the application in a way that felt intuitive.
+  </p>
+  <figure>
+    <img
+      src="projects/visual-design-home.png"
+      alt=""
+      class="m-middle"
+      title="Visual Design: Home Page"
+    />
+    <figcaption>Visual Design: Home Page</figcaption>
+  </figure>
+  <h3>Prototyping and Testing</h3>
+  <p>
+    Typically, in my UX/UI Design process, I include a dedicated Prototyping and
+    Testing phase. This is where I would normally create interactive prototypes
+    to test the user flow, design interactions, and gather feedback before
+    moving into development. However, since this is a personal project, I
+    decided to skip this phase in favor of diving directly into the development
+    process.
+  </p>
+  <p>
+    My familiarity with the user needs and content, combined with the
+    flexibility to iterate during development, allowed me to move forward
+    confidently. While I value the importance of prototyping and testing in a
+    typical project, this approach allowed me to focus on hands-on learning and
+    quickly bring my vision to life.
+  </p>
+  <p class="border-left">
+    If you're interested in learning how I conduct Usability Testing and how it
+    can improve the user experience, you can read an article I wrote on the
+    topic here:
+    <a routerLink="/blog/usability-testing"
+      >Usability Testing Made Easy in 4 Steps</a
+    >.
+  </p>
+</section>
+
+<section class="bg-light-berry ptb-80">
+  <div class="container-m m-middle">
+    <h3>Summary: UX/UI Process</h3>
+    <p>
+      The UX/UI Design Process for the Yin-Style Yoga App began with a thorough
+      Research and Discovery phase, where I identified key user needs and
+      defined the application's target audience. From there, I moved into the
+      High-Level Design phase, focusing on creating a scalable and flexible
+      structure for the app's information architecture and content. During the
+      Detailed Design phase, I developed a comprehensive Design System with
+      reusable components, custom illustrations, and the Visual Designs which
+      ensure a consistent and harmonious user experience.
+    </p>
+  </div>
+</section>
+
+<section class="ptb-80 container-m m-middle">
+  <h2>3. Development Process</h2>
+  <p>
+    The Development Process of the Yin-Style Yoga Application was where the
+    ideas and designs truly came to life. Having established a clear vision
+    during the planning and design phases, I was excited to bring all of the key
+    features together using a combination of Angular, TypeScript, HTML and SCSS.
+  </p>
+  <p>
+    Throughout the development journey, I aimed to create an application that is
+    not only visually appealing but also technically robust and easy to
+    maintain. By leveraging Angular's component-based architecture, I ensured
+    that the app remains modular, scalable, and flexible for future expansions.
+  </p>
+  <h3>Application Structure</h3>
+  <p>
+    During the transition from design to development it was time to bring all
+    the planning and visual decisions made in the
+    <strong>Design System</strong> to life within the actual structure of the
+    app. Using Angular's <strong>component-based architecture</strong>, I was
+    able to take the reusable components and patterns I had built in Figma and
+    translate them into a modular, maintainable codebase.
+  </p>
+  <p>
+    The variables.scss file, for example, was a direct reflection of the Design
+    System's Color Collections and other foundational elements, such as box
+    shadows, radius, and number scales. This alignment ensured that the app's
+    visual consistency - established during the design phase - would be carried
+    over seamlessly into the code.
+  </p>
+  <h4>Core Components</h4>
+  <p>
+    Just as I had carefully organized the design components and patterns in
+    Figma, I followed a similar approach in Angular by structuring the app
+    around <strong>reusable components</strong>.
+  </p>
+</section>

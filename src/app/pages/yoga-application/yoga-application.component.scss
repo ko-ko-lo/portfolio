@@ -1,0 +1,34 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+.bluebox h2,
+.bluebox h3,
+.bluebox p {
+  color: variables.$color-neutral-50;
+}
+
+.bluebox {
+  padding: variables.$spacing-unit-large * 13 0;
+}
+
+.link {
+  text-decoration: none;
+  gap: variables.$spacing-unit-large;
+}
+
+.link-to-project a:hover {
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 1.2rem;
+}
+
+img.sitemap {
+  max-height: 330px;
+}
+
+.border-left {
+  border-left: 3px solid variables.$color-berry-400;
+  padding-left: variables.$spacing-unit-large * 2;
+}
