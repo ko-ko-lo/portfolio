@@ -32,3 +32,9 @@ img.sitemap {
   border-left: 3px solid variables.$color-berry-400;
   padding-left: variables.$spacing-unit-large * 2;
 }
+
+pre {
+  background-color: variables.$color-neutral-800;
+  color: variables.$color-neutral-50;
+  padding: variables.$spacing-unit-large * 2;
+}

@@ -148,12 +148,18 @@ button {
 // ========================================================================
 // List Styles
 // ========================================================================
+
 ul,
 ol {
-  line-height: variables.$lineheight-xl;
+  line-height: variables.$lineheight-m;
   padding: 0;
   margin: 0;
   padding-left: 1rem;
+}
+
+ol li:not(:last-child),
+ul li:not(:last-child) {
+  padding-bottom: variables.$spacing-unit-large;
 }
 
 // ========================================================================

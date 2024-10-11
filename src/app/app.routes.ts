@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ArtComponent } from './pages/art-content/art/art.component';
 import { ConnectionComponent } from './pages/art-content/connection/connection.component';
@@ -37,3 +38,11 @@ export const routes: Routes = [
   { path: 'art/back-to-nature', component: OurPlanetComponent },
   { path: 'art/connection-human-nature', component: WalksInNatureComponent },
 ];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

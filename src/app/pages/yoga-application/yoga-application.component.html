@@ -57,17 +57,19 @@
 <section class="bg-light-brown ptb-80">
   <div class="container-m m-middle text-center">
     <h2>Table of Contents</h2>
-    <ol>
-      <li>Planning and Technology Stack</li>
-      <li>UX/UI Design Process</li>
-      <li>Development Process</li>
-      <li>Future Plans</li>
-      <li>Final Reflections</li>
-    </ol>
+    <h3>
+      <a (click)="scrollTo('section1')">1. Planning and Technology Stack</a>
+    </h3>
+    <h3>
+      <a (click)="scrollTo('section2')">2. UX/UI Design Process</a>
+    </h3>
+    <h3><a (click)="scrollTo('section3')">3. Development Process</a></h3>
+    <h3><a (click)="scrollTo('section4')">4. Future Plans</a></h3>
+    <h3><a (click)="scrollTo('section5')">5. Final Reflections</a></h3>
   </div>
 </section>
 
-<section class="ptb-80 container-m m-middle">
+<section id="section1" class="ptb-80 container-m m-middle">
   <h2>1. Planning and Technology Stack</h2>
   <h3>Project Scope and Goals</h3>
   <p>
@@ -129,7 +131,7 @@
   </div>
 </section>
 
-<section class="ptb-80 container-m m-middle">
+<section id="section2" class="ptb-80 container-m m-middle">
   <h2>2. UX/UI Design Process</h2>
   <h3>Research and Discovery Phase</h3>
   <p>
@@ -439,7 +441,7 @@
   </div>
 </section>
 
-<section class="ptb-80 container-m m-middle">
+<section id="section3" class="ptb-80 container-m m-middle">
   <h2>3. Development Process</h2>
   <p>
     The Development Process of the Yin-Style Yoga Application was where the
@@ -475,4 +477,308 @@
     Figma, I followed a similar approach in Angular by structuring the app
     around <strong>reusable components</strong>.
   </p>
+  <ul>
+    <li>
+      <strong>Yoga Pose Component</strong>: This component is responsible for
+      displaying yoga poses, dynamically rendered based on data stored in a JSON
+      file. This component is reused throughout the library and individual
+      routines.
+    </li>
+    <li>
+      <strong>Filtering Component</strong>: The filtering component allows users
+      to filter based on target areas. It communicates with its parent
+      components using Angular's input and output bindings. It is reused in the
+      library and the routines overview page.
+    </li>
+    <li>
+      <strong>Breadcrumb Component</strong>: This component provides easy
+      navigation for users by displaying the current path and dynamically
+      updating based on the page or routine being viewed. It fetches yoga
+      routine data from a JSON file to display relevant information in the
+      breadcrumb trail.
+    </li>
+    <li>
+      <strong>Global Components</strong>: The Main Menu and Footer components
+      are part of the app's core structure.
+    </li>
+  </ul>
+  <h4>Routing and Navigation</h4>
+  <p>
+    The application's navigation is powered by Angular's router, enabling smooth
+    transitions between key pages.
+  </p>
+  <p>
+    Dynamic routing is used to load individual yoga routines based on a URL
+    parameter (slug), allowing users to explore specific routines in more
+    detail. Features like scroll position restoration and anchor scrolling were
+    also enabled to ensure a seamless and enjoyable user experience.
+  </p>
+  <h4>Data Management</h4>
+  <p>
+    All data for the app is managed using <strong>JSON files</strong> for yoga
+    poses and routines, which are dynamically loaded through
+    <strong>Angular's HttpClient service</strong>.
+  </p>
+  <p>
+    This approach not only keeps the app flexible and easy to update but also
+    allows for future scalability, including potential back-end integration for
+    more dynamic content management.
+  </p>
+  <p>
+    Here's an example of how the yoga pose data is fetched and used within the
+    LibraryComponent:
+  </p>
+
+  <pre class="radius-l">
+    <code [innerHTML]="codeSnippet"></code>
+  </pre>
+
+  <h4>Styling and Theming</h4>
+  <p>
+    The Design System that I developed in Figma carried through to the
+    application's styling and theming. The styling is divided into:
+  </p>
+  <ul>
+    <li>
+      <strong>Global Styles</strong>: These base styles and utility classes
+      ensure consistency across the app, with variables for colors, fonts, and
+      other core elements defined in the variables.scss file.
+    </li>
+    <li>
+      <strong>Component-Specific Styles</strong>: To maintain flexibility and
+      prevent conflicts, each component has its own SCSS file, making the
+      styling modular and easy to manage as the application grows.
+    </li>
+  </ul>
+  <h3>Development Workflow</h3>
+  <p>
+    Throughout the development of the Yin-Style Yoga Application, I followed a
+    structured workflow to ensure the project was organized, trackable, and easy
+    to maintain.
+  </p>
+  <p>
+    At the heart of this process was Git for version control, with all project
+    files stored in a GitHub repository. After the initial setup and first
+    commit, I committed code regularly at key intervals as I developed new
+    features and made updates. This allowed me to keep track of the project's
+    progress and roll back changes if necessary.
+  </p>
+  <p>
+    To maintain a smooth workflow, I regularly tested the application on
+    different devices and browsers during development. This ensured that
+    features like dynamic routing, filtering components, and responsive design
+    were functioning correctly across various environments.
+  </p>
+  <p>
+    As I continue to grow my development skills, I look forward to refining this
+    workflow further by incorporating additional best practices like automated
+    testing and continuous integration.
+  </p>
 </section>
+
+<section class="ptb-80 bg-light-brown-100">
+  <div class="text-center m-middle container-m link-to-project">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/kokolo-yoga"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</section>
+
+<section class="bg-light-berry ptb-80">
+  <div class="container-m m-middle">
+    <h3>Summary: Development Process</h3>
+    <p>
+      The Development Process for the Yin-Style Yoga Application focused on
+      building a robust and scalable structure using Angular's component-based
+      architecture. With data managed dynamically through JSON files and styling
+      handled using SCSS, the application remained visually consistent while
+      providing a seamless user experience. Throughout development, I used Git
+      and GitHub for version control, committing code regularly to ensure the
+      project was organized and easy to manage.
+    </p>
+  </div>
+</section>
+
+<section id="section4" class="ptb-80 container-m m-middle">
+  <h2>4. Future Plans</h2>
+  <p>
+    The development of the Yin-Style Yoga Application is just the beginning.
+    Looking ahead, I have many exciting plans to expand the application's
+    features and enhance the overall user experience. These plans focus not only
+    on adding new functionality but also on deepening the customization options
+    for users and creating a more personalized, immersive platform.
+  </p>
+  <h3>Upcoming Features</h3>
+  <p>
+    In the next phase of development, the focus will be on expanding the
+    application's core features to make it even more versatile and
+    user-friendly:
+  </p>
+  <ul>
+    <li>
+      <strong>A continuous expansion of the Yoga Pose Library</strong> is a
+      priority, offering users a wider variety of poses to choose from.
+      Additionally, I plan to regularly add
+      <strong>more training plans</strong> that target different areas of the
+      body and offer various session lengths to suit users' needs.
+    </li>
+    <li>
+      To improve navigation, a <strong>search function</strong> will be
+      implemented for the Yoga Pose Library, allowing users to quickly and
+      easily find specific poses.
+    </li>
+    <li>
+      I also plan to <strong>expand the filtering options</strong>, allowing
+      users to filter routines by training time.
+    </li>
+    <li>
+      To enhance the overall user experience, a
+      <strong>Dark Mode</strong> option will be introduced, providing users with
+      the choice to switch to a darker color scheme for a more comfortable
+      experience, especially in low-light environments.
+    </li>
+  </ul>
+  <p class="mb-32">
+    These features are designed to make the app more accessible and
+    customizable, ensuring users can find and follow routines that best suit
+    their needs.
+  </p>
+  <figure>
+    <img
+      src="projects/dark-mode.jpg"
+      alt=""
+      class="m-middle radius-l"
+      title="Visual Design for Dark Mode"
+    />
+    <figcaption>Visual Design for Dark Mode</figcaption>
+  </figure>
+  <h3>Long-Term Vision</h3>
+  <p>
+    Looking further into the future, my vision for the Yin-Style Yoga
+    Application is to transform it into a more diverse and personalized
+    platform, offering users a truly comprehensive Yin-Style Yoga experience:
+  </p>
+  <ul>
+    <li>
+      One exciting addition will be the
+      <strong>integration of graphic videos</strong> of the yoga routines.
+    </li>
+    <li>
+      I also plan to introduce <strong>user accounts</strong>, which will allow
+      users to create and save personalized training plans, as well as track
+      their progress through a history of completed sessions. This will make the
+      app more tailored to each user's personal journey.
+    </li>
+    <li>
+      A key part of the long-term vision involves regularly
+      <strong>conducting usability testing</strong> to gather feedback directly
+      from users. These insights will help inform future development and ensure
+      the platform continues to evolve in ways that meet users' needs.
+    </li>
+    <li>
+      As the platform grows, I aim to add new sections beyond Yin-Style Yoga,
+      introducing users to <strong>Breathing Techniques</strong> and
+      <strong>Meditation Practices</strong>. This expansion will allow users to
+      explore other mindfulness practices and create a more well-rounded,
+      holistic approach
+    </li>
+  </ul>
+  <p>
+    These long-term goals reflect my commitment to continuously improving the
+    app, offering a deeper, more personalized experience, and expanding the
+    platform to include a wider range of practices to support users' physical
+    and mental well-being.
+  </p>
+</section>
+
+<section class="bg-light-berry ptb-80">
+  <div class="container-m m-middle">
+    <h3>Summary: Future Plans</h3>
+    <p>
+      Looking ahead, the Yin-Style Yoga Application will continue to grow with
+      the addition of key features such as an expanded Yoga Pose Library, a
+      search function, more filtering options, and Dark Mode for a more
+      comfortable user experience. In the long term, I envision transforming the
+      app into a fully personalized platform with user accounts, graphic videos,
+      and new sections dedicated to Breathing Techniques and Meditation
+      Practices.
+    </p>
+  </div>
+</section>
+
+<section id="section5" class="ptb-80 container-m m-middle">
+  <h2>5. Final Reflections</h2>
+  <p>
+    Working on the Yin-Style Yoga web application has been a deeply personal and
+    educational journey. From the early stages of content creation to the
+    technical challenges during development, this project has taught me valuable
+    lessons about both the process and myself as a designer and developer.
+  </p>
+  <p>
+    One of the key takeaways from this experience was learning to embrace the
+    process rather than rushing toward the end result. Preparing the yoga pose
+    illustrations and carefully crafting the descriptive text for each pose took
+    far longer than I initially expected. My early attempts to speed through
+    these tasks left me unsatisfied with the quality, which led to a restart. It
+    became clear that the real value lay in the journey itself - learning more
+    about each pose and finding a way to convey its essence. By slowing down, I
+    was able to produce content I could be proud of.
+  </p>
+  <p>
+    A similar lesson applied to the visual design. My first attempt at the
+    visual design wasn't quite right. It was too trendy and lacked the timeless
+    simplicity I wanted. Although I created a prototype, I knew it wasn't ready
+    for testing. Starting the design process again was the right decision, as it
+    allowed me to create a design that truly felt aligned with the message I
+    wanted the application to convey. Even with years of design experience, it's
+    a reminder that sometimes you have to take a step back, reflect, and try
+    again until the design feels just right.
+  </p>
+  <p>
+    This project also reinforced the importance of focus and prioritization.
+    It's easy to get caught up in the excitement of new ideas and want to
+    implement every feature at once. But I learned that focusing on the
+    essentials - building a strong foundation and taking things step by step -
+    is the most effective way to make meaningful progress. For me,
+    prioritization was challenging, but it was a crucial part of ensuring that
+    the project moved forward in a manageable and successful way.
+  </p>
+  <p>
+    On the development side, working with Angular was a rewarding experience.
+    The more I learned, the more I appreciated the power and flexibility of the
+    framework. That said, there were moments when small development challenges
+    nearly got the better of me - like debugging a page-scrolling issue that,
+    after hours of frustration, was solved with a simple line of code. These
+    moments reminded me of the patience required in development, and the
+    satisfaction that comes when a solution is finally found.
+  </p>
+  <p>
+    Reflecting on the entire project, I've come to realize that it's okay to
+    take things slowly, as long as you keep moving forward. It's okay to
+    restart, as long as you learn from the process. Having a vision for the
+    product - focusing not on the minute details but on the overall feeling and
+    purpose of the application - was what helped me stay motivated and see this
+    project through to the end. This project has not only expanded my technical
+    skills but also deepened my understanding of the creative process and my
+    ability to persevere through challenges.
+  </p>
+</section>
+
+<app-quote
+  [title]="
+    '“Life is like riding a bicycle. To keep your balance, you must keep moving.”'
+  "
+  [text]="'Albert Einstein'"
+></app-quote>
