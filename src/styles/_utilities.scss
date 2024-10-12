@@ -143,6 +143,10 @@
   margin-bottom: variables.$spacing-unit-large * 7;
 }
 
+.mb-64 {
+  margin-bottom: variables.$spacing-unit-large * 8;
+}
+
 .mb-80 {
   margin-bottom: variables.$spacing-unit-large * 10;
 }
@@ -155,6 +159,10 @@
   margin-bottom: variables.$spacing-unit-large * 13;
 }
 
+.mb-120 {
+  margin-bottom: variables.$spacing-unit-large * 15;
+}
+
 .m-middle {
   margin: 0 auto;
 }
@@ -165,6 +173,10 @@
 
 .mt-80 {
   margin-top: variables.$spacing-unit-large * 10;
+}
+
+.mt-120 {
+  margin-top: variables.$spacing-unit-large * 15;
 }
 
 //Padding
@@ -194,6 +206,10 @@
 // ========================================================================
 // Gap
 // ========================================================================
+.gap-16 {
+  gap: variables.$spacing-unit-large * 2;
+}
+
 .gap-32 {
   gap: variables.$spacing-unit-large * 4;
 }

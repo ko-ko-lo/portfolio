@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-//import { AppRoutingModule } from '../../app.routes';
 import { IntroComponent } from '../../components/intro/intro.component';
-import { QuoteComponent } from '../../components/quote/quote.component';
 
 @Component({
   selector: 'app-yoga-application',
   standalone: true,
-  imports: [RouterModule, IntroComponent, QuoteComponent],
+  imports: [RouterModule, IntroComponent],
   templateUrl: './yoga-application.component.html',
   styleUrl: './yoga-application.component.scss',
 })

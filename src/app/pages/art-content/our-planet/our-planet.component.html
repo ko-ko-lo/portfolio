@@ -1,1 +1,25 @@
-<p>our-planet works!</p>
+<section class="mt-80 mb-80">
+  <app-intro [title]="title" [text]="text"></app-intro>
+</section>
+
+<section class="container-m m-middle">
+  <img src="art/water-poem.jpg" alt="" class="mb-120" />
+  <img src="art/rest.jpg" alt="" class="mb-120" />
+  <img src="art/sun.jpg" alt="" class="mb-120" />
+</section>
+
+<section class="mb-120">
+  <img src="art/snail.jpg" alt="" class="container snail m-middle" />
+</section>
+
+<app-quote
+  [title]="
+    '“What you do makes a difference, and you have to decide what kind of difference you want to make.”'
+  "
+  [text]="'Jane Goodall'"
+></app-quote>
+
+<section class="container-l flex-row justify-between gap-32 mb-120 mt-120">
+  <div class="box-1"><img src="art/tree-poem.jpg" alt="" /></div>
+  <div class="box-1"><img src="art/tree-structure.jpg" alt="" /></div>
+</section>
