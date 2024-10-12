@@ -14,6 +14,6 @@ export class ReflectionsComponent {
   title: string = 'Reflections in Black and White';
   text: string[] = [
     "Each artwork in this black-and-white collection reflects a personal journey of navigating life's complexities, emotions and inner struggles. ",
-    'This collection is not only an expression of my personal experience but also an invitation for others to explore their own inner worlds, to find beauty in their challenges, and to embrace both the light and the dark that make us who we are.',
+    'This collection is not only an expression of my personal experience but also an invitation for others to explore their own inner worlds, to find beauty in their challenges and to embrace both the light and the dark that make us who we are.',
   ];
 }

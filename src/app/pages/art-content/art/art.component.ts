@@ -13,5 +13,5 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 export class ArtComponent {
   title: string = 'A Journey of Self-Expression';
   text: string =
-    'For me, art has always been about expressing thoughts and emotions that I couldn’t put into words. It’s a way to connect with myself, meditate on life’s challenges, and find personal healing through creativity.';
+    "For me, art has always been about expressing thoughts and emotions that I couldn't put into words. It's a way to connect with myself, meditate on life’s challenges and find personal healing through creativity.";
 }

@@ -2,9 +2,9 @@
   <a
     *ngFor="let article of articles"
     [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
-    class="box bg-white padding radius-l text-center full-link elevation-xs"
+    class="box bg-white padding radius-m text-center full-link elevation-xs"
   >
-    <img [src]="article.image" alt="" class="m-middle radius-l" />
+    <img [src]="article.image" alt="" class="m-middle radius-m" />
     <h3>{{ article.title }}</h3>
     <p>{{ article.teaser }}</p>
   </a>

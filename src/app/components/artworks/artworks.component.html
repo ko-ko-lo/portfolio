@@ -1,11 +1,11 @@
 <section class="container-l">
-  <div class="d-flex flex-wrap justify-between gap-32">
+  <div class="d-flex flex-wrap justify-between gap-32 text-center">
     <a
       *ngFor="let art of arts"
       [routerLink]="art.absoluteLink ? art.absoluteLink : art.link"
-      class="box padding text-center"
+      class="box padding"
     >
-      <img [src]="art.image" alt="" class="m-middle elevation-xs" />
+      <img [src]="art.image" alt="" class="elevation-xs" />
       <h3>{{ art.title }}</h3>
     </a>
   </div>

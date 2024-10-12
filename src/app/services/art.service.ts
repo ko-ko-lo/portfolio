@@ -23,7 +23,7 @@ export class ArtService {
     {
       id: 2,
       title: 'Connection between Human and Nature',
-      image: 'art/preview/connection.jpg',
+      image: 'art/preview/bird.jpg',
       link: 'art/connection-human-nature',
       absoluteLink: 'connection-human-nature',
     },
