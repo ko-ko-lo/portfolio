@@ -3,7 +3,7 @@
     <a
       *ngFor="let art of arts"
       [routerLink]="art.absoluteLink ? art.absoluteLink : art.link"
-      class="box padding"
+      class="box padding mb-32"
     >
       <div class="image-wrapper">
         <img [src]="art.image" alt="" class="elevation-xs" />

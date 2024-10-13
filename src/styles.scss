@@ -241,6 +241,19 @@ ul li:not(:last-child) {
   .container-m {
     padding: 0 variables.$global-pd-tablet;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  #card .padding {
+    padding: variables.$spacing-unit-large * 2 variables.$spacing-unit-large * 2
+      variables.$spacing-unit-large * 8;
+  }
 }
 
 @media (max-width: variables.$breakpoint-mobile) {

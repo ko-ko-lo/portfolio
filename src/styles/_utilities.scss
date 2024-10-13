@@ -252,6 +252,26 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+
+  .mt-80 {
+    margin-top: variables.$spacing-unit-large * 6;
+  }
+
+  .mb-80 {
+    margin-bottom: variables.$spacing-unit-large * 8;
+  }
+
+  .mb-120 {
+    margin-bottom: variables.$spacing-unit-large * 8;
+  }
+
+  .mt-120 {
+    margin-top: variables.$spacing-unit-large * 8;
+  }
+
+  .ptb-80 {
+    padding: variables.$spacing-unit-large * 8 0;
+  }
 }
 @media (max-width: variables.$breakpoint-mobile) {
   .gap-32 {
