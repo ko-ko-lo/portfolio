@@ -13,13 +13,14 @@ img {
 
 a {
   color: variables.$color-brown-900;
+  background-color: variables.$color-blue-100;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-a:hover.bg-white {
+a:hover {
   background-color: variables.$color-blue-50;
   transition: background-color 0.3s ease;
 }

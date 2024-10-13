@@ -1,9 +1,10 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
 
-.bg-light-blue {
+.bg-blue {
   padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4
     variables.$spacing-unit-large * 10;
+  background-color: variables.$color-blue-100;
 }
 
 a {
@@ -14,7 +15,7 @@ a:hover {
   text-decoration: none;
 }
 
-a:hover .bg-light-blue {
-  background-color: variables.$color-blue-100;
+a:hover .bg-blue {
+  background-color: variables.$color-blue-50;
   transition: background-color 0.3s ease;
 }

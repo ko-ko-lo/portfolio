@@ -5,7 +5,10 @@
       [routerLink]="art.absoluteLink ? art.absoluteLink : art.link"
       class="box padding"
     >
-      <img [src]="art.image" alt="" class="elevation-xs" />
+      <div class="image-wrapper">
+        <img [src]="art.image" alt="" class="elevation-xs" />
+        <div class="overlay"></div>
+      </div>
       <h3>{{ art.title }}</h3>
     </a>
   </div>

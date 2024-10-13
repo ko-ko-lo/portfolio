@@ -1,8 +1,8 @@
-<section class="d-flex flex-wrap justify-between gap-32 ptb-80">
+<section class="d-flex flex-wrap justify-between gap-32">
   <a
     *ngFor="let article of articles"
     [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
-    class="box bg-white padding radius-m text-center full-link elevation-xs"
+    class="box padding radius-m text-center full-link elevation-xs"
   >
     <img [src]="article.image" alt="" class="m-middle radius-m" />
     <h3>{{ article.title }}</h3>
