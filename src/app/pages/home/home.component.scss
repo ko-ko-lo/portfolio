@@ -25,13 +25,17 @@
   margin: 0;
 }
 
+.message p {
+  font-size: 1.3rem;
+}
+
 @media (max-width: 1200px) {
   .box:nth-child(3) {
     display: none;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
   .hero {
     text-align: center;
   }
@@ -41,6 +45,9 @@
   .mobile-middle {
     margin: 0 auto;
   }
+}
+
+@media (max-width: 560px) {
   .box:nth-child(2) {
     display: none;
   }
