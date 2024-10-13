@@ -239,3 +239,22 @@
 .max-width-l {
   max-width: variables.$max-width-l;
 }
+
+// ========================================================================
+// Responsive Design
+// ========================================================================
+@media (max-width: variables.$breakpoint-tablet) {
+  .gap-32 {
+    gap: variables.$spacing-unit-large * 3;
+  }
+  .box-1,
+  .box-2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: variables.$breakpoint-mobile) {
+  .gap-32 {
+    gap: variables.$spacing-unit-large * 2;
+  }
+}

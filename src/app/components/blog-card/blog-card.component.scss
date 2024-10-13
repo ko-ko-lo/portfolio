@@ -1,26 +1,2 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
-
-img {
-  max-height: 250px;
-  box-shadow: variables.$elevation-s;
-}
-
-.padding {
-  padding: variables.$spacing-unit-large * 3 variables.$spacing-unit-large * 3
-    variables.$spacing-unit-large * 8;
-}
-
-a {
-  color: variables.$color-brown-900;
-  background-color: variables.$color-blue-100;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: variables.$color-blue-50;
-  transition: background-color 0.3s ease;
-}

@@ -167,20 +167,7 @@ ul li:not(:last-child) {
 // ========================================================================
 .box {
   flex: 0 0 calc(33.33% - 21.33px);
-
   box-sizing: border-box;
-}
-
-@media (max-width: 1200px) {
-  .box {
-    flex: 0 0 calc(50% - 16px);
-  }
-}
-
-@media (max-width: 560px) {
-  .box {
-    flex: 0 0 100%;
-  }
 }
 
 .toolbox {
@@ -191,6 +178,30 @@ ul li:not(:last-child) {
 .toolbox h3 {
   color: variables.$color-neutral-50;
   margin-top: 0;
+}
+
+#card img {
+  max-height: 250px;
+  box-shadow: variables.$elevation-s;
+}
+
+#card .padding {
+  padding: variables.$spacing-unit-large * 3 variables.$spacing-unit-large * 3
+    variables.$spacing-unit-large * 8;
+}
+
+#card a {
+  color: variables.$color-brown-900;
+  background-color: variables.$color-blue-100;
+}
+
+#card a:hover {
+  text-decoration: none;
+}
+
+#card a:hover {
+  background-color: variables.$color-blue-50;
+  transition: background-color 0.3s ease;
 }
 
 // ========================================================================
@@ -225,13 +236,29 @@ ul li:not(:last-child) {
 // Responsive Styles
 // ========================================================================
 @media (max-width: variables.$breakpoint-tablet) {
-  .container-l {
+  .container-l,
+  .container,
+  .container-m {
     padding: 0 variables.$global-pd-tablet;
   }
 }
 
 @media (max-width: variables.$breakpoint-mobile) {
-  .container-l {
+  .container-l,
+  .container,
+  .container-m {
     padding: 0 variables.$global-pd-mobile;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 560px) {
+  .box {
+    flex: 0 0 100%;
   }
 }

@@ -32,4 +32,16 @@
 }
 
 @media (max-width: 560px) {
+  .hero {
+    text-align: center;
+  }
+  .intro-img {
+    max-height: 11rem;
+  }
+  .mobile-middle {
+    margin: 0 auto;
+  }
+  .box:nth-child(2) {
+    display: none;
+  }
 }

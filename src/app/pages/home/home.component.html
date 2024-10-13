@@ -1,7 +1,7 @@
 <section class="container-l mb-104 mt-80">
   <h1>Where Creativity Meets Code</h1>
-  <div class="d-flex max-width m-middle gap-32 align-center">
-    <div>
+  <div class="hero d-flex flex-wrap max-width m-middle gap-32 align-center">
+    <div class="mobile-middle">
       <img src="general/me.png" alt="" class="intro-img" />
     </div>
     <div class="box-2">
@@ -64,7 +64,47 @@
     <button routerLink="/blog" class="mb-56">Explore My Blog</button>
   </div>
   <div class="container-l">
-    <app-blog-card></app-blog-card>
+    <section class="d-flex flex-wrap justify-between gap-32" id="card">
+      <a
+        routerLink="/blog/ux-design-guidelines"
+        class="box padding radius-m text-center full-link elevation-xs"
+      >
+        <img
+          src="blog/teaser-ux-guidelines.jpg"
+          alt=""
+          class="m-middle radius-m"
+        />
+        <h3>7 UX Design Guidelines to Keep in Mind</h3>
+        <p>
+          This article explores 7 essential UX Design Guidelines that can help
+          you create meaningful user experiences.
+        </p>
+      </a>
+
+      <a
+        routerLink="/blog/usability-testing"
+        class="box padding radius-m text-center full-link elevation-xs"
+      >
+        <img src="blog/teaser-usability.png" alt="" class="m-middle radius-m" />
+        <h3>Usability Testing Made Easy in 4 Steps</h3>
+        <p>
+          This article breaks down the process into four clear steps, helping
+          you gather valuable insights to improve your product.
+        </p>
+      </a>
+
+      <a
+        routerLink="/blog/quantitative-qualitative-research"
+        class="box padding radius-m text-center full-link elevation-xs"
+      >
+        <img src="blog/teaser-research.png" alt="" class="m-middle radius-m" />
+        <h3>Best Use of Quantitative &amp; Qualitative Research</h3>
+        <p>
+          This article explores how each approach contributes and offers
+          valuable insights for creating successful solutions.
+        </p>
+      </a>
+    </section>
   </div>
 </section>
 
