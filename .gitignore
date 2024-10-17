@@ -43,3 +43,10 @@ Thumbs.db
 
 # Images
 /public
+
+# Firebase
+.firebase/
+.firebaserc
+.github/
+firebase.json
+firebase-debug.log
