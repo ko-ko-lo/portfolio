@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Article } from '../models/article.model';
+import { OverviewCardData } from '../models/card.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ArticleService {
-  private articles: Article[] = [
+  private articles: OverviewCardData[] = [
     {
       id: 3,
       title: '7 UX Design Guidelines to Keep in Mind',
@@ -35,7 +35,7 @@ export class ArticleService {
     },
   ];
 
-  getArticles(): Article[] {
+  getArticles(): OverviewCardData[] {
     return this.articles;
   }
 }

@@ -1,0 +1,15 @@
+<section class="d-flex flex-wrap justify-between gap-32" id="card">
+  <a
+    *ngFor="let projectTeaser of projectTeasers"
+    [routerLink]="
+      projectTeaser.absoluteLink
+        ? projectTeaser.absoluteLink
+        : projectTeaser.link
+    "
+    class="box padding radius-m text-center full-link elevation-xs mb-16"
+  >
+    <img [src]="projectTeaser.image" alt="" class="m-middle radius-m" />
+    <h3>{{ projectTeaser.title }}</h3>
+    <p>{{ projectTeaser.teaser }}</p>
+  </a>
+</section>

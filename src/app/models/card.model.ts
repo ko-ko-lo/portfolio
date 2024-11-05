@@ -1,4 +1,4 @@
-export interface Article {
+export interface OverviewCardData {
   id: number;
   title: string;
   teaser: string;

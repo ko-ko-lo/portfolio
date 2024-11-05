@@ -197,9 +197,6 @@ ul li:not(:last-child) {
 
 #card a:hover {
   text-decoration: none;
-}
-
-#card a:hover {
   background-color: variables.$color-blue-50;
   transition: background-color 0.3s ease;
 }
