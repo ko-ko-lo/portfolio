@@ -1,0 +1,16 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+/*
+img {
+  max-height: variables.$spacing-unit-large * 20;
+}
+*/
+.bluebox h2,
+.bluebox h3,
+.bluebox p {
+  color: variables.$color-neutral-50;
+}
+
+.bluebox {
+  padding: variables.$spacing-unit-large * 13 0;
+}

@@ -10,6 +10,7 @@ import { BlogComponent } from './pages/blog-content/blog/blog.component';
 import { ResearchComponent } from './pages/blog-content/research/research.component';
 import { UsabilityTestingComponent } from './pages/blog-content/usability-testing/usability-testing.component';
 import { UxGuidelinesComponent } from './pages/blog-content/ux-guidelines/ux-guidelines.component';
+import { HexifyComponent } from './pages/hexify/hexify.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { YogaApplicationComponent } from './pages/yoga-application/yoga-application.component';
@@ -29,6 +30,7 @@ export const routes: Routes = [
     path: 'projects/yin-style-yoga-application',
     component: YogaApplicationComponent,
   },
+  { path: 'projects/figma-plugin-hexify', component: HexifyComponent },
   { path: 'art', component: ArtComponent },
   {
     path: 'art/reflections-in-black-and-white',
