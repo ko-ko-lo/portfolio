@@ -167,6 +167,10 @@
   margin: 0 auto;
 }
 
+.mt-8 {
+  margin-top: variables.$spacing-unit-large;
+}
+
 .mt-48 {
   margin-top: variables.$spacing-unit-large * 6;
 }

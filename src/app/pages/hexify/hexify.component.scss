@@ -1,10 +1,6 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
-/*
-img {
-  max-height: variables.$spacing-unit-large * 20;
-}
-*/
+
 .bluebox h2,
 .bluebox h3,
 .bluebox p {
@@ -13,4 +9,25 @@ img {
 
 .bluebox {
   padding: variables.$spacing-unit-large * 13 0;
+}
+
+.link {
+  text-decoration: none;
+  gap: variables.$spacing-unit-large;
+}
+
+.link-to-project a:hover {
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 1.2rem;
+}
+
+img.user-flow {
+  max-height: 700px;
+}
+
+.link-to-project h3 {
+  margin-top: 0;
 }
