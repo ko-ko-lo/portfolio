@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Article } from '../../models/article.model';
+import { OverviewCardData } from '../../models/card.model';
 import { ArticleService } from '../../services/article.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { ArticleService } from '../../services/article.service';
   styleUrl: './blog-card.component.scss',
 })
 export class BlogCardComponent {
-  articles: Article[] = [];
+  articles: OverviewCardData[] = [];
 
   constructor(private articleService: ArticleService) {}
 

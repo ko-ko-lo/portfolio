@@ -72,7 +72,7 @@ h2 {
 
 h3 {
   font-size: 1.56rem;
-  margin-bottom: 0.88rem;
+  margin-bottom: variables.$spacing-unit-large * 3;
 }
 
 h4 {
@@ -197,9 +197,6 @@ ul li:not(:last-child) {
 
 #card a:hover {
   text-decoration: none;
-}
-
-#card a:hover {
   background-color: variables.$color-blue-50;
   transition: background-color 0.3s ease;
 }
@@ -230,6 +227,28 @@ ul li:not(:last-child) {
 
 .image-wrapper:hover .overlay {
   opacity: 1;
+}
+
+// ========================================================================
+// Code Snippet Container
+// ========================================================================
+pre {
+  background-color: variables.$color-neutral-800;
+  color: variables.$color-neutral-50;
+  padding: variables.$spacing-unit-large * 2;
+}
+
+.scrollable-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Make code scrollable */
+code {
+  display: block; /* Ensure it takes full width */
+  overflow: auto; /* Enable scrolling if content exceeds height */
+  max-height: 100%; /* Limit to the height of the parent */
+  font-size: 0.8rem;
 }
 
 // ========================================================================

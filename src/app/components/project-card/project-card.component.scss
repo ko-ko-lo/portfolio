@@ -1,0 +1,24 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+#card a {
+  background-color: variables.$color-neutral-50;
+}
+
+#card a:hover {
+  background-color: variables.$color-neutral-100;
+}
+
+.box {
+  flex: 0 0 calc(50% - 32px);
+}
+
+#card img {
+  max-height: 100%;
+}
+
+@media (max-width: variables.$breakpoint-tablet) {
+  .box {
+    flex: 0 100%;
+  }
+}
