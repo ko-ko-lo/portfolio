@@ -16,3 +16,9 @@
 #card img {
   max-height: 100%;
 }
+
+@media (max-width: variables.$breakpoint-tablet) {
+  .box {
+    flex: 0 100%;
+  }
+}

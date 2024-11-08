@@ -230,6 +230,28 @@ ul li:not(:last-child) {
 }
 
 // ========================================================================
+// Code Snippet Container
+// ========================================================================
+pre {
+  background-color: variables.$color-neutral-800;
+  color: variables.$color-neutral-50;
+  padding: variables.$spacing-unit-large * 2;
+}
+
+.scrollable-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Make code scrollable */
+code {
+  display: block; /* Ensure it takes full width */
+  overflow: auto; /* Enable scrolling if content exceeds height */
+  max-height: 100%; /* Limit to the height of the parent */
+  font-size: 0.8rem;
+}
+
+// ========================================================================
 // Responsive Styles
 // ========================================================================
 @media (max-width: variables.$breakpoint-tablet) {

@@ -62,7 +62,7 @@
     </h3>
     <h3><a (click)="scrollTo('section4')">4. Development Insights</a></h3>
     <h3>
-      <a (click)="scrollTo('section5')">5. Future Plans &amp; Reflections</a>
+      <a (click)="scrollTo('section5')">5. Reflections &amp; Future Plans</a>
     </h3>
   </div>
 </section>
@@ -82,35 +82,37 @@
   </div>
 </section>
 
-<section id="section2">
+<section id="section2" class="bg-light-blue ptb-80">
   <div class="container-m m-middle">
     <h2>2. Architecture</h2>
-    <p>
+    <p class="mb-16">
       The UI Layer of Hexify's architecture enables user interaction, while
       Code.ts orchestrates the main processes, handling data retrieval and
       coordination with helper modules.
     </p>
     <ul class="mb-64">
-      <li>
-        <strong>UI Layer:</strong> The interface where users select color
-        collections and generate output files.
+      <li class="mb-16">
+        <strong>UI Layer (ui.html):</strong><br />
+        The interface where users select color collections and initiate the
+        generation of output files.
       </li>
-      <li>
-        <strong>Code.ts:</strong> Central controller that handles requests from
-        the UI, coordinates tasks with helper modules, and communicates with the
-        Figma API.
+      <li class="mb-16">
+        <strong>Main Logic (code.ts):</strong> <br />Central controller that
+        handles requests from the UI, coordinates tasks with helper modules, and
+        communicates with the Figma API.
       </li>
-      <li>
-        <strong>Figma API:</strong> Provides Hexify with access to color
+      <li class="mb-16">
+        <strong>Helper Module (api.ts):</strong><br />
+        Gathers and filters color collections, preparing data for dropdown
+        options.
+      </li>
+      <li class="mb-16">
+        <strong>Helper Module (utilities.ts):</strong><br />Converts colors into
+        Hexadecimal and SCSS, CSS, or JSON formats for the final output.
+      </li>
+      <li class="mb-16">
+        <strong>Figma API:</strong> <br />Provides Hexify with access to color
         collections and variables directly from Figma.
-      </li>
-      <li>
-        <strong>api.ts:</strong> Gathers and filters color collections,
-        preparing data for dropdown options.
-      </li>
-      <li>
-        <strong>utilities.ts:</strong>Converts colors into Hexadecimal and SCSS,
-        CSS, or JSON formats for the final output.
       </li>
     </ul>
 
@@ -125,10 +127,10 @@
     <img
       src="projects/dropdown-population.png"
       alt="Diagram showing Hexify's dropdown population flow: the UI layer initializes, triggering the main logic to fetch color collections from the Figma API. The data is processed by api.ts to prepare dropdown options, which are then sent back to the UI layer to populate the color selection dropdown."
-      class="mb-56"
+      class="mb-64"
     />
     <h3>Output Generation (on Button Click)</h3>
-    <p class="mb-48">
+    <p class="mb-56">
       When the user clicks Generate Output, Hexify processes the selected colors
       into the desired format. The Main Logic directs utilities.ts to convert
       the colors, returning them as formatted code. Finally, the output is sent
@@ -196,7 +198,7 @@
     <div class="flex-row flex-wrap justify-between gap-32">
       <div class="box-1">
         <ul>
-          <li class="mb-24">
+          <li class="mb-16">
             <strong>Opening the Plugin:</strong>
             <ul class="mt-8">
               <li>User opens Figma and selects the plugin from the menu.</li>
@@ -206,7 +208,7 @@
               </li>
             </ul>
           </li>
-          <li class="mb-24">
+          <li class="mb-16">
             <strong>Selecting Color Collections:</strong>
             <ul class="mt-8">
               <li>User sees a list of color collections.</li>
@@ -218,7 +220,7 @@
               <li>If no collections are available, a message is displayed.</li>
             </ul>
           </li>
-          <li class="mb-24">
+          <li class="mb-16">
             <strong>Choosing Output Format:</strong>
             <ul class="mt-8">
               <li>
@@ -227,7 +229,7 @@
               </li>
             </ul>
           </li>
-          <li class="mb-24">
+          <li class="mb-16">
             <strong>Click “Generate Output”:</strong>
             <ul class="mt-8">
               <li>
@@ -241,7 +243,7 @@
               </li>
             </ul>
           </li>
-          <li class="mb-24">
+          <li class="mb-16">
             <strong>Download File:</strong>
             <ul class="mt-8">
               <li>The plugin provides a downloadable file to the user.</li>
@@ -260,72 +262,155 @@
   </div>
 </section>
 
-<section id="section4">
+<section id="section4" class="bg-light-blue ptb-80">
   <div class="container-m m-middle">
     <h2>4. Development Insights</h2>
-    <p class="mb-48">
+    <p class="mb-32">
       Developing Hexify involved a series of structured milestones, each focused
-      on building, refining, and enhancing the plugin's core functionality. The
-      code repository is available on GitHub.
+      on building, refining, and enhancing the plugin's core functionality.
     </p>
   </div>
-  <div class="ptb-80 bg-light-blue mb-64">
-    <div class="text-center m-middle container-m link-to-project">
-      <h3>Explore the full Source Code on GitHub</h3>
-      <p class="mb-32">
-        If you're interested in exploring the code and seeing how the project
-        was built in detail, feel free to visit the GitHub repository.
-      </p>
-      <a
-        href="https://github.com/ko-ko-lo/color-code-exporter"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button class="link d-flex align-items m-middle">
-          Go to Repository
-          <span class="material-icons" aria-hidden="true">open_in_new</span>
-        </button>
-      </a>
-    </div>
-  </div>
+
   <div class="container-m m-middle">
     <h3>Development Milestones</h3>
     <ul>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Set Up Development Environment:</strong><br />
         Initialized the project with npm, set up TypeScript, and created the
         project structure.
       </li>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Build UI Layout:</strong><br />Developed the HTML and CSS for
         the plugin UI.
       </li>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Implement Core Functionality:</strong><br />Implemented
         functions for fetching color collections and exporting data.
       </li>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Error Handling:</strong><br />Added error messages for missing
         selections.
       </li>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Testing and Debugging:</strong><br />Conducted thorough testing
         of all functionalities.
       </li>
-      <li class="mb-24">
+      <li class="mb-16">
         <strong>Final Review and Polish:</strong><br />Reviewed code for
         readability and efficiency.
       </li>
-      <li>
+      <li class="mb-48">
         <strong>Launch:</strong><br />Created necessary assets and published the
         plugin to the Figma Community.
       </li>
     </ul>
+
+    <h3>Feature Development Flow</h3>
+    <p class="mb-24">
+      To build Hexify's core features, I followed an iterative approach,
+      developing each functionality step-by-step. From initial data retrieval to
+      exporting the final output, this flow shows the sequence of key features
+      implemented to bring the plugin to life.
+    </p>
+    <ol>
+      <li class="mb-16">
+        <strong>Fetching All Collections from Figma API</strong>
+      </li>
+      <li class="mb-16">
+        <strong>Filtering to Color Collections Only</strong><br /><br />This
+        function retrieves variables by their IDs from the Figma API and filters
+        out any variables that aren't colors.
+        <div class="scrollable-container">
+          <pre class="radius-l">
+            <code [innerHTML]="codeSnippet"></code>
+          </pre>
+        </div>
+        <ul>
+          <li>
+            <strong>Promise.all and map:</strong> To handle multiple IDs at
+            once, Promise.all and map are used to make parallel requests,
+            speeding up the retrieval process. For each id, the
+            <strong>figma.variables.getVariableByIdAsync</strong>
+            method fetches the variable.
+          </li>
+          <li>
+            <strong>Error Handling:</strong> If an ID cannot be retrieved, null
+            is returned, allowing the function to gracefully handle errors
+            without stopping.
+          </li>
+          <li>
+            <strong>Filtering:</strong> Finally, the function filters out null
+            values and non-color variables, returning only valid color
+            variables.
+          </li>
+        </ul>
+      </li>
+      <li class="mb-16">
+        <strong>Populating Dropdown with Color Collections</strong>
+      </li>
+      <li class="mb-16">
+        <strong>Converting Color Variables to Hex Values</strong>
+      </li>
+      <li class="mb-16">
+        <strong>Process Selected Color Collections for Output</strong>
+      </li>
+      <li class="mb-16">
+        <strong>Binding and Providing Output Formats</strong>
+      </li>
+      <li class="mb-16">
+        <strong>Exporting Data as SCSS, CSS, or JSON</strong>
+      </li>
+    </ol>
   </div>
 </section>
 
+<div class="ptb-80 bg-light-brown-100">
+  <div class="text-center m-middle container-m link-to-project">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/color-code-exporter"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</div>
+
 <section id="section5" class="ptb-80">
   <div class="container-m m-middle">
-    <h2>5. Future Plans &amp; Reflections</h2>
+    <h2>5. Reflections &amp; Future Plans</h2>
+    <p>Developing Hexify has been a journey of both challenges and rewards.</p>
+    <p>
+      Working with new technology always brings a learning curve, and with
+      limited documentation or reference code available, I found myself relying
+      on patience, trial and error, and a fair share of troubleshooting. There
+      were certainly moments when things didn't work as expected, requiring
+      endurance and the determination to keep going. I quickly learned that
+      rushing through new concepts isn't the answer - allowing myself time to
+      dive in and truly understand the technology was essential. After all, the
+      journey itself is as valuable as the finished product.
+    </p>
+    <p>
+      Of course, there were a few gray hairs earned along the way, but the happy
+      moments, when everything finally worked as planned, made it all
+      worthwhile. This project taught me that I can accomplish things I never
+      knew I was capable of. I've come to truly appreciate the ups and downs of
+      the development process, discovering strengths I didn't realize I had.
+    </p>
+    <p>
+      Through working on Hexify, I've gained a much deeper understanding of
+      Figma and its API, and I'm excited to use this knowledge to create even
+      more plugins. Whether it's developing tools to streamline workflows or
+      experimenting just for the fun of it, I'm looking forward to exploring new
+      ideas and pushing my skills even further.
+    </p>
   </div>
 </section>
