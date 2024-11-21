@@ -13,7 +13,7 @@ export class ArticleService {
         'This article explores 7 essential UX Design Guidelines that can help you create meaningful user experiences.',
       image: 'blog/teaser-ux-guidelines.jpg',
       link: 'ux-design-guidelines',
-      absoluteLink: '/blog/ux-design-guidelines',
+      absoluteLink: '/blog/ux-guidelines',
     },
     {
       id: 2,

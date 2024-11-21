@@ -1,5 +1,5 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
 
 .bg-blue {
   padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4
