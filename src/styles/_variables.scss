@@ -126,3 +126,21 @@ $breakpoint-tablet: 768px;
 $max-width-s: 395px;
 $max-width-m: 822px;
 $max-width-l: 1440px;
+
+// ========================================================================
+// Animation
+// ========================================================================
+
+$fade-duration: 0.8s;
+$fade-ease: ease;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
