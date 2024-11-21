@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { IntroComponent } from '../../components/intro/intro.component';
-import { ProjectCardComponent } from '../../components/project-card/project-card.component';
+import { IntroComponent } from '../../../components/intro/intro.component';
+import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects',

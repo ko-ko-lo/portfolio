@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { BlogCardComponent } from '../../components/blog-card/blog-card.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { OverviewCardData } from '../../models/card.model';
 import { ArticleService } from '../../services/article.service';
@@ -8,7 +7,7 @@ import { ArticleService } from '../../services/article.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, ContactComponent, BlogCardComponent],
+  imports: [RouterModule, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

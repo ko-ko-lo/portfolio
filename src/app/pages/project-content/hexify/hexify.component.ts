@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { IntroComponent } from '../../components/intro/intro.component';
+import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-hexify',

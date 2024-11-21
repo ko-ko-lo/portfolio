@@ -8,7 +8,6 @@ import { MenuComponent } from './core/menu/menu.component';
   standalone: true,
   imports: [RouterOutlet, MenuComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'portfolio';

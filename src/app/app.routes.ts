@@ -10,10 +10,10 @@ import { BlogComponent } from './pages/blog-content/blog/blog.component';
 import { ResearchComponent } from './pages/blog-content/research/research.component';
 import { UsabilityTestingComponent } from './pages/blog-content/usability-testing/usability-testing.component';
 import { UxGuidelinesComponent } from './pages/blog-content/ux-guidelines/ux-guidelines.component';
-import { HexifyComponent } from './pages/hexify/hexify.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { YogaApplicationComponent } from './pages/yoga-application/yoga-application.component';
+import { HexifyComponent } from './pages/project-content/hexify/hexify.component';
+import { ProjectsComponent } from './pages/project-content/projects/projects.component';
+import { YogaApplicationComponent } from './pages/project-content/yoga-application/yoga-application.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
