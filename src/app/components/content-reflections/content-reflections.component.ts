@@ -17,4 +17,8 @@ export class ContentReflectionsComponent implements OnInit {
   ngOnInit(): void {
     this.content = this.reflectionsService.getContent();
   }
+
+  getWebpImage(imagePath: string): string {
+    return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
+  }
 }

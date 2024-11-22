@@ -1,4 +1,4 @@
-<div *ngFor="let item of content; let i = index" class="container-l mb-120">
+<!--<div *ngFor="let item of content; let i = index" class="container-l mb-120">
   <h2 class="text-center">{{ item.headline }}</h2>
   <div
     class="flex-row flex-wrap gap-32"
@@ -6,6 +6,24 @@
   >
     <div class="box-2">
       <img [src]="item.image" alt="" />
+    </div>
+    <div class="box-1">
+      <p *ngFor="let thought of item.thoughts">{{ thought }}</p>
+    </div>
+  </div>
+</div>
+-->
+<div *ngFor="let item of content; let i = index" class="container-l mb-120">
+  <h2 class="text-center">{{ item.headline }}</h2>
+  <div
+    class="flex-row flex-wrap gap-32"
+    [ngClass]="{ 'reverse-order': i % 2 !== 0 }"
+  >
+    <div class="box-2">
+      <picture>
+        <source [srcset]="getWebpImage(item.image)" type="image/webp" />
+        <img [src]="item.image" alt="" />
+      </picture>
     </div>
     <div class="box-1">
       <p *ngFor="let thought of item.thoughts">{{ thought }}</p>
