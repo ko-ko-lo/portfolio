@@ -45,6 +45,7 @@ figcaption {
   padding-top: variables.$spacing-unit-large * 2;
   color: variables.$color-neutral-700;
   font-size: 0.78rem;
+  text-align: center;
 }
 
 *:not(.overlay) {
@@ -232,6 +233,20 @@ ul li:not(:last-child) {
 
 .image-wrapper:hover .overlay {
   opacity: 1;
+}
+
+// ========================================================================
+// Bluebox for Tools
+// ========================================================================
+
+.bluebox h2,
+.bluebox h3,
+.bluebox p {
+  color: variables.$color-neutral-50;
+}
+
+.bluebox {
+  padding: variables.$spacing-unit-large * 13 0;
 }
 
 // ========================================================================

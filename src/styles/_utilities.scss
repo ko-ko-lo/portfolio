@@ -79,6 +79,22 @@
 }
 
 // ========================================================================
+// Background Colors
+// ========================================================================
+
+.medium-berry {
+  color: variables.$color-berry-600;
+}
+
+.medium-blue {
+  color: variables.$color-blue-600;
+}
+
+.medium-brown {
+  color: variables.$color-brown-600;
+}
+
+// ========================================================================
 // Flex Utilities
 // ========================================================================
 .flex-row {
@@ -123,6 +139,10 @@
 // Margin and Padding
 // ========================================================================
 // Margin
+.mb-8 {
+  margin-bottom: variables.$spacing-unit-large;
+}
+
 .mb-16 {
   margin-bottom: variables.$spacing-unit-large * 2;
 }
