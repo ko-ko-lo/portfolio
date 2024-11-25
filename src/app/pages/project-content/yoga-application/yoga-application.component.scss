@@ -1,16 +1,6 @@
 @use "../../../../styles/variables" as variables;
 @use "../../../../styles/utilities" as utilities;
 
-.bluebox h2,
-.bluebox h3,
-.bluebox p {
-  color: variables.$color-neutral-50;
-}
-
-.bluebox {
-  padding: variables.$spacing-unit-large * 13 0;
-}
-
 .link {
   text-decoration: none;
   gap: variables.$spacing-unit-large;
