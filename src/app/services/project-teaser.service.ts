@@ -17,9 +17,9 @@ export class ProjectTeaserService {
     },
     {
       id: 2,
-      title: 'Jsonify Plugin: Export Text into Structured JSON Data',
+      title: 'JSONify Plugin: Export Text into Structured JSON Data',
       teaser:
-        'While working on my yoga web application, I got tired of manually copying text from Figma. So I created a plugin to simplify the process. Jsonify exports text content directly from selected Figma elements into a structured JSON file — perfect for streamlining workflows.',
+        'While working on my yoga web application, I got tired of manually copying text from Figma. So I created a plugin to simplify the process. JSONify exports text content directly from selected Figma layers into a structured JSON file.',
       image: 'projects/jsonify.jpg',
       link: 'figma-plugin-jsonify',
       absoluteLink: 'projects/figma-plugin-jsonify',

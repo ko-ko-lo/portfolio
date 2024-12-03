@@ -11,28 +11,19 @@
 
 <section class="bg-medium-blue bluebox text-center">
   <div class="container-l">
-    <h2>Main Technical Tools</h2>
+    <h2>Core Technologies</h2>
     <div class="d-flex flex-wrap gap-32">
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>API</h3>
-        <p>Figma API</p>
-      </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Core Web Technologies</h3>
-        <p>JavaScript, TypeScript, CSS, HTML</p>
-      </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Design Tool</h3>
-        <p>Figma Design</p>
-      </div>
+      <p class="m-middle">
+        TypeScript, JavaScript, HTML, CSS, Figma Design &amp; API
+      </p>
     </div>
   </div>
 </section>
 
 <section class="text-center m-middle container-m link-to-project">
-  <h2 class="mt-80">Explore Jsonify on Figma Community</h2>
+  <h2 class="mt-80">Explore JSONify on Figma Community</h2>
   <p class="mb-32 container">
-    Take a peek at the product page to learn more and maybe see Jsonify in
+    Take a peek at the product page to learn more and maybe see JSONify in
     action!
   </p>
   <a
@@ -41,7 +32,7 @@
     rel="noopener noreferrer"
   >
     <button class="link d-flex align-items m-middle">
-      Explore Jsonify
+      Explore JSONify
       <span class="material-icons" aria-hidden="true">open_in_new</span>
     </button>
   </a>
@@ -72,7 +63,7 @@
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
     <p class="mb-16">
-      Jsonify is designed to simplify workflows by automating the conversion of
+      JSONify is designed to simplify workflows by automating the conversion of
       text content into structured JSON files. It eliminates repetitive tasks,
       allowing to focus on more impactful and challenging aspects of projects.
     </p>
@@ -104,13 +95,29 @@
 <section id="section2" class="bg-light-blue ptb-80">
   <div class="container-m m-middle">
     <h2>2. Key Features and Algorithm Highlights</h2>
-    <h3>Key Features of Jsonify</h3>
+    <p>
+      In JSONify, each Figma layer's name becomes a <strong>key</strong> in the
+      JSON output, and the text content within that layer becomes its
+      corresponding <strong>value</strong>. For example, a layer named "title"
+      containing the text "Hello World!" would generate the JSON entry:
+    </p>
+    <p>
+      <strong>
+        <span class="medium-berry">"title"</span>:
+        <span class="medium-blue">"Hello World!"</span><br />
+      </strong>
+    </p>
+    <p>
+      This simple mapping keeps the JSON output organized and easy to use,
+      directly reflecting the design's structure.
+    </p>
+
+    <h3>Key Features of JSONify</h3>
     <ul class="mb-48">
       <li class="mb-16">
         <strong>Specific Layers with Prefixes are excluded:</strong><br />
         The prefix "exclude-" is used to skip layers that are not wanted in the
-        JSON output. This gives control over what gets exported, keeping the
-        data clean and focused.
+        JSON output. This gives control over what gets exported.
       </li>
       <li class="mb-16">
         <strong>Auto Layout Layers are Ignored:</strong><br />
@@ -120,8 +127,7 @@
       <li class="mb-16">
         <strong>Layer Names Become Keys:</strong><br />
         Each layer's name is transformed into a key in the JSON object, making
-        the output structured and easy to use. Groups become arrays, and nested
-        groups create hierarchical structures that mirror the design.
+        the output structured and easy to use.
       </li>
     </ul>
 
@@ -174,19 +180,18 @@
       </div>
     </div>
 
-    <h3>Arrays in Jsonify</h3>
+    <h3>Arrays in JSONify</h3>
     <ul class="mb-48">
       <li class="mb-16">
         <strong>Line Breaks Create Arrays:</strong><br />
         When a text layer contains line breaks (\n), the text is split into an
         array. Each line becomes a separate entry in the JSON, making it easy to
-        handle lists or bullet points directly from the design.
+        handle lists or bullet points.
       </li>
       <li class="mb-16">
         <strong>Grouped Layers as Arrays:</strong><br />
-        Groups in Figma are treated as arrays in the generated JSON. Each child
-        layer inside the group becomes an array entry, keeping the structure
-        intuitive and aligned with the design hierarchy.
+        Groups in Figma are treated as arrays. Each child layer within the group
+        becomes an array entry, keeping it aligned with the design hierarchy.
       </li>
     </ul>
 
@@ -200,12 +205,11 @@
 
     <h3>Algorithm Highlights</h3>
     <p>
-      At the heart of Jsonify lies the
+      At the heart of JSONify lies the
       <strong>level-order traversal algorithm</strong> - a classic technique
-      commonly used to traverse trees and graphs. Last year, while earning my
-      university certificate in algorithms, I developed a strong appreciation
-      for this approach. It felt natural to apply it here, where traversing
-      Figma's hierarchical layer structure is a core requirement.
+      commonly used to traverse trees and graphs. It felt natural to apply it
+      here, where traversing Figma's hierarchical layer structure is a core
+      requirement.
     </p>
     <p class="mb-16">
       The purpose of this algorithm is to ensure every layer in the Figma design
@@ -237,10 +241,6 @@
         <code [innerHTML]="codeSnippet"></code>
       </pre>
     </div>
-    Using level-order traversal made Jsonify robust and reliable. It's a small
-    but powerful part of the plugin, ensuring structured data extraction works
-    seamlessly, no matter the complexity of the design. For me, this was a fun
-    opportunity to apply a foundational algorithm in a real-world project.
   </div>
 </section>
 
@@ -332,11 +332,11 @@
   <div class="container-m m-middle">
     <h2>4. Reflections on the Creative Process</h2>
     <p>
-      When I first had the idea for Jsonify, the level-order algorithm
+      When I first had the idea for JSONify, the level-order algorithm
       immediately came to mind. Figma's layer structure, organized like a tree,
       felt like the perfect real-world problem where this algorithm could shine.
       From that starting point, I began to think about how to mirror this
-      hierarchical structure in the output JSON.
+      hierarchical structure in the JSON output.
     </p>
     <p>
       One of the first "aha!" moments was realizing I could use Figma layer
@@ -355,12 +355,11 @@
       decided that grouped layers in Figma would act as arrays in the exported
       data. However, I also needed a way to process multi-line text as arrays,
       particularly for bullet point lists. That's when the idea to use \n (line
-      breaks) as a delimiter likely emerged. This small addition made the plugin
-      more versatile while keeping the user experience straightforward.
+      breaks) as a delimiter likely emerged.
     </p>
     <h3>Looking Ahead</h3>
     <p>
-      Developing Jsonify was a rewarding process, especially as I watched the
+      Developing JSONify was a rewarding process, especially as I watched the
       pieces come together to solve real-world problems. Finding solutions for
       each challenge along the way was both fun and satisfying - and even more
       so when everything worked as planned.
