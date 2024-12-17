@@ -8,4 +8,9 @@ import { RouterModule } from '@angular/router';
   templateUrl: './walks-in-nature.component.html',
   styleUrl: './walks-in-nature.component.scss',
 })
-export class WalksInNatureComponent {}
+export class WalksInNatureComponent {
+  getWebpImage(imagePath: string | undefined): string | undefined {
+    if (!imagePath) return undefined;
+    return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
+  }
+}

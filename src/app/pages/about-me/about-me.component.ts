@@ -11,4 +11,9 @@ import { ContactComponent } from '../../components/contact/contact.component';
 })
 export class AboutMeComponent {
   title: string = 'From Craft to Code: My Creative Journey';
+
+  getWebpImage(imagePath: string | undefined): string | undefined {
+    if (!imagePath) return undefined;
+    return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
+  }
 }

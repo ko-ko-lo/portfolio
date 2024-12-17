@@ -21,4 +21,9 @@ export class HomeComponent {
   get firstThreeArticles(): OverviewCardData[] {
     return this.articles.slice(0, 3);
   }
+
+  getWebpImage(imagePath: string | undefined): string | undefined {
+    if (!imagePath) return undefined;
+    return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
+  }
 }

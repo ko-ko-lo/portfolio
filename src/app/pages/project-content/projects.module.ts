@@ -16,6 +16,11 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class ProjectsModule {}
+export class ProjectsModule {
+  getWebpImage(imagePath: string | undefined): string | undefined {
+    if (!imagePath) return undefined;
+    return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
+  }
+}
 
 console.log('ProjectsModule loaded');
