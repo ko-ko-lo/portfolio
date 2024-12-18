@@ -1,12 +1,19 @@
 <section class="container m-middle">
   <div class="mb-104 mt-80">
-    <h1>Where Creativity Meets Code</h1>
+    <h1>Where Code Meets Creativity</h1>
     <div class="hero d-flex flex-wrap gap-32 align-top pt-32">
       <div class="box-1">
         <p class="intro text-italic">
           Hi, I'm Denise - a Software Developer, Designer and Artist on a
           mission to create meaningful experiences through code and creativity.
         </p>
+        <a href="https://github.com//ko-ko-lo" target="_blank">
+          <img
+            src="general/github-mark.svg"
+            alt=""
+            style="width: 30px; height: 30px"
+          />
+        </a>
       </div>
       <div class="mobile-middle box-2">
         <picture>
@@ -18,26 +25,7 @@
   </div>
 </section>
 
-<section class="bg-light-blue ptb-80">
-  <div class="container-m m-middle text-center">
-    <p class="highlighted">
-      At the heart of everything I do is a desire to understand deeply. Whether
-      it's solving problems through design or writing code. I believe that to
-      create something meaningful, you need to dive into its core.
-    </p>
-    <!--
-    <p>
-      Art is where I express emotions that words can't capture, while design is
-      about solving problems with intention. Development, for me, is where logic
-      meets creativity - it's the process of turning ideas into something real
-      and functional. These disciplines all reflect my passion for exploring,
-      learning and creating thoughtful experiences.
-    </p>
-   -->
-  </div>
-</section>
-
-<section class="text-center ptb-80">
+<section class="bg-light-blue text-center ptb-96">
   <div class="m-middle container-m">
     <h2>Discover My Work</h2>
     <p class="mb-32">
@@ -47,7 +35,7 @@
       platform for Yin-Style Yoga.
     </p>
     <button routerLink="/projects/yin-style-yoga-application" class="mb-56">
-      View The Project
+      View Project
     </button>
   </div>
   <div class="m-middle img-yoga container-l">
@@ -58,7 +46,7 @@
   </div>
 </section>
 
-<section class="bg-light-brown ptb-80">
+<section class="ptb-96">
   <div class="container-m m-middle text-center">
     <h2>Reflecting on the Process</h2>
     <p class="mb-32">
@@ -67,13 +55,13 @@
       place where I want to share not only technical insights but also my
       personal growth as a designer and developer.
     </p>
-    <button routerLink="/blog" class="mb-56">Explore My Blog</button>
+    <button routerLink="/blog" class="mb-56">Explore Blog</button>
   </div>
   <div class="container-l">
     <section class="d-flex flex-wrap justify-between gap-32" id="card">
       <a
         routerLink="/blog/ux-guidelines"
-        class="box padding radius-m text-center full-link elevation-xs"
+        class="box padding radius-l text-center full-link elevation-xs"
       >
         <img
           src="blog/teaser-ux-guidelines.jpg"
@@ -90,7 +78,7 @@
 
       <a
         routerLink="/blog/usability-testing"
-        class="box padding radius-m text-center full-link elevation-xs"
+        class="box padding radius-l text-center full-link elevation-xs"
       >
         <picture>
           <source srcset="blog/teaser-usability.webp" type="image/webp" />
@@ -109,7 +97,7 @@
 
       <a
         routerLink="/blog/quantitative-qualitative-research"
-        class="box padding radius-m text-center full-link elevation-xs"
+        class="box padding radius-l text-center full-link elevation-xs"
       >
         <picture>
           <source srcset="blog/teaser-research.webp" type="image/webp" />
@@ -129,32 +117,25 @@
   </div>
 </section>
 
-<section class="text-center ptb-80">
+<section class="bg-light-berry text-center ptb-96">
   <div class="m-middle container-m">
     <h2>About Me</h2>
     <p class="mb-32">
-      <!--For me, every project starts with a deep desire to understand. Whether
+      For me, every project starts with a deep desire to understand. Whether
       it's exploring the craft of design or the logic of development, I believe
-      in going beyond the surface to create meaningful, impactful work. -->Learn
+      in going beyond the surface to create meaningful, impactful work. Learn
       more about my journey and what drives me to bring ideas to life.
     </p>
-    <button routerLink="/about-me" class="mb-56">Get to Know Me</button>
-  </div>
-  <div class="m-middle container about-me">
-    <picture>
-      <source srcset="aboutme/about-me.webp" type="image/webp" />
-      <img src="aboutme/about-me.jpg" alt="" class="radius-m elevation-xs" />
-    </picture>
+    <button routerLink="/about-me">Get to Know Me</button>
   </div>
 </section>
 
-<section class="bg-light-blue ptb-80">
+<section class="bg-light-neutral ptb-96">
   <div class="container-m m-middle text-center">
     <h2>My Art</h2>
     <p class="mb-32">
-      <!--I find peace and expression in art. -->Explore my Art Page to see my
-      digital illustrations, where I express ideas and emotions that go beyond
-      words.
+      Explore my Art Page to see my digital illustrations, where I express ideas
+      and emotions that go beyond words.
     </p>
     <button routerLink="/art" class="mb-56">Explore My Art</button>
   </div>
@@ -191,15 +172,15 @@
     </div>
 
     <div class="box">
-      <a routerLink="/art/connection-human-nature">
+      <a routerLink="/art/back-to-nature">
         <div class="image-wrapper">
           <picture>
-            <source srcset="art/preview/bird.webp" type="image/webp" />
-            <img src="art/preview/bird.jpg" alt="" class="elevation-xs" />
+            <source srcset="art/preview/ourplanet.webp" type="image/webp" />
+            <img src="art/preview/ourplanet.jpg" alt="" class="elevation-xs" />
           </picture>
           <div class="overlay"></div>
         </div>
-        <h3>Connection between Human and Nature</h3>
+        <h3>Protecting Our Planet: A Journey Back to Nature</h3>
       </a>
     </div>
   </div>
@@ -207,6 +188,7 @@
 
 <app-contact></app-contact>
 
+<!--
 <section class="bg-light-blue pb-80 border-top">
   <div class="container-m m-middle text-center">
     <picture>
@@ -220,3 +202,4 @@
     <cite>Oren Harari</cite>
   </div>
 </section>
+-->

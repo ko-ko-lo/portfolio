@@ -12,16 +12,30 @@
   max-width: 1034px;
 }
 
+/*
 .about-me {
   max-width: 643px;
 }
-
-.border-top {
-  border-top: 3px solid #7694a2;
-}
+*/
 
 .highlighted {
   margin: 0;
+}
+
+.bg-light-berry {
+  background-color: variables.$color-blue-800;
+}
+
+.bg-light-berry h2,
+.bg-light-berry p {
+  color: variables.$color-berry-50;
+}
+
+.bg-light-berry button {
+  background-color: variables.$color-blue-500;
+  &:hover {
+    background-color: variables.$color-blue-600;
+  }
 }
 
 @media (max-width: 1200px) {

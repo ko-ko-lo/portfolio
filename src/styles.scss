@@ -134,7 +134,7 @@ button {
   font-weight: variables.$font-weight-regular;
   padding: variables.$spacing-unit-small * 7 variables.$spacing-unit-large * 4;
   text-transform: uppercase;
-  background-color: variables.$color-brown-700;
+  background-color: variables.$color-blue-800;
   color: variables.$color-neutral-50;
   border: none;
   border-radius: variables.$radius-s;
@@ -143,12 +143,12 @@ button {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: variables.$color-brown-500;
+    background-color: variables.$color-blue-600;
   }
 
   &:focus {
-    background-color: variables.$color-brown-600;
-    outline: 2px solid variables.$color-brown-800;
+    background-color: variables.$color-blue-700;
+    outline: 2px solid variables.$color-blue-900;
   }
 }
 
@@ -198,7 +198,7 @@ ul li:not(:last-child) {
 }
 
 #card a {
-  color: variables.$color-brown-900;
+  color: variables.$color-blue-900;
   background-color: variables.$color-blue-100;
 }
 
