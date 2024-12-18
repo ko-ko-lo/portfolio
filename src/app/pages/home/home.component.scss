@@ -12,34 +12,50 @@
   max-width: 1034px;
 }
 
-/*
-.about-me {
-  max-width: 643px;
-}
-*/
-
 .highlighted {
   margin: 0;
 }
 
 .bg-light-berry {
-  background-color: variables.$color-blue-800;
-}
+  background-color: $color-blue-800;
 
-.bg-light-berry h2,
-.bg-light-berry p {
-  color: variables.$color-berry-50;
-}
+  h2,
+  p {
+    color: $color-berry-50;
+  }
 
-.bg-light-berry button {
-  background-color: variables.$color-blue-500;
-  &:hover {
-    background-color: variables.$color-blue-600;
+  button {
+    background-color: $color-blue-500;
+
+    &:hover {
+      background-color: $color-blue-600;
+    }
   }
 }
 
 .bg-light-neutral {
-  background-color: variables.$color-neutral-200;
+  background-color: $color-neutral-950;
+
+  h2,
+  h3 {
+    color: $color-neutral-100;
+  }
+
+  p {
+    color: $color-neutral-50;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  button {
+    background-color: $color-blue-500;
+
+    &:hover {
+      background-color: $color-blue-600;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
