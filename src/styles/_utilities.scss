@@ -123,6 +123,10 @@
   align-items: center;
 }
 
+.align-bottom {
+  align-items: baseline;
+}
+
 .d-flex {
   display: flex;
 }
@@ -281,6 +285,11 @@
 // ========================================================================
 .border-bottom {
   border-bottom: 1px solid variables.$color-neutral-400;
+}
+
+.border-left {
+  border-left: 2px solid variables.$color-berry-400;
+  padding: variables.$spacing-unit-large * 2 0;
 }
 
 // ========================================================================

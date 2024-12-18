@@ -63,7 +63,7 @@
   </a>
 </section>
 
-<section class="bg-light-brown ptb-80 mt-80">
+<section class="table-contents bg-light-brown ptb-80 mt-80">
   <div class="container-m m-middle text-center">
     <h2>Table of Contents</h2>
     <h3>
@@ -84,21 +84,23 @@
     <h3>Project Scope and Goals</h3>
     <p>
       The goal of the web application is to create a calming and user-friendly
-      platform focused on Yin-Style Yoga. At the heart of the application is a
-      library of yoga poses, each presented with a structure that includes
-      step-by-step instructions for entering and exiting the pose, its effects
-      on the body, and suggested variations to suit different needs and
-      abilities.
+      platform focused on Yin-Style Yoga. At the
+      <strong>heart of the application</strong> is a library of yoga poses, each
+      presented with a structure that includes step-by-step instructions for
+      entering and exiting the pose, its effects on the body, and suggested
+      variations to suit different needs and abilities.
     </p>
     <p>
       In addition to the library, the app also features yoga routines, allowing
       users to filter routines based on specific target areas.
     </p>
-    <p>
-      Together, the Yoga Pose Library, routines, and introduction form
-      <strong>core of the application</strong>. These elements represent the
-      “Walking Skeleton” of the project - a minimal but complete version that
-      fulfills the essential requirements for the initial launch.
+    <p class="border-left">
+      <strong>
+        Together, the Yoga Pose Library, routines, and introduction form core of
+        the application. These elements represent the “Walking Skeleton” of the
+        project - a minimal but complete version that fulfills the essential
+        requirements for the initial launch.</strong
+      >
     </p>
     <h3>Technology Stack</h3>
     <p>
@@ -149,11 +151,7 @@
     <p>
       Creating the Yin-Style Yoga web application started with a personal
       challenge: organizing my yoga routines and pose instructions in a more
-      efficient and accessible way. I wanted to develop a solution that not only
-      worked for me but could also serve a wider audience of people who are
-      passionate about yoga. This phase helped me define the core problems,
-      understand the target audience, and set the key requirements for the
-      application.
+      efficient and accessible way.
     </p>
     <h4>Identifying the Problem</h4>
     <p>
@@ -168,38 +166,16 @@
       The primary goal of the application was to
       <strong>speed up the creation and execution of yoga routines</strong>,
       while providing a simple, quick way to access all the information I needed
-      about each pose. I envisioned an organized library that would allow me to
-      easily find, filter, and access yoga poses, saving me time and improving
-      the flow of my practice.
+      about each pose.
     </p>
-    <!--
-    <h4>Target Group Analysis</h4>
-    <p>
-      As I moved forward with the idea, I considered who else might benefit from
-      this web application. I conducted a target group analysis by asking myself
-      key questions about potential users:
+    <p class="border-left">
+      <strong>
+        I envisioned an organized library that would allow me to easily find,
+        filter, and access yoga poses, saving me time and improving the flow of
+        my practice.</strong
+      >
     </p>
-    <ul>
-      <li><strong>Who is the application for?</strong></li>
-      <li><strong>What are their needs?</strong></li>
-      <li><strong>What are the most common use cases?</strong></li>
-    </ul>
-    <p>
-      From this analysis, I identified the <strong>core target group</strong>:
-    </p>
-    <p>
-      The Yin-Style Yoga application is thoughtfully designed to welcome a
-      diverse audience, ranging from young adults to seniors, especially those
-      who have a basic understanding of yoga. The ideal users are individuals
-      who spend long hours sitting or face high levels of stress in their
-      everyday lives. They are likely seeking a soothing, physical practice to
-      help them find balance amidst their busy routines and nurture both their
-      physical and mental well-being.<br />The application is accessible on
-      various devices, including desktops and tablets for practicing yoga, as
-      well as smartphones for those moments when users want to explore poses or
-      browse our library on the go.
-    </p>
-      -->
+
     <h4>Brainstorming the Product Requirements</h4>
     <p>
       During my brainstorming sessions, I explored a variety of functionalities
@@ -257,12 +233,10 @@
     <h3>High-Level Design Concept</h3>
     <p>
       In this phase, the focus was on creating a flexible, scalable structure
-      for the Yin-Style Yoga App, ensuring that users would have a smooth,
-      intuitive experience. The high-level design decisions revolved around
-      visualizing the <strong>site's structure</strong>, organizing content
-      efficiently, and setting the overall <strong>look and feel</strong> of the
-      application. The goal was to ensure that the app would not only meet
-      users' current needs but could also grow and expand in the future.
+      for the Yin-Style Yoga App. The high-level design decisions revolved
+      around visualizing the <strong>site's structure</strong>, organizing
+      content efficiently, and setting the overall
+      <strong>look and feel</strong> of the application.
     </p>
     <h4>Scalable Information Architecture</h4>
     <p class="mb-32">
@@ -288,8 +262,8 @@
     <p>
       The next challenge was to create content for the whole application,
       particularly for the Yoga Pose Library. The goal was to create content
-      that was both clear and concise, giving users all the information they
-      need without overwhelming them with unnecessary details.
+      that was both clear and concise, providing all the information needed
+      without overwhelming with unnecessary details.
     </p>
     <h4>Filtering Options</h4>
     <p>
@@ -340,6 +314,38 @@
       (for example background, border, accent) to make the use of colors more
       efficient and meaningful throughout the design.
     </p>
+
+    <div
+      class="d-flex flex-wrap justify-between gap-32 align-bottom pt-32 pb-32"
+    >
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source srcset="projects/colors-kokolo.webp" type="image/webp" />
+            <img
+              src="projects/colors-kokolo.png"
+              alt=""
+              class="radius-l elevation-xs"
+            />
+          </picture>
+          <figcaption>Color Palette with soft, soothing tones</figcaption>
+        </figure>
+      </div>
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source srcset="projects/colors-variables.webp" type="image/webp" />
+            <img
+              src="projects/colors-variables.png"
+              alt=""
+              class="radius-l elevation-xs"
+            />
+          </picture>
+          <figcaption>Creation of Color Variables</figcaption>
+        </figure>
+      </div>
+    </div>
+
     <p>
       In addition to color, I defined variables for other key elements such as
       typography, number scales, border radius, elevation, and breakpoints.
@@ -403,11 +409,10 @@
       >, ensuring that the user experience remained cohesive from start to
       finish.
     </p>
-    <p class="mb-32">
+    <p class="mb-48">
       The Visual Designs were created with the goal of maintaining calmness and
       clarity, using the variables, components and design patterns defined in
-      the Design System. Each screen was carefully crafted to guide the user
-      through the application in a way that felt intuitive.
+      the Design System.
     </p>
     <figure>
       <picture>
@@ -422,21 +427,7 @@
       <figcaption>Visual Design: Home Page</figcaption>
     </figure>
     <h3>Prototyping and Testing</h3>
-    <p>
-      Typically, in my UX/UI Design process, I include a dedicated Prototyping
-      and Testing phase. This is where I would normally create interactive
-      prototypes to test the user flow, design interactions, and gather feedback
-      before moving into development. However, since this is a personal project,
-      I decided to skip this phase in favor of diving directly into the
-      development process.
-    </p>
-    <p>
-      My familiarity with the user needs and content, combined with the
-      flexibility to iterate during development, allowed me to move forward
-      confidently. While I value the importance of prototyping and testing in a
-      typical project, this approach allowed me to focus on hands-on learning
-      and quickly bring my vision to life.
-    </p>
+
     <p class="border-left">
       If you're interested in learning how I conduct Usability Testing and how
       it can improve the user experience, you can read an article I wrote on the
@@ -471,15 +462,13 @@
       The Development Process of the Yin-Style Yoga Application was where the
       ideas and designs truly came to life. Having established a clear vision
       during the planning and design phases, I was excited to bring all of the
-      key features together using a combination of Angular, TypeScript, HTML and
-      SCSS.
+      key features together using Angular, TypeScript, HTML and SCSS.
     </p>
     <p>
       Throughout the development journey, I aimed to create an application that
-      is not only visually appealing but also technically robust and easy to
-      maintain. By leveraging Angular's component-based architecture, I ensured
-      that the app remains modular, scalable, and flexible for future
-      expansions.
+      is technically robust and easy to maintain. By leveraging Angular's
+      component-based architecture, I ensured that the app remains modular,
+      scalable, and flexible for future expansions.
     </p>
     <h3>Application Structure</h3>
     <p>
@@ -499,9 +488,8 @@
     </p>
     <h4>Core Components</h4>
     <p>
-      Just as I had carefully organized the design components and patterns in
-      Figma, I followed a similar approach in Angular by structuring the app
-      around <strong>reusable components</strong>.
+      In Angular I structured the app around
+      <strong>reusable components</strong>.
     </p>
     <ul>
       <li>
@@ -562,10 +550,7 @@
     </div>
 
     <h4>Styling and Theming</h4>
-    <p>
-      The Design System that I developed in Figma carried through to the
-      application's styling and theming. The styling is divided into:
-    </p>
+    <p>The styling is divided into:</p>
     <ul>
       <li>
         <strong>Global Styles</strong>: These base styles and utility classes
@@ -650,53 +635,7 @@
       only on adding new functionality but also on deepening the customization
       options for users and creating a more personalized, immersive platform.
     </p>
-    <h3>Upcoming Features</h3>
-    <p>
-      In the next phase of development, the focus will be on expanding the
-      application's core features to make it even more versatile and
-      user-friendly:
-    </p>
-    <ul>
-      <li>
-        <strong>A continuous expansion of the Yoga Pose Library</strong> is a
-        priority, offering users a wider variety of poses to choose from.
-        Additionally, I plan to regularly add
-        <strong>more training plans</strong> that target different areas of the
-        body and offer various session lengths to suit users' needs.
-      </li>
-      <li>
-        To improve navigation, a <strong>search function</strong> will be
-        implemented for the Yoga Pose Library, allowing users to quickly and
-        easily find specific poses.
-      </li>
-      <li>
-        I also plan to <strong>expand the filtering options</strong>, allowing
-        users to filter routines by training time.
-      </li>
-      <li>
-        To enhance the overall user experience, a
-        <strong>Dark Mode</strong> option will be introduced, providing users
-        with the choice to switch to a darker color scheme for a more
-        comfortable experience, especially in low-light environments.
-      </li>
-    </ul>
-    <p class="mb-32">
-      These features are designed to make the app more accessible and
-      customizable, ensuring users can find and follow routines that best suit
-      their needs.
-    </p>
-    <figure>
-      <picture>
-        <source srcset="projects/dark-mode.webp" type="image/webp" />
-        <img
-          src="projects/dark-mode.jpg"
-          alt=""
-          class="m-middle radius-l"
-          title="Visual Design for Dark Mode"
-        />
-      </picture>
-      <figcaption>Visual Design for Dark Mode</figcaption>
-    </figure>
+
     <h3>Long-Term Vision</h3>
     <p>
       Looking further into the future, my vision for the Yin-Style Yoga
@@ -744,11 +683,10 @@
     <p>
       Looking ahead, the Yin-Style Yoga Application will continue to grow with
       the addition of key features such as an expanded Yoga Pose Library, a
-      search function, more filtering options, and Dark Mode for a more
-      comfortable user experience. In the long term, I envision transforming the
-      app into a fully personalized platform with user accounts, graphic videos,
-      and new sections dedicated to Breathing Techniques and Meditation
-      Practices.
+      search function, more filtering options. In the long term, I envision
+      transforming the app into a fully personalized platform with user
+      accounts, graphic videos, and new sections dedicated to Breathing
+      Techniques and Meditation Practices.
     </p>
   </div>
 </section>
@@ -758,20 +696,21 @@
     <h2>5. Final Reflections</h2>
     <p>
       Working on the Yin-Style Yoga web application has been a deeply personal
-      and educational journey. From the early stages of content creation to the
-      technical challenges during development, this project has taught me
-      valuable lessons about both the process and myself as a designer and
-      developer.
+      and educational journey.
     </p>
     <p>
-      One of the key takeaways from this experience was learning to embrace the
-      process rather than rushing toward the end result. Preparing the yoga pose
+      One of the key takeaways from this experience was learning to
+      <strong>embrace the process</strong>
+      rather than rushing toward the end result. Preparing the yoga pose
       illustrations and carefully crafting the descriptive text for each pose
       took far longer than I initially expected. My early attempts to speed
       through these tasks left me unsatisfied with the quality, which led to a
       restart. It became clear that the real value lay in the journey itself -
-      learning more about each pose and finding a way to convey its essence. By
-      slowing down, I was able to produce content I could be proud of.
+      learning more about each pose and finding a way to convey its essence.
+      <strong
+        >By slowing down, I was able to produce content I could be proud
+        of.</strong
+      >
     </p>
     <p>
       A similar lesson applied to the visual design. My first attempt at the
@@ -779,38 +718,58 @@
       timeless simplicity I wanted. Although I created a prototype, I knew it
       wasn't ready for testing. Starting the design process again was the right
       decision, as it allowed me to create a design that truly felt aligned with
-      the message I wanted the application to convey. Even with years of design
-      experience, it's a reminder that sometimes you have to take a step back,
-      reflect, and try again until the design feels just right.
+      the message I wanted the application to convey.
+      <strong
+        >Even with years of design experience, it's a reminder that sometimes
+        you have to take a step back, reflect, and try again until the design
+        feels just right.</strong
+      >
     </p>
     <p>
       This project also reinforced the importance of focus and prioritization.
       It's easy to get caught up in the excitement of new ideas and want to
       implement every feature at once. But I learned that focusing on the
       essentials - building a strong foundation and taking things step by step -
-      is the most effective way to make meaningful progress. For me,
-      prioritization was challenging, but it was a crucial part of ensuring that
-      the project moved forward in a manageable and successful way.
+      is the most effective way to make meaningful progress.
+      <strong
+        >For me, prioritization was challenging, but it was a crucial part of
+        ensuring that the project moved forward in a manageable and successful
+        way.</strong
+      >
     </p>
     <p>
       On the development side, working with Angular was a rewarding experience.
-      The more I learned, the more I appreciated the power and flexibility of
-      the framework. That said, there were moments when small development
-      challenges nearly got the better of me - like debugging a page-scrolling
-      issue that, after hours of frustration, was solved with a simple line of
-      code. These moments reminded me of the patience required in development,
-      and the satisfaction that comes when a solution is finally found.
+      The more I learned, the more I appreciated the
+      <strong>power and flexibility of the framework</strong>. That said, there
+      were moments when small development challenges nearly got the better of me
+      - like debugging a page-scrolling issue that, after hours of frustration,
+      was solved with a simple line of code. These moments reminded me of the
+      patience required in development, and the satisfaction that comes when a
+      solution is finally found.
     </p>
     <p>
-      Reflecting on the entire project, I've come to realize that it's okay to
-      take things slowly, as long as you keep moving forward. It's okay to
-      restart, as long as you learn from the process. Having a vision for the
-      product - focusing not on the minute details but on the overall feeling
-      and purpose of the application - was what helped me stay motivated and see
-      this project through to the end. This project has not only expanded my
-      technical skills but also deepened my understanding of the creative
-      process and my ability to persevere through challenges.
+      <strong>Reflecting on the entire project</strong>, I've come to realize
+      that:
     </p>
+    <ul>
+      <li>
+        <strong>
+          It's okay to take things slowly, as long as you keep moving forward.
+        </strong>
+      </li>
+      <li>
+        <strong
+          >It's okay to restart, as long as you learn from the process.</strong
+        >
+      </li>
+      <li>
+        <strong>
+          Having a vision for the product - focusing not on the minute details
+          but on the overall feeling and purpose of the application - was what
+          helped me stay motivated and see this project through to the end.
+        </strong>
+      </li>
+    </ul>
   </div>
 </section>
 

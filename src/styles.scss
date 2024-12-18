@@ -85,6 +85,7 @@ h3 {
 h4 {
   font-size: 1.17rem;
   margin-bottom: 0.44rem;
+  margin-top: variables.$spacing-unit-large * 5;
 }
 
 p {
@@ -270,6 +271,13 @@ code {
   overflow: auto; /* Enable scrolling if content exceeds height */
   max-height: 100%; /* Limit to the height of the parent */
   font-size: 0.8rem;
+}
+
+// ========================================================================
+// Others
+// ========================================================================
+.table-contents h3 {
+  margin-top: 0;
 }
 
 // ========================================================================

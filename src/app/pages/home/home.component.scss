@@ -38,6 +38,10 @@
   }
 }
 
+.bg-light-neutral {
+  background-color: variables.$color-neutral-200;
+}
+
 @media (max-width: 1200px) {
   .box:nth-child(3) {
     display: none;

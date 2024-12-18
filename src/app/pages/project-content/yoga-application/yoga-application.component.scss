@@ -18,6 +18,15 @@ img.sitemap {
   max-height: 380px;
 }
 
+ul,
+ol {
+  margin: variables.$spacing-unit-large * 4 0;
+}
+
+.bg-light-berry h3 {
+  margin-top: 0;
+}
+
 .border-left {
   border-left: 3px solid variables.$color-berry-400;
   padding-left: variables.$spacing-unit-large * 2;
