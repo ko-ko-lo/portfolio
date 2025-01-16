@@ -17,32 +17,32 @@
 }
 
 .bg-light-berry {
-  background-color: $color-blue-800;
+  background-color: variables.$color-blue-800;
 
   h2,
   p {
-    color: $color-berry-50;
+    color: variables.$color-berry-50;
   }
 
   button {
-    background-color: $color-blue-500;
+    background-color: variables.$color-blue-500;
 
     &:hover {
-      background-color: $color-blue-600;
+      background-color: variables.$color-blue-600;
     }
   }
 }
 
 .bg-light-neutral {
-  background-color: $color-neutral-950;
+  background-color: variables.$color-neutral-950;
 
   h2,
   h3 {
-    color: $color-neutral-100;
+    color: variables.$color-neutral-100;
   }
 
   p {
-    color: $color-neutral-50;
+    color: variables.$color-neutral-50;
   }
 
   a:hover {
@@ -50,10 +50,10 @@
   }
 
   button {
-    background-color: $color-blue-500;
+    background-color: variables.$color-blue-500;
 
     &:hover {
-      background-color: $color-blue-600;
+      background-color: variables.$color-blue-600;
     }
   }
 }

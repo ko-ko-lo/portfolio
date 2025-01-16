@@ -74,13 +74,13 @@
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
     <p>
-      The primary purpose of this plugin is to enhance the workflow, making it
-      faster and more efficient to implement designs in code. This project also
-      serves as a valuable resource for fellow developers and designers,
-      providing them with a tool that enhances collaboration and speeds up their
-      development processes. Additionally, it's a showcase piece for my GitHub
-      account and portfolio, demonstrating my commitment to continuous learning
-      and skill enhancement in Figma Plugin Development.
+      The primary purpose of this Plugin is to enhance the workflow, making it
+      faster and more efficient to implement Figma Designs in Code.
+    </p>
+    <p>
+      This project also serves as a resource for fellow Developers and
+      Designers, providing them with a Tool that enhances Collaboration and
+      speeds up their Development Processes.
     </p>
   </div>
 </section>
@@ -89,24 +89,24 @@
   <div class="container-m m-middle">
     <h2>2. Architecture</h2>
     <p class="mb-16">
-      The UI Layer of Hexify's architecture enables user interaction, while
-      Code.ts orchestrates the main processes, handling data retrieval and
-      coordination with helper modules.
+      The UI Layer of Hexify's Architecture enables user interaction, while the
+      Main Logic orchestrates the processes, handling Data Retrieval and
+      coordination with Helper Modules.
     </p>
     <ul class="mb-64">
       <li class="mb-16">
         <strong>UI Layer (ui.html):</strong><br />
-        The interface where users select color collections and initiate the
+        The interface where users select Color Collections and initiate the
         generation of output files.
       </li>
       <li class="mb-16">
-        <strong>Main Logic (code.ts):</strong> <br />Central controller that
-        handles requests from the UI, coordinates tasks with helper modules, and
+        <strong>Main Logic (code.ts):</strong> <br />Central Controller that
+        handles requests from the UI, coordinates tasks with Helper Modules, and
         communicates with the Figma API.
       </li>
       <li class="mb-16">
         <strong>Helper Module (api.ts):</strong><br />
-        Gathers and filters color collections, preparing data for dropdown
+        Gathers and filters Color Collections, preparing Data for dropdown
         options.
       </li>
       <li class="mb-16">
@@ -114,18 +114,18 @@
         Hexadecimal and SCSS, CSS, or JSON formats for the final output.
       </li>
       <li class="mb-16">
-        <strong>Figma API:</strong> <br />Provides Hexify with access to color
-        collections and variables directly from Figma.
+        <strong>Figma API:</strong> <br />Provides Hexify with access to Color
+        Collections and variables directly from Figma.
       </li>
     </ul>
 
     <h3>Dropdown Population (on UI Initialization)</h3>
     <p class="mb-64">
-      When Hexify's UI is ready, the plugin automatically fetches color
-      collections from Figma. The Main Logic coordinates with the Figma API and
-      api.ts to gather and filter the necessary color data. Once processed, the
-      dropdown is populated, allowing users to select from the available color
-      collections with ease.
+      When Hexify's UI is ready, the Plugin automatically fetches Color
+      Collections from Figma. The Main Logic coordinates with the Figma API and
+      api.ts (Helper Module) to gather and filter the necessary Color Data. Once
+      processed, the dropdown is populated, allowing users to select from the
+      available Color Vollections with ease.
     </p>
     <picture>
       <source srcset="projects/dropdown-population.webp" type="image/webp" />
@@ -138,9 +138,10 @@
     <h3>Output Generation (on Button Click)</h3>
     <p class="mb-56">
       When the user clicks Generate Output, Hexify processes the selected colors
-      into the desired format. The Main Logic directs utilities.ts to convert
-      the colors, returning them as formatted code. Finally, the output is sent
-      back to the UI, ready for download in SCSS, CSS, or JSON format.
+      into the desired format. The Main Logic directs utilities.ts (Helper
+      Module) to convert the colors, returning them as formatted code. Finally,
+      the output is sent back to the UI, ready for download in SCSS, CSS, or
+      JSON format.
     </p>
     <picture>
       <source srcset="projects/generated-output.webp" type="image/webp" />
@@ -157,12 +158,14 @@
   <div class="container-m m-middle">
     <h2>3. Visual Design &amp; User Flow</h2>
 
-    <p class="mb-48">
+    <p>
       The interface is organized into distinct sections for the introduction,
-      color collection selection, output format selection, and action buttons,
-      allowing users to quickly locate what they need. High contrast between
-      text and background colors enhances readability, and a clear typographic
-      hierarchy guides users smoothly through the interface.
+      Color Collection selection, Output Format selection, and action buttons,
+      allowing users to quickly locate what they need.
+    </p>
+    <p class="mb-48">
+      High contrast between text and background colors enhances readability, and
+      a clear Typographic Hierarchy guides users smoothly through the interface.
     </p>
   </div>
 
@@ -216,7 +219,7 @@
 
   <div class="container-m m-middle">
     <h3 class="mb-32">
-      User Flow from opening the plugin to downloading the output
+      User Flow from Opening the Plugin to Downloading the Output
     </h3>
     <div class="flex-row flex-wrap justify-between gap-32">
       <div class="box-1">
@@ -224,30 +227,30 @@
           <li class="mb-16">
             <strong>Opening the Plugin:</strong>
             <ul class="mt-8">
-              <li>User opens Figma and selects the plugin from the menu.</li>
+              <li>User opens Figma and selects the Plugin from the menu.</li>
               <li>
-                The plugin interface loads, displaying all available color
-                collections.
+                The Plugin interface loads, displaying all available Color
+                Collections.
               </li>
             </ul>
           </li>
           <li class="mb-16">
             <strong>Selecting Color Collections:</strong>
             <ul class="mt-8">
-              <li>User sees a list of color collections.</li>
-              <li>The user selects one or multiple collections.</li>
+              <li>User sees a list of Color Collections.</li>
+              <li>The user selects one or multiple Collections.</li>
               <li>
                 A "Select All" checkbox provides the option to select all
-                collections at once.
+                Collections at once.
               </li>
-              <li>If no collections are available, a message is displayed.</li>
+              <li>If no Collections are available, a message is displayed.</li>
             </ul>
           </li>
           <li class="mb-16">
             <strong>Choosing Output Format:</strong>
             <ul class="mt-8">
               <li>
-                User selects the desired output format (e.g., SCSS or CSS) from
+                User selects the desired Output Format (e.g., SCSS or CSS) from
                 a single-choice selection.
               </li>
             </ul>
@@ -256,12 +259,12 @@
             <strong>Click “Generate Output”:</strong>
             <ul class="mt-8">
               <li>
-                User clicks the CTA button to export the selected color
-                variables in a file.
+                User clicks the CTA Button to export the selected Color
+                Collections in a file as Hex values.
               </li>
               <li>
-                If the user attempts to export without a selection (color
-                collection and/or format), an error message prompts them to make
+                If the user attempts to export without a selection (Color
+                Collection and/or Format), an error message prompts them to make
                 a selection.
               </li>
             </ul>
@@ -269,7 +272,7 @@
           <li class="mb-16">
             <strong>Download File:</strong>
             <ul class="mt-8">
-              <li>The plugin provides a downloadable file to the user.</li>
+              <li>The Plugin provides a downloadable file to the user.</li>
             </ul>
           </li>
         </ul>
@@ -292,8 +295,8 @@
   <div class="container-m m-middle">
     <h2>4. Development Insights</h2>
     <p class="mb-32">
-      Developing Hexify involved a series of structured milestones, each focused
-      on building, refining, and enhancing the plugin's core functionality.
+      Developing Hexify involved a series of Milestones, each focused on
+      Building, Refining, and Enhancing the Plugin's core functionality.
     </p>
   </div>
 
@@ -307,11 +310,11 @@
       </li>
       <li class="mb-16">
         <strong>Build UI Layout:</strong><br />Developed the HTML and CSS for
-        the plugin UI.
+        the Plugin UI.
       </li>
       <li class="mb-16">
         <strong>Implement Core Functionality:</strong><br />Implemented
-        functions for fetching color collections and exporting data.
+        functions for fetching Color Collections and exporting Data.
       </li>
       <li class="mb-16">
         <strong>Error Handling:</strong><br />Added error messages for missing
@@ -332,11 +335,13 @@
     </ul>
 
     <h3>Feature Development Flow</h3>
-    <p class="mb-24">
+    <p>
       To build Hexify's core features, I followed an iterative approach,
-      developing each functionality step-by-step. From initial data retrieval to
-      exporting the final output, this flow shows the sequence of key features
-      implemented to bring the plugin to life.
+      developing each functionality step-by-step.
+    </p>
+    <p class="mb-24">
+      From initial data retrieval to exporting the final output, this flow shows
+      the sequence of key features implemented to bring the Plugin to life.
     </p>
     <ol>
       <li class="mb-16">
@@ -417,24 +422,25 @@
     <p>
       Working with new technology always brings a learning curve, and with
       limited documentation or reference code available, I found myself relying
-      on patience, trial and error, and a fair share of troubleshooting. There
-      were certainly moments when things didn't work as expected, requiring
-      endurance and the determination to keep going. I quickly learned that
-      rushing through new concepts isn't the answer - allowing myself time to
-      dive in and truly understand the technology was essential. After all, the
-      journey itself is as valuable as the finished product.
+      on patience, trial and error, and a fair share of troubleshooting.
+    </p>
+    <p>
+      There were certainly moments when things didn't work as expected,
+      requiring endurance and the determination to keep going. I quickly learned
+      that rushing through new concepts isn't the answer - allowing myself time
+      to dive in and truly understand the technology was essential. After all,
+      the journey itself is as valuable as the finished product.
     </p>
     <p>
       Of course, there were a few gray hairs earned along the way, but the happy
       moments, when everything finally worked as planned, made it all
       worthwhile. This project taught me that I can accomplish things I never
-      knew I was capable of. I've come to truly appreciate the ups and downs of
-      the development process, discovering strengths I didn't realize I had.
+      knew I was capable of.
     </p>
     <p>
       Through working on Hexify, I've gained a much deeper understanding of
       Figma and its API, and I'm excited to use this knowledge to create even
-      more plugins. Whether it's developing tools to streamline workflows or
+      more Plugins. Whether it's developing Tools to streamline workflows or
       experimenting just for the fun of it, I'm looking forward to exploring new
       ideas and pushing my skills even further.
     </p>
