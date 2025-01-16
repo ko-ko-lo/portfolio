@@ -76,10 +76,10 @@
         <strong>Organizes code efficiently</strong> by leveraging Figma layer
         names, groups, and hierarchies.
       </li>
-      <li class="mb-8">
+      <!--<li class="mb-8">
         <strong>Streamlines workflows</strong>, removing the need to repeatedly
         copy and format text.
-      </li>
+      </li>-->
       <li class="mb-8">
         <strong>Empowers to focus on creative and complex tasks</strong> instead
         of tedious data entry.
@@ -97,7 +97,7 @@
     <h2>2. Key Features and Algorithm Highlights</h2>
     <p>
       In JSONify, each Figma layer's name becomes a <strong>key</strong> in the
-      JSON output, and the text content within that layer becomes its
+      JSON Output, and the text content within that layer becomes its
       corresponding <strong>value</strong>. For example, a layer named "title"
       containing the text "Hello World!" would generate the JSON entry:
     </p>
@@ -108,7 +108,7 @@
       </strong>
     </p>
     <p>
-      This simple mapping keeps the JSON output organized and easy to use,
+      This simple mapping keeps the JSON Output organized and easy to use,
       directly reflecting the design's structure.
     </p>
 
@@ -117,7 +117,7 @@
       <li class="mb-16">
         <strong>Specific Layers with Prefixes are excluded:</strong><br />
         The prefix "exclude-" is used to skip layers that are not wanted in the
-        JSON output. This gives control over what gets exported.
+        JSON Output. This gives control over what gets exported.
       </li>
       <li class="mb-16">
         <strong>Auto Layout Layers are Ignored:</strong><br />
@@ -206,15 +206,13 @@
     <h3>Algorithm Highlights</h3>
     <p>
       At the heart of JSONify lies the
-      <strong>level-order traversal algorithm</strong> - a classic technique
-      commonly used to traverse trees and graphs. It felt natural to apply it
-      here, where traversing Figma's hierarchical layer structure is a core
-      requirement.
+      <strong>Level-Order Traversal Algorithm</strong> - a classic technique
+      commonly used to traverse trees and graphs.
     </p>
     <p class="mb-16">
-      The purpose of this algorithm is to ensure every layer in the Figma design
-      is visited in an orderly, level-by-level manner. By systematically
-      processing each layer, the plugin can:
+      The purpose of this Algorithm is to ensure every layer in the Figma
+      hierarchical layer structure is traversed in an orderly, level-by-level
+      manner. By systematically processing each layer, the Plugin can:
     </p>
     <ul>
       <li>Extract text content from layers and transform it into JSON.</li>
@@ -227,12 +225,12 @@
       </li>
     </ul>
     <p>
-      This algorithm is the <strong>engine of the plugin</strong>, enabling it
+      This Algorithm is the <strong>Engine of the Plugin</strong>, enabling it
       to handle complex Figma documents efficiently and accurately.
     </p>
     <h4>How It Works</h4>
     <p>
-      The algorithm starts at the root node of the selected layers and uses a
+      The Algorithm starts at the root node of the selected layers and uses a
       queue to traverse each node level by level. Here's a simplified code
       snippet demonstrating the process:
     </p>
@@ -253,11 +251,11 @@
       <li class="mb-16">
         <strong>Set Up Development Environment:</strong><br />Initialized the
         project with npm, configured TypeScript, and created the project
-        structure for the plugin.
+        structure for the Plugin.
       </li>
       <li class="mb-16">
-        <strong>Build Plugin UI:</strong><br />Designed the plugin's user
-        interface with HTML and CSS, ensuring a simple and user-friendly layout.
+        <strong>Build Plugin UI:</strong><br />Designed the Plugin's UI with
+        HTML and CSS, ensuring a clean and user-friendly layout.
       </li>
 
       <picture>
@@ -281,7 +279,7 @@
       </li>
       <li class="mb-16">
         <strong>Develop Core Functionality:</strong><br />
-        Built the level-order traversal algorithm to traverse through all
+        Built the Level-Order Traversal Algorithm to traverse through all
         selected Figma layers. Processed text layers, extracting their names and
         content to create JSON keys and values. Implemented rules to handle
         exclude- prefixes, ignore auto layout layers, and manage grouped layers
@@ -296,13 +294,14 @@
 
       <li class="mb-16">
         <strong>Testing and Debugging:</strong><br />Thoroughly tested the
-        plugin on various Figma files, ensuring it performs well with large and
-        complex documents.
+        Plugin on various Figma files.
+        <!--ensuring it performs well with large and
+        complex documents-->
       </li>
       <li class="mb-16">
         <strong>Final Review and Launch:</strong><br />Polished the code for
         readability and efficiency, created necessary assets, and published the
-        plugin to the Figma Community.
+        Plugin to the Figma Community.
       </li>
     </ul>
   </div>
@@ -332,16 +331,14 @@
   <div class="container-m m-middle">
     <h2>4. Reflections on the Creative Process</h2>
     <p>
-      When I first had the idea for JSONify, the level-order algorithm
-      immediately came to mind. Figma's layer structure, organized like a tree,
-      felt like the perfect real-world problem where this algorithm could shine.
-      From that starting point, I began to think about how to mirror this
-      hierarchical structure in the JSON output.
+      When I first had the idea for JSONify, the Level-Order Algorithm
+      immediately came to my mind. From that starting point, I began to think
+      about how to mirror Figma's hierarchical structure in the JSON Output.
     </p>
     <p>
       One of the first "aha!" moments was realizing I could use Figma layer
       names as keys for the JSON object. Since JavaScript objects are made of
-      key-value pairs, this approach allowed the plugin to seamlessly translate
+      key-value pairs, this approach allowed the Plugin to seamlessly translate
       Figma designs into structured data.
     </p>
     <p>
@@ -351,24 +348,16 @@
       exclude-.
     </p>
     <p>
-      Groups presented another challenge. To handle arrays in the JSON output, I
+      Groups presented another challenge. To handle arrays in the JSON Output, I
       decided that grouped layers in Figma would act as arrays in the exported
       data. However, I also needed a way to process multi-line text as arrays,
       particularly for bullet point lists. That's when the idea to use \n (line
       breaks) as a delimiter likely emerged.
     </p>
-    <h3>Looking Ahead</h3>
     <p>
-      Developing JSONify was a rewarding process, especially as I watched the
-      pieces come together to solve real-world problems. Finding solutions for
-      each challenge along the way was both fun and satisfying - and even more
-      so when everything worked as planned.
-    </p>
-    <p>
-      While the plugin meets my current needs, I look forward to using it
-      regularly and perhaps gathering feedback from others over time. With user
-      insights, I might refine its functionality and continue to learn from the
-      creative process.
+      While the Plugin meets my current needs, I look forward to using it
+      regularly and gathering feedback from others over time. With user
+      insights, I might refine its functionality.
     </p>
   </div>
 </section>
