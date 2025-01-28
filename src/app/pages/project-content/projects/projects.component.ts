@@ -13,6 +13,6 @@ import { ProjectCardComponent } from '../../../components/project-card/project-c
 export class ProjectsComponent {
   title: string = 'Where Ideas Become Reality: My Projects';
   text: string[] = [
-    "Here, you'll find a collection of the projects that reflect my journey as a designer, developer and problem-solver. Each project represents a unique challenge, blending creativity, design and technical development to bring ideas to life.",
+    "Here, you'll discover a collection of projects that reflect my journey as a Software Developer, Designer, and Problem-solver. Each project holds a story of creativity and care, where thoughtful design and technical craftsmanship come together to bring ideas to life.",
   ];
 }

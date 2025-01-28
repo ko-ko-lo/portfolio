@@ -10,7 +10,7 @@ export class ProjectTeaserService {
       id: 1,
       title: 'Hexify Plugin: Seamlessly Bring Figma Colors to Code',
       teaser:
-        'After repeatedly transferring color collections manually from Figma to SCSS, I developed this plugin to streamline the process. Hexify extracts color variables directly from Figma collections, converting them into hex values and generating SCSS, CSS, or JSON files.',
+        'Tired of manually transferring Color Collections from Figma to SCSS, I created Hexify to streamline the process. It extracts color variables from Figma and converts them into hex values, generating SCSS, CSS, or JSON files to save time and simplify the design-to-code workflow.',
       image: 'projects/hexify-teaser.jpg',
       link: 'figma-plugin-hexify',
       absoluteLink: 'projects/figma-plugin-hexify',
@@ -19,7 +19,7 @@ export class ProjectTeaserService {
       id: 2,
       title: 'JSONify Plugin: Export Text into Structured JSON Data',
       teaser:
-        'While working on my yoga web application, I got tired of manually copying text from Figma. So I created a plugin to simplify the process. JSONify exports text content directly from selected Figma layers into a structured JSON file.',
+        'While building my yoga web application, I found myself frustrated with manually copying text from Figma. To make things easier, I developed JSONify—a plugin that exports text content directly from selected Figma layers into a clean, structured JSON file.',
       image: 'projects/jsonify.jpg',
       link: 'figma-plugin-jsonify',
       absoluteLink: 'projects/figma-plugin-jsonify',
