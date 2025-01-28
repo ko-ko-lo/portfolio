@@ -12,7 +12,7 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 export class YogaApplicationComponent {
   title: string = 'Bringing Yoga to Life: My Heart Project';
   text: string[] = [
-    'This project represents the culmination of my personal journey through Yoga, Art, Design and Development. Having practiced yoga for many years and completed both Traditional and Yin Yoga Teacher Trainings, I found that yoga provided not only physical benefits but also a space for self-reflection, healing, and growth. I wanted to create something that reflected my passion for yoga while also leveraging my skills in UX/UI Design, Illustration and Software Development.',
+    'This project combines the principles of yoga with thoughtful design and technology to create a space for growth, learning, and self-reflection. Inspired by years of yoga practice and teacher training, it is designed to share the transformative benefits of yoga and provide others with tools to explore, heal, and grow.',
   ];
 
   codeSnippet: string = `
