@@ -9,12 +9,13 @@ html {
 }
 
 body {
+  background-color: variables.$background-color;
   font-family: "Lato", sans-serif;
   font-weight: variables.$font-weight-regular;
   line-height: variables.$lineheight-m;
   margin: 0;
   padding: 0;
-  color: variables.$color-brown-900;
+  color: variables.$color-neutral-50;
 }
 
 .container,
@@ -61,7 +62,6 @@ h2,
 h3,
 h4 {
   font-weight: variables.$font-weight-bold;
-  color: variables.$color-brown-800;
   line-height: variables.$lineheight-s;
 }
 
@@ -110,46 +110,47 @@ cite {
 // Link Styles
 // ========================================================================
 a {
-  color: variables.$color-blue-700;
+  color: variables.$color-berry-100;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    color: variables.$color-blue-500;
+    color: variables.$color-berry-200;
     cursor: pointer;
   }
 
   &:visited,
   &:active {
-    color: variables.$color-blue-600;
+    color: variables.$color-berry-200;
   }
 }
 
 // ========================================================================
 // Button Styles
 // ========================================================================
-button {
+button,
+.button {
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   font-size: 0.88rem;
   font-weight: variables.$font-weight-regular;
   padding: variables.$spacing-unit-small * 7 variables.$spacing-unit-large * 4;
   text-transform: uppercase;
-  background-color: variables.$color-blue-800;
-  color: variables.$color-neutral-50;
+  background-color: variables.$color-berry-200;
+  color: variables.$color-berry-950;
   border: none;
-  border-radius: variables.$radius-s;
+  border-radius: variables.$radius-full;
   cursor: pointer;
   box-shadow: variables.$elevation-xs;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: variables.$color-blue-600;
+    background-color: variables.$color-berry-300;
   }
 
   &:focus {
-    background-color: variables.$color-blue-700;
-    outline: 2px solid variables.$color-blue-900;
+    background-color: variables.$color-berry-200;
+    outline: 2px solid variables.$color-berry-300;
   }
 }
 
