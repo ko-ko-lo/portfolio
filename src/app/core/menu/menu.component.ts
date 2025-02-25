@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-menu',
@@ -12,18 +13,27 @@ import { Router, RouterModule } from '@angular/router';
 export class MenuComponent implements OnInit {
   menuOpen = false;
 
+  menuItems: { label: string; link: string }[] = [
+    { label: 'Projects', link: '/projects' },
+    { label: 'Blog', link: '/blog' },
+    { label: 'About Me', link: '/about-me' },
+    { label: 'Art', link: '/art' },
+  ];
+
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Subscribe to route changes and update menu state
+    this.router.events.pipe(filter((event) => event instanceof NavigationEnd));
+  }
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
     document.body.classList.toggle('no-scroll', this.menuOpen);
   }
 
-  // Close the menu when navigating via the logo
   closeMenuAndNavigate(): void {
     this.menuOpen = false;
-    this.router.navigate(['/']);
+    document.body.classList.remove('no-scroll'); // Re-enable scrolling
   }
 }
