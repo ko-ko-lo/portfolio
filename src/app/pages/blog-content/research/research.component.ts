@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-research',
   standalone: true,
-  imports: [RouterModule, IntroComponent],
+  imports: [RouterModule, IntroComponent, DividerComponent],
   templateUrl: './research.component.html',
   styleUrl: './research.component.scss',
 })

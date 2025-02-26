@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ReflectionsService } from '../../services/reflections.service';
+import { DividerComponent } from '../divider/divider.component';
 
 @Component({
   selector: 'app-content-reflections',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DividerComponent],
   templateUrl: './content-reflections.component.html',
   styleUrl: './content-reflections.component.scss',
 })

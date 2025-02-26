@@ -1,8 +1,14 @@
-<section class="mt-80 mb-64">
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/projects" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Back
+  </a>
+</nav>
+
+<section class="mb-64">
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
-<section class="container-m pb-80 m-middle">
+<section class="container-m m-middle">
   <picture>
     <source srcset="projects/hexify-teaser.webp" type="image/webp" />
     <img
@@ -13,28 +19,36 @@
   </picture>
 </section>
 
-<section class="bg-medium-blue bluebox text-center">
-  <div class="container-l">
-    <h2>Main Technical Tools</h2>
-    <div class="d-flex flex-wrap gap-32">
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Design &amp; API</h3>
-        <p>Figma Design, Figma API</p>
-      </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Core Web Technologies</h3>
-        <p>JavaScript, TypeScript, CSS, HTML</p>
-      </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Build &amp; Module Bundling</h3>
-        <p>Webpack</p>
-      </div>
+<app-divider></app-divider>
+
+<section class="text-center container-l technical-tools">
+  <h2>Main Technical Tools</h2>
+  <div class="d-flex flex-wrap gap-32">
+    <div
+      class="box-1 flex-wrap justify-between gap-32 border-standard radius-l"
+    >
+      <h3>Design &amp; API</h3>
+      <p>Figma Design, Figma API</p>
+    </div>
+    <div
+      class="box-1 flex-wrap justify-between gap-32 border-standard radius-l"
+    >
+      <h3>Core Web Technologies</h3>
+      <p>JavaScript, TypeScript, CSS, HTML</p>
+    </div>
+    <div
+      class="box-1 flex-wrap justify-between gap-32 border-standard radius-l"
+    >
+      <h3>Build &amp; Module Bundling</h3>
+      <p>Webpack</p>
     </div>
   </div>
 </section>
 
+<app-divider></app-divider>
+
 <section class="text-center m-middle container-m link-to-project">
-  <h2 class="mt-80">Explore Hexify on Figma Community</h2>
+  <h2>Explore Hexify on Figma Community</h2>
   <p class="mb-32 container">
     Take a peek at the product page to learn more and maybe see Hexify in
     action!
@@ -51,7 +65,9 @@
   </a>
 </section>
 
-<section class="table-contents bg-light-brown ptb-80 mt-80">
+<app-divider></app-divider>
+
+<section class="table-contents mt-80">
   <div class="container-m m-middle text-center">
     <h2>Table of Contents</h2>
     <h3>
@@ -70,7 +86,9 @@
   </div>
 </section>
 
-<section id="section1" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section1">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
     <p>
@@ -85,7 +103,9 @@
   </div>
 </section>
 
-<section id="section2" class="bg-light-blue ptb-80">
+<app-divider></app-divider>
+
+<section id="section2">
   <div class="container-m m-middle">
     <h2>2. Architecture</h2>
     <p class="mb-16">
@@ -154,7 +174,9 @@
   </div>
 </section>
 
-<section id="section3" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section3">
   <div class="container-m m-middle">
     <h2>3. Visual Design &amp; User Flow</h2>
 
@@ -178,7 +200,7 @@
             <img
               src="projects/hexify-start.png"
               alt=""
-              class="elevation-xs radius-m"
+              class="elevation-xs radius-l border-standard"
             />
           </picture>
           <figcaption>Starting Hexify</figcaption>
@@ -191,7 +213,7 @@
             <img
               src="projects/hexify-dropdown.png"
               alt=""
-              class="box elevation-xs radius-m"
+              class="box elevation-xs radius-l border-standard"
             />
           </picture>
           <figcaption>Dropdown Selection</figcaption>
@@ -208,7 +230,7 @@
             <img
               src="projects/hexify-no-collection.png"
               alt=""
-              class="box elevation-xs radius-m"
+              class="box elevation-xs radius-l border-standard"
             />
           </picture>
           <figcaption>No collections available</figcaption>
@@ -291,7 +313,9 @@
   </div>
 </section>
 
-<section id="section4" class="bg-light-blue ptb-80">
+<app-divider></app-divider>
+
+<section id="section4">
   <div class="container-m m-middle">
     <h2>4. Development Insights</h2>
     <p class="mb-32">
@@ -395,7 +419,9 @@
   </div>
 </section>
 
-<div class="ptb-80 bg-light-brown-100">
+<app-divider></app-divider>
+
+<div>
   <div class="text-center m-middle container-m link-to-project">
     <h2>Explore the full Source Code on GitHub</h2>
     <p class="mb-32">
@@ -415,7 +441,9 @@
   </div>
 </div>
 
-<section id="section5" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section5">
   <div class="container-m m-middle">
     <h2>5. Reflections &amp; Future Plans</h2>
     <p>Developing Hexify has been a journey of both challenges and rewards.</p>

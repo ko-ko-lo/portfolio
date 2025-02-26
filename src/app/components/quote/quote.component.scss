@@ -1,7 +1,5 @@
 @use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
 
-blockquote,
-cite {
-  color: variables.$color-neutral-50;
+.border-standard {
+  padding-bottom: variables.$spacing-unit-large * 7;
 }

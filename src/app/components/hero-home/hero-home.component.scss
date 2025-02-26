@@ -1,0 +1,16 @@
+@use "../../../styles/variables" as variables;
+@use "../../../styles/utilities" as utilities;
+
+.intro {
+  font-size: variables.$font-size-28;
+}
+section {
+  text-align: center;
+}
+
+img {
+  max-width: 580px;
+  width: 100%;
+  height: auto;
+  display: block;
+}

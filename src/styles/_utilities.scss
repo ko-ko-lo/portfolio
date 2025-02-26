@@ -36,65 +36,6 @@
 }
 
 // ========================================================================
-// Background Colors
-// ========================================================================
-.bg-white {
-  background-color: variables.$color-neutral-50;
-}
-
-.bg-light-blue {
-  background-color: variables.$bg-light-blue;
-}
-
-.bg-light-brown {
-  background-color: variables.$bg-light-brown;
-}
-
-.bg-light-brown-100 {
-  background-color: variables.$bg-light-brown-100;
-}
-
-.bg-light-berry {
-  background-color: variables.$bg-light-berry;
-}
-
-.bg-light-neutral {
-  background-color: variables.$bg-light-neutral;
-}
-
-.bg-medium-blue {
-  background-color: variables.$bg-medium-blue;
-}
-
-.bg-medium-brown {
-  background-color: variables.$bg-medium-brown;
-}
-
-.bg-medium-berry {
-  background-color: variables.$bg-medium-berry;
-}
-
-.bg-dark-neutral {
-  background-color: variables.$bg-dark-neutral;
-}
-
-// ========================================================================
-// Background Colors
-// ========================================================================
-
-.medium-berry {
-  color: variables.$color-berry-600;
-}
-
-.medium-blue {
-  color: variables.$color-blue-600;
-}
-
-.medium-brown {
-  color: variables.$color-brown-600;
-}
-
-// ========================================================================
 // Flex Utilities
 // ========================================================================
 .flex-row {
@@ -159,6 +100,10 @@
   margin-bottom: variables.$spacing-unit-large * 4;
 }
 
+.mb-40 {
+  margin-bottom: variables.$spacing-unit-large * 5;
+}
+
 .mb-48 {
   margin-bottom: variables.$spacing-unit-large * 6;
 }
@@ -195,12 +140,28 @@
   margin-top: variables.$spacing-unit-large;
 }
 
+.mt-24 {
+  margin-top: variables.$spacing-unit-large * 3;
+}
+
+.mt-40 {
+  margin-top: variables.$spacing-unit-large * 5;
+}
+
 .mt-48 {
   margin-top: variables.$spacing-unit-large * 6;
 }
 
+.mt-64 {
+  margin-top: variables.$spacing-unit-large * 8;
+}
+
 .mt-80 {
   margin-top: variables.$spacing-unit-large * 10;
+}
+
+.mt-88 {
+  margin-top: variables.$spacing-unit-large * 11;
 }
 
 .mt-120 {

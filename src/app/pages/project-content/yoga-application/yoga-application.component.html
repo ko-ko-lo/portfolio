@@ -1,27 +1,23 @@
-<section class="mt-80 mb-80">
-  <app-intro [title]="title" [text]="text"></app-intro>
-</section>
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/projects" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Back
+  </a>
+</nav>
 
-<section class="container-l d-flex gap-32 pb-80">
-  <div
-    class="box-1 flex-wrap justify-between gap-32 bg-light-blue radius-l pd-16"
-  >
+<section class="container-l d-flex gap-32 mb-80">
+  <div class="background box-1 flex-wrap justify-between gap-32 radius-l pd-16">
     <picture>
       <source srcset="projects/meditation.webp" type="image/webp" />
       <img src="projects/meditation.png" alt="" />
     </picture>
   </div>
-  <div
-    class="box-1 flex-wrap justify-between gap-32 bg-light-blue radius-l pd-16"
-  >
+  <div class="background box-1 flex-wrap justify-between gap-32 radius-l pd-16">
     <picture>
       <source srcset="projects/bananasana.webp" type="image/webp" />
       <img src="projects/bananasana.png" alt="" />
     </picture>
   </div>
-  <div
-    class="box-1 flex-wrap justify-between gap-32 bg-light-blue radius-l pd-16"
-  >
+  <div class="background box-1 flex-wrap justify-between gap-32 radius-l pd-16">
     <picture>
       <source srcset="projects/toe-squat.webp" type="image/webp" />
       <img src="projects/toe-squat.png" alt="" />
@@ -29,41 +25,49 @@
   </div>
 </section>
 
-<section class="bg-medium-blue bluebox text-center">
+<h1 class="text-center container-l mb-48">
+  A Digital Space for Yin-Style Yoga, Meditation & Breathwork
+</h1>
+
+<a href="https://openstillness.com" target="_blank" rel="noopener noreferrer">
+  <button class="link d-flex align-items m-middle">
+    Go to Application
+    <span class="material-icons" aria-hidden="true">open_in_new</span>
+  </button>
+</a>
+
+<app-divider></app-divider>
+
+<section class="text-center">
   <div class="container-l">
     <h2>Technical Tools used</h2>
     <div class="d-flex flex-wrap gap-32">
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Design Tools</h3>
-        <p>Figma for UIs, Procreate for Illustrations</p>
+      <div
+        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
+      >
+        <h3>Web Technologies</h3>
+        <p>TypeScript, SCSS and HTML</p>
       </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
+
+      <div
+        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
+      >
         <h3>Frontend Framework</h3>
         <p>Angular for Component-based Development</p>
       </div>
-      <div class="box-1 flex-wrap justify-between gap-32">
-        <h3>Web Technologies</h3>
-        <p>TypeScript, SCSS and HTML</p>
+      <div
+        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
+      >
+        <h3>Design Tools</h3>
+        <p>Figma for UIs, Procreate for Illustrations</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="text-center m-middle container-m link-to-project">
-  <h2 class="mt-80">Explore the Yin-Style Yoga Application</h2>
-  <p class="mb-32 container">
-    If you'd like to explore the application in real life, simply click the
-    button.
-  </p>
-  <a href="https://openstillness.com" target="_blank" rel="noopener noreferrer">
-    <button class="link d-flex align-items m-middle">
-      Go to Application
-      <span class="material-icons" aria-hidden="true">open_in_new</span>
-    </button>
-  </a>
-</section>
+<app-divider></app-divider>
 
-<section class="table-contents bg-light-brown ptb-80 mt-80">
+<section class="table-contents">
   <div class="container-m m-middle text-center">
     <h2>Table of Contents</h2>
     <h3>
@@ -78,7 +82,9 @@
   </div>
 </section>
 
-<section id="section1" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section1 ">
   <div class="container-m m-middle">
     <h2>1. Planning and Technology Stack</h2>
     <h3>Project Scope and Goals</h3>
@@ -127,8 +133,8 @@
   </div>
 </section>
 
-<section class="bg-light-berry ptb-80">
-  <div class="container-m m-middle">
+<section class="container-m m-middle">
+  <div class="border-standard radius-l mt-48 toolbox">
     <h3>Summary: Planning and Technology Stack</h3>
     <p>
       The Yin-Style Yoga Application is designed as a platform featuring a Yoga
@@ -144,7 +150,9 @@
   </div>
 </section>
 
-<section id="section2" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section2">
   <div class="container-m m-middle">
     <h2>2. UX/UI Design Process</h2>
     <h3>Research and Discovery Phase</h3>
@@ -409,7 +417,7 @@
     </figure>
     <h3>Prototyping and Testing</h3>
 
-    <p class="border-left">
+    <p class="border-left mb-48">
       If you're interested in learning how I conduct Usability Testing and how
       it can improve the user experience, you can read an article I wrote on the
       topic here:
@@ -420,8 +428,8 @@
   </div>
 </section>
 
-<section class="bg-light-berry ptb-80">
-  <div class="container-m m-middle">
+<section class="container-m m-middle">
+  <div class="border-standard radius-l mt-48 toolbox">
     <h3>Summary: UX/UI Process</h3>
     <p>
       The UX/UI Design Process for the Yin-Style Yoga App began with a thorough
@@ -435,7 +443,9 @@
   </div>
 </section>
 
-<section id="section3" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section3">
   <div class="container-m m-middle">
     <h2>3. Development Process</h2>
     <p>
@@ -548,7 +558,7 @@
       features like dynamic routing, filtering components, and responsive design
       were functioning correctly across various environments.
     </p>
-    <p>
+    <p class="mb-48">
       As I continue to grow my development skills, I look forward to refining
       this workflow further by incorporating additional best practices like
       automated testing and continuous integration.
@@ -556,28 +566,8 @@
   </div>
 </section>
 
-<section class="ptb-80 bg-light-brown-100">
-  <div class="text-center m-middle container-m link-to-project">
-    <h2>Explore the full Source Code on GitHub</h2>
-    <p class="mb-32">
-      If you're interested in exploring the code and seeing how the project was
-      built in detail, feel free to visit the GitHub repository.
-    </p>
-    <a
-      href="https://github.com/ko-ko-lo/kokolo-yoga"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button class="link d-flex align-items m-middle">
-        Go to Repository
-        <span class="material-icons" aria-hidden="true">open_in_new</span>
-      </button>
-    </a>
-  </div>
-</section>
-
-<section class="bg-light-berry ptb-80">
-  <div class="container-m m-middle">
+<section class="container-m m-middle">
+  <div class="border-standard radius-l mt-48 toolbox">
     <h3>Summary: Development Process</h3>
     <p>
       The Development Process for the Yin-Style Yoga Application focused on
@@ -589,7 +579,31 @@
   </div>
 </section>
 
-<section id="section4" class="ptb-80">
+<app-divider></app-divider>
+
+<section>
+  <div class="text-center m-middle container-m link-to-project">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/open-stillness"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section id="section4">
   <div class="container-m m-middle">
     <h2>4. Future Plans</h2>
     <p>
@@ -641,8 +655,8 @@
   </div>
 </section>
 
-<section class="bg-light-berry ptb-80">
-  <div class="container-m m-middle">
+<section class="container-m m-middle">
+  <div class="border-standard radius-l mt-48 toolbox">
     <h3>Summary: Future Plans</h3>
     <p>
       Looking ahead, the Yin-Style Yoga Application will continue to grow with
@@ -655,7 +669,9 @@
   </div>
 </section>
 
-<section id="section5" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section5">
   <div class="container-m m-middle">
     <h2>5. Final Reflections</h2>
     <p>
@@ -740,8 +756,8 @@
   </div>
 </section>
 
-<section class="bg-light-berry ptb-80">
-  <div class="container-m m-middle">
+<section class="container-m m-middle">
+  <div class="border-standard radius-l mt-48 toolbox">
     <h3>Summary: Final Reflections</h3>
     <p>
       Working on the Yin-Style Yoga web application has been a profoundly
@@ -754,11 +770,4 @@
       elegant solutions.
     </p>
   </div>
-</section>
-
-<section class="container-m m-middle text-center ptb-80">
-  <blockquote>
-    "Life is like riding a bicycle. To keep your balance, you must keep moving."
-  </blockquote>
-  <cite>Albert Einstein</cite>
 </section>

@@ -1,15 +1,23 @@
-<section class="mt-80 mb-64">
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/projects" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Back
+  </a>
+</nav>
+
+<section class="mb-64">
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
-<section class="container-m pb-80 m-middle">
+<section class="container-m m-middle">
   <picture>
     <source srcset="projects/jsonify.webp" type="image/webp" />
     <img src="projects/jsonify.jpg" alt="" class="radius-l elevation-xs" />
   </picture>
 </section>
 
-<section class="bg-medium-blue bluebox text-center">
+<app-divider></app-divider>
+
+<section class="text-center">
   <div class="container-l">
     <h2>Core Technologies</h2>
     <div class="d-flex flex-wrap gap-32">
@@ -19,6 +27,8 @@
     </div>
   </div>
 </section>
+
+<app-divider></app-divider>
 
 <section class="text-center m-middle container-m link-to-project">
   <h2 class="mt-80">Explore JSONify on Figma Community</h2>
@@ -33,11 +43,14 @@
   >
     <button class="link d-flex align-items m-middle">
       Explore JSONify
-      <span class="material-icons" aria-hidden="true">open_in_new</span>
+      <span class="material-icons" aria-hidden="true"> open_in_new</span>
     </button>
   </a>
 </section>
-<section class="table-contents bg-light-brown ptb-80 mt-80">
+
+<app-divider></app-divider>
+
+<section class="table-contents">
   <div class="container-m m-middle text-center">
     <h2>Table of Contents</h2>
     <h3>
@@ -59,40 +72,45 @@
   </div>
 </section>
 
-<section id="section1" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section1">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
-    <p class="mb-16">
+    <p class="mb-48">
       JSONify is designed to simplify workflows by automating the conversion of
       text content into structured JSON files. It eliminates repetitive tasks,
       allowing to focus on more impactful and challenging aspects of projects.
     </p>
-    <ul>
-      <li class="mb-8">
-        <strong>Automates text extraction and JSON creation</strong>, saving
-        time and reducing manual errors.
-      </li>
-      <li class="mb-8">
-        <strong>Organizes code efficiently</strong> by leveraging Figma layer
-        names, groups, and hierarchies.
-      </li>
-      <!--<li class="mb-8">
-        <strong>Streamlines workflows</strong>, removing the need to repeatedly
-        copy and format text.
-      </li>-->
-      <li class="mb-8">
-        <strong>Empowers to focus on creative and complex tasks</strong> instead
-        of tedious data entry.
-      </li>
-      <li class="mb-8">
-        <strong>Enhances the design-to-development handoff</strong> with a tool
-        built for structure and clarity.
-      </li>
-    </ul>
+
+    <app-list
+      headline="How JSONify simplifies the Workflow"
+      [tools]="[
+        {
+          name: 'Automates text extraction and JSON creation',
+          description: ', saving time and reducing manual errors.'
+        },
+        {
+          name: 'Organizes code efficiently',
+          description:
+            ' by leveraging Figma layer names, groups, and hierarchies.'
+        },
+        {
+          name: 'Empowers to focus on creative and complex tasks',
+          description: ' instead of tedious data entry.'
+        },
+        {
+          name: 'Enhances the design-to-development handoff',
+          description: ' with a tool built for structure and clarity.'
+        }
+      ]"
+    ></app-list>
   </div>
 </section>
 
-<section id="section2" class="bg-light-blue ptb-80">
+<app-divider></app-divider>
+
+<section id="section2">
   <div class="container-m m-middle">
     <h2>2. Key Features and Algorithm Highlights</h2>
     <p>
@@ -242,7 +260,9 @@
   </div>
 </section>
 
-<section id="section3" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section3">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
 
@@ -295,8 +315,6 @@
       <li class="mb-16">
         <strong>Testing and Debugging:</strong><br />Thoroughly tested the
         Plugin on various Figma files.
-        <!--ensuring it performs well with large and
-        complex documents-->
       </li>
       <li class="mb-16">
         <strong>Final Review and Launch:</strong><br />Polished the code for
@@ -307,27 +325,29 @@
   </div>
 </section>
 
-<div class="ptb-80 bg-light-brown-100">
-  <div class="text-center m-middle container-m link-to-project">
-    <h2>Explore the full Source Code on GitHub</h2>
-    <p class="mb-32">
-      If you're interested in exploring the code and seeing how the project was
-      built in detail, feel free to visit the GitHub repository.
-    </p>
-    <a
-      href="https://github.com/ko-ko-lo/figma-json-export"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button class="link d-flex align-items m-middle">
-        Go to Repository
-        <span class="material-icons" aria-hidden="true">open_in_new</span>
-      </button>
-    </a>
-  </div>
+<app-divider></app-divider>
+
+<div class="text-center m-middle container-m link-to-project">
+  <h2>Explore the full Source Code on GitHub</h2>
+  <p class="mb-32">
+    If you're interested in exploring the code and seeing how the project was
+    built in detail, feel free to visit the GitHub repository.
+  </p>
+  <a
+    href="https://github.com/ko-ko-lo/figma-json-export"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button class="link d-flex align-items m-middle">
+      Go to Repository
+      <span class="material-icons" aria-hidden="true">open_in_new</span>
+    </button>
+  </a>
 </div>
 
-<section id="section4" class="bg-light-blue ptb-80">
+<app-divider></app-divider>
+
+<section id="section4">
   <div class="container-m m-middle">
     <h2>4. Reflections on the Creative Process</h2>
     <p>
@@ -362,7 +382,9 @@
   </div>
 </section>
 
-<section id="section3" class="ptb-80">
+<app-divider></app-divider>
+
+<section id="section3">
   <div class="container-m m-middle">
     <h2>
       <span class="medium-brown">&#123;</span><br />

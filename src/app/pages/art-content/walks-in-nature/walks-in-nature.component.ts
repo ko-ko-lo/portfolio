@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { DividerComponent } from '../../../components/divider/divider.component';
 
 @Component({
   selector: 'app-walks-in-nature',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, DividerComponent],
   templateUrl: './walks-in-nature.component.html',
   styleUrl: './walks-in-nature.component.scss',
 })
