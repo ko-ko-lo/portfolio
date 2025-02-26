@@ -11,7 +11,7 @@ html {
 body {
   background-color: variables.$background-color;
   font-family: "Lato", sans-serif;
-  font-weight: variables.$font-weight-regular;
+  font-weight: variables.$font-weight-light;
   line-height: variables.$lineheight-m;
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ figure {
 
 figcaption {
   padding-top: variables.$spacing-unit-large * 2;
-  color: variables.$color-neutral-700;
+  color: variables.$color-neutral-100;
   font-size: 0.78rem;
   text-align: center;
 }
@@ -54,6 +54,10 @@ figcaption {
   animation: fadeIn variables.$fade-duration variables.$fade-ease forwards;
 }
 
+.border-standard {
+  border: 1px solid variables.$color-neutral-400;
+}
+
 // ========================================================================
 // Typography
 // ========================================================================
@@ -61,19 +65,19 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: variables.$font-weight-bold;
   line-height: variables.$lineheight-s;
+  font-weight: variables.$font-weight-regular;
 }
 
 h1 {
   font-size: 3.06rem;
-  margin: 0 0 1.77rem;
+  margin: 0 0 variables.$spacing-unit-large * 5;
   text-align: center;
 }
 
 h2 {
   font-size: 2.44rem;
-  margin: 0 0 1.77rem;
+  margin: 0 0 variables.$spacing-unit-large * 5;
 }
 
 h3 {
@@ -106,6 +110,25 @@ cite {
   font-size: variables.$font-size-32;
 }
 
+.breadcrumb {
+  font-size: variables.$font-size-14;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 6%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.material-icons {
+  font-size: variables.$spacing-unit-small * 9;
+}
+
+a.breadcrumb:hover {
+  text-decoration: none;
+  color: variables.$color-berry-100;
+}
+
 // ========================================================================
 // Link Styles
 // ========================================================================
@@ -114,7 +137,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: variables.$color-berry-200;
     cursor: pointer;
   }
@@ -133,7 +156,7 @@ button,
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   font-size: 0.88rem;
-  font-weight: variables.$font-weight-regular;
+  font-weight: variables.$font-weight-bold;
   padding: variables.$spacing-unit-small * 7 variables.$spacing-unit-large * 4;
   text-transform: uppercase;
   background-color: variables.$color-berry-200;
@@ -146,12 +169,19 @@ button,
 
   &:hover {
     background-color: variables.$color-berry-300;
+    text-decoration: none;
+    border-radius: variables.$radius-l;
   }
 
   &:focus {
     background-color: variables.$color-berry-200;
     outline: 2px solid variables.$color-berry-300;
   }
+}
+
+a.button {
+  display: inline-block;
+  color: variables.$color-berry-950;
 }
 
 // ========================================================================
@@ -179,9 +209,9 @@ ul li:not(:last-child) {
   box-sizing: border-box;
 }
 
-.toolbox {
+.toolbox,
+.my-quote {
   padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4;
-  color: variables.$color-neutral-50;
 }
 
 .toolbox h3 {
@@ -190,23 +220,31 @@ ul li:not(:last-child) {
 }
 
 #card img {
-  max-height: 250px;
-  box-shadow: variables.$elevation-s;
+  max-height: 300px;
 }
 
-#card .padding {
-  padding: variables.$spacing-unit-large * 3 variables.$spacing-unit-large * 3
-    variables.$spacing-unit-large * 8;
+#art-card img,
+#card img {
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
 }
 
-#card a {
-  color: variables.$color-blue-900;
-  background-color: variables.$color-blue-100;
+#card h3,
+#art-card h3 {
+  padding: variables.$spacing-unit-small variables.$spacing-unit-large * 3
+    variables.$spacing-unit-large * 5;
 }
 
-#card a:hover {
+#card a,
+#art-card a {
+  color: variables.$font-color-body;
+  background-color: variables.$footer-background;
+}
+
+#card a:hover,
+#art-card a:hover {
   text-decoration: none;
-  background-color: variables.$color-blue-50;
+  background-color: variables.$color-berry-800;
   transition: background-color 0.3s ease;
 }
 

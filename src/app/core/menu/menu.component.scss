@@ -1,12 +1,15 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
 
+header {
+  background-color: variables.$footer-background;
+}
+
 .navbar {
   padding: variables.$spacing-unit-small * 6 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: variables.$footer-background;
 }
 
 .navbar ul,
@@ -14,7 +17,7 @@
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 6%;
-  font-weight: variables.$font-weight-regular;
+  font-weight: variables.$font-weight-light;
 }
 
 ul {
@@ -46,7 +49,7 @@ ul {
           bottom: -26px;
           width: 100%;
           border-radius: variables.$radius-m;
-          height: 3px;
+          height: 4px;
           background-color: variables.$color-berry-300;
         }
       }

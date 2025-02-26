@@ -1,2 +1,5 @@
 @use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+
+.border-standard {
+  padding-bottom: variables.$spacing-unit-large * 7;
+}

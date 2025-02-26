@@ -1,18 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CollageYogaComponent } from '../../../components/collage-yoga/collage-yoga.component';
+import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [RouterModule, IntroComponent, ProjectCardComponent],
+  imports: [
+    RouterModule,
+    IntroComponent,
+    ProjectCardComponent,
+    DividerComponent,
+    CollageYogaComponent,
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  title: string = 'Where Ideas Become Reality: My Projects';
+  title: string = 'Where Ideas Take Shape: My Projects';
   text: string[] = [
-    "Here, you'll discover a collection of projects that reflect my journey as a Software Developer, Designer, and Problem-solver. Each project holds a story of creativity and care, where thoughtful design and technical craftsmanship come together to bring ideas to life.",
+    'Welcome to my collection of projects, a reflection of my journey as a Software Developer, Designer, and Problem-Solver. Each piece is created with care, curiosity, and creativity, where thoughtful design and technical craftsmanship come together to shape meaningful experiences.',
   ];
 }

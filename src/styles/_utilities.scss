@@ -100,6 +100,10 @@
   margin-bottom: variables.$spacing-unit-large * 4;
 }
 
+.mb-40 {
+  margin-bottom: variables.$spacing-unit-large * 5;
+}
+
 .mb-48 {
   margin-bottom: variables.$spacing-unit-large * 6;
 }
@@ -136,12 +140,28 @@
   margin-top: variables.$spacing-unit-large;
 }
 
+.mt-24 {
+  margin-top: variables.$spacing-unit-large * 3;
+}
+
+.mt-40 {
+  margin-top: variables.$spacing-unit-large * 5;
+}
+
 .mt-48 {
   margin-top: variables.$spacing-unit-large * 6;
 }
 
+.mt-64 {
+  margin-top: variables.$spacing-unit-large * 8;
+}
+
 .mt-80 {
   margin-top: variables.$spacing-unit-large * 10;
+}
+
+.mt-88 {
+  margin-top: variables.$spacing-unit-large * 11;
 }
 
 .mt-120 {

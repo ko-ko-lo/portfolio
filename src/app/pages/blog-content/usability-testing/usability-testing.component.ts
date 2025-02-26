@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { ListComponent } from '../../../components/list/list.component';
 
 @Component({
   selector: 'app-usability-testing',
   standalone: true,
-  imports: [RouterModule, IntroComponent],
+  imports: [RouterModule, IntroComponent, DividerComponent, ListComponent],
   templateUrl: './usability-testing.component.html',
   styleUrl: './usability-testing.component.scss',
 })

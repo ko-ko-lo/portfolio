@@ -55,21 +55,7 @@ $color-berry-900: #1d0721;
 $color-berry-950: #0f0411;
 
 // Background Colors
-$bg-light-brown: $color-brown-50;
-$bg-light-blue: $color-blue-50;
-$bg-light-berry: $color-berry-50;
-$bg-light-neutral: $color-neutral-100;
-
-$bg-light-brown-100: $color-brown-100;
-
-$bg-medium-brown: $color-brown-700;
-$bg-medium-blue: $color-blue-800;
-$bg-medium-berry: $color-berry-700;
-
-$bg-dark-neutral: $color-neutral-800;
-
 $background-color: $color-berry-950;
-
 $footer-background: $color-berry-900;
 
 // ========================================================================
@@ -94,6 +80,9 @@ $lineheight-s: 1.2;
 $lineheight-m: 1.5;
 $lineheight-l: 1.6;
 $lineheight-xl: 1.8;
+
+// Font Color
+$font-color-body: #ffffff;
 
 // ========================================================================
 // Spacing
@@ -121,6 +110,7 @@ $radius-s: $spacing-unit-small * 2;
 $radius-m: $spacing-unit-large;
 $radius-l: $spacing-unit-small * 6;
 $radius-full: $spacing-unit-large * 100;
+$radius-default: $spacing-unit-small * 9;
 
 // ========================================================================
 // Breakpoints

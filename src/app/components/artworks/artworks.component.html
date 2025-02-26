@@ -1,15 +1,18 @@
-<section class="container-l">
-  <div class="d-flex flex-wrap justify-between gap-32 text-center">
+<article class="container-l">
+  <div
+    class="d-flex flex-wrap justify-between gap-32 text-center"
+    id="art-card"
+  >
     <a
-      *ngFor="let art of arts"
+      *ngFor="let art of displayedArt"
       [routerLink]="art.absoluteLink ? art.absoluteLink : art.link"
-      class="box padding mb-32"
+      class="box padding mb-32 border-standard radius-l"
     >
       <div class="image-wrapper">
-        <img [src]="art.image" alt="" class="elevation-xs" />
+        <img [src]="art.image" alt="" />
         <div class="overlay"></div>
       </div>
       <h3>{{ art.title }}</h3>
     </a>
   </div>
-</section>
+</article>

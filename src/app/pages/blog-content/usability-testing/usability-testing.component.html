@@ -1,4 +1,10 @@
-<section class="mt-80 mb-80">
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/blog" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Back
+  </a>
+</nav>
+
+<section class="mb-80">
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
@@ -13,142 +19,163 @@
   </picture>
 </div>
 
-<section class="ptb-80">
-  <div class="container-m m-middle">
-    <h2>1. Preparation of a Test Plan</h2>
-    <h3>1.1 General Information</h3>
-    <p>
-      The test plan begins with basic details about the Usability Test: the
-      product being tested, the focus areas, the responsible UX Experts, and any
-      other relevant information, such as the time allocated per task.
-    </p>
-    <h3>1.2 Description of an Initial Scenario</h3>
-    <p>
-      The initial scenario sets the stage, helping the test user visualize a
-      real-life situation. For instance:
-    </p>
-    <p class="text-italic scenario">
-      You are a sales representative in the insurance industry. You are meeting
-      a client who is interested in life insurance. You've arranged this meeting
-      to present them with an offer. You are using new software that helps you
-      create an accurate risk analysis.
-    </p>
-    <h3>1.3 Writing Test Objectives and Test Items</h3>
-    <p>
-      The core of the test plan revolves around the test objectives and test
-      items, which are created based on the goals of the test.
-    </p>
-    <h4>Example of a Test Objective:</h4>
-    <p class="text-italic scenario">
-      Test how smoothly users are guided through a form's input fields to
-      quickly generate an accurate life insurance quote.
-    </p>
-    <h4>Example of a Test Task:</h4>
-    <p class="text-italic scenario">
-      Your client provides you with the necessary details for a life insurance
-      policy. Please enter all the information into the form. Stop when you
-      reach the field for the policy term.
-    </p>
-    <p>
-      It's helpful to start with simpler tasks to build the test user's
-      confidence.
-    </p>
-    <h3>1.4 Play Through the Test Yourself</h3>
-    <p class="mb-48">
-      Before conducting the Usability Test, ensure that the tasks are achievable
-      by playing through them yourself. A test run helps confirm that the
-      product supports the tasks you've created.
-    </p>
+<app-divider></app-divider>
 
-    <div class="m-middle">
-      <picture>
-        <source srcset="blog/test-plan.webp" type="image/webp" />
-        <img
-          src="blog/test-plan.png"
-          alt=""
-          class="radius-l mb-48 elevation-xs"
-        />
-      </picture>
-    </div>
+<section class="container-m m-middle">
+  <h2>1. Preparation of a Test Plan</h2>
+  <h3>1.1 General Information</h3>
+  <p>
+    The test plan begins with basic details about the Usability Test: the
+    product being tested, the focus areas, the responsible UX Experts, and any
+    other relevant information, such as the time allocated per task.
+  </p>
+  <h3>1.2 Description of an Initial Scenario</h3>
+  <p>
+    The initial scenario sets the stage, helping the test user visualize a
+    real-life situation. For instance:
+  </p>
+  <p class="scenario">
+    You are a sales representative in the insurance industry. You are meeting a
+    client who is interested in life insurance. You've arranged this meeting to
+    present them with an offer. You are using new software that helps you create
+    an accurate risk analysis.
+  </p>
+  <h3>1.3 Writing Test Objectives and Test Items</h3>
+  <p>
+    The core of the test plan revolves around the test objectives and test
+    items, which are created based on the goals of the test.
+  </p>
+  <h4>Example of a Test Objective:</h4>
+  <p class="scenario">
+    Test how smoothly users are guided through a form's input fields to quickly
+    generate an accurate life insurance quote.
+  </p>
+  <h4>Example of a Test Task:</h4>
+  <p class="scenario">
+    Your client provides you with the necessary details for a life insurance
+    policy. Please enter all the information into the form. Stop when you reach
+    the field for the policy term.
+  </p>
+  <p>
+    It's helpful to start with simpler tasks to build the test user's
+    confidence.
+  </p>
+  <h3>1.4 Play Through the Test Yourself</h3>
+  <p class="mb-48">
+    Before conducting the Usability Test, ensure that the tasks are achievable
+    by playing through them yourself. A test run helps confirm that the product
+    supports the tasks you've created.
+  </p>
 
-    <div class="toolbox radius-l m-middle">
-      <h3>Tips for Creating a Test Plan:</h3>
-      <ul>
-        <li>
-          Provide a clear description of the test objectives and their expected
-          outcomes.
-        </li>
-        <li>Make sure all necessary information for the test is included.</li>
-        <li>
-          Set a time limit for task completion (but keep it hidden from the
-          user).
-        </li>
-        <li>Use clear, simple language for all test tasks.</li>
-      </ul>
-    </div>
+  <div class="m-middle">
+    <picture>
+      <source srcset="blog/test-plan.webp" type="image/webp" />
+      <img
+        src="blog/test-plan.png"
+        alt=""
+        class="radius-l mb-48 elevation-xs"
+      />
+    </picture>
   </div>
+
+  <div class="mt-88"></div>
+  <app-list
+    headline="Tips for Creating a Test Plan:"
+    [tools]="[
+      {
+        name: '',
+        description:
+          'Provide a clear description of the test objectives and their expected outcomes.'
+      },
+      {
+        name: '',
+        description:
+          'Make sure all necessary information for the test is included.'
+      },
+      {
+        name: '',
+        description:
+          'Set a time limit for task completion (but keep it hidden from theuser).'
+      },
+      {
+        name: '',
+        description: 'Use clear, simple language for all test tasks.'
+      }
+    ]"
+  ></app-list>
 </section>
 
-<section class="ptb-80">
-  <div class="container-m m-middle">
-    <h2>2. Conducting the Usability Test</h2>
-    <p>Now it's time to see how easily users can complete the tasks.</p>
-    <h3>2.1 Check the Test Environment</h3>
-    <p>
-      Before the participants arrive, double-check that all technical equipment,
-      such as laptops or other devices, is functioning perfectly.
-    </p>
-    <h3>2.2 Welcoming and Instructing Participants</h3>
-    <p>
-      Greet the participants warmly and explain the process. It's helpful to
-      reassure them that it's the software being tested, not them. This helps
-      reduce any potential anxiety and makes them feel more comfortable.
-    </p>
-    <h3>2.3 Observing Test Users</h3>
-    <p>
-      As participants navigate the product, observe and collect feedback based
-      on their interactions. Feedback can be recorded via video (with consent),
-      screen recordings, or written notes.
-    </p>
-    <h3>2.4 Final Interview</h3>
-    <p>
-      After the tasks are completed, an optional interview allows you to gather
-      further insights into participants' opinions and impressions of the
-      product. You can also ask them to evaluate the design and overall
-      experience.
-    </p>
-    <p class="mb-48">
-      I like to ask participants to complete a (digital) questionnaire at the
-      end for additional feedback.
-    </p>
-    <div class="m-middle">
-      <picture>
-        <source srcset="blog/usability-testing.webp" type="image/webp" />
-        <img
-          src="blog/usability-testing.png"
-          alt=""
-          class="radius-l mb-48 elevation-xs"
-        />
-      </picture>
-    </div>
-    <div class="toolbox radius-l m-middle">
-      <h3>Tips for Conducting Usability Tests:</h3>
-      <ul>
-        <li>
-          Encourage participants to think aloud as they complete the tasks.
-        </li>
-        <li>Avoid interrupting unless absolutely necessary.</li>
-        <li>
-          Prompt participants to work through challenges rather than offering
-          solutions right away.
-        </li>
-        <li>Offer refreshments when welcoming participants.</li>
-      </ul>
-    </div>
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>2. Conducting the Usability Test</h2>
+  <p>Now it's time to see how easily users can complete the tasks.</p>
+  <h3>2.1 Check the Test Environment</h3>
+  <p>
+    Before the participants arrive, double-check that all technical equipment,
+    such as laptops or other devices, is functioning perfectly.
+  </p>
+  <h3>2.2 Welcoming and Instructing Participants</h3>
+  <p>
+    Greet the participants warmly and explain the process. It's helpful to
+    reassure them that it's the software being tested, not them. This helps
+    reduce any potential anxiety and makes them feel more comfortable.
+  </p>
+  <h3>2.3 Observing Test Users</h3>
+  <p>
+    As participants navigate the product, observe and collect feedback based on
+    their interactions. Feedback can be recorded via video (with consent),
+    screen recordings, or written notes.
+  </p>
+  <h3>2.4 Final Interview</h3>
+  <p>
+    After the tasks are completed, an optional interview allows you to gather
+    further insights into participants' opinions and impressions of the product.
+    You can also ask them to evaluate the design and overall experience.
+  </p>
+  <p class="mb-48">
+    I like to ask participants to complete a (digital) questionnaire at the end
+    for additional feedback.
+  </p>
+  <div class="m-middle">
+    <picture>
+      <source srcset="blog/usability-testing.webp" type="image/webp" />
+      <img
+        src="blog/usability-testing.png"
+        alt=""
+        class="radius-l mb-48 elevation-xs"
+      />
+    </picture>
   </div>
+  <div class="mt-88"></div>
+  <app-list
+    headline="Tips for Conducting Usability Tests:"
+    [tools]="[
+      {
+        name: '',
+        description:
+          'Encourage participants to think aloud as they complete the tasks.'
+      },
+      {
+        name: '',
+        description: 'Avoid interrupting unless absolutely necessary.'
+      },
+      {
+        name: '',
+        description:
+          'Prompt participants to work through challenges rather than offering solutions right away.'
+      },
+      {
+        name: '',
+        description: 'Offer refreshments when welcoming participants.'
+      }
+    ]"
+  ></app-list>
 </section>
 
-<section class="ptb-80">
+<app-divider></app-divider>
+
+<section>
   <div class="container-m m-middle">
     <h2>3. Analyzing the Test Data</h2>
     <h3>3.1 Categorizing Usability Problems</h3>
@@ -177,7 +204,7 @@
     </p>
     <p class="mb-32">Other important metrics may include:</p>
     <div class="d-flex flex-wrap gap-32">
-      <div class="box-1 toolbox radius-l m-middle">
+      <div class="box-1 toolbox radius-l m-middle border-standard">
         <h3>Quantitative Metrics:</h3>
         <ul>
           <li>Success rate for tasks</li>
@@ -185,7 +212,7 @@
           <li>Number of errors or clicks</li>
         </ul>
       </div>
-      <div class="box-1 toolbox radius-l m-middle">
+      <div class="box-1 toolbox radius-l m-middle border-standard">
         <h3>Qualitative Metrics:</h3>
         <ul>
           <li>Stress reactions</li>
@@ -198,97 +225,123 @@
   </div>
 </section>
 
-<section class="ptb-80">
-  <div class="container-m m-middle">
-    <h2>4. Writing a Test Report</h2>
-    <p>
-      One of the most critical parts of Usability Testing is sharing the results
-      in a clear and persuasive way.
-    </p>
-    <h3>4.1 Introduction</h3>
-    <p>
-      Begin the report with a brief summary of the Usability Test. Outline the
-      goals, focus areas, and key findings. I also like to start on a positive
-      note by highlighting strengths, such as: “During the Usability Test, the
-      intuitive layout of the tool received high praise.”
-    </p>
-    <p>Next, describe the methodology, for example:</p>
-    <ul>
-      <li>Participants: 5 (4 female, 1 non-binary), Age: 30 - 45</li>
-      <li>Laboratory Testing</li>
-      <li>1:1 sessions</li>
-      <li>Tasks completed independently</li>
-      <li>Followed by a post-test questionnaire</li>
-    </ul>
-    <h3>4.2 Main Section</h3>
-    <p>
-      The main body of the report lists usability problems for each task, often
-      supported by screenshots where appropriate. Alongside each issue, mention
-      the task success rate and the number of errors found. Include actionable
-      recommendations to improve the product.
-    </p>
-    <p>
-      Usability problems should be prioritized to help the team focus on the
-      most critical issues first.
-    </p>
-    <h3>4.3 Final Section</h3>
-    <p class="mb-32">
-      The final section gathers the opinions and reflections of the test users.
-      Both positive and negative comments can be shared here (ideally quoted
-      verbatim). If a questionnaire was used, summarize the results in this
-      section.
-    </p>
-    <div class="m-middle">
-      <picture>
-        <source srcset="blog/test-report.webp" type="image/webp" />
-        <img
-          src="blog/test-report.png"
-          alt=""
-          class="radius-l mb-48 elevation-xs"
-        />
-      </picture>
-    </div>
-    <div class="toolbox radius-l m-middle">
-      <h3>Tips for Creating a Test Report:</h3>
-      <ul>
-        <li>Focus on the outcomes that matter most.</li>
-        <li>Keep the company's goals in mind.</li>
-        <li>Be mindful of any technological limitations.</li>
-        <li>
-          Clearly differentiate between personal opinions and established facts.
-        </li>
-      </ul>
-    </div>
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>4. Writing a Test Report</h2>
+  <p>
+    One of the most critical parts of Usability Testing is sharing the results
+    in a clear and persuasive way.
+  </p>
+  <h3>4.1 Introduction</h3>
+  <p>
+    Begin the report with a brief summary of the Usability Test. Outline the
+    goals, focus areas, and key findings. I also like to start on a positive
+    note by highlighting strengths, such as: “During the Usability Test, the
+    intuitive layout of the tool received high praise.”
+  </p>
+  <p>Next, describe the methodology, for example:</p>
+  <ul>
+    <li>Participants: 5 (4 female, 1 non-binary), Age: 30 - 45</li>
+    <li>Laboratory Testing</li>
+    <li>1:1 sessions</li>
+    <li>Tasks completed independently</li>
+    <li>Followed by a post-test questionnaire</li>
+  </ul>
+  <h3>4.2 Main Section</h3>
+  <p>
+    The main body of the report lists usability problems for each task, often
+    supported by screenshots where appropriate. Alongside each issue, mention
+    the task success rate and the number of errors found. Include actionable
+    recommendations to improve the product.
+  </p>
+  <p>
+    Usability problems should be prioritized to help the team focus on the most
+    critical issues first.
+  </p>
+  <h3>4.3 Final Section</h3>
+  <p class="mb-32">
+    The final section gathers the opinions and reflections of the test users.
+    Both positive and negative comments can be shared here (ideally quoted
+    verbatim). If a questionnaire was used, summarize the results in this
+    section.
+  </p>
+  <div class="m-middle">
+    <picture>
+      <source srcset="blog/test-report.webp" type="image/webp" />
+      <img
+        src="blog/test-report.png"
+        alt=""
+        class="radius-l mb-48 elevation-xs"
+      />
+    </picture>
   </div>
+
+  <div class="mt-88"></div>
+  <app-list
+    headline="Tips for Creating a Test Report:"
+    [tools]="[
+      {
+        name: '',
+        description: 'Focus on the outcomes that matter most.'
+      },
+      {
+        name: '',
+        description: 'Keep the company\'s goals in mind.'
+      },
+      {
+        name: '',
+        description: 'Be mindful of any technological limitations.'
+      },
+      {
+        name: '',
+        description:
+          'Clearly differentiate between personal opinions and established facts.'
+      }
+    ]"
+  ></app-list>
 </section>
 
-<section class="ptb-80">
-  <div class="container-m m-middle">
-    <h2>Conclusion on Usability Testing</h2>
-    <p>
-      Usability Testing uncovers the needs and challenges users experience while
-      interacting with a product. It provides data-driven insights, allowing
-      design decisions to be based on facts, not assumptions.
-    </p>
-    <p>
-      Not every aspect of a product can be tested, so it's wise to focus on
-      critical or problematic areas. As observers during Usability Testing, we
-      must resist the temptation to influence users.
-    </p>
-    <p class="mb-32">
-      Prioritizing findings is crucial, taking into account the organization's
-      goals and technical limitations. Lastly, communicating test results
-      effectively is key to gaining stakeholder support for improvements.
-    </p>
+<app-divider></app-divider>
 
-    <div class="toolbox radius-l m-middle">
-      <h3>Summary Usability Testing Process:</h3>
-      <ul>
-        <li><strong>Step 1:</strong> Preparation of a Test Plan</li>
-        <li><strong>Step 2:</strong> Conducting the Usability Test</li>
-        <li><strong>Step 3:</strong> Analyzing the Test Data</li>
-        <li><strong>Step 4:</strong> Writing a Test Report</li>
-      </ul>
-    </div>
-  </div>
+<section class="container-m m-middle">
+  <h2>Conclusion on Usability Testing</h2>
+  <p>
+    Usability Testing uncovers the needs and challenges users experience while
+    interacting with a product. It provides data-driven insights, allowing
+    design decisions to be based on facts, not assumptions.
+  </p>
+  <p>
+    Not every aspect of a product can be tested, so it's wise to focus on
+    critical or problematic areas. As observers during Usability Testing, we
+    must resist the temptation to influence users.
+  </p>
+  <p class="mb-32">
+    Prioritizing findings is crucial, taking into account the organization's
+    goals and technical limitations. Lastly, communicating test results
+    effectively is key to gaining stakeholder support for improvements.
+  </p>
+
+  <div class="mt-88"></div>
+  <app-list
+    headline="Summary Usability Testing Process:"
+    [tools]="[
+      {
+        name: 'Step 1:',
+        description: ' Preparation of a Test Plan.'
+      },
+      {
+        name: 'Step 2:',
+        description: ' Conducting the Usability Test.'
+      },
+      {
+        name: 'Step 3:',
+        description: ' Analyzing the Test Data.'
+      },
+      {
+        name: 'Step 4:',
+        description: ' Writing a Test Report.'
+      }
+    ]"
+  ></app-list>
 </section>

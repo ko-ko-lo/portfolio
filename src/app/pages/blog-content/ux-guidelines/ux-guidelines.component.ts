@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-ux-guidelines',
   standalone: true,
-  imports: [RouterModule, IntroComponent],
+  imports: [RouterModule, IntroComponent, DividerComponent],
   templateUrl: './ux-guidelines.component.html',
   styleUrl: './ux-guidelines.component.scss',
 })

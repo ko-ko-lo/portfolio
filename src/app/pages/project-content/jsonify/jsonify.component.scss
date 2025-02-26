@@ -1,6 +1,25 @@
 @use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
 
 .jsonify-ui {
   max-height: 560px;
+}
+
+.link-to-project a:hover {
+  text-decoration: none;
+}
+
+.link-to-project .material-icons {
+  padding-left: variables.$spacing-unit-large;
+}
+
+.medium-brown {
+  color: variables.$color-brown-300;
+}
+
+.medium-berry {
+  color: variables.$color-berry-300;
+}
+
+.medium-blue {
+  color: variables.$color-blue-300;
 }

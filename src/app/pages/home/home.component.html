@@ -1,189 +1,48 @@
-<section class="container m-middle">
-  <div class="mb-104 mt-80">
-    <h1>Where Code Meets Creativity</h1>
-    <div class="hero d-flex flex-wrap gap-32 align-top pt-32">
-      <div class="box-1">
-        <p class="intro text-italic">
-          Hi, I'm Denise - a Software Developer, Designer and Artist on a
-          mission to create meaningful experiences through code and creativity.
-        </p>
-        <a href="https://github.com//ko-ko-lo" target="_blank">
-          <img
-            src="general/github-mark.svg"
-            alt=""
-            style="width: 30px; height: 30px"
-          />
-        </a>
-      </div>
-      <div class="mobile-middle box-2">
-        <picture>
-          <source srcset="general/me.webp" type="image/webp" />
-          <img src="general/me.png" alt="" class="intro-img" />
-        </picture>
-      </div>
-    </div>
-  </div>
-</section>
+<app-hero-home></app-hero-home>
 
-<section class="text-center ptb-96">
-  <div class="m-middle container-m">
-    <h2>Discover My Work</h2>
-    <p class="mb-32">
-      Explore my most recent project to see how I bring ideas to life through a
-      combination of design and development. This project was born from my
-      personal journey with yoga, aiming to create a calming, user-friendly
-      platform for Yin-Style Yoga.
-    </p>
-    <button routerLink="/projects/yin-style-yoga-application" class="mb-56">
-      View Project
-    </button>
-  </div>
-  <div class="m-middle img-yoga container-l">
-    <picture>
-      <source srcset="projects/visual-design-home.webp" type="image/webp" />
-      <img src="projects/visual-design-home.png" alt="" />
-    </picture>
-  </div>
-</section>
+<app-divider></app-divider>
 
-<section class="text-center ptb-96">
-  <div class="m-middle container-m">
-    <h2>About Me</h2>
-    <p class="mb-32">
-      For me, every project starts with a deep desire to understand. Whether
-      it's exploring the logic of development or the craft of design, I believe
-      in going beyond the surface to create meaningful, impactful work. Learn
-      more about my journey and what drives me to bring ideas to life.
-    </p>
-    <button routerLink="/about-me">Get to Know Me</button>
-  </div>
-</section>
+<app-intro-button
+  headline="Discover My Work"
+  text="Step into my latest project and see how I blend design and development to bring ideas to life. Inspired by my personal journey with yoga, this platform was created to offer a calm, intuitive space for Yin-Style Yoga, Meditation, and Breathwork - helping users find balance through mindful digital experiences."
+  label="Take a look"
+  route="projects/yin-style-yoga-application"
+></app-intro-button>
 
-<section class="ptb-96">
-  <div class="container-m m-middle text-center">
-    <h2>Reflecting on the Process</h2>
-    <p class="mb-32">
-      In my Blog, I reflect on the challenges and insights. Here, you'll find
-      articles about design principles, user experience and development. It's a
-      place where I want to share not only technical insights but also my
-      personal growth as a designer and developer.
-    </p>
-    <button routerLink="/blog" class="mb-56">Explore Blog</button>
-  </div>
-  <div class="container-l">
-    <section class="d-flex flex-wrap justify-between gap-32" id="card">
-      <a
-        routerLink="/blog/ux-guidelines"
-        class="box padding radius-l text-center full-link elevation-xs"
-      >
-        <img
-          src="blog/teaser-ux-guidelines.jpg"
-          alt=""
-          class="m-middle radius-m"
-        />
+<div class="mt-88"></div>
+<app-collage-yoga></app-collage-yoga>
 
-        <h3>7 UX Design Guidelines to Keep in Mind</h3>
-        <p>
-          This article explores 7 essential UX Design Guidelines that can help
-          you create meaningful user experiences.
-        </p>
-      </a>
+<app-divider></app-divider>
 
-      <a
-        routerLink="/blog/usability-testing"
-        class="box padding radius-l text-center full-link elevation-xs"
-      >
-        <picture>
-          <source srcset="blog/teaser-usability.webp" type="image/webp" />
-          <img
-            src="blog/teaser-usability.png"
-            alt=""
-            class="m-middle radius-m"
-          />
-        </picture>
-        <h3>Usability Testing Made Easy in 4 Steps</h3>
-        <p>
-          This article breaks down the process into four clear steps, helping
-          you gather valuable insights to improve your product.
-        </p>
-      </a>
+<app-intro-button
+  headline="Who I Am"
+  text="Every project I take on begins with curiosity and a deep desire to understand. Whether unraveling the logic behind development or shaping intuitive designs, I strive to go beyond the surface. Discover my journey and what fuels my passion for bringing ideas to life."
+  label="Get to Know Me"
+  route="/about-me"
+></app-intro-button>
 
-      <a
-        routerLink="/blog/quantitative-qualitative-research"
-        class="box padding radius-l text-center full-link elevation-xs"
-      >
-        <picture>
-          <source srcset="blog/teaser-research.webp" type="image/webp" />
-          <img
-            src="blog/teaser-research.png"
-            alt=""
-            class="m-middle radius-m"
-          />
-        </picture>
-        <h3>Best Use of Quantitative &amp; Qualitative Research</h3>
-        <p>
-          This article explores how each approach contributes and offers
-          valuable insights for creating successful solutions.
-        </p>
-      </a>
-    </section>
-  </div>
-</section>
+<app-divider></app-divider>
 
-<section class="ptb-96">
-  <div class="container-m m-middle text-center">
-    <h2>My Art</h2>
-    <p class="mb-32">
-      Explore my Art Page to see my digital illustrations, where I express ideas
-      and emotions that go beyond words.
-    </p>
-    <button routerLink="/art" class="mb-56">Explore Art</button>
-  </div>
+<app-intro-button
+  headline="Reflections on the Process"
+  text="In my blog, I explore the challenges, insights, and lessons learned along the way. From design principles and user experience to development and personal growth, this is where I share my journey - both technical and creative."
+  label="Explore the Blog"
+  route="/blog"
+></app-intro-button>
 
-  <div class="d-flex flex-wrap gap-32 container-l text-center">
-    <div class="box">
-      <a routerLink="/art/connection-without-words" class="image-container">
-        <div class="image-wrapper">
-          <picture>
-            <source srcset="art/preview/rooted.webp" type="image/webp" />
-            <img src="art/preview/rooted.jpg" alt="" class="elevation-xs" />
-          </picture>
-          <div class="overlay"></div>
-        </div>
-        <h3>The Beauty of Connection without words</h3>
-      </a>
-    </div>
+<div class="mt-88"></div>
 
-    <div class="box">
-      <a routerLink="/art/reflections-in-black-and-white">
-        <div class="image-wrapper">
-          <picture>
-            <source srcset="art/preview/reflections.webp" type="image/webp" />
-            <img
-              src="art/preview/reflections.jpg"
-              alt=""
-              class="elevation-xs"
-            />
-          </picture>
-          <div class="overlay"></div>
-        </div>
-        <h3>Reflections in Black and White</h3>
-      </a>
-    </div>
+<app-blog-card></app-blog-card>
 
-    <div class="box">
-      <a routerLink="/art/back-to-nature">
-        <div class="image-wrapper">
-          <picture>
-            <source srcset="art/preview/ourplanet.webp" type="image/webp" />
-            <img src="art/preview/ourplanet.jpg" alt="" class="elevation-xs" />
-          </picture>
-          <div class="overlay"></div>
-        </div>
-        <h3>Protecting Our Planet: A Journey Back to Nature</h3>
-      </a>
-    </div>
-  </div>
-</section>
+<app-divider></app-divider>
 
-<app-contact></app-contact>
+<app-intro-button
+  headline="A Glimpse into My Imagination"
+  text="Step into my world of digital illustrations - where creativity meets emotion. Through color, form, and imagination, I express ideas that go beyond words."
+  label="Explore My Artwork"
+  route="/art"
+></app-intro-button>
+
+<div class="mt-88"></div>
+
+<app-artworks [artLimit]="3"></app-artworks>

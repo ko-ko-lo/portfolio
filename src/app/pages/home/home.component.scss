@@ -5,57 +5,12 @@
   max-width: 890px;
 }
 
-.intro {
-  font-size: variables.$font-size-28;
-}
 .img-yoga {
   max-width: 1034px;
 }
 
 .highlighted {
   margin: 0;
-}
-
-.bg-light-berry {
-  background-color: variables.$color-blue-800;
-
-  h2,
-  p {
-    color: variables.$color-berry-50;
-  }
-
-  button {
-    background-color: variables.$color-blue-500;
-
-    &:hover {
-      background-color: variables.$color-blue-600;
-    }
-  }
-}
-
-.bg-light-neutral {
-  background-color: variables.$color-neutral-950;
-
-  h2,
-  h3 {
-    color: variables.$color-neutral-100;
-  }
-
-  p {
-    color: variables.$color-neutral-50;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  button {
-    background-color: variables.$color-blue-500;
-
-    &:hover {
-      background-color: variables.$color-blue-600;
-    }
-  }
 }
 
 @media (max-width: 1200px) {
@@ -65,11 +20,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    text-align: center;
-    padding-top: 0;
-  }
-
   .mobile-middle {
     margin: 0 auto;
   }

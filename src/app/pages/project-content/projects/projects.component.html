@@ -2,32 +2,27 @@
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
-<section class="container-l mb-80">
-  <a routerLink="yin-style-yoga-application">
-    <div class="bg-blue radius-l d-flex flex-wrap gap-32 elevation-s">
-      <div class="box-1">
-        <h3>Bringing Yoga to Life: My Heart Project</h3>
-        <p class="mb-24">
-          This web application is designed to share the transformative benefits
-          of Yin-Style Yoga. It provides a calming, user-friendly space for
-          growth, learning, and mindfulness, inspired by years of yoga practice
-          and teaching. The project aims to create a meaningful digital
-          experience that supports well-being and self-discovery.
-        </p>
-      </div>
-      <div class="box-2">
-        <picture>
-          <source srcset="projects/teaser-img.webp" type="image/webp" />
-          <img src="projects/teaser-img.png" alt="" />
-        </picture>
-      </div>
+<app-divider></app-divider>
+
+<section class="container-l">
+  <div class="d-flex flex-wrap gap-32">
+    <div class="box-1">
+      <h2>A Digital Space for Yin-Style Yoga, Meditation & Breathwork</h2>
+      <a routerLink="/projects/yin-style-yoga-application" class="button mt-40"
+        >Explore the project</a
+      >
     </div>
-  </a>
+    <div class="box-2">
+      <app-collage-yoga></app-collage-yoga>
+    </div>
+  </div>
 </section>
 
-<section class="ptb-80">
+<app-divider></app-divider>
+
+<section>
   <div class="container-l">
-    <h2 class="mb-32">Figma Plugin Development</h2>
+    <h2 class="text-center mb-64">Figma Plugin Development</h2>
     <app-project-card></app-project-card>
   </div>
 </section>
