@@ -8,7 +8,7 @@ This is my personal portfolio website created with Angular. It serves as:
 
 
 ## 🌎 Live Demo
-Experience the app here: [Web Application](https://creativejourney.com)
+Experience the app here: [Web Application](https://creativejourney.dev)
 
 
 ## Technologies Used
