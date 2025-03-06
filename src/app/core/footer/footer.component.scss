@@ -9,3 +9,9 @@
 img {
   max-height: 9rem;
 }
+
+@media (max-width: variables.$breakpoint-tablet) {
+  img {
+    max-height: 7rem;
+  }
+}

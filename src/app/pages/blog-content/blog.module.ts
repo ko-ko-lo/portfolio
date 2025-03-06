@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularAccessibilityComponent } from './angular-accessibility/angular-accessibility.component';
 import { BlogComponent } from './blog/blog.component';
 import { ResearchComponent } from './research/research.component';
 import { UsabilityTestingComponent } from './usability-testing/usability-testing.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'quantitative-qualitative-research', component: ResearchComponent },
   { path: 'usability-testing', component: UsabilityTestingComponent },
   { path: 'ux-guidelines', component: UxGuidelinesComponent },
+  { path: 'angular-accessibility', component: AngularAccessibilityComponent },
 ];
 
 @NgModule({

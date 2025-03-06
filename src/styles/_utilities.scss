@@ -181,16 +181,20 @@
   padding: variables.$spacing-unit-large * 12 0;
 }
 
-.pb-96 {
-  padding-bottom: variables.$spacing-unit-large * 12;
+.pb-24 {
+  padding-bottom: variables.$spacing-unit-large * 3;
+}
+
+.pb-32 {
+  padding-bottom: variables.$spacing-unit-large * 4;
 }
 
 .pb-80 {
   padding-bottom: variables.$spacing-unit-large * 10;
 }
 
-.pb-32 {
-  padding-bottom: variables.$spacing-unit-large * 4;
+.pb-96 {
+  padding-bottom: variables.$spacing-unit-large * 12;
 }
 
 .pt-32 {

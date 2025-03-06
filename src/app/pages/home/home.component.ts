@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ArtworksComponent } from '../../components/artworks/artworks.component';
@@ -20,6 +21,7 @@ import { ArticleService } from '../../services/article.service';
     CollageYogaComponent,
     BlogCardComponent,
     ArtworksComponent,
+    CommonModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

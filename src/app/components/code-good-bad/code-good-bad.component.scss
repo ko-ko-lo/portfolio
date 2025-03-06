@@ -1,0 +1,17 @@
+@use "../../../styles/variables" as variables;
+
+code {
+  color: variables.$color-berry-200;
+  line-height: variables.$lineheight-m;
+  font-size: variables.$spacing-unit-small * 8;
+}
+
+pre {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: variables.$spacing-unit-large * 10;
+}

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { OverviewCardData } from '../../models/card.model';
 import { ArticleService } from '../../services/article.service';
@@ -12,7 +12,7 @@ import { ArticleService } from '../../services/article.service';
   styleUrl: './blog-card.component.scss',
 })
 export class BlogCardComponent {
-  articles: OverviewCardData[] = [];
+  @Input() articles: OverviewCardData[] = [];
 
   constructor(private articleService: ArticleService) {}
 

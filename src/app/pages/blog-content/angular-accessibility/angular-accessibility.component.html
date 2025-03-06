@@ -1,0 +1,371 @@
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/blog" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Blog Overview
+  </a>
+</nav>
+<article>
+  <app-intro [title]="title" [text]="text"></app-intro>
+
+  <div class="container-m m-middle">
+    <picture>
+      <source srcset="blog/a11y-robot.webp" type="image/webp" />
+      <img
+        src="blog/a11y-robot.png"
+        alt=""
+        class="radius-l mt-64 m-middle elevation-xs robot"
+      />
+    </picture>
+  </div>
+
+  <app-divider></app-divider>
+
+  <!-- Titles in Angular-->
+  <section class="container-m m-middle">
+    <h2>Titles in Angular (No More Title Service)</h2>
+    <p>
+      Page titles play a crucial role in accessibility. They're the first thing
+      screen readers announce, giving users immediate context about where they
+      are. A well-structured title improves navigation - especially for users
+      with assistive technologies or multiple tabs open.
+    </p>
+    <p>
+      But despite knowing their importance, I wasn't always consistent in how I
+      handled them. Managing page titles manually within components made it easy
+      to overlook or mismatch them, leading to a frustrating experience for
+      users.
+    </p>
+    <p>
+      That's when I discovered Angular's built-in route-based titles - a
+      simpler, more structured way to ensure clear, accessible page titles
+      across the entire application.
+    </p>
+
+    <h3>The Old Way: Updating Titles in Components</h3>
+    <p>
+      Previously, I was setting titles manually within routed components using a
+      TitleService, like this:
+    </p>
+
+    <app-code-good-bad
+      [code]="
+        'constructor(private titleService: TitleService) {}\n\nngOnInit(): void {\n  this.titleService.setTitle(\'Meditation Library | OpenStillness\');\n}'
+      "
+      [imageUrl]="'blog/bad.png'"
+    >
+    </app-code-good-bad>
+    <p>This method worked, but it had its downsides:</p>
+    <ul>
+      <li>
+        <strong>Repetitive & error-prone:</strong> I had to manually update the
+        title in multiple components.
+      </li>
+      <li>
+        <strong>Harder to maintain:</strong> A slight mismatch in one component
+        could lead to inconsistent titles across the app.
+      </li>
+      <li>
+        <strong>No central control:</strong> I couldn't easily see or modify all
+        page titles in one place.
+      </li>
+    </ul>
+
+    <h3>The Better Approach: Defining Titles in Routes</h3>
+    <p>
+      With Angular's built-in title strategy, you can define page titles
+      directly in the routes. This makes them declarative, centralized, and
+      easier to manage - no more manually updating them in components.
+    </p>
+    <app-code-good-bad
+      [code]="
+        'export const routes: Routes = [\n  {\n    path: ROUTES.LIBRARY,\n    component: LibraryComponent,\n    title: \'Meditation Library | OpenStillness\',\n  },\n];'
+      "
+      [imageUrl]="'blog/good.png'"
+    ></app-code-good-bad>
+    <p>
+      Now, Angular automatically updates the page title when users navigate to a
+      new route. Less manual work, more accessibility.
+    </p>
+    <h3>What I Learned</h3>
+    <ul>
+      <li>
+        Page titles should always follow a clear and consistent structure.
+      </li>
+      <li>
+        Managing titles in routes (instead of components) improves accessibility
+        and reduces errors.
+      </li>
+    </ul>
+  </section>
+
+  <app-divider></app-divider>
+
+  <!-- Heading Hierarchy -->
+  <section class="container-m m-middle">
+    <h2>Heading Hierarchy for Dynamic Components</h2>
+    <p>
+      I've always known that clear heading structures help users, especially
+      those relying on screen readers, navigate content quickly and understand
+      the organization of a page. But when working in a component-based system
+      like Angular, I ran into an issue:
+    </p>
+    <p>
+      Even though I visually structured my pages with proper sections, the
+      heading hierarchy was breaking because components weren't naturally aware
+      of where they were placed within the page.
+    </p>
+    <p>
+      For example, a reusable training card component might always use an h2,
+      even if it's embedded inside a section where an h3 would make more sense.
+    </p>
+
+    <h3>The Problem: Components Can't See Their Context</h3>
+    <p>
+      If each component blindly defines its own headings, you can end up with a
+      messy structure like this:
+    </p>
+
+    <app-code-good-bad
+      [code]="
+        '&lt;h1&gt;Yoga Routines&lt;/h1&gt;\n\n&lt;h2&gt;Beginner Routines&lt;/h2&gt;\n\n&lt;h2&gt;Sun Salutation Flow&lt;/h2&gt; &lt;!-- Should be an h3 --&gt;\n&lt;h2&gt;Deep Stretch Sequence&lt;/h2&gt; &lt;!-- Should be an h3 --&gt;'
+      "
+      [imageUrl]="'blog/bad.png'"
+    ></app-code-good-bad>
+    <p>
+      Here, the individual routine names should be h3s, but the component
+      rendering them doesn't know where it sits in the overall page structure.
+    </p>
+    <p>
+      This creates a poor experience for screen reader users and assistive
+      technologies, making it harder to understand the hierarchy of content.
+    </p>
+    <h3>The Fix: Pass the Heading Level as an Input</h3>
+    <p>
+      To solve this, I learned to make the heading level dynamic, allowing each
+      component to adjust based on its context.
+    </p>
+    <h4>1. Modify the Component to Accept a headingLevel Input</h4>
+    <p>
+      First, modify the component to accept a headingLevel input and dynamically
+      render the appropriate heading tag:
+    </p>
+
+    <app-code-good-bad
+      [code]="exampleCode"
+      [imageUrl]="'blog/good.png'"
+    ></app-code-good-bad>
+
+    <p>
+      In the component's TypeScript file, define a default heading level - in
+      this case, h2:
+    </p>
+    <app-code-good-bad [code]="exampleCode1"></app-code-good-bad>
+    <h4>2. Set the Heading Level When Embedding the Component</h4>
+    <p>
+      Now, whenever I use this component, I can modify the heading level as
+      needed:
+    </p>
+    <app-code-good-bad [code]="exampleCode2"></app-code-good-bad>
+    <p>
+      This ensures that each heading fits seamlessly into the page's structure -
+      without breaking accessibility!
+    </p>
+    <h3>What I Learned</h3>
+    <ul>
+      <li>
+        Components should be flexible, not dictate their own heading levels.
+      </li>
+      <li>
+        Passing a heading level as an input makes it easy to maintain a clean,
+        accessible structure across the entire app.
+      </li>
+    </ul>
+    <p>
+      This was one of those accessibility issues I didn't notice at first, but
+      once I fixed it, I realized how much smoother navigation became. Now, my
+      components blend seamlessly into the overall page hierarchy, making
+      content clearer for everyone.
+    </p>
+  </section>
+
+  <app-divider></app-divider>
+
+  <!-- NG-Container-->
+  <section class="container-m m-middle">
+    <h2>ng-container Instead of div: Cleaning Up Unnecessary Markup</h2>
+    <p>
+      While reviewing my final HTML markup for accessibility, I noticed
+      something strange - extra &lt;div&gt; wrappers cluttering the structure.
+    </p>
+    <p>
+      At first, I didn't think much of it. But then I realized these &lt;div&gt;
+      elements weren't serving any real purpose - they weren't needed for
+      styling, layout, or semantics. They were just there because I had wrapped
+      structural directives like *ngFor and *ngIf inside them.
+    </p>
+
+    <h3>The Issue: Unnecessary div Wrappers</h3>
+    <p>Take this example where I loop through descriptions using *ngFor:</p>
+    <app-code-good-bad
+      [code]="exampleCode3"
+      [imageUrl]="'blog/bad.png'"
+    ></app-code-good-bad>
+    <p>
+      This works, but the &lt;div&gt; doesn't actually do anything. It exists
+      purely because I needed a way to apply the directive.
+    </p>
+    <h3>The Fix: Use ng-container for Structural Directives</h3>
+    <p>
+      Then I remembered ng-container - a special Angular element that doesn't
+      get rendered in the final HTML. By switching to it, I removed the
+      unnecessary &lt;div&gt; while keeping the same functionality:
+    </p>
+    <app-code-good-bad
+      [code]="exampleCode4"
+      [imageUrl]="'blog/good.png'"
+    ></app-code-good-bad>
+    <p>Now, the final markup stays clean, without extra wrapper elements.</p>
+    <h3>What I Learned</h3>
+    <ul>
+      <li>
+        <strong>Unnecessary &lt;div&gt; elements add clutter</strong>
+        and can make HTML harder to navigate, especially for assistive
+        technologies.
+      </li>
+      <li>
+        <strong
+          >Use &lt;ng-container&gt; when you only need a structural
+          directive</strong
+        >
+        - it keeps the final output lightweight and semantic.
+      </li>
+    </ul>
+  </section>
+
+  <app-divider></app-divider>
+
+  <!-- Buttons for Actions -->
+  <section class="container-m m-middle">
+    <h2>Buttons Only for Actions, Not for Links</h2>
+    <p>
+      One thing I got wrong way too many times - and I bet I'm not alone - is
+      that a button is not always a button. Sounds weird, right? But here's the
+      deal:
+    </p>
+    <p>
+      A &lt;button&gt; should be used for actions, while an &lt;a&gt; should be
+      used for navigation. I used to assume that if something looked like a
+      button, I should wrap it in a &lt;button&gt; tag. But functionality, not
+      styling, determines whether it should be a &lt;button&gt; or an &lt;a&gt;.
+    </p>
+    <h3>The Key Rules:</h3>
+    <ul>
+      <li>
+        <strong>Use &lt;button&gt; for actions</strong> like submitting forms,
+        opening modals, or triggering UI changes.
+      </li>
+      <li>
+        <strong>Use &lt;a&gt; for navigation</strong> - when clicking it takes
+        you to another page, section, or anchor link.
+      </li>
+    </ul>
+
+    <h3>Where I Got It Wrong</h3>
+    <p>Here's a mistake I made:</p>
+    <app-code-good-bad
+      [code]="exampleCode5"
+      [imageUrl]="'blog/bad.png'"
+    ></app-code-good-bad>
+    <p>
+      I used a &lt;button&gt; for navigation, which is incorrect because it's
+      not performing an action - it's just taking the user somewhere else.
+    </p>
+    <h3>The Fix: Use &lt;a&gt; for Navigation</h3>
+    <p>Instead, the correct approach is to use an &lt;a&gt; tag:</p>
+    <app-code-good-bad
+      [code]="exampleCode6"
+      [imageUrl]="'blog/good.png'"
+    ></app-code-good-bad>
+    <p>
+      Now, screen readers and keyboard users correctly interpret it as a
+      navigation link.
+    </p>
+    <h3>What I Learned</h3>
+    <ul>
+      <li><strong>If it performs an action</strong>, use &lt;button&gt;.</li>
+      <li><strong>If it navigates somewhere</strong>, use &lt;a&gt;.</li>
+    </ul>
+  </section>
+
+  <app-divider></app-divider>
+
+  <!-- Alt-text imgs inside links-->
+  <section class="container-m m-middle">
+    <h2>Alt-Text for Images Alone Inside Links</h2>
+    <p>
+      Even though I've used the WAI (Web Accessibility Initiative) alt decision
+      tree for years, there was one mistake I kept making:
+    </p>
+    <ul>
+      <li>A linked image (used alone) needs alt text, even if it is a logo.</li>
+    </ul>
+    <p>
+      These aren't decorative images - they are functional images because they
+      initiate an action. And functional images require alt text that describes
+      the action being taken.
+    </p>
+    <h3>Where I Got It Wrong</h3>
+    <p>
+      I used to leave the alt attribute empty, thinking the logo was purely
+      decorative:
+    </p>
+    <app-code-good-bad
+      [code]="exampleCode7"
+      [imageUrl]="'blog/bad.png'"
+    ></app-code-good-bad>
+    <p></p>
+    <p>
+      Mistake: The image is the only content inside the link, so screen readers
+      get no information about what the link does.
+    </p>
+    <h3>The Fix: Describe the Action</h3>
+    <p>
+      To ensure accessibility, the alt text should convey what happens when the
+      link is activated:
+    </p>
+    <app-code-good-bad
+      [code]="exampleCode8"
+      [imageUrl]="'blog/good.png'"
+    ></app-code-good-bad>
+    <p>
+      Now, screen readers will correctly announce: "OpenStillness Home, link",
+      making it clear that clicking the logo takes the user to the homepage.
+    </p>
+    <h3>What I Learned</h3>
+    <ul>
+      <li>
+        If an image is inside a link and it's the only content, it needs
+        meaningful alt text.
+      </li>
+      <li>Alt text should describe the action the link performs.</li>
+    </ul>
+  </section>
+
+  <app-divider></app-divider>
+
+  <section class="container-m m-middle">
+    <h2>Final Thoughts: Accessibility is a Continuous Journey</h2>
+    <p>
+      If there's one thing I've learned, it's this: Accessibility is never
+      “done” - it's an ongoing process of learning, improving, and adapting.
+    </p>
+    <p>
+      Despite my experience, I still found areas where I could do better. And
+      that's okay! The important thing is to stay curious, listen to users, and
+      be open to change.
+    </p>
+    <p>
+      Every small improvement makes the web a more inclusive space, and that's
+      something worth striving for.
+    </p>
+  </section>
+</article>
