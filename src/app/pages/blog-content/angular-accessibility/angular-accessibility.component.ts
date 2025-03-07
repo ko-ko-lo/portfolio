@@ -36,7 +36,7 @@ export class AngularAccessibilityComponent {
   <p class="margin-bottom-16">{{ desc }}</p>
 </ng-container>`;
   exampleCode5: string = `<button [routerLink]="[buttonLink]">{{ buttonLabel }}</button>`;
-  exampleCode6: string = `<a [routerLink]="[buttonLink]">{{ buttonLabel }}</a>`;
+  exampleCode6: string = `<a [routerLink]="[navigationLink]">{{ navigationLabel }}</a>`;
   exampleCode7: string = `<a routerLink="/">
   <img src="public/logo.svg" alt="" class="logo" />
 </a>`;

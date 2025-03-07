@@ -5,7 +5,7 @@
   >
     <a
       *ngFor="let art of displayedArt"
-      [routerLink]="art.absoluteLink ? art.absoluteLink : art.link"
+      [routerLink]="useRelativeLinks ? art.link : art.absoluteLink"
       class="box padding mb-32 border-standard radius-l"
     >
       <div class="image-wrapper">

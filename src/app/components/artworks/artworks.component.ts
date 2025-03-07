@@ -13,6 +13,8 @@ import { ArtService } from '../../services/art.service';
 })
 export class ArtworksComponent implements OnInit {
   @Input() artLimit: number | null = null; // Allows dynamic limiting
+  @Input() useRelativeLinks: boolean = false; // Default is absolute links
+
   arts: Art[] = []; // Full list from service
 
   constructor(private artService: ArtService) {}
