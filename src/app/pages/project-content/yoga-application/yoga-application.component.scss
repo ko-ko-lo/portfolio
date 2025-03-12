@@ -29,5 +29,11 @@ ol {
 }
 
 .background {
-  background-color: variables.$color-neutral-100;
+  background-color: #d9ddf2;
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+  .nd-mobile {
+    display: none;
+  }
 }
