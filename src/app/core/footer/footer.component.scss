@@ -10,6 +10,24 @@ img {
   max-height: 9rem;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$spacing-unit-large * 2;
+  margin-top: variables.$spacing-unit-large * 3;
+}
+
+.social-icons a img {
+  width: variables.$spacing-unit-large * 5;
+  height: variables.$spacing-unit-large * 5;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 @media (max-width: variables.$breakpoint-tablet) {
   img {
     max-height: 7rem;
