@@ -1,0 +1,57 @@
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
+
+button.application {
+  margin-top: variables.$spacing-unit-large * 6;
+}
+
+.phase {
+  font-size: variables.$spacing-unit-large * 12;
+  font-weight: 700;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 115px;
+  text-align: center;
+  color: variables.$color-neutral-400;
+}
+
+.phase-active {
+  color: variables.$color-berry-300;
+}
+
+.pill {
+  padding: variables.$spacing-unit-large variables.$spacing-unit-large * 2;
+  font-size: variables.$spacing-unit-small * 7;
+}
+
+.pill-blue {
+  background-color: variables.$color-blue-500;
+}
+
+.pill-brown {
+  background-color: variables.$color-brown-600;
+}
+
+.pill-neutral {
+  background-color: variables.$color-neutral-700;
+}
+
+h3 {
+  margin: 0;
+}
+
+.box-2 {
+  align-items: flex-start;
+  gap: variables.$spacing-unit-large * 2;
+}
+
+.link {
+  text-decoration: none;
+  gap: variables.$spacing-unit-large;
+}
+
+hr {
+  color: variables.$color-neutral-700;
+}

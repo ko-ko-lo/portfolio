@@ -16,6 +16,10 @@
   border-radius: variables.$radius-l;
 }
 
+.radius-full {
+  border-radius: variables.$radius-full;
+}
+
 // ========================================================================
 // Text Utilities
 // ========================================================================
@@ -70,6 +74,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.gap-32 {
+  gap: variables.$spacing-unit-large * 4;
 }
 
 .box-1 {
@@ -179,6 +187,10 @@
 
 .ptb-96 {
   padding: variables.$spacing-unit-large * 12 0;
+}
+
+.pb-16 {
+  padding-bottom: variables.$spacing-unit-large * 2;
 }
 
 .pb-24 {
