@@ -13,7 +13,7 @@ import { MyQuoteComponent } from '../../../components/my-quote/my-quote.componen
 })
 export class OpenStillnessComponent {
   title: string =
-    'OpenStillness - A Journey in Meditation, Yin-Style Yoga & Breathwork';
+    'Open Stillness - A Journey in Meditation, Yin-Style Yoga & Breathwork';
   text: string =
     'Mindfulness Meets Technology: This platform is designed to help people cultivate mindfulness through Meditation, Yin-Style Yoga, and Breathwork. What started as a small project has grown into a feature-rich experience - continuously evolving with new improvements.';
 

@@ -326,15 +326,15 @@ code {
 }
 
 .code-container {
-  color: #2d2d2d; /* Dark but not too harsh */
-  padding: 1rem;
-  border-radius: 8px;
+  color: variables.$color-berry-900;
+  padding: variables.$spacing-unit-large * 2;
+  border-radius: variables.$radius-m;
   overflow-x: auto;
-  font-family: "Fira Code", "JetBrains Mono", monospace; /* Clean, designer-friendly fonts */
-  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+  font-size: variables.$spacing-unit-small * 9;
   line-height: 1.6;
-  border: 1px solid #ddd; /* Subtle border */
-  box-shadow: none; /* NO ugly shadow */
+  border: 1px solid variables.$color-neutral-400;
+  box-shadow: none;
 }
 
 .code-container code {
@@ -342,25 +342,6 @@ code {
   white-space: pre-wrap; /* Keeps indentation correct */
   word-wrap: break-word;
   text-shadow: none;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #a0a0a0 !important;
-}
-
-.token.keyword {
-  color: #d73a49 !important;
-}
-
-.token.string {
-  color: #008080 !important;
-}
-
-.token.function {
-  color: #795da3 !important;
 }
 
 // ========================================================================
@@ -392,6 +373,9 @@ code {
   .container,
   .container-m {
     padding: 0 variables.$global-pd-mobile;
+  }
+  .highlighted {
+    font-size: variables.$spacing-unit-large * 3;
   }
 }
 
