@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DividerComponent } from '../../../components/divider/divider.component';
-import { QuoteComponent } from '../../../components/quote/quote.component';
 
 @Component({
   selector: 'app-yoga-application',
   standalone: true,
-  imports: [RouterModule, DividerComponent, QuoteComponent],
+  imports: [RouterModule, DividerComponent],
   templateUrl: './yoga-application.component.html',
   styleUrl: './yoga-application.component.scss',
 })
