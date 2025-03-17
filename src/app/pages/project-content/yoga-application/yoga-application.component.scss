@@ -27,13 +27,3 @@ ol {
   border-left: 3px solid variables.$color-berry-400;
   padding-left: variables.$spacing-unit-large * 2;
 }
-
-.background {
-  background-color: #d9ddf2;
-}
-
-@media (max-width: variables.$breakpoint-mobile) {
-  .nd-mobile {
-    display: none;
-  }
-}

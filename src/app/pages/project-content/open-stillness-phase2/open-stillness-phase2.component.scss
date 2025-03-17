@@ -1,0 +1,14 @@
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
+
+.box-large {
+  flex: 3;
+}
+
+.box-small {
+  flex: 1;
+}
+
+img.robot {
+  max-height: 430px;
+}
