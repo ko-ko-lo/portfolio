@@ -1,0 +1,209 @@
+<nav class="container-l mt-24 mb-80">
+  <a routerLink="/projects" class="breadcrumb">
+    <span class="material-icons">arrow_back</span> Projects Overview
+  </a>
+</nav>
+
+<section class="mb-64">
+  <app-intro [title]="title" [text]="text"></app-intro>
+</section>
+
+<div class="container-m m-middle">
+  <picture>
+    <source srcset="projects/pattern-hearts-cover.webp" type="image/webp" />
+    <img
+      src="projects/pattern-hearts-cover.jpg"
+      alt=""
+      class="radius-l elevation-xs"
+    />
+  </picture>
+</div>
+
+<app-divider></app-divider>
+
+<section class="text-center">
+  <div class="container-l">
+    <h2>Core Technologies</h2>
+    <div class="d-flex flex-wrap gap-32">
+      <p class="m-middle">
+        TypeScript, JavaScript, HTML, CSS, Figma Design &amp; API
+      </p>
+    </div>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section class="text-center m-middle container-m link-to-project">
+  <h2 class="mt-80">Explore Pattern Hearts on Figma Community</h2>
+  <p class="mb-32 container">
+    Take a peek at the product page to learn more and maybe see Pattern Hearts
+    in action!
+  </p>
+  <a
+    href="https://www.figma.com/community/plugin/1482073467314571187/pattern-hearts"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button class="link d-flex align-items m-middle">
+      Explore Pattern Hearts
+      <span class="material-icons" aria-hidden="true"> open_in_new</span>
+    </button>
+  </a>
+</section>
+
+<app-divider></app-divider>
+
+<section class="table-contents">
+  <div class="container-m m-middle text-center">
+    <h2>Table of Contents</h2>
+    <h3>
+      <a (click)="scrollTo('section1')">1. Purpose &amp; Goals</a>
+    </h3>
+    <h3>
+      <a (click)="scrollTo('section2')">2. Features &amp; Visual Design</a>
+    </h3>
+    <h3>
+      <a (click)="scrollTo('section3')">3. Development Insights</a>
+    </h3>
+    <h3>
+      <a (click)="scrollTo('section4')">4. Final Reflections</a>
+    </h3>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section id="section1">
+  <div class="container-m m-middle">
+    <h2>1. Purpose &amp; Goal</h2>
+    <p>
+      "Love Comes in All Patterns" was born from a simple wish: to spread a
+      little more love and light into the world - and into our designs.
+    </p>
+    <p>
+      In a time where division and exclusion often dominate the conversation,
+      this plugin is a gentle counter-message. It's about celebrating diversity
+      and expressing kindness, creativity, and connection through design. The
+      heart shape stands for what unites us, while the different patterns
+      represent the beauty of our individuality - across cultures, identities,
+      backgrounds, and beliefs.
+    </p>
+    <p>
+      I also wanted to create something joyful and accessible. After working on
+      more technical plugins, I felt the pull to make something playful -
+      something that could put a smile on someone's face, whether they're a
+      designer, developer, or just exploring Figma for fun.
+    </p>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section id="section2">
+  <div class="container-m m-middle">
+    <h2>2. Features &amp; Visual Design</h2>
+    <h3>Patterned Hearts Gallery with Color Picker &amp; Magic</h3>
+    <ul class="mb-48">
+      <li class="mb-16">
+        <strong>A Library of Patterned Hearts</strong><br />
+        From playful polka dots to sleek lines - each heart comes with a unique
+        pattern to match every mood and message.
+      </li>
+      <li class="mb-16">
+        <strong>Built-in Color Picker</strong><br />
+        Choose from a rainbow of vibrant colors (plus a rich, dark gray as the
+        default). Pick a hue and instantly see it reflected across all hearts.
+      </li>
+      <li class="mb-16">
+        <strong>One-Click Insertion</strong><br />
+        Add hearts to your Figma canvas with a single click. Quick, easy, and
+        ready to use.
+      </li>
+    </ul>
+
+    <figure>
+      <picture>
+        <source
+          srcset="projects/pattern-hearts-plugin.webp"
+          type="image/webp"
+        />
+        <img
+          src="projects/pattern-hearts-plugin.jpg"
+          alt=""
+          class="radius-l elevation-xs plugin-img m-middle"
+        />
+      </picture>
+      <figcaption>Pattern Hearts Plugin: User Interface</figcaption>
+    </figure>
+
+    <p class="mt-48">
+      All patterned hearts are SVGs, which means they can be scaled endlessly
+      without losing quality, and their colors can be customized directly within
+      Figma.
+    </p>
+
+    <div class="toolbox radius-l border-standard text-center mt-48">
+      <img src="projects/rainbow-heart.svg" alt="" class="m-middle pb-32" />
+      <h4>The Magic Button</h4>
+      <p>
+        Want some sparkle? <br />
+        The Magic Button applies a beautiful rainbow gradient.
+      </p>
+    </div>
+
+    <h3>Heartwork in Action</h3>
+    <p>
+      A little collection of playful ideas to show how these hearts can come to
+      life in design. From blooming love to floating joy, here's how “Love Comes
+      in All Patterns” can add charm, warmth, and a spark of creativity.
+    </p>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section id="section3">
+  <div class="container-m m-middle">
+    <h2>3. Development Insights</h2>
+  </div>
+</section>
+
+<app-divider></app-divider>
+
+<section id="section4">
+  <div class="container-m m-middle">
+    <h2>4. Final Reflections</h2>
+    <p>
+      This little plugin was a joyful space to play, create, and share something
+      with heart. I loved giving a simple tool a meaningful twist, filling it
+      with illustrated patterns and quiet metaphors for love, diversity, and
+      togetherness.
+    </p>
+    <p>
+      Designing each heart, picking the ones that felt just right, and imagining
+      how they might live inside someone's design was a delight. Creating those
+      playful demo scenes brought smiles and a welcome reminder that even small
+      things can carry warmth.
+    </p>
+    <p>
+      With every piece of work, there's learning, growing, and a quiet build-up
+      of confidence. The Figma Plugin API occasionally tested my patience
+      (especially when things broke without a single error), but that too has
+      made me a better debugger, and definitely a more resilient developer.
+    </p>
+    <p class="mb-120">
+      Most of all, I hope this plugin brings a bit of fun - to developers and
+      non-developers alike - and that the magic button truly feels a little bit
+      magical.
+    </p>
+  </div>
+</section>
+
+<div class="container-l m-middle">
+  <img src="projects/pattern-hearts-pattern.svg" alt="" />
+</div>
+
+<div class="container-m m-middle text-center">
+  <h2 class="pt-120">Thank you for taking the time to explore this project.</h2>
+</div>
