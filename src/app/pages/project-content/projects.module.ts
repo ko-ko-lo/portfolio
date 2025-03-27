@@ -19,7 +19,7 @@ const routes: Routes = [
     path: 'open-stillness-application-phase-2',
     component: OpenStillnessPhase2Component,
   },
-  { path: 'pattern-hearts', component: PatternHeartsComponent },
+  { path: 'figma-pattern-hearts', component: PatternHeartsComponent },
 ];
 
 @NgModule({

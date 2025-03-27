@@ -153,11 +153,30 @@
     </div>
 
     <h3>Heartwork in Action</h3>
-    <p>
+    <p class="mb-48">
       A little collection of playful ideas to show how these hearts can come to
       life in design. From blooming love to floating joy, here's how “Love Comes
       in All Patterns” can add charm, warmth, and a spark of creativity.
     </p>
+    <div class="border-standard radius-l mb-32">
+      <img
+        src="projects/pattern-hearts-idea1.svg"
+        alt=""
+        class="m-middle pd-all-48"
+      />
+    </div>
+  </div>
+  <div class="container-l d-flex gap-32">
+    <div class="box-2 border-standard radius-l flex-end flower-hearts">
+      <img
+        src="projects/pattern-hearts-idea2.svg"
+        alt=""
+        class="flower-hearts-pd"
+      />
+    </div>
+    <div class="box-2 border-standard radius-l">
+      <img src="projects/pattern-hearts-idea3.svg" alt="" class="pd-all-32" />
+    </div>
   </div>
 </section>
 
@@ -166,8 +185,67 @@
 <section id="section3">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
+    <p>
+      The goal was to keep everything light and easy to use - but under the
+      surface, a few puzzles needed solving. Here's what happened behind the
+      scenes:
+    </p>
+    <h3>SVG Integration & Frame Removal</h3>
+    <p>
+      All hearts are stored as SVGs with one &lt;path&gt; each. When a heart is
+      inserted into Figma, the SVG is converted into a Figma node using
+      figma.createNodeFromSvg().
+    </p>
+    <p>
+      But SVGs come wrapped in a frame by default - not ideal for this use case.
+      So the actual VECTOR node inside is extracted and the frame removed to
+      keep things clean and minimal inside the user's file.
+    </p>
+    <app-code-good-bad [code]="exampleCode1"></app-code-good-bad>
+    <h3>The Gradient Struggle (And Solution)</h3>
+    <p>
+      I wanted a magic button that fills hearts with a rainbow gradient. But
+      Figma doesn't support &lt;linearGradient&gt; from raw SVGs.
+    </p>
+    <p>
+      <strong>The workaround:</strong> A heart is inserted into Figma first,
+      then a GRADIENT_LINEAR fill applied via the plugin API.
+    </p>
+    <app-code-good-bad [code]="exampleCode2"></app-code-good-bad>
+    <p>This gives users a native Figma gradient they can edit if needed.</p>
+    <h3>Handling Color Picker Logic</h3>
+    <p>
+      Colors selected in the plugin's UI are passed from ui.html to code.ts
+      using window.postMessage(). Since Figma's API doesn't accept hex colors,
+      they need to be converted to RGB in code:
+    </p>
+    <app-code-good-bad [code]="exampleCode3"></app-code-good-bad>
+    <p>
+      Figma's API expects RGB values between 0 and 1 - so hex colors are
+      converted by dividing by 255.
+    </p>
   </div>
 </section>
+
+<app-divider></app-divider>
+
+<div class="text-center m-middle container-m link-to-project">
+  <h2>Explore the full Source Code on GitHub</h2>
+  <p class="mb-32">
+    If you're interested in exploring the code and seeing how the project was
+    built in detail, feel free to visit the GitHub repository.
+  </p>
+  <a
+    href="https://github.com/ko-ko-lo/figma-pattern-hearts"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button class="link d-flex align-items m-middle">
+      Go to Repository
+      <span class="material-icons" aria-hidden="true">open_in_new</span>
+    </button>
+  </a>
+</div>
 
 <app-divider></app-divider>
 
@@ -205,5 +283,7 @@
 </div>
 
 <div class="container-m m-middle text-center">
-  <h2 class="pt-120">Thank you for taking the time to explore this project.</h2>
+  <h2 class="pt-120">
+    Thank you for taking the time to explore this little project.
+  </h2>
 </div>
