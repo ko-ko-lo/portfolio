@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ListComponent } from '../../../components/list/list.component';
@@ -7,7 +8,13 @@ import { ListComponent } from '../../../components/list/list.component';
 @Component({
   selector: 'app-jsonify',
   standalone: true,
-  imports: [RouterModule, IntroComponent, DividerComponent, ListComponent],
+  imports: [
+    RouterModule,
+    IntroComponent,
+    DividerComponent,
+    ListComponent,
+    CodeGoodBadComponent,
+  ],
   templateUrl: './jsonify.component.html',
   styleUrl: './jsonify.component.scss',
 })

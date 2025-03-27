@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-hexify',
   standalone: true,
-  imports: [RouterModule, IntroComponent, DividerComponent],
+  imports: [
+    RouterModule,
+    IntroComponent,
+    DividerComponent,
+    CodeGoodBadComponent,
+  ],
   templateUrl: './hexify.component.html',
   styleUrl: './hexify.component.scss',
 })

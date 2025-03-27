@@ -375,11 +375,11 @@
         <strong>Filtering to Color Collections Only</strong><br /><br />This
         function retrieves variables by their IDs from the Figma API and filters
         out any variables that aren't colors.
-        <div class="scrollable-container">
-          <pre class="radius-l">
-            <code [innerHTML]="codeSnippet"></code>
-          </pre>
+
+        <div class="mt-24">
+          <app-code-good-bad [code]="codeSnippet"></app-code-good-bad>
         </div>
+
         <ul>
           <li>
             <strong>Promise.all and map:</strong> To handle multiple IDs at
