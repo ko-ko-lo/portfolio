@@ -52,6 +52,10 @@
   flex-direction: column;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -181,6 +185,14 @@
   padding: variables.$spacing-unit-large * 2;
 }
 
+.pd-all-32 {
+  padding: variables.$spacing-unit-large * 4;
+}
+
+.pd-all-48 {
+  padding: variables.$spacing-unit-large * 6;
+}
+
 .ptb-80 {
   padding: variables.$spacing-unit-large * 10 0;
 }
@@ -211,6 +223,10 @@
 
 .pt-32 {
   padding-top: variables.$spacing-unit-large * 4;
+}
+
+.pt-120 {
+  padding-top: variables.$spacing-unit-large * 15;
 }
 
 // ========================================================================

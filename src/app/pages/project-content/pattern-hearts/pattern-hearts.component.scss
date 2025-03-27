@@ -1,0 +1,30 @@
+@use "../../../../styles/variables" as variables;
+@use "../../../../styles/utilities" as utilities;
+
+.plugin-img {
+  max-height: 450px;
+}
+
+.toolbox h4 {
+  margin-top: 0;
+}
+
+.flower-hearts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flower-hearts-pd {
+  padding: 56px 32px 0;
+}
+
+@media (max-width: variables.$breakpoint-tablet) {
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .gap-32 {
+    gap: variables.$spacing-unit-large * 4;
+  }
+}
