@@ -1,0 +1,26 @@
+<div class="d-flex gap-32 mb-80 mt-120" [ngClass]="{ swap: isSwapped }">
+  <div class="box-2 d-flex">
+    <span class="phase">{{ phasesCount }}</span>
+    <div class="content">
+      <div class="d-flex align-center justify-between">
+        <h3>{{ phasesHeadline }}</h3>
+        <span class="pill pill-blue radius-full">{{ phasesProgress }}</span>
+      </div>
+      <p class="mt-24 mb-40">
+        {{ phasesText }}
+      </p>
+
+      <a *ngIf="phasesLink" [routerLink]="phasesLink" class="subheadline">
+        <span class="material-icons">arrow_forward_ios</span>
+        View Details
+      </a>
+    </div>
+  </div>
+
+  <div class="box-2">
+    <picture>
+      <source [srcset]="phasesImgWebp" type="image/webp" />
+      <img [src]="phasesImg" loading="lazy" alt="" />
+    </picture>
+  </div>
+</div>
