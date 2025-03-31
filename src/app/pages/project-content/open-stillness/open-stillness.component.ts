@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { MyQuoteComponent } from '../../../components/my-quote/my-quote.component';
+import { PhasesProjectComponent } from '../../../components/phases-project/phases-project.component';
 
 @Component({
   selector: 'app-open-stillness',
@@ -14,6 +15,7 @@ import { MyQuoteComponent } from '../../../components/my-quote/my-quote.componen
     IntroComponent,
     MyQuoteComponent,
     BreadcrumbComponent,
+    PhasesProjectComponent,
   ],
   templateUrl: './open-stillness.component.html',
   styleUrl: './open-stillness.component.scss',

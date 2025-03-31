@@ -59,159 +59,85 @@
   <hr />
 
   <!-- Phase 1: MVP / Walking Skeleton -->
-  <div class="d-flex gap-32 mb-80 mt-120">
-    <div class="box-2 d-flex">
-      <span class="phase phase-active">1</span>
-      <div class="content">
-        <div class="d-flex align-center justify-between">
-          <h3>MVP / Walking Skeleton</h3>
-          <span class="pill pill-blue radius-full">Completed</span>
-        </div>
-        <p class="mt-24 mb-40">
-          The foundation of the platform was established in this phase. The
-          architecture was carefully planned, the technology stack chosen, and
-          the design language defined. A scalable design system was developed,
-          and a walking skeleton was implemented using Angular to ensure a solid
-          starting point for future expansions.
-        </p>
-        <a routerLink="/projects/yin-style-yoga-application" class="subheadline"
-          ><span class="material-icons"> arrow_forward_ios </span>
-
-          View Details</a
-        >
-      </div>
-    </div>
-
-    <div class="box-2">
-      <picture>
-        <source srcset="projects/phase-1.webp" type="image/webp" />
-        <img src="projects/phase-1.png" alt="" />
-      </picture>
-    </div>
-  </div>
+  <app-phases-project
+    phasesCount="1"
+    phasesText="The foundation of the platform was established in this phase. The
+    architecture was carefully planned, the technology stack chosen, and
+    the design language defined. A scalable design system was developed,
+    and a walking skeleton was implemented using Angular to ensure a solid
+    starting point for future expansions."
+    phasesProgress="Completed"
+    phasesHeadline="MVP / Walking Skeleton"
+    phasesLink="/projects/yin-style-yoga-application"
+    phasesImgWebp="projects/phase-1.webp"
+    phasesImg="projects/phase-1.png"
+  ></app-phases-project>
 
   <hr />
 
   <!-- Phase 2: MVP / Expanding the Platform -->
-  <div class="d-flex gap-32 mb-80 mt-120 swap">
-    <div class="box-2 d-flex">
-      <span class="phase phase-active">2</span>
-      <div class="content">
-        <div class="d-flex align-center justify-between">
-          <h3>Expanding the Platform</h3>
-          <span class="pill pill-blue radius-full">Completed</span>
-        </div>
-        <p class="mt-24 mb-40">
-          With the core structure in place, this phase focused on expanding the
-          platform's features. Guided meditation sessions and breathwork
-          exercises were introduced, enhancing the user experience.
-          Accessibility improvements and UI refinements ensured that the
-          platform became more inclusive and intuitive.
-        </p>
-
-        <a
-          routerLink="/projects/open-stillness-application-phase-2"
-          class="subheadline"
-          ><span class="material-icons"> arrow_forward_ios </span>
-
-          View Details</a
-        >
-      </div>
-    </div>
-
-    <div class="box-2">
-      <picture>
-        <source srcset="projects/phase-2.webp" type="image/webp" />
-        <img src="projects/phase-2.png" alt="" />
-      </picture>
-    </div>
-  </div>
+  <app-phases-project
+    phasesCount="2"
+    phasesText="With the core structure in place, this phase focused on expanding the
+    platform's features. Guided meditation sessions and breathwork
+    exercises were introduced, enhancing the user experience.
+    Accessibility improvements and UI refinements ensured that the
+    platform became more inclusive and intuitive."
+    phasesProgress="Completed"
+    phasesHeadline="Expanding the Platform"
+    phasesLink="/projects/open-stillness-application-phase-2"
+    phasesImgWebp="projects/phase-2.webp"
+    phasesImg="projects/phase-2.png"
+    [isSwapped]="true"
+  ></app-phases-project>
 
   <hr />
 
   <!-- Phase 3: Routine Videos -->
-  <div class="d-flex gap-32 mb-80 mt-120">
-    <div class="box-2 d-flex">
-      <span class="phase">3</span>
-      <div class="content">
-        <div class="d-flex align-center justify-between">
-          <h3>Routine Videos</h3>
-          <span class="pill pill-brown radius-full">In Progress</span>
-        </div>
-        <p class="mt-24 mb-40">
-          This phase will introduce video content to enhance the platform's
-          experiences and allow users to follow structured routines with ease.
-          In addition ambient soundscapes will be composed to complement each
-          session, creating a deeply immersive and calming atmosphere.
-        </p>
-      </div>
-    </div>
-
-    <div class="box-2">
-      <picture>
-        <source srcset="projects/phase-3.webp" type="image/webp" />
-        <img src="projects/phase-3.png" alt="" />
-      </picture>
-    </div>
-  </div>
+  <app-phases-project
+    phasesCount="3"
+    phasesText="This phase will introduce video content to enhance the platform's
+    experiences and allow users to follow structured routines with ease.
+    In addition ambient soundscapes will be composed to complement each
+    session, creating a deeply immersive and calming atmosphere."
+    phasesProgress="In Progress"
+    phasesHeadline="Routine Videos"
+    phasesImgWebp="projects/phase-3.webp"
+    phasesImg="projects/phase-3.png"
+  ></app-phases-project>
 
   <hr />
 
   <!-- Phase 4: Progressive Web App -->
-  <div class="d-flex gap-32 mb-80 mt-120 swap">
-    <div class="box-2 d-flex">
-      <span class="phase">4</span>
-      <div class="content">
-        <div class="d-flex align-center justify-between">
-          <h3>Progressive Web App</h3>
-          <span class="pill pill-brown radius-full">In Progress</span>
-        </div>
-        <p class="mt-24 mb-40">
-          Transforming the platform into a Progressive Web App (PWA) allows
-          users to access mindfulness practices anytime, anywhere. Offline
-          functionality, push notifications, and performance optimizations will
-          be key focuses, ensuring a smooth and engaging experience even without
-          an internet connection.
-        </p>
-      </div>
-    </div>
-
-    <div class="box-2">
-      <picture>
-        <source srcset="projects/phase-4.webp" type="image/webp" />
-        <img src="projects/phase-4.png" alt="" />
-      </picture>
-    </div>
-  </div>
+  <app-phases-project
+    phasesCount="4"
+    phasesText="Transforming the platform into a Progressive Web App (PWA) allows
+    users to access mindfulness practices anytime, anywhere. Offline
+    functionality, push notifications, and performance optimizations will
+    be key focuses, ensuring a smooth and engaging experience even without
+    an internet connection."
+    phasesProgress="In Progress"
+    phasesHeadline="Progressive Web App"
+    phasesImgWebp="projects/phase-4.webp"
+    phasesImg="projects/phase-4.png"
+    [isSwapped]="true"
+  ></app-phases-project>
 
   <hr />
 
   <!-- Phase 5: MVP / Walking Skeleton -->
-  <div class="d-flex gap-32 mb-80 mt-120">
-    <div class="box-2 d-flex">
-      <span class="phase">5</span>
-      <div class="content">
-        <div class="d-flex align-center justify-between">
-          <h3>User Backend</h3>
-          <span class="pill pill-neutral radius-full">Coming soon</span>
-        </div>
-        <p class="mt-24 mb-40">
-          Introducing user authentication and personalized features, this phase
-          brings deeper engagement and interactivity. A secure backend enables
-          users to track progress, save preferences, and access personalized
-          content, making the platform a truly individualized mindfulness
-          experience.
-        </p>
-      </div>
-    </div>
-
-    <div class="box-2">
-      <picture>
-        <source srcset="projects/phase-5.webp" type="image/webp" />
-        <img src="projects/phase-5.png" alt="" />
-      </picture>
-    </div>
-  </div>
+  <app-phases-project
+    phasesCount="5"
+    phasesText="Introducing user authentication and personalized features, this phase
+    brings deeper engagement and interactivity. A secure backend enables
+    users to track progress, save preferences, and access personalized
+    content, making the platform a truly individualized mindfulness
+    experience."
+    phasesProgress="Coming soon"
+    phasesHeadline="User Backend"
+    phasesImgWebp="projects/phase-5.webp"
+    phasesImg="projects/phase-5.png"
+  ></app-phases-project>
 </section>
 
 <app-divider></app-divider>
