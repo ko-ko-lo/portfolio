@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-research',
   standalone: true,
-  imports: [RouterModule, IntroComponent, DividerComponent],
+  imports: [
+    RouterModule,
+    IntroComponent,
+    DividerComponent,
+    BreadcrumbBlogComponent,
+  ],
   templateUrl: './research.component.html',
   styleUrl: './research.component.scss',
 })

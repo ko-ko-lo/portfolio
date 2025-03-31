@@ -24,5 +24,3 @@ export class BlogModule {
     return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
   }
 }
-
-console.log('BlogModule loaded');

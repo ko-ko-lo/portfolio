@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
@@ -14,6 +15,7 @@ import { ListComponent } from '../../../components/list/list.component';
     DividerComponent,
     ListComponent,
     CodeGoodBadComponent,
+    BreadcrumbComponent,
   ],
   templateUrl: './jsonify.component.html',
   styleUrl: './jsonify.component.scss',

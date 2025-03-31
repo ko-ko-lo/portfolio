@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
@@ -12,6 +13,7 @@ import { IntroComponent } from '../../../components/intro/intro.component';
     DividerComponent,
     IntroComponent,
     CodeGoodBadComponent,
+    BreadcrumbComponent,
   ],
   templateUrl: './pattern-hearts.component.html',
   styleUrl: './pattern-hearts.component.scss',

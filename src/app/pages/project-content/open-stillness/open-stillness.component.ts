@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { MyQuoteComponent } from '../../../components/my-quote/my-quote.component';
@@ -7,7 +8,13 @@ import { MyQuoteComponent } from '../../../components/my-quote/my-quote.componen
 @Component({
   selector: 'app-open-stillness',
   standalone: true,
-  imports: [RouterModule, DividerComponent, IntroComponent, MyQuoteComponent],
+  imports: [
+    RouterModule,
+    DividerComponent,
+    IntroComponent,
+    MyQuoteComponent,
+    BreadcrumbComponent,
+  ],
   templateUrl: './open-stillness.component.html',
   styleUrl: './open-stillness.component.scss',
 })
