@@ -71,6 +71,7 @@
     phasesLink="/projects/yin-style-yoga-application"
     phasesImgWebp="projects/phase-1.webp"
     phasesImg="projects/phase-1.png"
+    [isActive]="true"
   ></app-phases-project>
 
   <hr />
@@ -89,6 +90,7 @@
     phasesImgWebp="projects/phase-2.webp"
     phasesImg="projects/phase-2.png"
     [isSwapped]="true"
+    [isActive]="true"
   ></app-phases-project>
 
   <hr />
@@ -104,6 +106,7 @@
     phasesHeadline="Routine Videos"
     phasesImgWebp="projects/phase-3.webp"
     phasesImg="projects/phase-3.png"
+    pillColor="brown"
   ></app-phases-project>
 
   <hr />
@@ -121,6 +124,7 @@
     phasesImgWebp="projects/phase-4.webp"
     phasesImg="projects/phase-4.png"
     [isSwapped]="true"
+    pillColor="brown"
   ></app-phases-project>
 
   <hr />
@@ -137,37 +141,20 @@
     phasesHeadline="User Backend"
     phasesImgWebp="projects/phase-5.webp"
     phasesImg="projects/phase-5.png"
+    pillColor="neutral"
   ></app-phases-project>
 </section>
 
 <app-divider></app-divider>
 
-<section class="text-center">
-  <div class="container-l">
-    <h2>Technical Tools used</h2>
-    <div class="d-flex flex-wrap gap-32">
-      <div
-        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
-      >
-        <h3>Web Technologies</h3>
-        <p>TypeScript, SCSS and HTML</p>
-      </div>
-
-      <div
-        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
-      >
-        <h3>Frontend Framework</h3>
-        <p>Angular for Component-based Development</p>
-      </div>
-      <div
-        class="box-1 flex-wrap justify-between gap-32 toolbox border-standard radius-l"
-      >
-        <h3>Design Tools</h3>
-        <p>Figma for UIs, Procreate for Illustrations</p>
-      </div>
-    </div>
-  </div>
-</section>
+<app-technical-tools-big
+  headlineTools1="Web Technologies"
+  headlineTools2="Frontend Framework"
+  headlineTools3="Design Tools"
+  textTools1="TypeScript, SCSS and HTML"
+  textTools2="Angular for Component-based Development"
+  textTools3="Figma for UIs, Procreate for Illustrations"
+></app-technical-tools-big>
 
 <app-divider></app-divider>
 

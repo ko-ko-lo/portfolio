@@ -5,6 +5,7 @@ import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-goo
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ListComponent } from '../../../components/list/list.component';
+import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
   selector: 'app-jsonify',
@@ -16,6 +17,7 @@ import { ListComponent } from '../../../components/list/list.component';
     ListComponent,
     CodeGoodBadComponent,
     BreadcrumbComponent,
+    TechnicalToolsSmallComponent,
   ],
   templateUrl: './jsonify.component.html',
   styleUrl: './jsonify.component.scss',

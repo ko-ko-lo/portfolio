@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
+import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
   selector: 'app-yoga-application',
@@ -12,6 +13,7 @@ import { DividerComponent } from '../../../components/divider/divider.component'
     DividerComponent,
     CodeGoodBadComponent,
     BreadcrumbComponent,
+    TechnicalToolsBigComponent,
   ],
   templateUrl: './yoga-application.component.html',
   styleUrl: './yoga-application.component.scss',

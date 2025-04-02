@@ -18,4 +18,6 @@ export class PhasesProjectComponent {
   @Input() phasesImgWebp: string = '';
   @Input() phasesImg: string = '';
   @Input() isSwapped: boolean = false;
+  @Input() isActive: boolean = false;
+  @Input() pillColor: 'blue' | 'brown' | 'neutral' = 'blue';
 }

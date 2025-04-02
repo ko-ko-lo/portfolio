@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
   selector: 'app-pattern-hearts',
@@ -14,6 +15,7 @@ import { IntroComponent } from '../../../components/intro/intro.component';
     IntroComponent,
     CodeGoodBadComponent,
     BreadcrumbComponent,
+    TechnicalToolsSmallComponent,
   ],
   templateUrl: './pattern-hearts.component.html',
   styleUrl: './pattern-hearts.component.scss',

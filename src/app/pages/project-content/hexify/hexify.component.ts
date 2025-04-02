@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
   selector: 'app-hexify',
@@ -14,6 +15,7 @@ import { IntroComponent } from '../../../components/intro/intro.component';
     DividerComponent,
     CodeGoodBadComponent,
     BreadcrumbComponent,
+    TechnicalToolsBigComponent,
   ],
   templateUrl: './hexify.component.html',
   styleUrl: './hexify.component.scss',
