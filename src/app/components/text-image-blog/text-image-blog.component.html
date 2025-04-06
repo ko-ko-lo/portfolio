@@ -1,0 +1,21 @@
+<section>
+  <div class="container-m m-middle">
+    <h2>{{ headlineH2 }}</h2>
+    <p
+      *ngFor="let paragraph of paragraphs; let isLast = last"
+      [ngClass]="{ 'mb-48': isLast }"
+    >
+      {{ paragraph }}
+    </p>
+    <picture>
+      <source [srcset]="imgWebpSrc" type="image/webp" />
+      <img
+        [src]="imgSrc"
+        alt=""
+        class="m-middle"
+        [ngClass]="{ single: single }"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
