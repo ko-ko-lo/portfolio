@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
@@ -16,6 +17,7 @@ import { TechnicalToolsBigComponent } from '../../../components/technical-tools-
     CodeGoodBadComponent,
     BreadcrumbComponent,
     TechnicalToolsBigComponent,
+    ScrollMenuComponent,
   ],
   templateUrl: './hexify.component.html',
   styleUrl: './hexify.component.scss',
@@ -47,11 +49,11 @@ export class HexifyComponent {
     );
   }`;
 
-  scrollTo(element: string): void {
-    (document.getElementById(element) as HTMLElement).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  }
+  sections = [
+    { id: 'section1', label: '1. Purpose & Goals' },
+    { id: 'section2', label: '2. Architecture' },
+    { id: 'section3', label: '3. Visual Design & User Flow' },
+    { id: 'section4', label: '4. Development Insights' },
+    { id: 'section5', label: '5. Reflections & Future Plans' },
+  ];
 }

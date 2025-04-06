@@ -37,27 +37,7 @@
 
 <app-divider></app-divider>
 
-<section class="table-contents">
-  <div class="container-m m-middle text-center">
-    <h2>Table of Contents</h2>
-    <h3>
-      <a (click)="scrollTo('section1')">1. Purpose &amp; Goals</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section2')"
-        >2. Key Features and Algorithm Highlights</a
-      >
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section3')">3. Development Insights</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section4')"
-        >4. Reflections on the Creative Process</a
-      >
-    </h3>
-  </div>
-</section>
+<app-scroll-menu [sections]="sections"></app-scroll-menu>
 
 <app-divider></app-divider>
 

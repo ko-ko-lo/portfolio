@@ -55,20 +55,7 @@
 
 <app-divider></app-divider>
 
-<section class="table-contents">
-  <div class="container-m m-middle text-center">
-    <h2>Table of Contents</h2>
-    <h3>
-      <a (click)="scrollTo('section1')">1. Planning and Technology Stack</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section2')">2. UX/UI Design Process</a>
-    </h3>
-    <h3><a (click)="scrollTo('section3')">3. Development Process</a></h3>
-    <h3><a (click)="scrollTo('section4')">4. Future Plans</a></h3>
-    <h3><a (click)="scrollTo('section5')">5. Final Reflections</a></h3>
-  </div>
-</section>
+<app-scroll-menu [sections]="sections"></app-scroll-menu>
 
 <app-divider></app-divider>
 

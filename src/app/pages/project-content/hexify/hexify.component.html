@@ -48,24 +48,7 @@
 
 <app-divider></app-divider>
 
-<section class="table-contents mt-80">
-  <div class="container-m m-middle text-center">
-    <h2>Table of Contents</h2>
-    <h3>
-      <a (click)="scrollTo('section1')">1. Purpose &amp; Goals</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section2')">2. Architecture</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section3')">3. Visual Design &amp; User Flow</a>
-    </h3>
-    <h3><a (click)="scrollTo('section4')">4. Development Insights</a></h3>
-    <h3>
-      <a (click)="scrollTo('section5')">5. Reflections &amp; Future Plans</a>
-    </h3>
-  </div>
-</section>
+<app-scroll-menu [sections]="sections"></app-scroll-menu>
 
 <app-divider></app-divider>
 

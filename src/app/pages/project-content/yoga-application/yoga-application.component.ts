@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
+import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
@@ -14,6 +15,7 @@ import { TechnicalToolsBigComponent } from '../../../components/technical-tools-
     CodeGoodBadComponent,
     BreadcrumbComponent,
     TechnicalToolsBigComponent,
+    ScrollMenuComponent,
   ],
   templateUrl: './yoga-application.component.html',
   styleUrl: './yoga-application.component.scss',
@@ -21,6 +23,14 @@ import { TechnicalToolsBigComponent } from '../../../components/technical-tools-
 export class YogaApplicationComponent {
   linkBreadcrumb: string = '/projects/open-stillness-application';
   linkTextBreadcrumb: string = 'Open Stillness Project Overview';
+
+  sections = [
+    { id: 'section1', label: '1. Planning and Technology Stack' },
+    { id: 'section2', label: '2. UX/UI Design Process' },
+    { id: 'section3', label: '3. Development Process' },
+    { id: 'section4', label: '4. Future Plans' },
+    { id: 'section5', label: '5. Final Reflections' },
+  ];
 
   codeSnippet: string = `
 export class LibraryComponent implements OnInit {
@@ -34,11 +44,4 @@ export class LibraryComponent implements OnInit {
     });
   }
 }`;
-  scrollTo(element: string): void {
-    (document.getElementById(element) as HTMLElement).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  }
 }

@@ -42,29 +42,7 @@
 
 <app-divider></app-divider>
 
-<section class="table-contents">
-  <div class="container-m m-middle text-center">
-    <h2>Table of Contents</h2>
-    <h3>
-      <a (click)="scrollTo('section1')"
-        >1. Introducing Meditation & Breathwork Sections</a
-      >
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section2')">2. Extending the Architecture</a>
-    </h3>
-    <h3><a (click)="scrollTo('section3')">3. Redesigning the Navigation</a></h3>
-    <h3>
-      <a (click)="scrollTo('section4')"
-        >4. From Kokolo Yoga to Open Stillness</a
-      >
-    </h3>
-    <h3><a (click)="scrollTo('section5')">5. Enhancing Accessibility</a></h3>
-    <h3>
-      <a (click)="scrollTo('section6')">6. Final Reflections & Learnings</a>
-    </h3>
-  </div>
-</section>
+<app-scroll-menu [sections]="sections"></app-scroll-menu>
 
 <app-divider></app-divider>
 

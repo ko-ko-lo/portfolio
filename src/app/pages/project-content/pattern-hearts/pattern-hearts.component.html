@@ -41,23 +41,7 @@
 
 <app-divider></app-divider>
 
-<section class="table-contents">
-  <div class="container-m m-middle text-center">
-    <h2>Table of Contents</h2>
-    <h3>
-      <a (click)="scrollTo('section1')">1. Purpose &amp; Goals</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section2')">2. Features &amp; Visual Design</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section3')">3. Development Insights</a>
-    </h3>
-    <h3>
-      <a (click)="scrollTo('section4')">4. Final Reflections</a>
-    </h3>
-  </div>
-</section>
+<app-scroll-menu [sections]="sections"> </app-scroll-menu>
 
 <app-divider></app-divider>
 
@@ -95,12 +79,12 @@
       <li class="mb-16">
         <strong>A Library of Patterned Hearts</strong><br />
         From playful polka dots to sleek lines - each heart comes with a unique
-        pattern to match every mood and message.
+        pattern.
       </li>
       <li class="mb-16">
         <strong>Built-in Color Picker</strong><br />
-        Choose from a rainbow of vibrant colors (plus a rich, dark gray as the
-        default). Pick a hue and instantly see it reflected across all hearts.
+        Choose from a rainbow of vibrant colors (plus dark gray as the default).
+        Pick a hue and instantly see it reflected across all hearts.
       </li>
       <li class="mb-16">
         <strong>One-Click Insertion</strong><br />

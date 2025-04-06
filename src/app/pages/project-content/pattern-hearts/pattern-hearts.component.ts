@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
@@ -16,6 +17,7 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
     CodeGoodBadComponent,
     BreadcrumbComponent,
     TechnicalToolsSmallComponent,
+    ScrollMenuComponent,
   ],
   templateUrl: './pattern-hearts.component.html',
   styleUrl: './pattern-hearts.component.scss',
@@ -44,11 +46,10 @@ heartVector.fills = [gradientFill];`;
 const g = parseInt(hex.slice(3, 5), 16) / 255;
 const b = parseInt(hex.slice(5, 7), 16) / 255;`;
 
-  scrollTo(element: string): void {
-    (document.getElementById(element) as HTMLElement).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  }
+  sections = [
+    { id: 'section1', label: '1. Purpose & Goals' },
+    { id: 'section2', label: '2. Features & Visual Design' },
+    { id: 'section3', label: '3. Development Insights' },
+    { id: 'section4', label: '4. Final Reflections' },
+  ];
 }
