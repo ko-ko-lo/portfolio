@@ -1,0 +1,9 @@
+<section class="table-contents">
+  <div class="container-m m-middle text-center">
+    <h2>Table of Contents</h2>
+
+    <h3 *ngFor="let section of sections">
+      <a (click)="scrollTo(section.id)">{{ section.label }}</a>
+    </h3>
+  </div>
+</section>
