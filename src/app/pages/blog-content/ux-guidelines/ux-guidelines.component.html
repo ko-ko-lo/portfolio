@@ -6,164 +6,97 @@
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>1. Design for the Audience</h2>
-    <p>
-      While age is often seen as just a number, it's important to recognize that
-      our different age groups have grown up in varied cultural and
-      technological environments, leading to distinct needs and expectations.
-    </p>
-    <p>
-      So, who are we building this application for? Is it aimed at employees who
-      rarely engage with digital products in their personal and professional
-      lives, or are we targeting seasoned programmers?
-    </p>
-    <p class="mb-32">
-      UX Design should be tailored to the target audience—those for whom we are
-      creating the product. Whoever they may be, understanding their needs is
-      essential.
-    </p>
-    <picture>
-      <source srcset="blog/audience.webp" type="image/webp" />
-      <img src="blog/audience.png" alt="" class="mb-48 m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="1. Design for the Audience"
+  [paragraphs]="[
+    'While age is often seen as just a number, it\'s important to recognize that our different age groups have grown up in varied cultural and technological environments, leading to distinct needs and expectations.',
+    'So, who are we building this application for? Is it aimed at employees who rarely engage with digital products in their personal and professional lives, or are we targeting seasoned programmers?',
+    'UX Design should be tailored to the target audience - those for whom we are creating the product. Whoever they may be, understanding their needs is essential.'
+  ]"
+  imgSrc="blog/audience.png"
+  imgWebpSrc="blog/audience.webp"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>2. Design for Context</h2>
-    <p>
-      How do people in our target group use the product, and where will it be
-      utilized?
-    </p>
-    <p>
-      Are we developing software for someone who will be using it at their desk,
-      or are we creating an app for someone on the go, walking down the street?
-    </p>
-    <p class="mb-32">
-      Understanding the context of use is crucial for designing an effective
-      user experience.
-    </p>
-    <picture>
-      <source srcset="blog/context.webp" type="image/webp" />
-      <img src="blog/context.png" alt="" class="mb-48 m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="2. Design for Context"
+  [paragraphs]="[
+    'How do people in our target group use the product, and where will it be utilized?',
+    'Are we developing software for someone who will be using it at their desk, or are we creating an app for someone on the go, walking down the street?',
+    'Understanding the context of use is crucial for designing an effective user experience.'
+  ]"
+  imgSrc="blog/context.png"
+  imgWebpSrc="blog/context.webp"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>3. Make the Product Easy to Use and Learn</h2>
-    <p>What's easy to use may not always be easy to learn, and vice versa.</p>
-    <p class="mb-32">
-      As a UX Designer, finding a balance between the needs of returning users
-      and those encountering the product for the first time is vital. Strive to
-      create an intuitive experience that accommodates both groups.
-    </p>
-    <picture>
-      <source srcset="blog/easy-to-use.webp" type="image/webp" />
-      <img src="blog/easy-to-use.png" alt="" class="mb-48 single m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="3. Make the Product Easy to Use and Learn"
+  [paragraphs]="[
+    'What\'s easy to use may not always be easy to learn, and vice versa.',
+    'As a UX Designer, finding a balance between the needs of returning users and those encountering the product for the first time is vital. Strive to create an intuitive experience that accommodates both groups.'
+  ]"
+  imgSrc="blog/easy-to-use.png"
+  imgWebpSrc="blog/easy-to-use.webp"
+  [single]="true"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>4. Make the Product Appealing and Satisfying</h2>
-    <p>
-      Creating a product that people not only want to use but love is essential.
-      What matters most to the target audience in crafting a compelling user
-      experience?
-    </p>
-    <p class="mb-32">
-      The product should be more than just easy to use and learn; it should also
-      be enjoyable. Users should feel drawn to return time and again. Discover
-      what motivates a person to engage with the product initially, and what
-      will encourage them to come back.
-    </p>
-    <picture>
-      <source srcset="blog/satisfying.webp" type="image/webp" />
-      <img src="blog/satisfying.png" alt="" class="mb-48 single m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="4. Make the Product Appealing and Satisfying"
+  [paragraphs]="[
+    'Creating a product that people not only want to use but love is essential. What matters most to the target audience in crafting a compelling user experience?',
+    ' The product should be more than just easy to use and learn; it should also be enjoyable. Users should feel drawn to return time and again. Discover what motivates a person to engage with the product initially, and what will encourage them to come back.'
+  ]"
+  imgSrc="blog/satisfying.png"
+  imgWebpSrc="blog/satisfying.webp"
+  [single]="true"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>5. Test the Product with Real Users</h2>
-    <p>In UX, there's a powerful mantra: You are not the user.</p>
-    <p>
-      But how to uncover what users truly need and desire? Testing the product
-      is key. What you perceive as user-friendly may differ significantly from
-      the experiences of your target audience.
-    </p>
-    <p class="mb-32">
-      Engaging with real users will provide insights that are invaluable for
-      refining the product.
-    </p>
-    <picture>
-      <source srcset="blog/testing.webp" type="image/webp" />
-      <img src="blog/testing.png" alt="" class="mb-48 single m-middle" />
-    </picture>
-  </div>
-</section>
-
-<section class="ptb-80">
-  <div class="container-m m-middle">
-    <h2>6. Consider the Goals of the Business</h2>
-    <p>
-      A product exists for reasons beyond just creating a great user experience;
-      there are business objectives to consider.
-    </p>
-    <p>
-      For example, if the product is a news website aiming to generate revenue
-      through banner ads, a potential conflict may arise between user needs and
-      company goals.
-    </p>
-    <p class="mb-32">
-      As a UX Designer, it's essential to navigate these complexities, keeping
-      both the company's objectives and the users' goals in mind, even when it's
-      challenging.
-    </p>
-    <picture>
-      <source srcset="blog/business-goals.webp" type="image/webp" />
-      <img src="blog/business-goals.png" alt="" class="mb-48 single m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="5. Test the Product with Real Users"
+  [paragraphs]="[
+    'In UX, there\'s a powerful mantra: You are not the user.',
+    'But how to uncover what users truly need and desire? Testing the product is key. What you perceive as user-friendly may differ significantly from the experiences of your target audience.',
+    ' Engaging with real users will provide insights that are invaluable for refining the product.'
+  ]"
+  imgSrc="blog/testing.png"
+  imgWebpSrc="blog/testing.webp"
+  [single]="true"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
-<section>
-  <div class="container-m m-middle">
-    <h2>7. Put the User First</h2>
-    <p>Above all, the user must always come first.</p>
-    <p>
-      Conflicts can arise not only from company goals but also from technical
-      limitations or constraints related to time and budget. It's important to
-      acknowledge that you may not be able to implement every idea to enhance
-      the user experience.
-    </p>
-    <p class="mb-32">
-      Engaging with real users will provide insights that are invaluable for
-      refining the product.
-    </p>
-    <picture>
-      <source srcset="blog/users-first.webp" type="image/webp" />
-      <img src="blog/users-first.png" alt="" class="mb-48 single m-middle" />
-    </picture>
-  </div>
-</section>
+<app-text-image-blog
+  headlineH2="6. Consider the Goals of the Business"
+  [paragraphs]="[
+    'A product exists for reasons beyond just creating a great user experience - there are business objectives to consider.',
+    'For example, if the product is a news website aiming to generate revenue through banner ads, a potential conflict may arise between user needs and company goals.',
+    ' As a UX Designer, it\'s essential to navigate these complexities, keeping both the company\'s objectives and the users\' goals in mind, even when it\'s challenging.'
+  ]"
+  imgSrc="blog/business-goals.png"
+  imgWebpSrc="blog/business-goals.webp"
+  [single]="true"
+></app-text-image-blog>
+
+<app-divider></app-divider>
+
+<app-text-image-blog
+  headlineH2="7. Put the User First"
+  [paragraphs]="[
+    'Above all, the user must always come first.',
+    'Conflicts can arise not only from company goals but also from technical limitations or constraints related to time and budget. It\'s important to acknowledge that you may not be able to implement every idea to enhance the user experience.',
+    'Even when making decisions that require compromises, the UX Designer must always be the voice of the user.'
+  ]"
+  imgSrc="blog/users-first.png"
+  imgWebpSrc="blog/users-first.webp"
+  [single]="true"
+></app-text-image-blog>
 
 <app-divider></app-divider>
 
@@ -178,7 +111,7 @@
     <p class="mb-32">
       As a UX Designer, your aim is to ensure that these individuals enjoy a
       seamless and delightful experience. The seven guidelines outlined here
-      will help to make informed decisions that benefit both the user and the
+      will help to make informed decisions that benefit both, the user and the
       product.
     </p>
   </div>

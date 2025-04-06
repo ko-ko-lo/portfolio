@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
+import { TextImageBlogComponent } from '../../../components/text-image-blog/text-image-blog.component';
 
 @Component({
   selector: 'app-ux-guidelines',
@@ -12,6 +13,7 @@ import { IntroComponent } from '../../../components/intro/intro.component';
     IntroComponent,
     DividerComponent,
     BreadcrumbBlogComponent,
+    TextImageBlogComponent,
   ],
   templateUrl: './ux-guidelines.component.html',
   styleUrl: './ux-guidelines.component.scss',
