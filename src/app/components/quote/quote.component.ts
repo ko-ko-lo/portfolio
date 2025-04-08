@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './quote.component.scss',
 })
 export class QuoteComponent {
-  @Input() title: string = '';
-  @Input() text: string = '';
+  @Input() author: string = '';
+  @Input() quote: string = '';
 }

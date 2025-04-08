@@ -23,4 +23,8 @@ export class ReflectionsComponent {
   text: string[] = [
     'This collection is not only an expression of my personal experience but also an invitation for others to explore their own inner worlds, to find beauty in their challenges and to embrace both the light and the dark that make us who we are.',
   ];
+
+  quote =
+    "I guess I'm pretty much of a lone wolf. I don't say I don't like people at all, but, to tell you the truth, I only like it then if I have a chance to look deep into their hearts and their minds.";
+  author = 'Bela Lugosi';
 }

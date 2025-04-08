@@ -10,4 +10,7 @@ import { MyQuoteComponent } from '../../../components/my-quote/my-quote.componen
   templateUrl: './connection.component.html',
   styleUrl: './connection.component.scss',
 })
-export class ConnectionComponent {}
+export class ConnectionComponent {
+  text =
+    "The connection of souls doesn't fade with distance or time - it lingers, quietly, like a melody you can still hear in your heart, even when the song has ended.";
+}

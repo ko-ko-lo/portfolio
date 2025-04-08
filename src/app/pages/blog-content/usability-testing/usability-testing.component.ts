@@ -4,6 +4,7 @@ import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/bre
 import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ListComponent } from '../../../components/list/list.component';
+import { TextHighlightComponent } from '../../../components/text-highlight/text-highlight.component';
 
 @Component({
   selector: 'app-usability-testing',
@@ -14,6 +15,7 @@ import { ListComponent } from '../../../components/list/list.component';
     DividerComponent,
     ListComponent,
     BreadcrumbBlogComponent,
+    TextHighlightComponent,
   ],
   templateUrl: './usability-testing.component.html',
   styleUrl: './usability-testing.component.scss',

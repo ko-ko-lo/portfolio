@@ -25,6 +25,9 @@ export class AboutMeComponent {
   text: string =
     'I started my journey in design, driven by a curiosity to understand how things are made. That same mindset led me to software development, where I found the perfect mix of creativity, logic, and problem-solving. Now, I combine design and code to craft intuitive, meaningful digital experiences.';
 
+  myQuote: string =
+    'The road ahead for me is about continuing to merge creativity and code, learning new skills, and creating products that bring ideas to life in ways that feel meaningful and impactful.';
+
   getWebpImage(imagePath: string | undefined): string | undefined {
     if (!imagePath) return undefined;
     return imagePath.replace(/\.(png|jpg|jpeg)$/, '.webp');
