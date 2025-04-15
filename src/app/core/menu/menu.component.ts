@@ -17,7 +17,6 @@ export class MenuComponent implements OnInit {
     { label: 'Projects', link: '/projects' },
     { label: 'Blog', link: '/blog' },
     { label: 'About Me', link: '/about-me' },
-    { label: 'Art', link: '/art' },
   ];
 
   constructor(private router: Router) {}
