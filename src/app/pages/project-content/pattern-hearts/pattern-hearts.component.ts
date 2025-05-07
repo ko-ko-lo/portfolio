@@ -25,7 +25,7 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
 export class PatternHeartsComponent {
   title: string = 'Love Comes in All Patterns: A Fun Figma Plugin';
   text: string[] = [
-    'This plugin brings a collection of crafted, patterned hearts to Figma designs - perfect for adding warmth, charm, and creativity. Whether used to celebrate, connect, or simply bring warmth to a design, the hearts are a playful tool with an underlying message: love comes in all patterns.',
+    'This plugin brings a collection of crafted, patterned hearts to Figma designs - perfect for adding warmth, charm, and creativity. The plugin is a playful tool with an underlying message: love comes in all patterns.',
   ];
 
   exampleCode1: string = `const node = figma.createNodeFromSvg(heartSVG);

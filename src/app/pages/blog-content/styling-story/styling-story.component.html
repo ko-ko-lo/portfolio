@@ -1,0 +1,132 @@
+<app-breadcrumb></app-breadcrumb>
+
+<article>
+  <app-intro [title]="title" [text]="text"></app-intro>
+</article>
+
+<div class="container-m m-middle">
+  <picture>
+    <source srcset="blog/a11y-robot.webp" type="image/webp" />
+    <img
+      src="blog/a11y-robot.png"
+      alt=""
+      class="radius-l mt-64 m-middle elevation-xs robot"
+    />
+  </picture>
+</div>
+
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>Early Days with CSS</h2>
+  <p>
+    My journey into Web Development and CSS began a long time ago - at the end
+    of 2012. Back in those days, some developers were still using Inline CSS, so
+    learning CSS with classes felt almost avant-garde.
+  </p>
+  <p>
+    CSS back then was more challenging in many ways. Placing a container on the
+    right side of a layout could lead into a "float" adventure and hours of
+    questioning your skills. So the biggest challenge for me was layout: trying
+    to make elements sit where they were supposed to.
+  </p>
+  <p>
+    There was a lot of repetition. Variables weren't a thing yet, and even if
+    there were ways to work more efficiently, browser compatibility often
+    prevented you from using them. It was a real pain. No helper modules, no
+    preprocessors, just raw CSS and hacks.
+  </p>
+  <p>
+    I still remember how proud I was in 2013, learning responsive design. It
+    felt like magic. Seeing containers break beautifully at different screen
+    sizes was a true gamechanger.
+  </p>
+  <p>
+    In summary: CSS was harder, less flexible, and full of repetition. But it
+    was also deeply formative.
+  </p>
+</section>
+
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>SCSS and Structure</h2>
+  <p>
+    Over the years, my focus shifted more toward UX/UI Design. But development
+    never stopped calling me back.
+  </p>
+  <p>
+    When I returned to coding more seriously, I started exploring SCSS. And what
+    a revelation it was.
+  </p>
+  <p>
+    I began by creating base variables for colors, spacing, shadows, etc., and
+    then semantic variables like "text-color-body", "bg-color-primary", and so
+    on. Utility classes became more meaningful. Nesting, mixins, logic-based
+    spacing ($spacing-unit-large: 0.44rem * 5) - it felt like writing code, not
+    just styles.
+  </p>
+  <p>
+    In 2023, I even chose SCSS for my heart project: a web application for
+    Yin-Style Yoga, Meditation, and Breathwork. It just made sense. SCSS was
+    structured, logical, and expressive. I loved it.
+  </p>
+</section>
+
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>Discovering Tailwind CSS</h2>
+  <p>
+    While job hunting as a developer, I kept seeing Tailwind CSS pop up. In job
+    postings. In articles. In projects. Eventually, I added it to my "To Learn"
+    list.
+  </p>
+  <p>
+    Rather than take a course, I decided to dive in hands-on. My project was
+    ongoing and scalable, so I thought: why not implement Tailwind directly?
+  </p>
+  <p>
+    It was challenging at first. I was used to writing my own class names.
+    Tailwind forced me to rewire how I thought about styling.
+  </p>
+  <p>
+    At first, I missed SCSS. I missed control. I struggled when things didn't
+    work. But slowly, I got used to it. I started creating design tokens in
+    "tailwind.config.js". I learned to love utility classes. I found power in
+    "&#64;apply" and flexibility in inline styling.
+  </p>
+  <p>
+    Eventually, writing Tailwind started to feel fun. Fast. Expressive. The
+    structure I learned from SCSS helped me bring order to Tailwind's
+    flexibility.
+  </p>
+</section>
+
+<app-divider></app-divider>
+
+<section class="container-m m-middle">
+  <h2>What I've Learned</h2>
+  <p>
+    Styling has evolved. It's gotten more efficient and more powerful. But it's
+    also gotten more complex.
+  </p>
+  <p>
+    I'm grateful I learned CSS when I did. The fundamentals are in my bones. I
+    know <span class="text-italic">why</span> Tailwind works the way it does.
+    That grounding helps.
+  </p>
+  <p class="mb-48">
+    I know struggles younger developers may never face (like floating a
+    sidebar), and I admire those who came before me, who built layouts with
+    tables and inline styles.
+  </p>
+</section>
+
+<app-my-quote [myQuote]="myQuote"></app-my-quote>
+
+<section class="container-m m-middle">
+  <p class="mt-48">
+    We are all part of this styling journey - let's see where it leads us next.
+  </p>
+</section>

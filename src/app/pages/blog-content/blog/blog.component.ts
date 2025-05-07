@@ -9,7 +9,6 @@ import { IntroComponent } from '../../../components/intro/intro.component';
   standalone: true,
   imports: [RouterModule, IntroComponent, BlogCardComponent, DividerComponent],
   templateUrl: './blog.component.html',
-  styleUrl: './blog.component.scss',
 })
 export class BlogComponent {
   title: string = 'Beyond Code: Thoughts on Design & Development';
