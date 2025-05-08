@@ -1,4 +1,7 @@
-<article class="d-flex flex-wrap justify-between gap-32 container-l" id="card">
+<article
+  class="justify-content-start d-flex flex-wrap justify-between gap-32 container-l"
+  id="card"
+>
   <a
     *ngFor="let article of articles"
     [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"

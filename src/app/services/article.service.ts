@@ -7,11 +7,18 @@ import { OverviewCardData } from '../models/card.model';
 export class ArticleService {
   private articles: OverviewCardData[] = [
     {
+      id: 5,
+      title: 'My Styling Story: From CSS to Tailwind',
+      image: 'blog/styling-colors-teaser.jpg',
+      link: 'styling-story',
+      absoluteLink: '/blog/styling-story',
+    },
+    {
       id: 4,
       title:
         '5 Accessibility Mistakes I Made (and Fixed) While Building an Angular App',
       image: 'blog/teaser-a11y-robot.jpg',
-      link: 'angular/accessibility',
+      link: 'angular-accessibility',
       absoluteLink: '/blog/angular-accessibility',
     },
     {

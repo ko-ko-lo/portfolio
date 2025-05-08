@@ -9,7 +9,6 @@ import { ArticleService } from '../../services/article.service';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './blog-card.component.html',
-  styleUrl: './blog-card.component.scss',
 })
 export class BlogCardComponent {
   @Input() articles: OverviewCardData[] = [];
