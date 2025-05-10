@@ -20,7 +20,6 @@ import { TechnicalToolsBigComponent } from '../../../components/technical-tools-
     TechnicalToolsBigComponent,
   ],
   templateUrl: './open-stillness.component.html',
-  styleUrl: './open-stillness.component.scss',
 })
 export class OpenStillnessComponent {
   title: string =

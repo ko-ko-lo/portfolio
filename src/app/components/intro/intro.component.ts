@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './intro.component.html',
-  styleUrl: './intro.component.scss',
 })
 export class IntroComponent {
   @Input() title: string = '';

@@ -9,7 +9,6 @@ import { ArtService } from '../../services/art.service';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './artworks.component.html',
-  styleUrl: './artworks.component.scss',
 })
 export class ArtworksComponent implements OnInit {
   @Input() artLimit: number | null = null; // Allows dynamic limiting

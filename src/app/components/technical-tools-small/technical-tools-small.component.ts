@@ -5,7 +5,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './technical-tools-small.component.html',
-  styleUrl: './technical-tools-small.component.scss',
 })
 export class TechnicalToolsSmallComponent {
   @Input() textTechnologies: string =

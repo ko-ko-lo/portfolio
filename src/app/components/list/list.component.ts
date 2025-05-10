@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './list.component.html',
-  styleUrl: './list.component.scss',
 })
 export class ListComponent {
   @Input() headline: string = '';

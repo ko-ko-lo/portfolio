@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './scroll-menu.component.html',
-  styleUrl: './scroll-menu.component.scss',
 })
 export class ScrollMenuComponent {
   @Input() sections: { id: string; label: string }[] = [];

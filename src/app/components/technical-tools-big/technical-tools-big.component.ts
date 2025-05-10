@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './technical-tools-big.component.html',
-  styleUrl: './technical-tools-big.component.scss',
 })
 export class TechnicalToolsBigComponent {
   @Input() headlineTools1: string = '';

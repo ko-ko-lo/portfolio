@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './breadcrumb.component.html',
-  styleUrl: './breadcrumb.component.scss',
 })
 export class BreadcrumbComponent {
   @Input() linkTextBreadcrumb: string = 'Projects Overview';
