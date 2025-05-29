@@ -1,0 +1,71 @@
+@use "./tokens.scss" as token;
+
+/* ------------------------------------------------------------------
+ Colors
+------------------------------------------------------------------ */
+// background
+$color-bg: token.$gray-900;
+$color-bg-message: token.$violet-800;
+$colof-bg-social: token.$gold;
+$color-bg-usability: token.$gray-700;
+$color-bg-a11y: token.$teal-700;
+$color-bg-frontend: token.$teal-700;
+$color-bg-system: token.$violet-700;
+$color-bg-plugin: token.$ochre-700;
+$color-bg-hover: token.$gold-tranparent;
+$color-bg-hover-gray: token.$gray-800;
+
+// text
+$color-text-primary: token.$gray-50;
+
+// border
+$color-border: token.$gray-400;
+$color-border-tag-usability: token.$gray-600;
+$color-border-tag-a11y: token.$teal-500;
+$color-border-tag-system: token.$violet-500;
+$color-border-tag-frontend: token.$green;
+$color-border-tag-plugin: token.$ochre-500;
+
+// button
+$color-button-primary: token.$gold;
+
+/* ------------------------------------------------------------------
+ Typography
+------------------------------------------------------------------ */
+// Font Families
+$font-family-base: "Outfit", sans-serif;
+$font-family-heading: "Recursive", sans-serif;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+$font-size-breadcrumb: token.$spacing-unit-small * 7;
+$font-size-base: 1.125rem;
+
+$link-text: token.$gold;
+$link-hover: token.$ochre-500;
+$link-visited: token.$gold;
+$link-focus: token.$gold;
+
+/* ------------------------------------------------------------------
+ Spacing
+------------------------------------------------------------------ */
+// Responsive Spacing
+$global-pd-desktop: token.$spacing-unit-large * 12;
+$global-pd-tablet: token.$spacing-unit-large * 3;
+$global-pd-mobile: token.$spacing-unit-large * 2;
+
+// Line Height
+$lineheight-heading: token.$lineheight-s;
+$lineheight-body: token.$lineheight-m;
+
+/* ------------------------------------------------------------------
+ Radius
+------------------------------------------------------------------ */
+$radius-s: token.$spacing-unit-small * 2;
+$radius-m: token.$spacing-unit-large;
+$radius-l: token.$spacing-unit-small * 6;
+$radius-full: token.$spacing-unit-large * 100;
+$radius-default: token.$spacing-unit-small * 9;

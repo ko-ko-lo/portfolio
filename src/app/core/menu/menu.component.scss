@@ -1,23 +1,17 @@
 @use "../../../styles/variables" as variables;
 @use "../../../styles/utilities" as utilities;
+@use "../../../styles/semantic" as semantic;
+@use "../../../styles/tokens" as token;
 
 header {
-  background-color: variables.$footer-background;
+  background-color: semantic.$color-bg;
 }
 
 .navbar {
-  padding: variables.$spacing-unit-small * 6 0;
+  padding: token.$spacing-unit-small * 6 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.navbar ul,
-.sub-nav ul {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 6%;
-  font-weight: variables.$font-weight-light;
 }
 
 ul {
@@ -28,14 +22,14 @@ ul {
   display: none;
   list-style: none;
   display: flex;
-  gap: variables.$spacing-unit-large * 5;
+  gap: token.$spacing-unit-large * 5;
 
   .nav-item {
     position: relative; /* Allows absolute positioning inside */
 
     a {
       text-decoration: none;
-      color: variables.$font-color-body;
+      color: semantic.$color-text-primary;
       position: relative; /* Needed for the underline positioning */
 
       &.active-link {
@@ -46,11 +40,11 @@ ul {
           content: "";
           position: absolute;
           left: 0;
-          bottom: -26px;
+          bottom: -16px;
           width: 100%;
-          border-radius: variables.$radius-m;
-          height: 4px;
-          background-color: variables.$color-berry-300;
+          border-radius: semantic.$radius-m;
+          height: token.$spacing-unit-small;
+          background-color: token.$gold;
         }
       }
 

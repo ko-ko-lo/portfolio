@@ -1,5 +1,7 @@
 @use "styles/variables" as variables;
 @use "styles/utilities" as utilities;
+@use "styles/semantic" as semantic;
+@use "styles/tokens" as token;
 
 // ========================================================================
 // Base Styles
@@ -9,27 +11,27 @@ html {
 }
 
 body {
-  background-color: variables.$background-color;
-  font-family: "Lato", sans-serif;
-  font-weight: variables.$font-weight-light;
-  line-height: variables.$lineheight-m;
+  background-color: semantic.$color-bg;
+  font-family: semantic.$font-family-base;
+  font-weight: semantic.$font-weight-light;
+  line-height: semantic.$lineheight-body;
   margin: 0;
   padding: 0;
-  color: variables.$color-neutral-50;
+  color: semantic.$color-text-primary;
 }
 
 .container,
 .container-m,
 .container-l {
-  padding: 0 variables.$global-pd-desktop;
+  padding: 0 semantic.$global-pd-desktop;
 }
 
 .container-m {
-  max-width: variables.$max-width-m;
+  max-width: token.$max-width-m;
 }
 
 .container-l {
-  max-width: variables.$max-width-l;
+  max-width: token.$max-width-l;
 }
 
 img {
@@ -49,17 +51,6 @@ figcaption {
   text-align: center;
 }
 
-/*
-*:not(.overlay) {
-  opacity: 0;
-  animation: fadeIn variables.$fade-duration variables.$fade-ease forwards;
-}
-*/
-
-.border-standard {
-  border: 1px solid variables.$color-neutral-400;
-}
-
 // ========================================================================
 // Typography
 // ========================================================================
@@ -67,35 +58,36 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: variables.$lineheight-s;
-  font-weight: variables.$font-weight-regular;
+  font-family: semantic.$font-family-heading;
+  line-height: semantic.$lineheight-heading;
+  font-weight: semantic.$font-weight-medium;
 }
 
 h1 {
   font-size: 3.06rem;
-  margin: 0 0 variables.$spacing-unit-large * 5;
+  margin: 0 0 token.$spacing-unit-large * 5;
   text-align: center;
 }
 
 h2 {
   font-size: 2.44rem;
-  margin: 0 0 variables.$spacing-unit-large * 5;
+  margin: 0 0 token.$spacing-unit-large * 5;
 }
 
 h3 {
   font-size: 1.56rem;
-  margin-bottom: variables.$spacing-unit-large * 3;
-  margin-top: variables.$spacing-unit-large * 6;
+  margin-bottom: token.$spacing-unit-large * 3;
+  margin-top: token.$spacing-unit-large * 6;
 }
 
 h4 {
   font-size: 1.17rem;
   margin-bottom: 0.44rem;
-  margin-top: variables.$spacing-unit-large * 5;
+  margin-top: token.$spacing-unit-large * 5;
 }
 
 p {
-  font-size: 1rem;
+  font-size: semantic.$font-size-base;
   margin-bottom: 1.17rem;
 }
 
@@ -109,48 +101,48 @@ cite {
 }
 
 .highlighted {
-  font-size: variables.$font-size-32;
+  font-size: 32px;
 }
 
 .breadcrumb {
-  font-size: variables.$font-size-14;
+  font-size: semantic.$font-size-breadcrumb;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: semantic.$font-weight-medium;
   letter-spacing: 6%;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: token.$spacing-unit-large;
 }
 
 .material-icons {
-  font-size: variables.$spacing-unit-small * 9;
+  font-size: token.$spacing-unit-small * 9;
 }
 
 a.breadcrumb:hover {
   text-decoration: none;
-  color: variables.$color-berry-100;
+  color: semantic.$link-hover;
 }
 
 .subheadline {
-  font-size: variables.$font-size-23;
+  font-size: 23px;
 }
 
 // ========================================================================
 // Link Styles
 // ========================================================================
 a {
-  color: variables.$color-berry-100;
+  color: semantic.$link-text;
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
-    color: variables.$color-berry-200;
+    color: semantic.$link-hover;
     cursor: pointer;
   }
 
   &:visited,
   &:active {
-    color: variables.$color-berry-200;
+    color: semantic.$link-visited;
   }
 }
 
@@ -159,35 +151,39 @@ a {
 // ========================================================================
 button,
 .button {
-  font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
-  font-size: 0.88rem;
-  font-weight: variables.$font-weight-bold;
-  padding: variables.$spacing-unit-small * 7 variables.$spacing-unit-large * 4;
-  text-transform: uppercase;
-  background-color: variables.$color-berry-200;
-  color: variables.$color-berry-950;
-  border: none;
-  border-radius: variables.$radius-full;
+  font-family: semantic.$font-family-base;
+  font-size: semantic.$font-size-base;
+  font-weight: semantic.$font-weight-light;
+  padding: token.$spacing-unit-small * 7 token.$spacing-unit-large * 4;
+  color: semantic.$color-button-primary;
+  border: token.$spacing-unit-small solid semantic.$color-button-primary;
+  border-radius: semantic.$radius-l;
   cursor: pointer;
-  box-shadow: variables.$elevation-xs;
+  box-shadow: token.$elevation-xs;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
 
   &:hover {
-    background-color: variables.$color-berry-300;
+    background-color: semantic.$color-bg-hover;
     text-decoration: none;
-    border-radius: variables.$radius-l;
+    border-radius: semantic.$radius-full;
   }
 
   &:focus {
-    background-color: variables.$color-berry-200;
-    outline: 2px solid variables.$color-berry-300;
+    outline: 2px solid semantic.$link-focus;
+  }
+
+  &::before {
+    content: "→";
+    margin-right: token.$spacing-unit-large;
+    display: inline-block;
+    font-size: semantic.$font-size-base;
+    transition: transform 0.2s ease;
   }
 }
 
 a.button {
   display: inline-block;
-  color: variables.$color-berry-950;
 }
 
 // ========================================================================
@@ -196,7 +192,7 @@ a.button {
 
 ul,
 ol {
-  line-height: variables.$lineheight-m;
+  line-height: semantic.$lineheight-body;
   padding: 0;
   margin: 0;
   padding-left: 1rem;
@@ -204,7 +200,7 @@ ol {
 
 ol li:not(:last-child),
 ul li:not(:last-child) {
-  padding-bottom: variables.$spacing-unit-large;
+  padding-bottom: token.$spacing-unit-large;
 }
 
 // ========================================================================
@@ -217,11 +213,10 @@ ul li:not(:last-child) {
 
 .toolbox,
 .my-quote {
-  padding: variables.$spacing-unit-large * 5 variables.$spacing-unit-large * 4;
+  padding: token.$spacing-unit-large * 5 token.$spacing-unit-large * 4;
 }
 
 .toolbox h3 {
-  color: variables.$color-neutral-50;
   margin-top: 0;
 }
 
@@ -237,26 +232,27 @@ ul li:not(:last-child) {
 
 #card h3,
 #art-card h3 {
-  padding: variables.$spacing-unit-small variables.$spacing-unit-large * 3
-    variables.$spacing-unit-large * 5;
+  padding: token.$spacing-unit-small token.$spacing-unit-large * 3
+    token.$spacing-unit-large * 5;
 }
 
 #card a,
 #art-card a {
-  color: variables.$font-color-body;
-  background-color: variables.$footer-background;
+  color: semantic.$color-text-primary;
+  background-color: semantic.$color-bg;
 }
 
 #card a:hover,
 #art-card a:hover {
   text-decoration: none;
-  background-color: variables.$color-berry-800;
+  background-color: semantic.$color-bg-hover-gray;
   transition: background-color 0.3s ease;
 }
 
 // ========================================================================
 // Overlay Art Styles
 // ========================================================================
+/*
 .image-container {
   display: inline-block;
 }
@@ -272,7 +268,7 @@ ul li:not(:last-child) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(38, 49, 54, 0.15);
+  background-color: token.$gray-700;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -281,6 +277,7 @@ ul li:not(:last-child) {
 .image-wrapper:hover .overlay {
   opacity: 1;
 }
+*/
 
 // ========================================================================
 // Bluebox for Tools
@@ -289,20 +286,16 @@ ul li:not(:last-child) {
 .bluebox h2,
 .bluebox h3,
 .bluebox p {
-  color: variables.$color-neutral-50;
+  color: semantic.$color-text-primary;
 }
 
 .bluebox {
-  padding: variables.$spacing-unit-large * 13 0;
+  padding: token.$spacing-unit-large * 13 0;
 }
 
 // ========================================================================
 // Open Stillness Project Page
 // ========================================================================
-
-.background-blue-middle {
-  background-color: variables.$color-blue-100;
-}
 
 .subheadline {
   position: relative;
@@ -313,7 +306,7 @@ ul li:not(:last-child) {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: variables.$color-berry-300;
+  background-color: token.$teal-500;
   left: 0;
   bottom: -3px;
   transform: scaleX(0);
@@ -334,12 +327,12 @@ ul li:not(:last-child) {
 // ========================================================================
 // Code Snippet Container
 // ========================================================================
-pre {
+/*pre {
   background-color: variables.$color-neutral-800;
   color: variables.$color-neutral-50;
   padding: variables.$spacing-unit-large * 2;
 }
-
+*/
 .scrollable-container {
   width: 100%;
   max-width: 800px;
@@ -361,14 +354,14 @@ code {
 }
 
 .code-container {
-  color: variables.$color-berry-900;
-  padding: variables.$spacing-unit-large * 2;
-  border-radius: variables.$radius-m;
+  color: token.$teal-500;
+  padding: token.$spacing-unit-large * 2;
+  border-radius: semantic.$radius-m;
   overflow-x: auto;
   font-family: "Fira Code", monospace;
-  font-size: variables.$spacing-unit-small * 9;
+  font-size: token.$spacing-unit-small * 9;
   line-height: 1.6;
-  border: 1px solid variables.$color-neutral-400;
+  border: 1px solid semantic.$color-border;
   box-shadow: none;
 }
 
@@ -380,30 +373,30 @@ code {
 }
 
 button.application {
-  margin-top: variables.$spacing-unit-large * 6;
+  margin-top: token.$spacing-unit-large * 6;
 }
 
 // ========================================================================
 // Responsive Styles
 // ========================================================================
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: token.$breakpoint-tablet) {
   .container-l,
   .container,
   .container-m {
-    padding: 0 variables.$global-pd-tablet;
+    padding: 0 semantic.$global-pd-tablet;
   }
   h1 {
-    font-size: variables.$spacing-unit-small * 18;
+    font-size: token.$spacing-unit-small * 18;
   }
   h2 {
-    font-size: variables.$spacing-unit-small * 15;
+    font-size: token.$spacing-unit-small * 15;
   }
   h3 {
-    font-size: variables.$spacing-unit-small * 11;
+    font-size: token.$spacing-unit-small * 11;
   }
   #card .padding {
-    padding: variables.$spacing-unit-large * 2 variables.$spacing-unit-large * 2
-      variables.$spacing-unit-large * 8;
+    padding: token.$spacing-unit-large * 2 token.$spacing-unit-large * 2
+      token.$spacing-unit-large * 8;
   }
 }
 
@@ -411,10 +404,10 @@ button.application {
   .container-l,
   .container,
   .container-m {
-    padding: 0 variables.$global-pd-mobile;
+    padding: 0 semantic.$global-pd-mobile;
   }
   .highlighted {
-    font-size: variables.$spacing-unit-large * 3;
+    font-size: token.$spacing-unit-large * 3;
   }
 }
 

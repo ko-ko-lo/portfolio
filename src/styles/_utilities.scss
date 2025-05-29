@@ -1,5 +1,7 @@
 // _utilities.scss
 @use "./variables" as variables;
+@use "./tokens" as token;
+@use "./semantic" as semantic;
 
 // ========================================================================
 // Radius
@@ -287,6 +289,10 @@
 .border-left {
   border-left: 2px solid variables.$color-berry-400;
   padding: variables.$spacing-unit-large * 2 0;
+}
+
+.border-standard {
+  border: 1px solid semantic.$color-border;
 }
 
 // ========================================================================
