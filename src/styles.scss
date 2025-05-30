@@ -1,4 +1,3 @@
-@use "styles/variables" as variables;
 @use "styles/utilities" as utilities;
 @use "styles/semantic" as semantic;
 @use "styles/tokens" as token;
@@ -45,8 +44,8 @@ figure {
 }
 
 figcaption {
-  padding-top: variables.$spacing-unit-large * 2;
-  color: variables.$color-neutral-100;
+  padding-top: token.$spacing-unit-large * 2;
+  color: token.$gray-50;
   font-size: 0.78rem;
   text-align: center;
 }
@@ -92,8 +91,8 @@ p {
 }
 
 blockquote {
-  font-size: variables.$font-size-32;
-  font-style: variables.$font-style-italic;
+  font-size: 23px;
+  font-style: italic;
 }
 
 cite {
@@ -318,7 +317,7 @@ ul li:not(:last-child) {
   transform: scaleX(1);
 }
 
-@media (max-width: variables.$breakpoint-mobile) {
+@media (max-width: token.$breakpoint-mobile) {
   .nd-mobile {
     display: none;
   }
@@ -400,7 +399,7 @@ button.application {
   }
 }
 
-@media (max-width: variables.$breakpoint-mobile) {
+@media (max-width: token.$breakpoint-mobile) {
   .container-l,
   .container,
   .container-m {

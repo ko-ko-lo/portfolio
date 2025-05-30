@@ -20,12 +20,7 @@ export const routes: Routes = [
       import('./pages/blog-content/blog.module').then((m) => m.BlogModule),
     title: 'Blog | Portfolio',
   },
-  {
-    path: 'art',
-    loadChildren: () =>
-      import('./pages/art-content/art.module').then((m) => m.ArtModule),
-    title: 'Art | Portfolio',
-  },
+
   {
     path: 'projects',
     loadChildren: () =>

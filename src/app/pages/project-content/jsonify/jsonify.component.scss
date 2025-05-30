@@ -1,4 +1,4 @@
-@use "../../../../styles/variables" as variables;
+@use "../../../../styles/tokens" as token;
 
 .jsonify-ui {
   max-height: 560px;
@@ -9,17 +9,17 @@
 }
 
 .link-to-project .material-icons {
-  padding-left: variables.$spacing-unit-large;
+  padding-left: token.$spacing-unit-large;
 }
 
 .medium-brown {
-  color: variables.$color-brown-300;
+  color: token.$violet-500;
 }
 
 .medium-berry {
-  color: variables.$color-berry-300;
+  color: token.$ochre-50;
 }
 
 .medium-blue {
-  color: variables.$color-blue-300;
+  color: token.$teal-500;
 }

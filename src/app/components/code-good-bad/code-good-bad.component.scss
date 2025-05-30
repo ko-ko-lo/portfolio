@@ -1,9 +1,9 @@
-@use "../../../styles/variables" as variables;
+@use "../../../styles/tokens" as token;
 
 code {
-  color: variables.$color-berry-200;
-  line-height: variables.$lineheight-m;
-  font-size: variables.$spacing-unit-small * 8;
+  color: token.$ochre-500;
+  line-height: token.$lineheight-m;
+  font-size: token.$spacing-unit-small * 8;
 }
 
 pre {
@@ -13,5 +13,5 @@ pre {
 }
 
 img {
-  max-width: variables.$spacing-unit-large * 10;
+  max-width: token.$spacing-unit-large * 10;
 }

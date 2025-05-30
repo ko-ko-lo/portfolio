@@ -1,7 +1,5 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
-@use "../../../styles/semantic" as semantic;
 @use "../../../styles/tokens" as token;
+@use "../../../styles/semantic" as semantic;
 
 img {
   max-height: 9rem;

@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ArtworksComponent } from '../../components/artworks/artworks.component';
 import { BlogCardComponent } from '../../components/blog-card/blog-card.component';
 import { CollageYogaComponent } from '../../components/collage-yoga/collage-yoga.component';
 import { DividerComponent } from '../../components/divider/divider.component';
@@ -20,7 +19,6 @@ import { ArticleService } from '../../services/article.service';
     IntroButtonComponent,
     CollageYogaComponent,
     BlogCardComponent,
-    ArtworksComponent,
     CommonModule,
   ],
   templateUrl: './home.component.html',

@@ -1,12 +1,11 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/tokens" as token;
 
 h3 {
   margin: 0;
 }
 
 .phase {
-  font-size: variables.$spacing-unit-large * 12;
+  font-size: token.$spacing-unit-large * 12;
   font-weight: 700;
   flex-shrink: 0;
   display: flex;
@@ -14,59 +13,60 @@ h3 {
   width: 75px;
   height: 115px;
   text-align: center;
-  color: variables.$color-neutral-400;
+  color: token.$gray-400;
 }
 
 .phase-active {
-  color: variables.$color-berry-300;
+  color: token.$teal-500;
 }
 
 .pill {
-  padding: variables.$spacing-unit-large variables.$spacing-unit-large * 2;
-  font-size: variables.$spacing-unit-small * 7;
+  padding: token.$spacing-unit-large variables.$spacing-unit-large * 2;
+  font-size: token.$spacing-unit-small * 7;
 }
 
 .pill-blue {
-  background-color: variables.$color-blue-500;
+  background-color: token.$teal-700;
 }
 
 .pill-brown {
-  background-color: variables.$color-brown-600;
+  background-color: token.$violet-700;
 }
 
 .pill-neutral {
-  background-color: variables.$color-neutral-700;
+  background-color: token.$gray-400;
+  color: token.$gray-900;
 }
 
 .box-2 {
   align-items: flex-start;
-  gap: variables.$spacing-unit-large * 2;
+  gap: token.$spacing-unit-large * 2;
 }
 
 .link {
   text-decoration: none;
-  gap: variables.$spacing-unit-large;
+  gap: token.$spacing-unit-large;
 }
 
 hr {
-  color: variables.$color-neutral-700;
+  color: token.$gray-700;
 }
 
 .swap {
   flex-direction: row-reverse;
 }
 
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: token.$breakpoint-tablet) {
   .d-flex {
     flex-wrap: wrap;
   }
 
   .phases img {
-    margin-top: variables.$spacing-unit-large * 3;
+    margin-top: token.$spacing-unit-large * 3;
   }
 
   .gap-32 {
-    gap: variables.$spacing-unit-large * 4;
+    gap: token.$spacing-unit-large * 4;
   }
 
   .swap {

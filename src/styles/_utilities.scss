@@ -1,5 +1,4 @@
 // _utilities.scss
-@use "./variables" as variables;
 @use "./tokens" as token;
 @use "./semantic" as semantic;
 
@@ -7,19 +6,19 @@
 // Radius
 // ========================================================================
 .radius-s {
-  border-radius: variables.$radius-s;
+  border-radius: semantic.$radius-s;
 }
 
 .radius-m {
-  border-radius: variables.$radius-m;
+  border-radius: semantic.$radius-m;
 }
 
 .radius-l {
-  border-radius: variables.$radius-l;
+  border-radius: semantic.$radius-l;
 }
 
 .radius-full {
-  border-radius: variables.$radius-full;
+  border-radius: semantic.$radius-full;
 }
 
 // ========================================================================
@@ -87,7 +86,7 @@
 }
 
 .gap-32 {
-  gap: variables.$spacing-unit-large * 4;
+  gap: token.$spacing-unit-large * 4;
 }
 
 .box-1 {
@@ -103,51 +102,51 @@
 // ========================================================================
 // Margin
 .mb-8 {
-  margin-bottom: variables.$spacing-unit-large;
+  margin-bottom: token.$spacing-unit-large;
 }
 
 .mb-16 {
-  margin-bottom: variables.$spacing-unit-large * 2;
+  margin-bottom: token.$spacing-unit-large * 2;
 }
 
 .mb-24 {
-  margin-bottom: variables.$spacing-unit-large * 3;
+  margin-bottom: token.$spacing-unit-large * 3;
 }
 
 .mb-32 {
-  margin-bottom: variables.$spacing-unit-large * 4;
+  margin-bottom: token.$spacing-unit-large * 4;
 }
 
 .mb-40 {
-  margin-bottom: variables.$spacing-unit-large * 5;
+  margin-bottom: token.$spacing-unit-large * 5;
 }
 
 .mb-48 {
-  margin-bottom: variables.$spacing-unit-large * 6;
+  margin-bottom: token.$spacing-unit-large * 6;
 }
 
 .mb-56 {
-  margin-bottom: variables.$spacing-unit-large * 7;
+  margin-bottom: token.$spacing-unit-large * 7;
 }
 
 .mb-64 {
-  margin-bottom: variables.$spacing-unit-large * 8;
+  margin-bottom: token.$spacing-unit-large * 8;
 }
 
 .mb-80 {
-  margin-bottom: variables.$spacing-unit-large * 10;
+  margin-bottom: token.$spacing-unit-large * 10;
 }
 
 .mb-88 {
-  margin-bottom: variables.$spacing-unit-large * 11;
+  margin-bottom: token.$spacing-unit-large * 11;
 }
 
 .mb-104 {
-  margin-bottom: variables.$spacing-unit-large * 13;
+  margin-bottom: token.$spacing-unit-large * 13;
 }
 
 .mb-120 {
-  margin-bottom: variables.$spacing-unit-large * 15;
+  margin-bottom: token.$spacing-unit-large * 15;
 }
 
 .m-middle {
@@ -155,84 +154,84 @@
 }
 
 .mt-8 {
-  margin-top: variables.$spacing-unit-large;
+  margin-top: token.$spacing-unit-large;
 }
 
 .mt-24 {
-  margin-top: variables.$spacing-unit-large * 3;
+  margin-top: token.$spacing-unit-large * 3;
 }
 
 .mt-40 {
-  margin-top: variables.$spacing-unit-large * 5;
+  margin-top: token.$spacing-unit-large * 5;
 }
 
 .mt-48 {
-  margin-top: variables.$spacing-unit-large * 6;
+  margin-top: token.$spacing-unit-large * 6;
 }
 
 .mt-64 {
-  margin-top: variables.$spacing-unit-large * 8;
+  margin-top: token.$spacing-unit-large * 8;
 }
 
 .mt-80 {
-  margin-top: variables.$spacing-unit-large * 10;
+  margin-top: token.$spacing-unit-large * 10;
 }
 
 .mt-88 {
-  margin-top: variables.$spacing-unit-large * 11;
+  margin-top: token.$spacing-unit-large * 11;
 }
 
 .mt-120 {
-  margin-top: variables.$spacing-unit-large * 15;
+  margin-top: token.$spacing-unit-large * 15;
 }
 
 //Padding
 .pd-16 {
-  padding: variables.$spacing-unit-large * 2;
+  padding: token.$spacing-unit-large * 2;
 }
 
 .pd-all-32 {
-  padding: variables.$spacing-unit-large * 4;
+  padding: token.$spacing-unit-large * 4;
 }
 
 .pd-all-48 {
-  padding: variables.$spacing-unit-large * 6;
+  padding: token.$spacing-unit-large * 6;
 }
 
 .ptb-80 {
-  padding: variables.$spacing-unit-large * 10 0;
+  padding: token.$spacing-unit-large * 10 0;
 }
 
 .ptb-96 {
-  padding: variables.$spacing-unit-large * 12 0;
+  padding: token.$spacing-unit-large * 12 0;
 }
 
 .pb-16 {
-  padding-bottom: variables.$spacing-unit-large * 2;
+  padding-bottom: token.$spacing-unit-large * 2;
 }
 
 .pb-24 {
-  padding-bottom: variables.$spacing-unit-large * 3;
+  padding-bottom: token.$spacing-unit-large * 3;
 }
 
 .pb-32 {
-  padding-bottom: variables.$spacing-unit-large * 4;
+  padding-bottom: token.$spacing-unit-large * 4;
 }
 
 .pb-80 {
-  padding-bottom: variables.$spacing-unit-large * 10;
+  padding-bottom: token.$spacing-unit-large * 10;
 }
 
 .pb-96 {
-  padding-bottom: variables.$spacing-unit-large * 12;
+  padding-bottom: token.$spacing-unit-large * 12;
 }
 
 .pt-32 {
-  padding-top: variables.$spacing-unit-large * 4;
+  padding-top: token.$spacing-unit-large * 4;
 }
 
 .pt-120 {
-  padding-top: variables.$spacing-unit-large * 15;
+  padding-top: token.$spacing-unit-large * 15;
 }
 
 // ========================================================================
@@ -246,49 +245,46 @@
 // Gap
 // ========================================================================
 .gap-16 {
-  gap: variables.$spacing-unit-large * 2;
+  gap: token.$spacing-unit-large * 2;
 }
 
 .gap-32 {
-  gap: variables.$spacing-unit-large * 4;
+  gap: token.$spacing-unit-large * 4;
 }
 
 // ========================================================================
 // Elevation
 // ========================================================================
-.elevation-xs {
-  box-shadow: variables.$elevation-xs;
-}
-
+.elevation-xs,
 .elevation-s {
-  box-shadow: variables.$elevation-s;
+  box-shadow: token.$elevation-xs;
 }
 
 // ========================================================================
 // Max-Width
 // ========================================================================
 .max-width-s {
-  max-width: variables.$max-width-s;
+  max-width: token.$max-width-s;
 }
 
 .max-width-m {
-  max-width: variables.$max-width-m;
+  max-width: token.$max-width-m;
 }
 
 .max-width-l {
-  max-width: variables.$max-width-l;
+  max-width: token.$max-width-l;
 }
 
 // ========================================================================
 // Border
 // ========================================================================
 .border-bottom {
-  border-bottom: 1px solid variables.$color-neutral-400;
+  border-bottom: 1px solid semantic.$color-border;
 }
 
 .border-left {
-  border-left: 2px solid variables.$color-berry-400;
-  padding: variables.$spacing-unit-large * 2 0;
+  border-left: 2px solid token.$teal-500;
+  padding: token.$spacing-unit-large * 2 0;
 }
 
 .border-standard {
@@ -298,9 +294,9 @@
 // ========================================================================
 // Responsive Design
 // ========================================================================
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: token.$breakpoint-tablet) {
   .gap-32 {
-    gap: variables.$spacing-unit-large * 3;
+    gap: token.$spacing-unit-large * 3;
   }
   .box-1,
   .box-2 {
@@ -309,27 +305,27 @@
   }
 
   .mt-80 {
-    margin-top: variables.$spacing-unit-large * 6;
+    margin-top: token.$spacing-unit-large * 6;
   }
 
   .mb-80 {
-    margin-bottom: variables.$spacing-unit-large * 8;
+    margin-bottom: token.$spacing-unit-large * 8;
   }
 
   .mb-120 {
-    margin-bottom: variables.$spacing-unit-large * 8;
+    margin-bottom: token.$spacing-unit-large * 8;
   }
 
   .mt-120 {
-    margin-top: variables.$spacing-unit-large * 8;
+    margin-top: token.$spacing-unit-large * 8;
   }
 
   .ptb-80 {
-    padding: variables.$spacing-unit-large * 8 0;
+    padding: token.$spacing-unit-large * 8 0;
   }
 }
-@media (max-width: variables.$breakpoint-mobile) {
+@media (max-width: token.$breakpoint-mobile) {
   .gap-32 {
-    gap: variables.$spacing-unit-large * 2;
+    gap: token.$spacing-unit-large * 2;
   }
 }

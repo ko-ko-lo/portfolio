@@ -1,9 +1,8 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/tokens" as token;
 
 .scenario {
-  color: variables.$color-brown-100;
+  color: token.$violet-500;
   max-width: 604px;
-  border-left: 3px solid variables.$color-berry-400;
-  padding-left: variables.$spacing-unit-large * 2;
+  border-left: 3px solid token.$teal-500;
+  padding-left: token.$spacing-unit-large * 2;
 }

@@ -1,5 +1,4 @@
-@use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
+@use "../../../../styles/tokens" as token;
 
 .plugin-img {
   max-height: 450px;
@@ -19,12 +18,12 @@
   padding: 56px 32px 0;
 }
 
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: token.$breakpoint-tablet) {
   .d-flex {
     flex-wrap: wrap;
   }
 
   .gap-32 {
-    gap: variables.$spacing-unit-large * 4;
+    gap: token.$spacing-unit-large * 4;
   }
 }

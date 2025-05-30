@@ -1,8 +1,7 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/tokens" as token;
 
 .intro {
-  font-size: variables.$font-size-28;
+  font-size: 28px;
 }
 
 section {
@@ -16,8 +15,8 @@ img {
   display: block;
 }
 
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: token.$breakpoint-tablet) {
   .intro {
-    font-size: variables.$font-size-23;
+    font-size: 23px;
   }
 }

@@ -1,5 +1,6 @@
 @use "../../../styles/variables" as variables;
+@use "../../../styles/tokens" as token;
 
 .border-standard {
-  padding-bottom: variables.$spacing-unit-large * 7;
+  padding-bottom: token.$spacing-unit-large * 7;
 }

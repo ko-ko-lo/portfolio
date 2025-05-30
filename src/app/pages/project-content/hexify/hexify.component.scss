@@ -1,9 +1,8 @@
-@use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
+@use "../../../../styles/tokens" as token;
 
 .link {
   text-decoration: none;
-  gap: variables.$spacing-unit-large;
+  gap: token.$spacing-unit-large;
 }
 
 .link-to-project a:hover {
@@ -23,5 +22,5 @@ img.user-flow {
 }
 
 .technical-tools .border-standard {
-  padding-bottom: variables.$spacing-unit-large * 5;
+  padding-bottom: token.$spacing-unit-large * 5;
 }
