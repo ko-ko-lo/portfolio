@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
@@ -8,6 +9,11 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent,
     title: 'Home | Portfolio',
+  },
+  {
+    path: 'expertise',
+    component: ExpertiseComponent,
+    title: 'My Expertise | Portfolio',
   },
   {
     path: 'about-me',

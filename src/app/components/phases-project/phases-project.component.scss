@@ -21,7 +21,7 @@ h3 {
 }
 
 .pill {
-  padding: token.$spacing-unit-large variables.$spacing-unit-large * 2;
+  padding: token.$spacing-unit-large token.$spacing-unit-large * 2;
   font-size: token.$spacing-unit-small * 7;
 }
 

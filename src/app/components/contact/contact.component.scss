@@ -1,0 +1,8 @@
+@use "./../../../styles/semantic" as semantic;
+@use "../../../styles/tokens" as token;
+
+.contact {
+  background-color: semantic.$color-bg-message;
+  padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 13
+    token.$spacing-unit-large * 15;
+}

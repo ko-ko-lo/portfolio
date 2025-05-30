@@ -101,6 +101,10 @@
 // Margin and Padding
 // ========================================================================
 // Margin
+.main-margin {
+  margin-bottom: token.$spacing-unit-large * 25;
+}
+
 .mb-8 {
   margin-bottom: token.$spacing-unit-large;
 }
@@ -161,6 +165,10 @@
   margin-top: token.$spacing-unit-large * 3;
 }
 
+.mt-32 {
+  margin-top: token.$spacing-unit-large * 4;
+}
+
 .mt-40 {
   margin-top: token.$spacing-unit-large * 5;
 }
@@ -171,6 +179,10 @@
 
 .mt-64 {
   margin-top: token.$spacing-unit-large * 8;
+}
+
+.mt-72 {
+  margin-top: token.$spacing-unit-large * 9;
 }
 
 .mt-80 {

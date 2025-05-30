@@ -4,15 +4,12 @@
   font-size: 28px;
 }
 
-section {
-  text-align: center;
-}
-
 img {
-  max-width: 580px;
+  max-width: 454px;
   width: 100%;
   height: auto;
   display: block;
+  margin-left: auto;
 }
 
 @media (max-width: token.$breakpoint-tablet) {

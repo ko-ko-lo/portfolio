@@ -1,36 +1,63 @@
 <app-hero-home></app-hero-home>
 
-<app-divider></app-divider>
+<section class="main-margin">
+  <div class="container-m m-middle text-center">
+    <h2>My Expertise Ecosystem</h2>
+    <p>
+      I work across five connected focus areas, from Frontend code to inclusive
+      Design. Together, they shape how I build thoughtful digital products.
+    </p>
+    <app-expertise-tag-group></app-expertise-tag-group>
+  </div>
 
-<app-intro-button
-  headline="Discover My Work"
-  text="Step into my latest project and see how I blend design and development to bring ideas to life. Inspired by my personal journey with yoga, this platform was created to offer a calm, intuitive space for Yin-Style Yoga, Meditation, and Breathwork - helping users find balance through mindful digital experiences."
-  label="Take a look"
-  route="projects/open-stillness-application"
-></app-intro-button>
+  <div class="container-m m-middle text-center">
+    <img src="general/connected-dots.svg" alt="" class="m-middle" />
+    <a routerLink="/expertise" class="button mt-72">Explore My Expertise</a>
+  </div>
+</section>
 
-<div class="mt-88 container-m m-middle">
-  <app-collage-yoga></app-collage-yoga>
-</div>
+<section id="project-teaser" class="main-margin">
+  <div class="container-m m-middle text-center">
+    <h2>A Case Study in Design & Development</h2>
+    <p class="mb-56">
+      Inspired by my yoga journey, I designed and built this mindfulness
+      platform called Open Stillness using Angular, Tailwind CSS, and UX
+      Research - creating an accessible space for Yin-Style Yoga, Mediation and
+      Breathwork.
+    </p>
+  </div>
 
-<app-divider></app-divider>
+  <div class="container-m m-middle text-center">
+    <app-collage-yoga></app-collage-yoga>
+    <a routerLink="/projects/open-stillness-application" class="button mt-72"
+      >Explore the Open Stillness Project</a
+    >
+  </div>
+</section>
 
-<app-intro-button
-  headline="Who I Am"
-  text="Every project I take on begins with curiosity and a deep desire to understand. Whether unraveling the logic behind development or shaping intuitive designs, I strive to go beyond the surface. Discover my journey and what fuels my passion for bringing ideas to life."
-  label="Get to Know Me"
-  route="/about-me"
-></app-intro-button>
+<section id="about-teaser" class="main-margin">
+  <app-intro-button
+    headline="Curious by Nature. Hybrid by Design."
+    text="I've always worked between disciplines, from UX/UI Design to Frontend Development. With every project, I go deep, ask questions, and bring a quiet determination to craft systems that work for real people."
+    label="Read My Story"
+    route="/about-me"
+  >
+    <picture>
+      <source srcset="general/me.webp" type="image/webp" />
+      <img src="general/me.png" alt="" class="mt-64" />
+    </picture>
+  </app-intro-button>
+</section>
 
-<app-divider></app-divider>
+<section id="blog-teaser" class="main-margin">
+  <app-intro-button
+    headline="Behind the Screens: Thoughts on Design, Code & Curiosity"
+    text="I write to understand  and to share what I'm learning as a Designer–Developer in motion. From my CSS journey to workflows to personal growth, this is where the thinking continues."
+    label="Read the Blog"
+    route="/blog"
+  ></app-intro-button>
+</section>
 
-<app-intro-button
-  headline="Reflections on the Process"
-  text="In my blog, I explore the challenges, insights, and lessons learned along the way. From design principles and user experience to development and personal growth, this is where I share my journey - both technical and creative."
-  label="Explore the Blog"
-  route="/blog"
-></app-intro-button>
-
-<div class="mt-88"></div>
-
-<app-blog-card [articles]="firstThreeArticles"></app-blog-card>
+<section id="contact" class="main-margin">
+  <app-contact></app-contact>
+</section>

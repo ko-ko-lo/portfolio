@@ -1,0 +1,34 @@
+@use "../../../styles/tokens" as token;
+@use "../../../styles/semantic" as semantic;
+
+.tag {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1.5rem;
+  white-space: nowrap;
+
+  &--frontend {
+    background-color: semantic.$color-bg-frontend;
+    border: 1px solid semantic.$color-border-tag-frontend;
+  }
+
+  &--accessibility {
+    background-color: semantic.$color-bg-a11y;
+    border: 1px solid semantic.$color-border-tag-a11y;
+  }
+
+  &--designsystems {
+    background-color: semantic.$color-bg-system;
+    border: 1px solid semantic.$color-border-tag-system;
+  }
+
+  &--figma {
+    background-color: semantic.$color-bg-plugin;
+    border: 1px solid semantic.$color-border-tag-plugin;
+  }
+
+  &--usability {
+    background-color: semantic.$color-bg-usability;
+    border: 1px solid semantic.$color-border-tag-usability;
+  }
+}
