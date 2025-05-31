@@ -16,7 +16,6 @@ import { TextImageBlogComponent } from '../../../components/text-image-blog/text
     TextImageBlogComponent,
   ],
   templateUrl: './ux-guidelines.component.html',
-  styleUrl: './ux-guidelines.component.scss',
 })
 export class UxGuidelinesComponent {
   title: string = '7 UX Design Guidelines to Keep in Mind';

@@ -16,7 +16,7 @@ export const routes: Routes = [
     title: 'My Expertise | Portfolio',
   },
   {
-    path: 'about-me',
+    path: 'about',
     component: AboutMeComponent,
     title: 'About me | Portfolio',
   },

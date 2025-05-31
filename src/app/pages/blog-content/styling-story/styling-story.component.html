@@ -5,20 +5,21 @@
 </article>
 
 <div class="container-m m-middle">
-  <picture>
-    <source srcset="blog/styling-colors.webp" type="image/webp" />
-    <img
-      src="blog/styling-colors.png"
-      alt=""
-      class="radius-l mt-64 m-middle elevation-xs"
-    />
-  </picture>
+  <div class="mb-32">
+    <picture>
+      <source srcset="blog/styling-colors.webp" type="image/webp" />
+      <img
+        src="blog/styling-colors.png"
+        alt=""
+        class="radius-l mt-64 m-middle elevation-xs"
+      />
+    </picture>
+  </div>
+  <img src="general/arrow.svg" alt="" class="m-middle" />
 </div>
 
-<app-divider></app-divider>
-
 <section class="container-m m-middle">
-  <h2>Early Days with CSS</h2>
+  <h2 class="mt-32">Early Days with CSS</h2>
   <p>
     My journey into Web Development and CSS began a long time ago - at the end
     of 2012. Back in those days, some developers were still using Inline CSS, so
@@ -41,13 +42,11 @@
     felt like magic. Seeing containers break beautifully at different screen
     sizes was a true gamechanger.
   </p>
-  <p>
+  <p class="main-margin">
     In summary: CSS was harder, less flexible, and full of repetition. But it
     was also deeply formative.
   </p>
 </section>
-
-<app-divider></app-divider>
 
 <section class="container-m m-middle">
   <h2>SCSS and Structure</h2>
@@ -66,14 +65,12 @@
     spacing ($spacing-unit-large: 0.44rem * 5) - it felt like writing code, not
     just styles.
   </p>
-  <p>
+  <p class="main-margin">
     In 2023, I even chose SCSS for my heart project: a web application for
     Yin-Style Yoga, Meditation, and Breathwork. It just made sense. SCSS was
     structured, logical, and expressive. I loved it.
   </p>
 </section>
-
-<app-divider></app-divider>
 
 <section class="container-m m-middle">
   <h2>Discovering Tailwind CSS</h2>
@@ -96,14 +93,12 @@
     "tailwind.config.js". I learned to love utility classes. I found power in
     "&#64;apply" and flexibility in inline styling.
   </p>
-  <p>
+  <p class="main-margin">
     Eventually, writing Tailwind started to feel fun. Fast. Expressive. The
     structure I learned from SCSS helped me bring order to Tailwind's
     flexibility.
   </p>
 </section>
-
-<app-divider></app-divider>
 
 <section class="container-m m-middle">
   <h2>What I've Learned</h2>
@@ -126,12 +121,7 @@
 <app-my-quote [myQuote]="myQuote"></app-my-quote>
 
 <section class="container-m m-middle">
-  <p class="mt-48">
+  <p class="mt-48 main-margin">
     We are all part of this styling journey - let's see where it leads us next.
   </p>
-
-  <picture>
-    <source srcset="blog/styling-future.webp" type="image/webp" />
-    <img src="blog/styling-future.png" alt="" class="mt-64 m-middle" />
-  </picture>
 </section>

@@ -1,7 +1,7 @@
 @use "../../../../styles/tokens" as token;
 
 .scenario {
-  color: token.$violet-500;
+  color: token.$violet-200;
   max-width: 604px;
   border-left: 3px solid token.$teal-500;
   padding-left: token.$spacing-unit-large * 2;

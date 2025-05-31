@@ -1,0 +1,45 @@
+@use "./../../../styles/semantic" as semantic;
+@use "../../../styles/tokens" as token;
+
+.boxes {
+  background-color: semantic.$color-bg-message;
+  padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 13
+    token.$spacing-unit-large * 15;
+  border: 3px solid semantic.$color-border;
+}
+
+h2 {
+  margin-bottom: token.$spacing-unit-small * 5;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: token.$spacing-unit-large * 3;
+  font-weight: semantic.$font-weight-regular;
+}
+
+// Themed variants
+.theme--frontend {
+  background-color: semantic.$color-bg-frontend;
+  border-color: semantic.$color-border-tag-frontend;
+}
+
+.theme--a11y {
+  background-color: semantic.$color-bg-a11y;
+  border-color: semantic.$color-border-tag-a11y;
+}
+
+.theme--plugin {
+  background-color: semantic.$color-bg-plugin;
+  border-color: semantic.$color-border-tag-plugin;
+}
+
+.theme--systems {
+  background-color: semantic.$color-bg-system;
+  border-color: semantic.$color-border-tag-system;
+}
+
+.theme--usability {
+  background-color: semantic.$color-bg-usability;
+  border-color: semantic.$color-border-tag-usability;
+}
