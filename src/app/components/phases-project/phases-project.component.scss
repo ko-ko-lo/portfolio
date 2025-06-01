@@ -56,7 +56,7 @@ hr {
   flex-direction: row-reverse;
 }
 
-@media (max-width: token.$breakpoint-tablet) {
+@media (max-width: 768px) {
   .d-flex {
     flex-wrap: wrap;
   }

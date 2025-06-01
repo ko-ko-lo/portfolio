@@ -309,7 +309,7 @@
 // ========================================================================
 // Responsive Design
 // ========================================================================
-@media (max-width: token.$breakpoint-tablet) {
+@media (max-width: 768px) {
   .gap-32 {
     gap: token.$spacing-unit-large * 3;
   }
@@ -317,6 +317,10 @@
   .box-2 {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+
+  .main-margin {
+    margin-bottom: token.$spacing-unit-large * 20;
   }
 
   .mt-80 {
@@ -339,8 +343,11 @@
     padding: token.$spacing-unit-large * 8 0;
   }
 }
-@media (max-width: token.$breakpoint-mobile) {
+@media (max-width: 390px) {
   .gap-32 {
     gap: token.$spacing-unit-large * 2;
+  }
+  .main-margin {
+    margin-bottom: token.$spacing-unit-large * 16;
   }
 }

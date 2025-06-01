@@ -43,3 +43,20 @@ h3 {
   background-color: semantic.$color-bg-usability;
   border-color: semantic.$color-border-tag-usability;
 }
+
+@media (max-width: 768px) {
+  .boxes {
+    padding: token.$spacing-unit-large * 10 token.$spacing-unit-large * 11
+      token.$spacing-unit-large * 12;
+  }
+}
+
+@media (max-width: 390px) {
+  .boxes {
+    padding: token.$spacing-unit-large * 5 token.$spacing-unit-large * 6
+      token.$spacing-unit-large * 7;
+  }
+  .mb-104 {
+    margin-bottom: 48px;
+  }
+}

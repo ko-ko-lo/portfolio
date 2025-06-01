@@ -6,3 +6,10 @@
   padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 13
     token.$spacing-unit-large * 15;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    padding: token.$spacing-unit-large * 6 token.$spacing-unit-large * 6
+      token.$spacing-unit-large * 8;
+  }
+}

@@ -18,7 +18,7 @@
   padding: 56px 32px 0;
 }
 
-@media (max-width: token.$breakpoint-tablet) {
+@media (max-width: 768px) {
   .d-flex {
     flex-wrap: wrap;
   }

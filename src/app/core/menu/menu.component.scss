@@ -16,6 +16,10 @@ ul {
   padding: 0;
 }
 
+button::before {
+  content: none;
+}
+
 .nav-menu {
   display: none;
   list-style: none;
@@ -77,7 +81,7 @@ ul {
   animation: none !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-menu {
     opacity: 0;
     visibility: hidden;

@@ -15,6 +15,7 @@ import { ProjectCardComponent } from '../../../components/project-card/project-c
     CollageYogaComponent,
   ],
   templateUrl: './projects.component.html',
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
   title: string = 'Where Ideas Take Shape: My Projects';

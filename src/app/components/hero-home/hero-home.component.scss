@@ -12,8 +12,22 @@ img {
   margin-left: auto;
 }
 
-@media (max-width: token.$breakpoint-tablet) {
+@media (max-width: 768px) {
   .intro {
     font-size: 23px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  p,
+  h1 {
+    text-align: center;
+  }
+  .button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

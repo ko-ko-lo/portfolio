@@ -14,7 +14,6 @@ import { IntroComponent } from '../../components/intro/intro.component';
     ExpertiseBoxesComponent,
   ],
   templateUrl: './expertise.component.html',
-  styleUrl: './expertise.component.scss',
 })
 export class ExpertiseComponent {
   title: string = 'My Expertise Ecosystem';

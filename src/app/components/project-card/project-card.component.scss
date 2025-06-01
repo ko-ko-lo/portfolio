@@ -12,7 +12,13 @@
   max-height: 100%;
 }
 
-@media (max-width: token.$breakpoint-tablet) {
+@media (max-width: 768px) {
+  .box {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 390px) {
   .box {
     flex: 0 100%;
   }
