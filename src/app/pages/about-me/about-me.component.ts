@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from '../../components/contact/contact.component';
-import { DividerComponent } from '../../components/divider/divider.component';
 import { IntroComponent } from '../../components/intro/intro.component';
 import { ListComponent } from '../../components/list/list.component';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [
-    RouterModule,
-    ContactComponent,
-    IntroComponent,
-    DividerComponent,
-    ListComponent,
-  ],
+  imports: [RouterModule, ContactComponent, IntroComponent, ListComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',
 })

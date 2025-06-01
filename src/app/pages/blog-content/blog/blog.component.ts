@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BlogCardComponent } from '../../../components/blog-card/blog-card.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterModule, IntroComponent, BlogCardComponent, DividerComponent],
+  imports: [RouterModule, IntroComponent, BlogCardComponent],
   templateUrl: './blog.component.html',
 })
 export class BlogComponent {

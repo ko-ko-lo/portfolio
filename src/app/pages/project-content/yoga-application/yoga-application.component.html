@@ -4,14 +4,16 @@
 ></app-breadcrumb>
 
 <section class="container-l d-flex gap-32 mb-80">
-  <div class="border box-1 flex-wrap justify-between gap-32 radius-l pd-16">
+  <div
+    class="border box-1 flex-wrap justify-between radius-l border-standard pd-16 bg-violet"
+  >
     <picture>
       <source srcset="projects/meditation.webp" type="image/webp" />
       <img src="projects/meditation.png" alt="" />
     </picture>
   </div>
   <div
-    class="border nd-mobile box-1 flex-wrap justify-between gap-32 radius-l pd-16"
+    class="border nd-mobile box-1 flex-wrap justify-between radius-l border-standard pd-16 bg-violet"
   >
     <picture>
       <source srcset="projects/bananasana.webp" type="image/webp" />
@@ -19,7 +21,7 @@
     </picture>
   </div>
   <div
-    class="border nd-mobile box-1 flex-wrap justify-between gap-32 radius-l pd-16"
+    class="border nd-mobile box-1 flex-wrap justify-between gap-32 radius-l border-standard pd-16 bg-violet"
   >
     <picture>
       <source srcset="projects/toe-squat.webp" type="image/webp" />
@@ -28,7 +30,7 @@
   </div>
 </section>
 
-<h1 class="text-center container-l mb-48">
+<h1 class="text-center container-l">
   From Concept to Reality: <br />
   The MVP of Open Stillness
 </h1>
@@ -40,24 +42,26 @@
   </button>
 </a>
 
-<app-divider></app-divider>
+<div class="mt-32 mb-48">
+  <img src="general/arrow.svg" alt="" class="m-middle" />
+</div>
 
-<app-technical-tools-big
-  headlineTools1="Web Technologies"
-  headlineTools2="Frontend Framework"
-  headlineTools3="Design Tools"
-  textTools1="TypeScript, SCSS and HTML"
-  textTools2="Angular for Component-based Development"
-  textTools3="Figma for UIs, Procreate for Illustrations"
-></app-technical-tools-big>
+<div class="main-margin">
+  <app-technical-tools-big
+    headlineTools1="Web Technologies"
+    headlineTools2="Frontend Framework"
+    headlineTools3="Design Tools"
+    textTools1="TypeScript, SCSS and HTML"
+    textTools2="Angular for Component-based Development"
+    textTools3="Figma for UIs, Procreate for Illustrations"
+  ></app-technical-tools-big>
+</div>
 
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"></app-scroll-menu>
+</div>
 
-<app-scroll-menu [sections]="sections"></app-scroll-menu>
-
-<app-divider></app-divider>
-
-<section id="section1 ">
+<section id="section1">
   <div class="container-m m-middle">
     <h2>1. Planning and Technology Stack</h2>
     <h3>Project Scope and Goals</h3>
@@ -107,7 +111,7 @@
 </section>
 
 <section class="container-m m-middle">
-  <div class="border-standard radius-l mt-48 toolbox">
+  <div class="border-standard radius-l main-margin mt-48 toolbox">
     <h3>Summary: Planning and Technology Stack</h3>
     <p>
       The Yin-Style Yoga Application is designed as a platform featuring a Yoga
@@ -122,8 +126,6 @@
     </p>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <section id="section2">
   <div class="container-m m-middle">
@@ -402,7 +404,7 @@
 </section>
 
 <section class="container-m m-middle">
-  <div class="border-standard radius-l mt-48 toolbox">
+  <div class="border-standard radius-l mt-48 main-margin toolbox">
     <h3>Summary: UX/UI Process</h3>
     <p>
       The UX/UI Design Process for the Yin-Style Yoga App began with a thorough
@@ -415,8 +417,6 @@
     </p>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <section id="section3">
   <div class="container-m m-middle">
@@ -536,7 +536,7 @@
 </section>
 
 <section class="container-m m-middle">
-  <div class="border-standard radius-l mt-48 toolbox">
+  <div class="border-standard radius-l mt-48 toolbox main-margin">
     <h3>Summary: Development Process</h3>
     <p>
       The Development Process for the Yin-Style Yoga Application focused on
@@ -547,8 +547,6 @@
     </p>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <section id="section4">
   <div class="container-m m-middle">
@@ -603,7 +601,7 @@
 </section>
 
 <section class="container-m m-middle">
-  <div class="border-standard radius-l mt-48 toolbox">
+  <div class="border-standard radius-l mt-48 toolbox main-margin">
     <h3>Summary: Future Plans</h3>
     <p>
       Looking ahead, the Yin-Style Yoga Application will continue to grow with
@@ -615,8 +613,6 @@
     </p>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <section id="section5">
   <div class="container-m m-middle">
@@ -681,7 +677,7 @@
 
     <h3>Reflecting on the entire project</h3>
     <p>I've come to realize that:</p>
-    <ul>
+    <ul class="border-left">
       <li>
         <strong>
           It's okay to take things slowly, as long as you keep moving forward.

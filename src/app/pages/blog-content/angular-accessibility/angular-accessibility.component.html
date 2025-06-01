@@ -4,21 +4,22 @@
   <app-intro [title]="title" [text]="text"></app-intro>
 
   <div class="container-m m-middle">
-    <picture>
-      <source srcset="blog/a11y-robot.webp" type="image/webp" />
-      <img
-        src="blog/a11y-robot.png"
-        alt=""
-        class="radius-l mt-64 m-middle robot"
-      />
-    </picture>
+    <div class="mb-32">
+      <picture>
+        <source srcset="blog/a11y-robot.webp" type="image/webp" />
+        <img
+          src="blog/a11y-robot.png"
+          alt=""
+          class="radius-l mt-64 m-middle robot"
+        />
+      </picture>
+    </div>
+    <img src="general/arrow.svg" alt="" class="m-middle" />
   </div>
-
-  <app-divider></app-divider>
 
   <!-- Titles in Angular-->
   <section class="container-m m-middle">
-    <h2>Titles in Angular (No More Title Service)</h2>
+    <h2 class="mt-32">1. Titles in Angular (No More Title Service)</h2>
     <p>
       Page titles play a crucial role in accessibility. They're the first thing
       screen readers announce, giving users immediate context about where they
@@ -83,7 +84,7 @@
       new route. Less manual work, more accessibility.
     </p>
     <h3>What I Learned</h3>
-    <ul>
+    <ul class="main-margin">
       <li>
         Page titles should always follow a clear and consistent structure.
       </li>
@@ -94,11 +95,9 @@
     </ul>
   </section>
 
-  <app-divider></app-divider>
-
   <!-- Heading Hierarchy -->
   <section class="container-m m-middle">
-    <h2>Heading Hierarchy for Dynamic Components</h2>
+    <h2>2. Heading Hierarchy for Dynamic Components</h2>
     <p>
       I've always known that clear heading structures help users, especially
       those relying on screen readers, navigate content quickly and understand
@@ -176,7 +175,7 @@
         accessible structure across the entire app.
       </li>
     </ul>
-    <p>
+    <p class="main-margin">
       This was one of those accessibility issues I didn't notice at first, but
       once I fixed it, I realized how much smoother navigation became. Now, my
       components blend seamlessly into the overall page hierarchy, making
@@ -184,11 +183,9 @@
     </p>
   </section>
 
-  <app-divider></app-divider>
-
   <!-- NG-Container-->
   <section class="container-m m-middle">
-    <h2>ng-container Instead of div: Cleaning Up Unnecessary Markup</h2>
+    <h2>3. ng-container Instead of div: Cleaning Up Unnecessary Markup</h2>
     <p>
       While reviewing my final HTML markup for accessibility, I noticed
       something strange - extra &lt;div&gt; wrappers cluttering the structure.
@@ -222,7 +219,7 @@
     ></app-code-good-bad>
     <p>Now, the final markup stays clean, without extra wrapper elements.</p>
     <h3>What I Learned</h3>
-    <ul>
+    <ul class="main-margin">
       <li>
         <strong>Unnecessary &lt;div&gt; elements add clutter</strong>
         and can make HTML harder to navigate, especially for assistive
@@ -238,11 +235,9 @@
     </ul>
   </section>
 
-  <app-divider></app-divider>
-
   <!-- Buttons for Actions -->
   <section class="container-m m-middle">
-    <h2>Buttons Only for Actions, Not for Links</h2>
+    <h2>4. Buttons Only for Actions, Not for Links</h2>
     <p>
       One thing I got wrong way too many times - and I bet I'm not alone - is
       that a button is not always a button. Sounds weird, right? But here's the
@@ -287,17 +282,15 @@
       navigation link.
     </p>
     <h3>What I Learned</h3>
-    <ul>
+    <ul class="main-margin">
       <li><strong>If it performs an action</strong>, use &lt;button&gt;.</li>
       <li><strong>If it navigates somewhere</strong>, use &lt;a&gt;.</li>
     </ul>
   </section>
 
-  <app-divider></app-divider>
-
   <!-- Alt-text imgs inside links-->
   <section class="container-m m-middle">
-    <h2>Alt-Text for Images Alone Inside Links</h2>
+    <h2>5. Alt-Text for Images Alone Inside Links</h2>
     <p>
       Even though I've used the WAI (Web Accessibility Initiative) alt decision
       tree for years, there was one mistake I kept making:
@@ -338,7 +331,7 @@
       making it clear that clicking the logo takes the user to the homepage.
     </p>
     <h3>What I Learned</h3>
-    <ul>
+    <ul class="main-margin">
       <li>
         If an image is inside a link and it's the only content, it needs
         meaningful alt text.
@@ -346,8 +339,6 @@
       <li>Alt text should describe the action the link performs.</li>
     </ul>
   </section>
-
-  <app-divider></app-divider>
 
   <section class="container-m m-middle">
     <h2>Final Thoughts: Accessibility is a Continuous Journey</h2>

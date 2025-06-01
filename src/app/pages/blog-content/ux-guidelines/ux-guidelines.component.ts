@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { TextImageBlogComponent } from '../../../components/text-image-blog/text-image-blog.component';
 
@@ -11,7 +10,6 @@ import { TextImageBlogComponent } from '../../../components/text-image-blog/text
   imports: [
     RouterModule,
     IntroComponent,
-    DividerComponent,
     BreadcrumbBlogComponent,
     TextImageBlogComponent,
   ],

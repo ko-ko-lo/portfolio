@@ -8,23 +8,23 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Home | Portfolio',
+    title: 'Home',
   },
   {
     path: 'expertise',
     component: ExpertiseComponent,
-    title: 'My Expertise | Portfolio',
+    title: 'Expertise',
   },
   {
     path: 'about',
     component: AboutMeComponent,
-    title: 'About me | Portfolio',
+    title: 'About',
   },
   {
     path: 'blog',
     loadChildren: () =>
       import('./pages/blog-content/blog.module').then((m) => m.BlogModule),
-    title: 'Blog | Portfolio',
+    title: 'Blog',
   },
 
   {
@@ -33,7 +33,7 @@ export const routes: Routes = [
       import('./pages/project-content/projects.module').then(
         (m) => m.ProjectsModule
       ),
-    title: 'Projects | Portfolio',
+    title: 'Projects',
   },
 ];
 

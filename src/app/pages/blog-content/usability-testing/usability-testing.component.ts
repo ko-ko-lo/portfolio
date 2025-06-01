@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ListComponent } from '../../../components/list/list.component';
 import { TextHighlightComponent } from '../../../components/text-highlight/text-highlight.component';
@@ -12,13 +11,11 @@ import { TextHighlightComponent } from '../../../components/text-highlight/text-
   imports: [
     RouterModule,
     IntroComponent,
-    DividerComponent,
     ListComponent,
     BreadcrumbBlogComponent,
     TextHighlightComponent,
   ],
   templateUrl: './usability-testing.component.html',
-  styleUrl: './usability-testing.component.scss',
 })
 export class UsabilityTestingComponent {
   title: string = 'Usability Testing Made Easy - in 4 Steps';

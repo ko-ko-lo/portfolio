@@ -25,4 +25,9 @@ ol {
 .border-left {
   border-left: 3px solid token.$teal-500;
   padding-left: token.$spacing-unit-large * 2;
+  color: token.$teal-300;
+}
+
+ul.border-left {
+  padding-left: token.$spacing-unit-large * 4;
 }

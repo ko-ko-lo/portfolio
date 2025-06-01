@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CollageYogaComponent } from '../../../components/collage-yoga/collage-yoga.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
@@ -12,7 +11,7 @@ import { ProjectCardComponent } from '../../../components/project-card/project-c
     RouterModule,
     IntroComponent,
     ProjectCardComponent,
-    DividerComponent,
+
     CollageYogaComponent,
   ],
   templateUrl: './projects.component.html',

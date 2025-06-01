@@ -4,23 +4,25 @@
 ></app-breadcrumb>
 <section class="container-l d-flex gap-32 mb-80">
   <div
-    class="background-blue-middle box-1 flex-wrap justify-between gap-32 radius-l pd-16"
+    class="box-1 flex-wrap justify-between radius-l border-standard pd-16 bg-violet"
   >
     <picture>
       <source srcset="projects/full-yogic-breath.webp" type="image/webp" />
       <img src="projects/full-yogic-breath.png" alt="" />
     </picture>
   </div>
+
   <div
-    class="nd-mobile background-blue-middle box-1 flex-wrap justify-between gap-32 radius-l pd-16"
+    class="nd-mobile box-1 flex-wrap justify-between border-standard radius-l pd-16 bg-violet"
   >
     <picture>
       <source srcset="projects/meditation.webp" type="image/webp" />
       <img src="projects/meditation.png" alt="" />
     </picture>
   </div>
+
   <div
-    class="nd-mobile background-blue-middle box-1 flex-wrap justify-between gap-32 radius-l pd-16"
+    class="nd-mobile box-1 flex-wrap justify-between gap-32 radius-l border-standard pd-16 bg-violet"
   >
     <picture>
       <source srcset="projects/humming-bee-breath.webp" type="image/webp" />
@@ -40,13 +42,15 @@
   </button>
 </a>
 
-<app-divider></app-divider>
+<div class="mt-32 mb-48">
+  <img src="general/arrow.svg" alt="" class="m-middle" />
+</div>
 
-<app-scroll-menu [sections]="sections"></app-scroll-menu>
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"></app-scroll-menu>
+</div>
 
-<app-divider></app-divider>
-
-<section id="section1">
+<section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Introducing Meditation & Breathwork Sections</h2>
     <p>
@@ -109,7 +113,7 @@
     <h3>A Glimpse Into the Meditation & Breathwork Library</h3>
   </div>
   <div
-    class="container-l d-flex flex-wrap justify-between gap-32 align-bottom pt-32 pb-32"
+    class="container-l d-flex flex-wrap justify-between gap-32 align-bottom mt-48 pb-48"
   >
     <div class="box-1">
       <figure>
@@ -154,9 +158,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section2">
+<section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Extending the Architecture</h2>
     <p>
@@ -217,9 +219,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section3">
+<section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>
       3. Redesigning the Navigation: A Smoother, More Intuitive Experience
@@ -251,13 +251,14 @@
         individual routines & deeper content.
       </li>
     </ul>
-    <p>
+    <p class="mb-48">
       This eliminates dropdown complexity while keeping navigation clear and
       structured.
     </p>
   </div>
+
   <div
-    class="container-l d-flex flex-wrap justify-between gap-32 align-bottom pt-32 pb-32"
+    class="container-m m-middle d-flex flex-wrap justify-between gap-32 align-bottom pt-32 pb-32"
   >
     <div class="box-large">
       <figure>
@@ -300,9 +301,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section4">
+<section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. From Kokolo Yoga to Open Stillness: A Journey of Growth</h2>
     <p>
@@ -388,9 +387,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section5">
+<section id="section5" class="main-margin">
   <div class="container-m m-middle">
     <h2>
       5. Enhancing Accessibility: Invisible Improvements That Make a Big
@@ -487,8 +484,6 @@
     </div>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <section id="section6">
   <div class="container-m m-middle">
