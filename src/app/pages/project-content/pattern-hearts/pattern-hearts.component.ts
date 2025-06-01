@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
@@ -12,7 +11,6 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
   standalone: true,
   imports: [
     RouterModule,
-    DividerComponent,
     IntroComponent,
     CodeGoodBadComponent,
     BreadcrumbComponent,

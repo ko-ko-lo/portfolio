@@ -1,10 +1,12 @@
-<section class="mt-80">
+<section class="mt-80 mb-32">
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
-<app-divider></app-divider>
+<div class="container-m m-middle">
+  <img src="general/arrow.svg" alt="" class="m-middle" />
+</div>
 
-<section>
+<section class="mt-32 mb-32">
   <div class="container-m m-middle">
     <h2 class="text-center">Roots in Art and Design</h2>
     <p>
@@ -50,7 +52,7 @@
         />
       </picture>
     </div>
-    <div class="box">
+    <div class="box main-margin">
       <picture>
         <source srcset="aboutme/craquele.webp" type="image/webp" />
         <img
@@ -63,9 +65,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section>
+<section class="mt-32 mb-32">
   <div class="container-m m-middle">
     <h2 class="text-center">Becoming a UX/UI Designer</h2>
     <p>
@@ -86,7 +86,7 @@
       as I dove deeper into the world of user experience and interface design,
       it felt like a natural fit.
     </p>
-    <p>
+    <p class="main-margin">
       Driven by curiosity and the desire to master this new field, I dedicated
       myself to self-study. Through books, courses, colleagues, and hands-on
       experience working for a variety of companies - from tech startups to
@@ -95,9 +95,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section>
+<section class="mt-32 main-margin">
   <div class="container-m m-middle">
     <h2 class="text-center">Returning to Development</h2>
     <p>
@@ -126,71 +124,72 @@
   </div>
 </section>
 
-<app-divider></app-divider>
+<section class="main-margin">
+  <div class="container-m m-middle">
+    <h2 class="text-center">My Toolbox</h2>
+    <p class="mb-48 text-center">
+      Here's an overview of the tools I mainly use to bring ideas to life:
+    </p>
 
-<div class="container-m m-middle">
-  <h2 class="text-center">My Toolbox</h2>
-  <p class="mb-48 text-center">
-    Here's an overview of the tools I mainly use to bring ideas to life:
-  </p>
+    <app-list
+      headline="Coding &amp; Frameworks"
+      [tools]="[
+        {
+          name: 'HTML, CSS, SCSS, Tailwind CSS:',
+          description: ' For building responsive and styled interfaces.'
+        },
+        {
+          name: 'TypeScript:',
+          description:
+            ' My preferred language for writing scalable and maintainable code.'
+        },
+        {
+          name: 'JavaScript:',
+          description:
+            ' Core language for dynamic and interactive web development.'
+        },
+        {
+          name: 'Java:',
+          description:
+            ' For object-oriented programming and building powerful, server-side applications.'
+        },
+        {
+          name: 'Angular, React:',
+          description:
+            ' The frameworks I use to build modular, scalable web applications.'
+        }
+      ]"
+    ></app-list>
 
-  <app-list
-    headline="Coding &amp; Frameworks"
-    [tools]="[
-      {
-        name: 'HTML, CSS, SCSS, Tailwind CSS:',
-        description: ' For building responsive and styled interfaces.'
-      },
-      {
-        name: 'TypeScript:',
-        description:
-          ' My preferred language for writing scalable and maintainable code.'
-      },
-      {
-        name: 'JavaScript:',
-        description:
-          ' Core language for dynamic and interactive web development.'
-      },
-      {
-        name: 'Java:',
-        description:
-          ' For object-oriented programming and building powerful, server-side applications.'
-      },
-      {
-        name: 'Angular, React:',
-        description:
-          ' The frameworks I use to build modular, scalable web applications.'
-      }
-    ]"
-  ></app-list>
+    <div class="mt-40"></div>
 
-  <div class="mt-40"></div>
+    <app-list
+      headline="Development Tools"
+      [tools]="[
+        {
+          name: 'Visual Studio Code:',
+          description: ' My go-to IDE for Coding.'
+        },
+        {
+          name: 'Git and GitHub:',
+          description: ' For version control and Collaborative Coding.'
+        }
+      ]"
+    ></app-list>
 
-  <app-list
-    headline="Development Tools"
-    [tools]="[
-      { name: 'Visual Studio Code:', description: ' My go-to IDE for Coding.' },
-      {
-        name: 'Git and GitHub:',
-        description: ' For version control and Collaborative Coding.'
-      }
-    ]"
-  ></app-list>
+    <div class="mt-40"></div>
 
-  <div class="mt-40"></div>
+    <app-list
+      headline="Design Tools"
+      [tools]="[
+        { name: 'Figma:', description: ' For Design Systems and UI Designs.' },
+        { name: 'Procreate:', description: ' For Digital Illustrations.' }
+      ]"
+    ></app-list>
+  </div>
+</section>
 
-  <app-list
-    headline="Design Tools"
-    [tools]="[
-      { name: 'Figma:', description: ' For Design Systems and UI Designs.' },
-      { name: 'Procreate:', description: ' For Digital Illustrations.' }
-    ]"
-  ></app-list>
-</div>
-
-<app-divider></app-divider>
-
-<section>
+<section class="main-margin">
   <div class="container-l text-center">
     <h2>Snapshots from My Personal Journey</h2>
     <div class="d-flex flex-wrap gap-32 mt-48">
@@ -243,10 +242,4 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
 <app-contact></app-contact>
-
-<app-divider></app-divider>
-
-<app-my-quote [myQuote]="myQuote"></app-my-quote>

@@ -13,46 +13,47 @@
       class="radius-l elevation-xs"
     />
   </picture>
+  <div class="mt-32 mb-48">
+    <img src="general/arrow.svg" alt="" class="m-middle" />
+  </div>
 </section>
 
-<app-divider></app-divider>
-
-<app-technical-tools-big
-  headlineTools1="Design &amp; API"
-  headlineTools2="Core Web Technologies"
-  headlineTools3="Build &amp; Module Bundling"
-  textTools1="Figma Design, Figma API"
-  textTools2="JavaScript, TypeScript, CSS, HTML"
-  textTools3="Webpack"
-></app-technical-tools-big>
-
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-technical-tools-big
+    headlineTools1="Design &amp; API"
+    headlineTools2="Core Web Technologies"
+    headlineTools3="Build &amp; Module Bundling"
+    textTools1="Figma Design, Figma API"
+    textTools2="JavaScript, TypeScript, CSS, HTML"
+    textTools3="Webpack"
+  ></app-technical-tools-big>
+</div>
 
 <section class="text-center m-middle container-m link-to-project">
-  <h2>Explore Hexify on Figma Community</h2>
-  <p class="mb-32 container">
-    Take a peek at the product page to learn more and maybe see Hexify in
-    action!
-  </p>
-  <a
-    href="https://www.figma.com/community/plugin/1428416759853968301/hexify"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button class="link d-flex align-items m-middle">
-      Explore Hexify
-      <span class="material-icons" aria-hidden="true">open_in_new</span>
-    </button>
-  </a>
+  <div class="main-margin">
+    <h2>Explore Hexify on Figma Community</h2>
+    <p class="mb-32 container">
+      Take a peek at the product page to learn more and maybe see Hexify in
+      action!
+    </p>
+    <a
+      href="https://www.figma.com/community/plugin/1428416759853968301/hexify"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Explore Hexify
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
 </section>
 
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"></app-scroll-menu>
+</div>
 
-<app-scroll-menu [sections]="sections"></app-scroll-menu>
-
-<app-divider></app-divider>
-
-<section id="section1">
+<section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
     <p>
@@ -67,9 +68,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section2">
+<section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Architecture</h2>
     <p class="mb-16">
@@ -138,9 +137,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section3">
+<section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>3. Visual Design &amp; User Flow</h2>
 
@@ -277,9 +274,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section4">
+<section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. Development Insights</h2>
     <p class="mb-32">
@@ -383,10 +378,8 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<div>
-  <div class="text-center m-middle container-m link-to-project">
+<div class="text-center m-middle container-m link-to-project">
+  <div class="main-margin">
     <h2>Explore the full Source Code on GitHub</h2>
     <p class="mb-32">
       If you're interested in exploring the code and seeing how the project was
@@ -405,9 +398,7 @@
   </div>
 </div>
 
-<app-divider></app-divider>
-
-<section id="section5">
+<section id="section5 main-margin">
   <div class="container-m m-middle">
     <h2>5. Reflections &amp; Future Plans</h2>
     <p>Developing Hexify has been a journey of both challenges and rewards.</p>

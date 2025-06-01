@@ -1,9 +1,8 @@
-@use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
+@use "../../../../styles/tokens" as token;
 
 .link {
   text-decoration: none;
-  gap: variables.$spacing-unit-large;
+  gap: token.$spacing-unit-large;
 }
 
 .link-to-project a:hover {
@@ -20,10 +19,15 @@ img.sitemap {
 
 ul,
 ol {
-  margin: variables.$spacing-unit-large * 4 0;
+  margin: token.$spacing-unit-large * 4 0;
 }
 
 .border-left {
-  border-left: 3px solid variables.$color-berry-400;
-  padding-left: variables.$spacing-unit-large * 2;
+  border-left: 3px solid token.$teal-500;
+  padding-left: token.$spacing-unit-large * 2;
+  color: token.$teal-300;
+}
+
+ul.border-left {
+  padding-left: token.$spacing-unit-large * 4;
 }

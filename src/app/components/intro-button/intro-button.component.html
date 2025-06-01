@@ -1,5 +1,15 @@
-<section class="container-m m-middle">
+<!--<section class="container-m m-middle">
   <h2 class="text-center">{{ headline }}</h2>
   <p>{{ text }}</p>
   <a [routerLink]="route" class="button mt-40">{{ label }}</a>
+</section>
+-->
+<section class="container-m m-middle">
+  <h2 class="text-center">{{ headline }}</h2>
+  <p>{{ text }}</p>
+
+  <!-- SLOT: external image/component will be injected here -->
+  <ng-content></ng-content>
+
+  <a [routerLink]="route" class="button mt-48">{{ label }}</a>
 </section>

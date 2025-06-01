@@ -13,52 +13,51 @@
       class="radius-l elevation-xs"
     />
   </picture>
+  <div class="mt-32 mb-48">
+    <img src="general/arrow.svg" alt="" class="m-middle" />
+  </div>
 </div>
 
-<app-divider></app-divider>
-
-<app-technical-tools-small></app-technical-tools-small>
-
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-technical-tools-small></app-technical-tools-small>
+</div>
 
 <section class="text-center m-middle container-m link-to-project">
-  <h2 class="mt-80">Explore Pattern Hearts on Figma Community</h2>
-  <p class="mb-32 container">
-    Take a peek at the product page to learn more and maybe see Pattern Hearts
-    in action!
-  </p>
-  <a
-    href="https://www.figma.com/community/plugin/1482073467314571187/pattern-hearts"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button class="link d-flex align-items m-middle">
-      Explore Pattern Hearts
-      <span class="material-icons" aria-hidden="true"> open_in_new</span>
-    </button>
-  </a>
+  <div class="main-margin">
+    <h2 class="mt-80">Explore Pattern Hearts on Figma Community</h2>
+    <p class="mb-32 container">
+      Take a peek at the product page to learn more and maybe see Pattern Hearts
+      in action!
+    </p>
+    <a
+      href="https://www.figma.com/community/plugin/1482073467314571187/pattern-hearts"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Explore Pattern Hearts
+        <span class="material-icons" aria-hidden="true"> open_in_new</span>
+      </button>
+    </a>
+  </div>
 </section>
 
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"> </app-scroll-menu>
+</div>
 
-<app-scroll-menu [sections]="sections"> </app-scroll-menu>
-
-<app-divider></app-divider>
-
-<section id="section1">
+<section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goal</h2>
     <p>
       "Love Comes in All Patterns" was born from a simple wish: to spread a
-      little more love and light into the world - and into our designs.
+      little more love into the world - and into our designs.
     </p>
     <p>
-      In a time where division and exclusion often dominate the conversation,
-      this plugin is a gentle counter-message. It's about celebrating diversity
-      and expressing kindness, creativity, and connection through design. The
-      heart shape stands for what unites us, while the different patterns
-      represent the beauty of our individuality - across cultures, identities,
-      backgrounds, and beliefs.
+      This plugin is about celebrating diversity and expressing kindness,
+      creativity, and connection through design. The heart shape stands for what
+      unites us, while the different patterns represent the beauty of our
+      individuality - across cultures, identities, backgrounds, and beliefs.
     </p>
     <p>
       I also wanted to create something joyful and accessible. After working on
@@ -69,9 +68,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section2">
+<section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Features &amp; Visual Design</h2>
     <h3>Patterned Hearts Gallery with Color Picker &amp; Magic</h3>
@@ -130,14 +127,11 @@
     </p>
 
     <div class="m-middle">
-      <picture>
-        <source srcset="projects/pattern-hearts-idea1.webp" type="image/webp" />
-        <img
-          src="projects/pattern-hearts-idea1.png"
-          alt=""
-          class="radius-l elevation-xs border-standard mb-32"
-        />
-      </picture>
+      <img
+        src="projects/pattern-hearts-idea1.svg"
+        alt=""
+        class="radius-l elevation-xs border-standard mb-32"
+      />
     </div>
   </div>
   <div class="container-l d-flex gap-32">
@@ -154,9 +148,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section3">
+<section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
     <p>
@@ -201,29 +193,27 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
 <div class="text-center m-middle container-m link-to-project">
-  <h2>Explore the full Source Code on GitHub</h2>
-  <p class="mb-32">
-    If you're interested in exploring the code and seeing how the project was
-    built in detail, feel free to visit the GitHub repository.
-  </p>
-  <a
-    href="https://github.com/ko-ko-lo/figma-pattern-hearts"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button class="link d-flex align-items m-middle">
-      Go to Repository
-      <span class="material-icons" aria-hidden="true">open_in_new</span>
-    </button>
-  </a>
+  <div class="main-margin">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/figma-pattern-hearts"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
 </div>
 
-<app-divider></app-divider>
-
-<section id="section4">
+<section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. Final Reflections</h2>
     <p>
@@ -253,11 +243,9 @@
 </section>
 
 <div class="container-l m-middle">
-  <img src="projects/pattern-hearts-pattern.svg" alt="" />
+  <img src="projects/pattern-hearts-pattern.svg" alt="" class="main-margin" />
 </div>
 
 <div class="container-m m-middle text-center">
-  <h2 class="pt-120">
-    Thank you for taking the time to explore this little project.
-  </h2>
+  <h2>Thank you for taking the time to explore this little project.</h2>
 </div>

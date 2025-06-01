@@ -1,10 +1,9 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/semantic" as semantic;
 
 img.puzzle {
   max-height: 363px;
 }
 
 .bg-dark-neutral li {
-  font-weight: variables.$font-weight-light;
+  font-weight: semantic.$font-weight-light;
 }

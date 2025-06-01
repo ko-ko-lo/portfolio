@@ -1,23 +1,33 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/tokens" as token;
 
 .intro {
-  font-size: variables.$font-size-28;
-}
-
-section {
-  text-align: center;
+  font-size: 28px;
 }
 
 img {
-  max-width: 580px;
+  max-width: 454px;
   width: 100%;
   height: auto;
   display: block;
+  margin-left: auto;
 }
 
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: 768px) {
   .intro {
-    font-size: variables.$font-size-23;
+    font-size: 23px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  p,
+  h1 {
+    text-align: center;
+  }
+  .button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

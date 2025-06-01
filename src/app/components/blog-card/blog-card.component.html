@@ -7,10 +7,7 @@
     [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
     class="box padding radius-l text-center full-link mb-16 border-standard"
   >
-    <div class="image-wrapper">
-      <img [src]="article.image" alt="" class="m-middle" />
-      <div class="overlay"></div>
-    </div>
+    <img [src]="article.image" alt="" class="m-middle" />
     <h3>{{ article.title }}</h3>
   </a>
 </article>

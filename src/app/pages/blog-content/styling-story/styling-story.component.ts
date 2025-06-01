@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { MyQuoteComponent } from '../../../components/my-quote/my-quote.component';
 
@@ -12,11 +11,9 @@ import { MyQuoteComponent } from '../../../components/my-quote/my-quote.componen
     RouterModule,
     BreadcrumbBlogComponent,
     IntroComponent,
-    DividerComponent,
     MyQuoteComponent,
   ],
   templateUrl: './styling-story.component.html',
-  styleUrl: './styling-story.component.scss',
 })
 export class StylingStoryComponent {
   title: string = 'My Styling Story: From CSS to Tailwind';

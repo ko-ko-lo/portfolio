@@ -1,5 +1,4 @@
-@use "../../../styles/variables" as variables;
-@use "../../../styles/utilities" as utilities;
+@use "../../../styles/tokens" as token;
 
 #card .padding {
   padding-top: 0;
@@ -13,7 +12,13 @@
   max-height: 100%;
 }
 
-@media (max-width: variables.$breakpoint-tablet) {
+@media (max-width: 768px) {
+  .box {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 390px) {
   .box {
     flex: 0 100%;
   }

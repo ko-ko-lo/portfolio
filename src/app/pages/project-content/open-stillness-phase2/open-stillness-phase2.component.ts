@@ -1,18 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 
 @Component({
   selector: 'app-open-stillness-phase2',
   standalone: true,
-  imports: [
-    DividerComponent,
-    RouterModule,
-    BreadcrumbComponent,
-    ScrollMenuComponent,
-  ],
+  imports: [RouterModule, BreadcrumbComponent, ScrollMenuComponent],
   templateUrl: './open-stillness-phase2.component.html',
   styleUrl: './open-stillness-phase2.component.scss',
 })

@@ -15,8 +15,9 @@ export class MenuComponent implements OnInit {
 
   menuItems: { label: string; link: string }[] = [
     { label: 'Projects', link: '/projects' },
+    { label: 'Expertise', link: '/expertise' },
     { label: 'Blog', link: '/blog' },
-    { label: 'About Me', link: '/about-me' },
+    { label: 'About', link: '/about' },
   ];
 
   constructor(private router: Router) {}

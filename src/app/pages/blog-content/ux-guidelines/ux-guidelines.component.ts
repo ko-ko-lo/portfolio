@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { TextImageBlogComponent } from '../../../components/text-image-blog/text-image-blog.component';
 
@@ -11,12 +10,10 @@ import { TextImageBlogComponent } from '../../../components/text-image-blog/text
   imports: [
     RouterModule,
     IntroComponent,
-    DividerComponent,
     BreadcrumbBlogComponent,
     TextImageBlogComponent,
   ],
   templateUrl: './ux-guidelines.component.html',
-  styleUrl: './ux-guidelines.component.scss',
 })
 export class UxGuidelinesComponent {
   title: string = '7 UX Design Guidelines to Keep in Mind';

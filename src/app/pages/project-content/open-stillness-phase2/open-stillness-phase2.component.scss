@@ -1,6 +1,3 @@
-@use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
-
 .box-large {
   flex: 3;
 }
@@ -11,4 +8,17 @@
 
 img.robot {
   max-height: 430px;
+}
+
+@media (max-width: 768px) {
+  .box-1 {
+    flex: 1;
+  }
+}
+
+@media (max-width: 390px) {
+  .box-1 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }

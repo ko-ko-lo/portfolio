@@ -1,6 +1,6 @@
 <app-breadcrumb></app-breadcrumb>
 
-<section>
+<section class="mb-32">
   <img src="projects/open-stillness-icon.svg" alt="" class="m-middle pb-16" />
 
   <app-intro [title]="title" [text]="text"></app-intro>
@@ -13,10 +13,10 @@
   </a>
 </section>
 
-<app-divider></app-divider>
+<img src="general/arrow.svg" alt="" class="m-middle" />
 
 <section class="m-middle container-m">
-  <h2>Why was this platform created?</h2>
+  <h2 class="mt-48">Why was this platform created?</h2>
   <p>
     What started as a personal solution for organizing my yoga routines has
     evolved into a full-fledged mindfulness platform. Initially, I struggled
@@ -25,7 +25,7 @@
     platform expanded to include guided Meditations, Breathwork techniques, and
     more.
   </p>
-  <p>
+  <p class="main-margin">
     <strong
       >As both the designer and developer, I have built this platform from the
       ground up</strong
@@ -37,14 +37,12 @@
   </p>
 </section>
 
-<app-divider></app-divider>
-
 <div class="container-m m-middle">
   <h2>
     Project Phases: <br />
     The Evolution of Open Stillness
   </h2>
-  <p class="mb-80">
+  <p class="main-margin">
     Every project starts with a simple idea. What began as a structured way to
     organize Yin-Style Yoga routines has grown into a comprehensive mindfulness
     platform. This journey is divided into key phases, each adding new features
@@ -56,8 +54,6 @@
 </div>
 
 <section class="m-middle container-l phases">
-  <hr />
-
   <!-- Phase 1: MVP / Walking Skeleton -->
   <app-phases-project
     phasesCount="1"
@@ -73,8 +69,6 @@
     phasesImg="projects/phase-1.png"
     [isActive]="true"
   ></app-phases-project>
-
-  <hr />
 
   <!-- Phase 2: MVP / Expanding the Platform -->
   <app-phases-project
@@ -93,8 +87,6 @@
     [isActive]="true"
   ></app-phases-project>
 
-  <hr />
-
   <!-- Phase 3: Routine Videos -->
   <app-phases-project
     phasesCount="3"
@@ -108,8 +100,6 @@
     phasesImg="projects/phase-3.png"
     pillColor="brown"
   ></app-phases-project>
-
-  <hr />
 
   <!-- Phase 4: Progressive Web App -->
   <app-phases-project
@@ -127,48 +117,46 @@
     pillColor="brown"
   ></app-phases-project>
 
-  <hr />
-
   <!-- Phase 5: MVP / Walking Skeleton -->
-  <app-phases-project
-    phasesCount="5"
-    phasesText="Introducing user authentication and personalized features, this phase
+  <div class="main-margin">
+    <app-phases-project
+      phasesCount="5"
+      phasesText="Introducing user authentication and personalized features, this phase
     brings deeper engagement and interactivity. A secure backend enables
     users to track progress, save preferences, and access personalized
     content, making the platform a truly individualized mindfulness
     experience."
-    phasesProgress="Coming soon"
-    phasesHeadline="User Backend"
-    phasesImgWebp="projects/phase-5.webp"
-    phasesImg="projects/phase-5.png"
-    pillColor="neutral"
-  ></app-phases-project>
+      phasesProgress="Coming soon"
+      phasesHeadline="User Backend"
+      phasesImgWebp="projects/phase-5.webp"
+      phasesImg="projects/phase-5.png"
+      pillColor="neutral"
+    ></app-phases-project>
+  </div>
 </section>
 
-<app-divider></app-divider>
-
-<app-technical-tools-big
-  headlineTools1="Web Technologies"
-  headlineTools2="Frontend Framework"
-  headlineTools3="Design Tools"
-  textTools1="TypeScript, Tailwind CSS and HTML"
-  textTools2="Angular for Component-based Development"
-  textTools3="Figma for UIs, Procreate for Illustrations"
-></app-technical-tools-big>
-
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-technical-tools-big
+    headlineTools1="Web Technologies"
+    headlineTools2="Frontend Framework"
+    headlineTools3="Design Tools"
+    textTools1="TypeScript, Tailwind CSS and HTML"
+    textTools2="Angular for Component-based Development"
+    textTools3="Figma for UIs, Procreate for Illustrations"
+  ></app-technical-tools-big>
+</div>
 
 <section class="m-middle container-l">
   <h2 class="text-center">Impressions of Open Stillness</h2>
 
-  <div class="d-flex gap-32 pb-32">
-    <div class="box-2">
+  <div class="gap-32">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-1.webp" type="image/webp" />
         <img src="projects/open-stillness-1.png" alt="" />
       </picture>
     </div>
-    <div class="box-2">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-2.webp" type="image/webp" />
         <img src="projects/open-stillness-2.png" alt="" />
@@ -176,14 +164,14 @@
     </div>
   </div>
 
-  <div class="d-flex gap-32 pb-32">
-    <div class="box-2">
+  <div class="gap-32">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-3.webp" type="image/webp" />
         <img src="projects/open-stillness-3.png" alt="" />
       </picture>
     </div>
-    <div class="box-2">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-4.webp" type="image/webp" />
         <img src="projects/open-stillness-4.png" alt="" />
@@ -191,14 +179,14 @@
     </div>
   </div>
 
-  <div class="d-flex gap-32">
-    <div class="box-2">
+  <div class="gap-32 main-margin">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-5.webp" type="image/webp" />
         <img src="projects/open-stillness-5.png" alt="" />
       </picture>
     </div>
-    <div class="box-2">
+    <div class="box-2 pb-32">
       <picture>
         <source srcset="projects/open-stillness-6.webp" type="image/webp" />
         <img src="projects/open-stillness-6.png" alt="" />
@@ -206,8 +194,6 @@
     </div>
   </div>
 </section>
-
-<app-divider></app-divider>
 
 <app-my-quote
   myQuote="As the platform continues to evolve, upcoming phases will focus on enhancing user experience, improving accessibility, and introducing new features. With each iteration, the goal is to create a seamless, personalized, and immersive mindfulness experience."

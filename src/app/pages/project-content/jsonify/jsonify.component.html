@@ -8,40 +8,41 @@
   <picture>
     <source srcset="projects/jsonify.webp" type="image/webp" />
     <img src="projects/jsonify.jpg" alt="" class="radius-l elevation-xs" />
+    <div class="mt-32 mb-48">
+      <img src="general/arrow.svg" alt="" class="m-middle" />
+    </div>
   </picture>
 </div>
 
-<app-divider></app-divider>
-
-<app-technical-tools-small></app-technical-tools-small>
-
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-technical-tools-small></app-technical-tools-small>
+</div>
 
 <section class="text-center m-middle container-m link-to-project">
-  <h2 class="mt-80">Explore JSONify on Figma Community</h2>
-  <p class="mb-32 container">
-    Take a peek at the product page to learn more and maybe see JSONify in
-    action!
-  </p>
-  <a
-    href="https://www.figma.com/community/plugin/1437780775818955662"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button class="link d-flex align-items m-middle">
-      Explore JSONify
-      <span class="material-icons" aria-hidden="true"> open_in_new</span>
-    </button>
-  </a>
+  <div class="main-margin">
+    <h2 class="mt-80">Explore JSONify on Figma Community</h2>
+    <p class="mb-32 container">
+      Take a peek at the product page to learn more and maybe see JSONify in
+      action!
+    </p>
+    <a
+      href="https://www.figma.com/community/plugin/1437780775818955662"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Explore JSONify
+        <span class="material-icons" aria-hidden="true"> open_in_new</span>
+      </button>
+    </a>
+  </div>
 </section>
 
-<app-divider></app-divider>
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"></app-scroll-menu>
+</div>
 
-<app-scroll-menu [sections]="sections"></app-scroll-menu>
-
-<app-divider></app-divider>
-
-<section id="section1">
+<section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goals</h2>
     <p class="mb-48">
@@ -75,9 +76,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section2">
+<section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Key Features and Algorithm Highlights</h2>
     <p>
@@ -104,11 +103,7 @@
         The prefix "exclude-" is used to skip layers that are not wanted in the
         JSON Output. This gives control over what gets exported.
       </li>
-      <li class="mb-16">
-        <strong>Auto Layout Layers are Ignored:</strong><br />
-        Auto layout layers are automatically excluded to ensure the exported
-        JSON remains straightforward.
-      </li>
+
       <li class="mb-16">
         <strong>Layer Names Become Keys:</strong><br />
         Each layer's name is transformed into a key in the JSON object, making
@@ -128,22 +123,6 @@
             />
           </picture>
           <figcaption>Prefix "exclude-" to omit layers</figcaption>
-        </figure>
-      </div>
-      <div class="box">
-        <figure>
-          <picture>
-            <source
-              srcset="projects/jsonify-no-export.webp"
-              type="image/webp"
-            />
-            <img
-              src="projects/jsonify-no-export.png"
-              alt=""
-              class="box elevation-xs radius-m border-standard"
-            />
-          </picture>
-          <figcaption>Auto layout layers are ignored</figcaption>
         </figure>
       </div>
 
@@ -223,9 +202,7 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
-<section id="section3">
+<section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
 
@@ -288,29 +265,27 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
 <div class="text-center m-middle container-m link-to-project">
-  <h2>Explore the full Source Code on GitHub</h2>
-  <p class="mb-32">
-    If you're interested in exploring the code and seeing how the project was
-    built in detail, feel free to visit the GitHub repository.
-  </p>
-  <a
-    href="https://github.com/ko-ko-lo/figma-json-export"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button class="link d-flex align-items m-middle">
-      Go to Repository
-      <span class="material-icons" aria-hidden="true">open_in_new</span>
-    </button>
-  </a>
+  <div class="main-margin">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/figma-json-export"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
 </div>
 
-<app-divider></app-divider>
-
-<section id="section4">
+<section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. Reflections on the Creative Process</h2>
     <p>
@@ -345,15 +320,13 @@
   </div>
 </section>
 
-<app-divider></app-divider>
-
 <section id="section3">
   <div class="container-m m-middle">
-    <h2>
+    <p class="thanks">
       <span class="medium-brown">&#123;</span><br />
       <span class="medium-berry">"ending"</span>:
       <span class="medium-blue">"Thanks for your interest!"</span><br />
       <span class="medium-brown">&#125;</span>
-    </h2>
+    </p>
   </div>
 </section>

@@ -1,7 +1,6 @@
-@use "../../../../styles/variables" as variables;
-@use "../../../../styles/utilities" as utilities;
+@use "../../../../styles/tokens" as token;
 
 .bg-medium-brown ul {
-  font-size: variables.$spacing-unit-large * 3;
-  color: variables.$color-neutral-50;
+  font-size: token.$spacing-unit-large * 3;
+  color: token.$gray-50;
 }

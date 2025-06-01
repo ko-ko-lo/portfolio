@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ArtworksComponent } from '../../components/artworks/artworks.component';
-import { BlogCardComponent } from '../../components/blog-card/blog-card.component';
 import { CollageYogaComponent } from '../../components/collage-yoga/collage-yoga.component';
-import { DividerComponent } from '../../components/divider/divider.component';
+import { ContactComponent } from '../../components/contact/contact.component';
+import { ExpertiseTagGroupComponent } from '../../components/expertise-tag-group/expertise-tag-group.component';
 import { HeroHomeComponent } from '../../components/hero-home/hero-home.component';
 import { IntroButtonComponent } from '../../components/intro-button/intro-button.component';
 import { OverviewCardData } from '../../models/card.model';
@@ -16,12 +15,11 @@ import { ArticleService } from '../../services/article.service';
   imports: [
     RouterModule,
     HeroHomeComponent,
-    DividerComponent,
     IntroButtonComponent,
     CollageYogaComponent,
-    BlogCardComponent,
-    ArtworksComponent,
     CommonModule,
+    ExpertiseTagGroupComponent,
+    ContactComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -1,0 +1,57 @@
+<section class="mt-80">
+  <app-intro [title]="title" [text]="text"></app-intro>
+</section>
+
+<div class="container-m m-middle">
+  <app-expertise-tag-group></app-expertise-tag-group>
+
+  <img src="general/connected-dots.svg" alt="" class="main-margin" />
+</div>
+
+<section id="expertise-boxes" class="main-margin">
+  <app-expertise-boxes
+    [color]="'usability'"
+    [headline2]="h2Usability"
+    [headline3]="h3Usability"
+    [expertiseText]="textUsability"
+  ></app-expertise-boxes>
+
+  <app-expertise-boxes
+    [color]="'a11y'"
+    [headline2]="h2A11y"
+    [headline3]="h3A11y"
+    [expertiseText]="textA11y"
+  ></app-expertise-boxes>
+
+  <app-expertise-boxes
+    [color]="'systems'"
+    [headline2]="h2Systems"
+    [headline3]="h3Systems"
+    [expertiseText]="textSystems"
+  ></app-expertise-boxes>
+
+  <app-expertise-boxes
+    [color]="'frontend'"
+    [headline2]="h2Frontend"
+    [headline3]="h3Frontend"
+    [expertiseText]="textFrontend"
+  ></app-expertise-boxes>
+
+  <app-expertise-boxes
+    [color]="'plugin'"
+    [headline2]="h2Plugin"
+    [headline3]="h3Plugin"
+    [expertiseText]="textPlugin"
+  ></app-expertise-boxes>
+</section>
+
+<section id="expertise-diagram" class="container-m m-middle text-center">
+  <h2>How It All Connects</h2>
+  <p class="mb-88">
+    These aren't just five separate skills: they're interwoven practices that
+    shape how I design, build, and iterate. Accessibility, Design Systems and
+    Figma Plugin Development sit at the core, bridging the creative and
+    technical, because meaningful products happen where design and code meet.
+  </p>
+  <img src="general/expertise-diagram.svg" alt="" class="main-margin" />
+</section>

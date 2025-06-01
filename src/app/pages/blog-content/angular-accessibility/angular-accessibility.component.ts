@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/breadcrumb.component';
 import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-good-bad.component';
-import { DividerComponent } from '../../../components/divider/divider.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
@@ -10,13 +9,11 @@ import { IntroComponent } from '../../../components/intro/intro.component';
   standalone: true,
   imports: [
     RouterModule,
-    DividerComponent,
     IntroComponent,
     CodeGoodBadComponent,
     BreadcrumbBlogComponent,
   ],
   templateUrl: './angular-accessibility.component.html',
-  styleUrl: './angular-accessibility.component.scss',
 })
 export class AngularAccessibilityComponent {
   title: string =
