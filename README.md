@@ -18,5 +18,3 @@ This is my personal portfolio website created with Angular. It serves as:
 ## Live Demo
 Experience the app here: [Web Application](https://creativejourney.dev)
 
-<img width="1470" alt="" src="https://github.com/user-attachments/assets/c4c7722f-c060-4797-bf6f-d4b2e7f15ca4" />
-
