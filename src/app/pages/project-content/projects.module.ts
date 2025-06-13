@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CurlyArrowsComponent } from './curly-arrows/curly-arrows.component';
 import { HexifyComponent } from './hexify/hexify.component';
 import { JsonifyComponent } from './jsonify/jsonify.component';
 import { OpenStillnessPhase2Component } from './open-stillness-phase2/open-stillness-phase2.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
     component: OpenStillnessPhase2Component,
   },
   { path: 'figma-pattern-hearts', component: PatternHeartsComponent },
+  { path: 'curly-arrows', component: CurlyArrowsComponent },
 ];
 
 @NgModule({
