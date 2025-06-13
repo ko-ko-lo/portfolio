@@ -4,6 +4,7 @@ code {
   color: token.$ochre-500;
   line-height: token.$lineheight-m;
   font-size: token.$spacing-unit-small * 8;
+  cursor: pointer;
 }
 
 pre {

@@ -27,6 +27,13 @@ export class ProjectTeaserService {
       link: 'figma-pattern-hearts',
       absoluteLink: 'projects/figma-pattern-hearts',
     },
+    {
+      id: 4,
+      title: 'Curly Arrows: A Fun Figma Plugin',
+      image: 'projects/curly-arrows-teaser.webp',
+      link: 'figma-curly-arrows',
+      absoluteLink: 'projects/figma-curly-arrows',
+    },
   ];
   getProjectTeaser(): OverviewCardData[] {
     return this.projectTeaser;

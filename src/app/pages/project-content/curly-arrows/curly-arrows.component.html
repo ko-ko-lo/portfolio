@@ -22,7 +22,7 @@
   <div class="main-margin">
     <h2 class="mt-80">Explore Curly Arrows on Figma Community</h2>
     <p class="mb-32 container">
-      Take a peek at the product page to learn more and maybe see Curly Arrows
+      Take a peek at the community page to learn more and maybe see Curly Arrows
       in action!
     </p>
     <a
@@ -45,29 +45,173 @@
 <section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goal</h2>
+    <p>Curly Arrows began with a keynote.</p>
+    <p>
+      To make my presentation feel more personal and engaging, I hand-drew small
+      illustrations, including playful, imperfect arrows that added character
+      and flow. While preparing, I realized: why not share these? Others might
+      want to add that same expressive touch to their own work.
+    </p>
+    <p>
+      The goal of Curly Arrows is to provide clean, hand-drawn arrows that stand
+      out with personality, perfect for enriching user flows, websites, or
+      presentations where standard arrows might go unnoticed.
+    </p>
+    <p>
+      More than just sharing assets, I wanted to build something useful,
+      beautiful, and simple to use: a tiny plugin that brings joy into the
+      design process.
+    </p>
   </div>
 </section>
 
 <section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Features &amp; Visual Design</h2>
+    <p>
+      Every arrow in Curly Arrows starts with a hand-drawn sketch. This gives
+      each one a natural rhythm and personality. These sketches capture the
+      playful imperfections that make the arrows feel expressive, dynamic, and a
+      little unexpected.
+    </p>
+    <picture>
+      <source srcset="projects/arrow-sketches.webp" type="image/webp" />
+      <img
+        src="projects/arrow-sketches.jpg"
+        alt=""
+        class="radius-l elevation-xs mb-32"
+      />
+    </picture>
+    <p>
+      To turn these sketches into interactive assets, I convert them into vector
+      paths. This allows for flexibility inside Figma, particularly when it
+      comes to stroke width. The plugin includes a stroke slider, giving users
+      control over the thickness of the arrow lines, from 1px to 10px.
+      Adjustments are visible instantly in the plugin preview.
+    </p>
+    <p>
+      Curly Arrows also comes with a curated palette of six colors, plus a deep
+      charcoal gray. These options let users experiment quickly inside the
+      plugin, while keeping the door open for full customization: once inserted
+      into Figma, arrows behave like any native vector - users can change color,
+      or apply any style they like.
+    </p>
+    <p>
+      The UI is intentionally simple and designed to make selection and
+      customization effortless. It includes:
+    </p>
+    <ul class="mb-64">
+      <li class="mb-8">A live preview of each arrow</li>
+      <li class="mb-8">A color picker with hover labels</li>
+      <li class="mb-8">A stroke width slider with real-time updates</li>
+    </ul>
+    <div class="mb-48 d-flex flex-wrap justify-between gap-32 text-center">
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source srcset="projects/curly-arrows-ui.webp" type="image/webp" />
+            <img
+              src="projects/curly-arrows-ui.png"
+              alt=""
+              class="elevation-xs radius-l border-standard"
+            />
+          </picture>
+          <figcaption>Default UI</figcaption>
+        </figure>
+      </div>
+
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source
+              srcset="projects/curly-arrows-ui-1.webp"
+              type="image/webp"
+            />
+            <img
+              src="projects/curly-arrows-ui-1.png"
+              alt=""
+              class="box elevation-xs radius-l border-standard"
+            />
+          </picture>
+          <figcaption>Customized Arrows</figcaption>
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
+    <p>
+      One of the trickiest parts was working with SVG paths exported from Figma.
+      I wanted to give users the ability to change stroke width dynamically, but
+      many of my initial arrow designs didn't include proper stroke attributes,
+      especially if the paths had advanced stroke settings or were flattened
+      during export.
+    </p>
+    <p>
+      I had to learn how to prepare the SVGs so that they remained editable, and
+      how to inject stroke and stroke-width values via code before inserting
+      them into Figma.
+    </p>
+    <p>
+      Here's a snippet that dynamically injects the selected stroke color and
+      width into all &lt;path&gt; elements before the SVG is inserted into the
+      canvas:
+    </p>
+    <app-code-good-bad [code]="exampleCode1"></app-code-good-bad>
   </div>
 </section>
+
+<div class="text-center m-middle container-m link-to-project">
+  <div class="main-margin">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/figma-art-arrows"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</div>
 
 <section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. Final Reflections</h2>
+    <p>
+      I'm really happy with how the arrows turned out - they feel playful,
+      expressive, and fun to use. I also like the clean, simple UI that allows
+      users to pick from curated colors and adjust stroke width without
+      friction.
+    </p>
+    <p>
+      On the technical side, this project helped me deepen my understanding of
+      the Figma Plugin API, especially how to work with SVG paths and inject
+      dynamic attributes like color and stroke.
+    </p>
+    <p>
+      Curly Arrows is now part of my growing family of playful plugins,
+      alongside Smiley Express and
+      <a href="projects/figma-pattern-hearts">Pattern Hearts</a>.
+    </p>
+    <p>
+      I've already received feedback about adding animation features. Let's see
+      where this goes next ....
+    </p>
   </div>
 </section>
 
 <div class="container-l m-middle">
-  <img src="projects/pattern-hearts-pattern.svg" alt="" class="main-margin" />
+  <img src="projects/curly-arrows-pattern.svg" alt="" class="main-margin" />
 </div>
 
 <div class="container-m m-middle text-center">

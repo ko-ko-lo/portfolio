@@ -21,7 +21,7 @@ const routes: Routes = [
     component: OpenStillnessPhase2Component,
   },
   { path: 'figma-pattern-hearts', component: PatternHeartsComponent },
-  { path: 'curly-arrows', component: CurlyArrowsComponent },
+  { path: 'figma-curly-arrows', component: CurlyArrowsComponent },
 ];
 
 @NgModule({
