@@ -18,6 +18,10 @@
   padding: 56px 32px 0;
 }
 
+figcaption {
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .d-flex {
     flex-wrap: wrap;
