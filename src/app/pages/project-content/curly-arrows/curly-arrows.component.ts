@@ -18,7 +18,6 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
     CodeGoodBadComponent,
   ],
   templateUrl: './curly-arrows.component.html',
-  styleUrl: './curly-arrows.component.scss',
 })
 export class CurlyArrowsComponent {
   title: string = 'Curly Arrows: A Fun Figma Plugin';

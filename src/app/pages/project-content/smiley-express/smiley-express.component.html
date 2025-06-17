@@ -22,9 +22,9 @@
   <app-technical-tools-small></app-technical-tools-small>
 </div>
 
-<section class="text-center m-middle container-m link-to-project">
-  <div class="main-margin">
-    <h2 class="mt-80">Explore Smiley Express on Figma Community</h2>
+<section class="text-center m-middle container-m">
+  <div class="main-margin special-link radius-l">
+    <h2>Explore Smiley Express on Figma Community</h2>
     <p class="mb-32 container">
       Take a peek at the community page to learn more and maybe see Smiley
       Express in action!
@@ -49,23 +49,149 @@
 <section id="section1" class="main-margin">
   <div class="container-m m-middle">
     <h2>1. Purpose &amp; Goal</h2>
+    <p>
+      Smiley Express began as a playful side project for a keynote on plugin
+      development. To illustrate the emotional rollercoaster of building a Figma
+      plugin, I created a series of hand-drawn emojis - each one reflecting a
+      moment from the journey. The audience's reaction was immediate and warm:
+      they smiled.
+    </p>
+    <p>
+      That response sparked the idea to share these illustrations more broadly.
+      I noticed there weren't many Figma plugins offering hand-crafted,
+      expressive visuals - especially ones that felt personal and a bit
+      non-standard. Smiley Express aims to fill that gap by offering a library
+      of mood-based emojis, designed for anyone who wants to communicate
+      visually, quickly, and with personality.
+    </p>
   </div>
 </section>
 
 <section id="section2" class="main-margin">
   <div class="container-m m-middle">
     <h2>2. Features &amp; Visual Design</h2>
+
+    <p>
+      Users can choose from six vibrant color combinations, plus a neutral gray.
+      The design principle is simple but effective: the facial expression is
+      rendered in a darker shade than the outline, drawing attention to the
+      emotion being conveyed. Colors can be selected directly within the plugin
+      UI, and once inserted into Figma, every part of the emoji remains fully
+      editable.
+    </p>
+
+    <p>
+      The emojis are organized across six main moods: Happy, Sad, Angry,
+      Excited, Calm, and Anxious, accessible via a tab-based menu. Each mood
+      features a variety of nuanced expressions. For example, the Anxious
+      category includes Sweaty, Nervous, Stressed, and Worried.
+    </p>
+
+    <p>
+      Inserting an emoji is effortless: one click, and it's placed on Figma
+      canvas - ready to be used or customized.
+    </p>
+
+    <p class="mb-48">
+      To showcase the plugin, I've included two UI images: one showing the
+      default state (Happy mood, dark gray), and another featuring the Anxious
+      mood in golden colors.
+    </p>
+
+    <div class="mb-104 d-flex flex-wrap justify-between gap-32 text-center">
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source
+              srcset="projects/smiley-express-ui-default.webp"
+              type="image/webp"
+            />
+            <img
+              src="projects/smiley-express-ui-default.png"
+              alt=""
+              class="elevation-xs radius-l"
+            />
+          </picture>
+          <figcaption>Default UI</figcaption>
+        </figure>
+      </div>
+
+      <div class="box-1">
+        <figure>
+          <picture>
+            <source
+              srcset="projects/smiley-express-ui-customized.webp"
+              type="image/webp"
+            />
+            <img
+              src="projects/smiley-express-ui-customized.png"
+              alt=""
+              class="box elevation-xs radius-l"
+            />
+          </picture>
+          <figcaption>Customized Emojis</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <p class="mb-32">
+      Plus, three bonus visuals where the emojis are having a little fun of
+      their own.
+    </p>
+
+    <div class="m-middle">
+      <img
+        src="projects/smiley-sketch-2.svg"
+        alt=""
+        class="radius-l mb-32 elevation-xs"
+      />
+    </div>
+  </div>
+
+  <div class="container-l d-flex gap-32">
+    <div class="box-2">
+      <img
+        src="projects/smiley-sketch-1.svg"
+        alt=""
+        class="radius-l elevation-xs"
+      />
+    </div>
+    <div class="box-2">
+      <img
+        src="projects/smiley-sketch-3.svg"
+        alt=""
+        class="radius-l elevation-xs"
+      />
+    </div>
   </div>
 </section>
 
 <section id="section3" class="main-margin">
   <div class="container-m m-middle">
     <h2>3. Development Insights</h2>
+    <p class="mb-32">
+      Smiley Express was built with a strong focus on dynamic SVG manipulation
+      and Figma's plugin API. Each emoji is stored as an SVG string with
+      semantic classes for facial features (.base, .face), enabling color
+      customization through simple regex replacements:
+    </p>
+    <app-code-good-bad [code]="exampleCode1"></app-code-good-bad>
+
+    <p class="mb-32">
+      To insert an emoji into the canvas, the SVG is parsed and sanitized before
+      passing it to figma.createNodeFromSvg():
+    </p>
+    <app-code-good-bad [code]="exampleCode2"></app-code-good-bad>
+    <p>
+      One challenge was ensuring a consistent group structure and avoiding
+      unwanted frames in Figma. Instead of relying on grouping logic
+      post-insertion, clean SVG markup proved to be the most reliable approach.
+    </p>
   </div>
 </section>
 
-<div class="text-center m-middle container-m link-to-project">
-  <div class="main-margin">
+<div class="text-center m-middle container-m">
+  <div class="main-margin special-link radius-l">
     <h2>Explore the full Source Code on GitHub</h2>
     <p class="mb-32">
       If you're interested in exploring the code and seeing how the project was
@@ -87,5 +213,25 @@
 <section id="section4" class="main-margin">
   <div class="container-m m-middle">
     <h2>4. Final Reflections</h2>
+    <p>
+      Over the past year of developing Figma plugins, I've seen firsthand how
+      much the Figma developer experience has evolved. Error messages have
+      become clearer, API responses more predictable, it feels like the platform
+      is really listening to developers.
+    </p>
+    <p>
+      With Smiley Express, I wanted to focus on something playful rather than
+      overly technical. That kept the process fun and refreshing, and definitely
+      spared me a few gray hairs.
+    </p>
+    <p>
+      I'm getting more comfortable with the Figma API, and I'm already looking
+      forward to the next plugin adventure!
+    </p>
   </div>
 </section>
+
+<div class="container-m m-middle text-center">
+  <img src="projects/cheerful.svg" alt="" class="mb-32 cheerful" />
+  <h2>Thank you for taking the time to explore this little project.</h2>
+</div>

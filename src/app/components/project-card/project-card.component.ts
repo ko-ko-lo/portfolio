@@ -9,7 +9,6 @@ import { ProjectTeaserService } from '../../services/project-teaser.service';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.scss',
 })
 export class ProjectCardComponent {
   projectTeasers: OverviewCardData[] = [];

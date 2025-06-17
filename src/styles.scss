@@ -356,6 +356,12 @@ button.application {
   margin-top: token.$spacing-unit-large * 6;
 }
 
+.special-link {
+  background-color: semantic.$color-bg-message;
+  padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 13
+    token.$spacing-unit-large * 15;
+}
+
 // ========================================================================
 // Responsive Styles
 // ========================================================================
@@ -380,6 +386,10 @@ button.application {
   }
   .highlighted {
     font-size: token.$spacing-unit-large * 3;
+  }
+  .special-link {
+    padding: token.$spacing-unit-large * 6 token.$spacing-unit-large * 6
+      token.$spacing-unit-large * 8;
   }
 }
 
