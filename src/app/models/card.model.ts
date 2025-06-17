@@ -4,4 +4,5 @@ export interface OverviewCardData {
   image: string;
   link: string;
   absoluteLink?: string;
+  category?: 'utility' | 'creative';
 }

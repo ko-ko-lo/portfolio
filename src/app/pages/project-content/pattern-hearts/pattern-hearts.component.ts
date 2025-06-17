@@ -21,7 +21,7 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
   styleUrl: './pattern-hearts.component.scss',
 })
 export class PatternHeartsComponent {
-  title: string = 'Love Comes in All Patterns: A Fun Figma Plugin';
+  title: string = 'Love Comes in All Patterns: Illustrated Hearts';
   text: string[] = [
     'This plugin brings a collection of crafted, patterned hearts to Figma designs - perfect for adding warmth, charm, and creativity.',
   ];

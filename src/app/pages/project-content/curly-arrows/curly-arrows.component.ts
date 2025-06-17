@@ -20,7 +20,7 @@ import { TechnicalToolsSmallComponent } from '../../../components/technical-tool
   templateUrl: './curly-arrows.component.html',
 })
 export class CurlyArrowsComponent {
-  title: string = 'Curly Arrows: A Fun Figma Plugin';
+  title: string = 'Curly Arrows: Point with Personality';
   text: string =
     'Curly Arrows lets users insert playful, artistic arrows into their Figma designs.';
 

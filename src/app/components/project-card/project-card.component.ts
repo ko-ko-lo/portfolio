@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { OverviewCardData } from '../../models/card.model';
 import { ProjectTeaserService } from '../../services/project-teaser.service';
@@ -12,10 +12,13 @@ import { ProjectTeaserService } from '../../services/project-teaser.service';
 })
 export class ProjectCardComponent {
   projectTeasers: OverviewCardData[] = [];
+  @Input() category!: 'utility' | 'creative';
 
   constructor(private projectTeaserService: ProjectTeaserService) {}
 
   ngOnInit(): void {
-    this.projectTeasers = this.projectTeaserService.getProjectTeaser();
+    this.projectTeasers = this.projectTeaserService
+      .getProjectTeaser()
+      .filter((p) => p.category === this.category);
   }
 }
