@@ -34,6 +34,13 @@ export class ProjectTeaserService {
       link: 'figma-curly-arrows',
       absoluteLink: 'projects/figma-curly-arrows',
     },
+    {
+      id: 5,
+      title: 'Smiley Express: Hop On and Pick a Mood!',
+      image: 'projects/smiley-express-teaser.webp',
+      link: 'figma-smiley-express',
+      absoluteLink: 'projects/figma-smiley-express',
+    },
   ];
   getProjectTeaser(): OverviewCardData[] {
     return this.projectTeaser;
