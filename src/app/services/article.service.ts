@@ -7,6 +7,13 @@ import { OverviewCardData } from '../models/card.model';
 export class ArticleService {
   private articles: OverviewCardData[] = [
     {
+      id: 6,
+      title: 'My Design Process: A Practical Guide Shaped by Experience',
+      image: 'blog/design-process-teaser.png',
+      link: 'design-process',
+      absoluteLink: '/blog/design-process',
+    },
+    {
       id: 5,
       title: 'My Styling Story: From CSS to Tailwind',
       image: 'blog/teaser-tailwind.png',
@@ -30,7 +37,7 @@ export class ArticleService {
     },
     {
       id: 2,
-      title: 'Usability Testing Made Easy in 4 Steps',
+      title: 'Usability Testing Made Easy - in 4 Steps',
       image: 'blog/teaser-usability.png',
       link: 'usability-testing',
       absoluteLink: '/blog/usability-testing',

@@ -25,7 +25,7 @@ export class ProjectTeaserService {
     {
       id: 3,
       title: 'Love Comes in All Patterns: Illustrated Hearts',
-      image: 'projects/pattern-hearts-cover.webp',
+      image: 'projects/pattern-hearts-teaser.webp',
       link: 'figma-pattern-hearts',
       absoluteLink: 'projects/figma-pattern-hearts',
       category: 'creative',
