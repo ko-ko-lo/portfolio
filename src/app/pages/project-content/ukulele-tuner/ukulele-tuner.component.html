@@ -1,0 +1,101 @@
+<app-breadcrumb></app-breadcrumb>
+
+<section class="mb-64">
+  <app-intro [title]="title" [text]="text"></app-intro>
+</section>
+
+<section class="container-m m-middle">
+  <picture>
+    <source
+      srcset="projects/aloha-tune/aloha-tune-cover.webp"
+      type="image/webp"
+    />
+    <img
+      src="projects/aloha-tune/aloha-tune-cover.png"
+      alt=""
+      class="radius-l elevation-xs"
+    />
+  </picture>
+  <div class="mt-32 mb-48">
+    <img src="general/arrow.svg" alt="" class="m-middle" />
+  </div>
+</section>
+
+<div class="main-margin">
+  <app-technical-tools-big
+    headlineTools1="Design"
+    headlineTools2="Core Web Technologies"
+    headlineTools3="Audio Library"
+    textTools1="Figma Design"
+    textTools2="React, TypeScript, SCSS, HTML"
+    textTools3="Tone.js"
+  ></app-technical-tools-big>
+</div>
+
+<section class="text-center m-middle container-m">
+  <div class="main-margin special-link radius-l">
+    <h2>Explore the Aloha Tune Application</h2>
+    <p class="mb-32 container">
+      Take a peek at the application to learn more and maybe see Aloha Tune in
+      action!
+    </p>
+    <a
+      href="https://aloha-tune.web.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Explore Aloha Tune
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</section>
+
+<div class="main-margin">
+  <app-scroll-menu [sections]="sections"></app-scroll-menu>
+</div>
+
+<section id="section1" class="main-margin">
+  <div class="container-m m-middle">
+    <h2>1. Purpose &amp; Goals</h2>
+  </div>
+</section>
+
+<section id="section2" class="main-margin">
+  <div class="container-m m-middle">
+    <h2>2. UX/UI Design</h2>
+  </div>
+</section>
+
+<section id="section3" class="main-margin">
+  <div class="container-m m-middle">
+    <h2>3. Development Insights</h2>
+  </div>
+</section>
+
+<div class="text-center m-middle container-m link-to-project">
+  <div class="main-margin special-link radius-l">
+    <h2>Explore the full Source Code on GitHub</h2>
+    <p class="mb-32">
+      If you're interested in exploring the code and seeing how the project was
+      built in detail, feel free to visit the GitHub repository.
+    </p>
+    <a
+      href="https://github.com/ko-ko-lo/ukulele-tuner"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button class="link d-flex align-items m-middle">
+        Go to Repository
+        <span class="material-icons" aria-hidden="true">open_in_new</span>
+      </button>
+    </a>
+  </div>
+</div>
+
+<section id="section4 main-margin">
+  <div class="container-m m-middle">
+    <h2>4. Final Reflections</h2>
+  </div>
+</section>

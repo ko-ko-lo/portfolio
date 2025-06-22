@@ -190,19 +190,19 @@
       for the application:
     </p>
     <ol>
-      <li>
-        <strong>Quick and Easy Access to Yoga Poses</strong>: The application
-        needed a well-structured library where users could quickly find and
-        filter yoga poses based on target areas.
+      <li class="mb-16">
+        <strong>Quick and Easy Access to Yoga Poses</strong>:<br />The
+        application needed a well-structured library where users could quickly
+        find and filter yoga poses based on target areas.
+      </li>
+      <li class="mb-16">
+        <strong>Self-Paced Practice</strong>:<br />Users should be able to
+        conduct ready-made yoga routines.
       </li>
       <li>
-        <strong>Self-Paced Practice</strong>: Users should be able to conduct
-        ready-made yoga routines.
-      </li>
-      <li>
-        <strong>Introduction to Yin-Style Yoga</strong>: For those new to the
-        practice, a brief introduction would offer insights into the benefits
-        and techniques of Yin-Style Yoga.
+        <strong>Introduction to Yin-Style Yoga</strong>:<br />For those new to
+        the practice, a brief introduction would offer insights into the
+        benefits and techniques of Yin-Style Yoga.
       </li>
     </ol>
     <p>
@@ -335,19 +335,21 @@
       components included:
     </p>
     <ul class="mb-32">
-      <li>
-        <strong>Buttons and Filters</strong>: Designed with various states for
-        default, hover, etc.
+      <li class="mb-16">
+        <strong>Buttons and Filters</strong>:<br />Designed with various states
+        for default, hover, etc.
       </li>
-      <li>
-        <strong>Accordion</strong>: A design pattern for expanding and
+      <li class="mb-16">
+        <strong>Accordion</strong>:<br />A design pattern for expanding and
         collapsing content.
       </li>
-      <li>
-        <strong>Main Navigation and Footer</strong>: Design patterns for
+      <li class="mb-16">
+        <strong>Main Navigation and Footer</strong>:<br />Design patterns for
         consistent navigation across the app.
       </li>
-      <li><strong>Cards</strong>: Components like the Yoga Pose Card.</li>
+      <li class="mb-16">
+        <strong>Cards</strong>:<br />Components like the Yoga Pose Card.
+      </li>
     </ul>
 
     <figure>
@@ -437,28 +439,28 @@
     <h4>Core Components</h4>
 
     <ul>
-      <li>
-        <strong>Yoga Pose Component</strong>: This component is responsible for
-        displaying yoga poses, dynamically rendered based on data stored in a
-        JSON file. This component is reused throughout the library and
+      <li class="mb-16">
+        <strong>Yoga Pose Component</strong>:<br />This component is responsible
+        for displaying yoga poses, dynamically rendered based on data stored in
+        a JSON file. This component is reused throughout the library and
         individual routines.
       </li>
-      <li>
-        <strong>Filtering Component</strong>: The filtering component allows
-        users to filter based on target areas. It communicates with its parent
-        components using Angular's input and output bindings. It is reused in
-        the library and the routines overview page.
+      <li class="mb-16">
+        <strong>Filtering Component</strong>:<br />The filtering component
+        allows users to filter based on target areas. It communicates with its
+        parent components using Angular's input and output bindings. It is
+        reused in the library and the routines overview page.
       </li>
-      <li>
-        <strong>Breadcrumb Component</strong>: This component provides easy
+      <li class="mb-16">
+        <strong>Breadcrumb Component</strong>:<br />This component provides easy
         navigation for users by displaying the current path and dynamically
         updating based on the page or routine being viewed. It fetches yoga
         routine data from a JSON file to display relevant information in the
         breadcrumb trail.
       </li>
-      <li>
-        <strong>Global Components</strong>: The Main Menu and Footer components
-        are part of the app's core structure.
+      <li class="mb-16">
+        <strong>Global Components</strong>:<br />The Main Menu and Footer
+        components are part of the app's core structure.
       </li>
     </ul>
     <h4>Routing and Navigation</h4>
@@ -466,22 +468,17 @@
       The application's navigation is powered by Angular's router, enabling
       smooth transitions between key pages.
     </p>
-    <p>
+    <!--<p>
       Dynamic routing is used to load individual yoga routines based on a URL
       parameter (slug). Features like scroll position restoration and anchor
       scrolling were also enabled to ensure a seamless and enjoyable user
       experience.
-    </p>
+    </p>-->
     <h4>Data Management</h4>
     <p>
       All data for the app is managed using <strong>JSON files</strong> for yoga
       poses and routines, which are dynamically loaded through
       <strong>Angular's HttpClient service</strong>.
-    </p>
-    <p>
-      This approach not only keeps the app flexible and easy to update but also
-      allows for future scalability, including potential back-end integration
-      for more dynamic content management.
     </p>
     <p>
       Here's an example of how the yoga pose data is fetched and used within the
@@ -493,15 +490,15 @@
     <h4>Styling and Theming</h4>
     <p>The styling is divided into:</p>
     <ul>
-      <li>
-        <strong>Component-Specific Styles</strong>: To maintain flexibility and
-        prevent conflicts, each component has its own SCSS file, making the
+      <li class="mb-16">
+        <strong>Component-Specific Styles</strong>:<br />To maintain flexibility
+        and prevent conflicts, each component has its own SCSS file, making the
         styling modular and easy to manage as the application grows.
       </li>
-      <li>
-        <strong>Global Styles</strong>: These base styles and utility classes
-        ensure consistency across the app, with variables for colors, fonts, and
-        other core elements defined in the variables.scss file.
+      <li class="mb-16">
+        <strong>Global Styles</strong>:<br />These base styles and utility
+        classes ensure consistency across the app, with variables for colors,
+        fonts, and other core elements defined in the variables.scss file.
       </li>
     </ul>
     <p>
@@ -509,28 +506,11 @@
       Color Collections and other foundational elements, such as box shadows,
       radius, and number scales.
     </p>
-    <h3>Development Workflow</h3>
+
+    <h4>Development Workflow</h4>
     <p>
-      Throughout the development of the Yin-Style Yoga Application, I followed a
-      structured workflow to ensure the project was organized, trackable, and
-      easy to maintain.
-    </p>
-    <p>
-      At the heart of this process was Git for version control, with all project
-      files stored in a GitHub repository. After the initial setup and first
-      commit, I committed code regularly at key intervals as I developed new
-      features and made updates.
-    </p>
-    <p>
-      To maintain a smooth workflow, I regularly tested the application on
-      different devices and browsers during development. This ensured that
-      features like dynamic routing, filtering components, and responsive design
-      were functioning correctly across various environments.
-    </p>
-    <p class="mb-48">
-      As I continue to grow my development skills, I look forward to refining
-      this workflow further by incorporating additional best practices like
-      automated testing and continuous integration.
+      I used Git for version control, with all project files stored in a GitHub
+      repository.
     </p>
   </div>
 </section>
@@ -560,43 +540,26 @@
     </p>
 
     <h3>Long-Term Vision</h3>
-    <p>
-      Looking further into the future, my vision for the Yin-Style Yoga
-      Application is to transform it into a more diverse and personalized
-      platform, offering users a truly comprehensive Yin-Style Yoga experience:
-    </p>
+
     <ul>
-      <li>
-        One exciting addition will be the
-        <strong>integration of graphic videos</strong> of the yoga routines.
+      <li class="mb-16">
+        As the platform grows, I aim to add new sections beyond Yin-Style Yoga,
+        introducing users to <strong>Breathwork</strong> and
+        <strong>Meditation</strong>. This expansion will allow users to explore
+        other mindfulness practices and create a more well-rounded, holistic
+        approach.
       </li>
-      <li>
+      <li class="mb-16">
+        One exciting addition will be the
+        <strong>integration of graphic videos</strong> of the routines.
+      </li>
+      <li class="mb-16">
         I also plan to introduce <strong>user accounts</strong>, which will
         allow users to create and save personalized training plans, as well as
         track their progress through a history of completed sessions. This will
         make the app more tailored to each user's personal journey.
       </li>
-      <li>
-        A key part of the long-term vision involves regularly
-        <strong>conducting usability testing</strong> to gather feedback
-        directly from users. These insights will help inform future development
-        and ensure the platform continues to evolve in ways that meet users'
-        needs.
-      </li>
-      <li>
-        As the platform grows, I aim to add new sections beyond Yin-Style Yoga,
-        introducing users to <strong>Breathing Techniques</strong> and
-        <strong>Meditation Practices</strong>. This expansion will allow users
-        to explore other mindfulness practices and create a more well-rounded,
-        holistic approach
-      </li>
     </ul>
-    <p>
-      These long-term goals reflect my commitment to continuously improving the
-      app, offering a deeper, more personalized experience, and expanding the
-      platform to include a wider range of practices to support users' physical
-      and mental well-being.
-    </p>
   </div>
 </section>
 
@@ -604,12 +567,9 @@
   <div class="border-standard radius-l mt-48 toolbox main-margin">
     <h3>Summary: Future Plans</h3>
     <p>
-      Looking ahead, the Yin-Style Yoga Application will continue to grow with
-      the addition of key features such as an expanded Yoga Pose Library, a
-      search function, more filtering options. In the long term, I envision
-      transforming the app into a fully personalized platform with user
-      accounts, graphic videos, and new sections dedicated to Breathing
-      Techniques and Meditation Practices.
+      In the long term, I envision transforming the app into a fully
+      personalized platform with user accounts, graphic videos, and new sections
+      dedicated to Breathwork and Meditation.
     </p>
   </div>
 </section>
@@ -645,9 +605,8 @@
       decision, as it allowed me to create a design that truly felt aligned with
       the message I wanted the application to convey.
       <strong
-        >Even with years of design experience, it's a reminder that sometimes
-        you have to take a step back, reflect, and try again until the design
-        feels just right.</strong
+        >It's a reminder that sometimes you have to take a step back, reflect,
+        and try again until the design feels just right.</strong
       >
     </p>
     <h3>Focus and Prioritization: Building a Strong Foundation</h3>
@@ -706,11 +665,9 @@
       Working on the Yin-Style Yoga web application has been a profoundly
       personal and educational journey. Embracing the process over rushing to
       the result led to more meaningful and high-quality work, both in crafting
-      content and refining the visual design. The importance of focus and
-      prioritization was essential for building a solid foundation and making
-      steady progress. Finally, navigating development challenges highlighted
-      the value of patience, problem-solving, and the satisfaction of finding
-      elegant solutions.
+      content and refining the visual design. Finally, navigating development
+      challenges highlighted the value of patience, problem-solving, and the
+      satisfaction of finding elegant solutions.
     </p>
   </div>
 </section>
