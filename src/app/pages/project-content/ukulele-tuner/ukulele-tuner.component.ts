@@ -19,14 +19,15 @@ import { TechnicalToolsBigComponent } from '../../../components/technical-tools-
   styleUrl: './ukulele-tuner.component.scss',
 })
 export class UkuleleTunerComponent {
-  title: string = 'Aloha Tune';
+  title: string = 'Aloha Tune: A Browser-Based Ukulele Tuner';
   text: string =
-    'A Hawaiian-inspired Ukulele Tuner designed for simplicity & accuracy.';
+    'Aloha Tune is a web-based tuner built specifically for Ukulele players. It offers real-time pitch detection, visual feedback, and a calming island-inspired design. And all that without needing to download an app.';
 
   sections = [
     { id: 'section1', label: '1. Purpose & Goals' },
     { id: 'section2', label: '2. UX/UI Design' },
     { id: 'section3', label: '3. Development Insights' },
-    { id: 'section4', label: '4. Final Reflections' },
+    { id: 'section4', label: '4. Future Plans' },
+    { id: 'section5', label: '5. Final Reflections' },
   ];
 }
