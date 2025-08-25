@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngularAccessibilityComponent } from './angular-accessibility/angular-accessibility.component';
 import { BlogComponent } from './blog/blog.component';
 import { DesignProcessComponent } from './design-process/design-process.component';
+import { KeynotePluginDevelopmentComponent } from './keynote-plugin-development/keynote-plugin-development.component';
 import { ResearchComponent } from './research/research.component';
 import { StylingStoryComponent } from './styling-story/styling-story.component';
 import { UsabilityTestingComponent } from './usability-testing/usability-testing.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   { path: 'angular-accessibility', component: AngularAccessibilityComponent },
   { path: 'styling-story', component: StylingStoryComponent },
   { path: 'design-process', component: DesignProcessComponent },
+  {
+    path: 'keynote-plugin-development',
+    component: KeynotePluginDevelopmentComponent,
+  },
 ];
 
 @NgModule({

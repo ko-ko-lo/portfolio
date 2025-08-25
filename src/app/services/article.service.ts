@@ -7,6 +7,13 @@ import { OverviewCardData } from '../models/card.model';
 export class ArticleService {
   private articles: OverviewCardData[] = [
     {
+      id: 7,
+      title: 'From Chaos to Creation: My Journey into Figma Plugin Development',
+      image: 'blog/teaser-plugin-keynote.png',
+      link: 'keynote-plugin-development',
+      absoluteLink: '/blog/keynote-plugin-development',
+    },
+    {
       id: 6,
       title: 'My Design Process: A Practical Guide Shaped by Experience',
       image: 'blog/design-process-teaser.png',

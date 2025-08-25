@@ -1,0 +1,276 @@
+<app-breadcrumb></app-breadcrumb>
+
+<article>
+  <app-intro [title]="title" [text]="text"></app-intro>
+</article>
+
+<div class="container-m m-middle">
+  <div class="mb-32">
+    <picture>
+      <source srcset="blog/plugin-keynote.webp" type="image/webp" />
+      <img
+        src="blog/plugin-keynote.png"
+        alt=""
+        class="radius-l mt-64 m-middle elevation-xs"
+      />
+    </picture>
+    <p class="mb-40 text-center mt-64">
+      Before I show you what I built, I want to share how it actually felt to
+      walk this path.
+    </p>
+  </div>
+  <img src="general/arrow.svg" alt="" class="m-middle" />
+</div>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32">The Emotional Rollercoaster</h2>
+  <p>If you’ve ever worked on a personal tech project, you know the ride.</p>
+  <p>
+    At first I was optimistic: “This will be fun. How hard can it be?” Then came
+    the frustration: debugging, weird API behavior, error messages that made me
+    question my life choices. But eventually, after trial and error, something
+    clicked. And when the plugin finally worked, I felt victorious: “I built
+    this thing!”
+  </p>
+
+  <p class="mb-40">
+    It reminded me that learning new tech is rarely linear. It’s try → fail →
+    learn → repeat.
+  </p>
+
+  <div class="m-middle">
+    <figure class="main-margin">
+      <picture>
+        <source
+          srcset="blog/plugin-emotional-rollercoaster.webp"
+          type="image/webp"
+        />
+        <img
+          src="blog/plugin-emotional-rollercoaster.png"
+          alt=""
+          class="radius-l elevation-xs"
+        />
+      </picture>
+      <figcaption class="caption">
+        The emotional rollercoaster of building my first Figma plugin.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32">Why Plugins?</h2>
+
+  <p>
+    For those who don’t know: plugins in Figma are little helpers. They export
+    colors, insert icons, generate data: small tools that make design work
+    faster or easier. Basically, if Figma doesn’t do it by default, there’s
+    probably a plugin for that.
+  </p>
+
+  <p>
+    I’ve created several plugins, but for this talk I chose to share three of
+    them:”
+  </p>
+
+  <ul>
+    <li>
+      <strong>Hexify</strong> - turns color collections into code (SCSS, CSS,
+      JSON)
+    </li>
+    <li>
+      <strong>JSONify</strong> - exports content from Figma into structured JSON
+      data
+    </li>
+    <li>
+      <strong>Pattern Hearts</strong> - a tiny plugin to spread a little joy
+      through design
+    </li>
+  </ul>
+
+  <p class="mb-40">Each one came with its own set of challenges and lessons.</p>
+
+  <div class="m-middle">
+    <picture>
+      <source srcset="blog/plugin-all.webp" type="image/webp" />
+      <img
+        src="blog/plugin-all.png"
+        alt=""
+        class="radius-l main-margin elevation-xs"
+      />
+    </picture>
+  </div>
+</section>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32">Hexify: Learning by Doing</h2>
+
+  <p>
+    Hexify was my first plugin. It sounded simple: export Figma colors into
+    code. But starting out, I had almost no knowledge of the Figma API. I
+    skimmed the docs, watched a few YouTube videos, and then thought: “Alright,
+    let’s try to build something real.”
+  </p>
+
+  <p>
+    Step by step, I connected the dots. I discovered how to access variables,
+    filter colors, and convert RGB values into Hex. Just when I thought I was
+    done, I realized semantic tokens were referencing other colors: another dot
+    to connect.
+  </p>
+
+  <a
+    href="https://www.figma.com/community/plugin/1428416759853968301/hexify"
+    target="blank"
+    class="subheadline"
+    ><span class="material-icons"> arrow_forward_ios </span>
+
+    Explore Hexify on Figma Community</a
+  >
+
+  <h3>Unexpected Token</h3>
+
+  <p class="mb-40">
+    I met the “Unexpected Token” error along the way. At some point, that vague
+    short error message had me doubting everything.
+  </p>
+
+  <div class="m-middle">
+    <picture>
+      <source srcset="blog/plugin-unexpected-token.webp" type="image/webp" />
+      <img
+        src="blog/plugin-unexpected-token.png"
+        alt=""
+        class="radius-l main-margin elevation-xs"
+      />
+    </picture>
+  </div>
+</section>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32">JSONify: Automating My Own Workflow</h2>
+
+  <p>
+    My second plugin grew out of a personal project:
+    <a href="https://openstillness.com/" target="_blank">Open Stillness</a>, a
+    platform I’m building for Meditation, Breathwork, and Yin-Style yoga.
+  </p>
+
+  <p>
+    Each piece of content, a pose, a meditation, a technique, is documented as a
+    card in Figma. At some point, I needed a way to turn all those cards into
+    structured data.
+  </p>
+
+  <h3>Enter JSONify</h3>
+
+  <p>
+    It meant diving into Figma’s node tree with a Depth-First Search algorithm,
+    finding text layers buried inside frames and groups. I discovered I could
+    use layer names as keys, exclude layers with a naming rule, and even split
+    line breaks into arrays.
+  </p>
+
+  <p>
+    That little mapping trick, from design layer to JSON output, unlocked
+    everything. Suddenly, I wasn’t just designing content, I was building data
+    structures straight out of Figma.
+  </p>
+
+  <a
+    href="https://www.figma.com/community/plugin/1437780775818955662/jsonify"
+    target="blank"
+    class="subheadline"
+    ><span class="material-icons"> arrow_forward_ios </span>
+
+    Explore JSONify on Figma Community</a
+  >
+
+  <div class="m-middle pt-40">
+    <figure class="main-margin">
+      <picture>
+        <source srcset="blog/plugin-hello-jsonify.webp" type="image/webp" />
+        <img
+          src="blog/plugin-hello-jsonify.png"
+          alt=""
+          class="radius-l elevation-xs"
+        />
+      </picture>
+      <figcaption class="caption">
+        Goodbye, Copy-Paste. Hello, JSONify.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32 rainbow-text">Pattern Hearts: Joy Through Design</h2>
+
+  <p>
+    After Hexify and JSONify, I wanted something lighter. Inspired by an old art
+    project where I drew patterned hearts on paper, I built Pattern Hearts. It
+    is a plugin to add patterned hearts (and rainbow gradients!) to designs.
+  </p>
+
+  <p>
+    It wasn’t just playful, it was also personal. Each heart stood for openness,
+    empathy, and individuality. Pattern Hearts is a joyful plugin made to share
+    a little love.
+  </p>
+
+  <a
+    href="https://www.figma.com/community/plugin/1482073467314571187/pattern-hearts"
+    target="blank"
+    class="subheadline"
+    ><span class="material-icons"> arrow_forward_ios </span>
+
+    Explore Pattern Hearts on Figma Community</a
+  >
+
+  <div class="m-middle pt-40">
+    <picture>
+      <source srcset="blog/plugin-pattern-heart.webp" type="image/webp" />
+      <img
+        src="blog/plugin-pattern-heart.png"
+        alt=""
+        class="radius-l main-margin elevation-xs"
+      />
+    </picture>
+  </div>
+</section>
+
+<section class="container-m m-middle">
+  <h2 class="mt-32">Takeaways: From Chaos to Creation</h2>
+
+  <p>
+    Looking back, these three plugins taught me more than just the Figma API:
+  </p>
+
+  <ul class="mb-40">
+    <li>
+      <strong>Start small.</strong> Even tiny projects can spark real growth.
+    </li>
+    <li>
+      <strong>Embrace chaos.</strong> Trial and error is not failure, it’s the
+      process.
+    </li>
+    <li>
+      <strong>Follow your curiosity.</strong> The best tools often emerge from
+      personal needs.
+    </li>
+    <li>
+      <strong>Bring joy.</strong> Tech isn’t only about efficiency, it can also
+      spread a little love.
+    </li>
+  </ul>
+
+  <div class="m-middle">
+    <figure class="main-margin">
+      <picture>
+        <source srcset="blog/plugin-end.webp" type="image/webp" />
+        <img src="blog/plugin-end.png" alt="" class="radius-l elevation-xs" />
+      </picture>
+      <figcaption class="caption">Thank you</figcaption>
+    </figure>
+  </div>
+</section>

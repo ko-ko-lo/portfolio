@@ -1,0 +1,16 @@
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    #ce5849,
+    #e38443,
+    #e6c15d,
+    #5aa465,
+    #5278b8,
+    #66549e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}

@@ -16,7 +16,7 @@ import { IntroComponent } from '../../components/intro/intro.component';
   templateUrl: './expertise.component.html',
 })
 export class ExpertiseComponent {
-  title: string = 'My Expertise Ecosystem';
+  title: string = 'My Core Strengths';
   text: string =
     'I work at the intersection of design and development, blending systems thinking, creative tools, and inclusive frontend architecture to craft digital products with care and clarity. These five interconnected pillars form the foundation of my expertise:';
 
